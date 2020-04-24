@@ -1,6 +1,6 @@
-baseURL = "https://less.coffee"
+baseURL = "/"
 languageCode = "en-us"
-title = "Noteworthy"
+title = "Less Coffee"
 theme = "noteworthy"
 enableRobotsTXT = true
 paginate = 4 # Set the number of posts to show before overflowing to the next page.
@@ -16,7 +16,7 @@ disqusShortname = ""
   tag = "tags"
 
 [author]
-	name = "kimcc"
+	name = "Arie Oldman"
 
 # Set to false to disallow raw HTML in markdown files
 [markup.goldmark.renderer]
@@ -25,7 +25,7 @@ disqusShortname = ""
 [params]
 	math = true
 	# Blog description at the top of the homepage. Supports markdown.
-	description = "Noteworthy is a minimalist Hugo theme, perfect for writers and bloggers."
+	description = "Software developer from Sydney. This website is a work in progress."
 
     showReadMore = false
 
@@ -35,43 +35,13 @@ disqusShortname = ""
 
 	# Add links to your accounts. Remove the ones you don't want to include.
 	# Main
-	email = "#"
-    facebook = "#"
-    twitter = "#"
-	instagram = "#"
-	tumblr = "#"
-	reddit = "#"
-	pinterest = "#"
-	youtube = "#"
-    vimeo = "#"
-	weibo = "#"
-	vk = "#"
-	linkedin = "#"
-
-	# Writing
-    medium = "#"
-	blogger = "#"
-	wordpress = "#"
+	linkedin = "https://www.linkedin.com/in/arieoldman/"
 
 	# Creative & Visual
-    dribbble = "#"
-	behance = "#"
-	deviantart = "#"
-	flickr = "#"
-
-    # Audio & Music
-    soundcloud = "#"
 
 	# Programming
-    github = "#"
-	stackoverflow = "#"
-	gitlab = "#"
-	codepen = "#"
+  github = "https://github.com/Arizard"
 
-    # Academic
-    googlescholar = "#"
-    impactstory = "#"
-    orcid = "#"
 
 # Menu links along the sidebar navigation.
 [[menu.main]]

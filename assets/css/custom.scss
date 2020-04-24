@@ -1,0 +1,31 @@
+
+$junebud: #badc58;
+$pureapple: #6ab04c;
+$coffee: #eeb17f;
+$coffee-dark: #996c55;
+
+.color-link {
+  color: $coffee;
+}
+
+.color-link:visited {
+  color: $coffee;
+}
+
+.paginator {
+  a {
+    color: $coffee;
+  }
+}
+
+.twitter-tweet {
+  border-left: 4px solid $coffee !important;
+}
+
+.color-link:hover {
+  color: $coffee-dark;
+
+  .color-arrow {
+    fill: $coffee-dark;
+  }
+}
