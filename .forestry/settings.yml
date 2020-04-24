@@ -17,9 +17,9 @@ sections:
   create: all
   match: "**/*"
 upload_dir: uploads
-public_path: public
+public_path: http://less.coffee.s3-website-ap-southeast-2.amazonaws.com/uploads
 front_matter_path: ''
-use_front_matter_path: 
+use_front_matter_path: false
 file_template: ":filename:"
 build:
   preview_env:
