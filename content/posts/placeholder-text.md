@@ -1,15 +1,15 @@
 ---
-author: "Hugo Authors"
-title: "Placeholder Text"
-date: "2019-12-17"
-description: "Lorem Ipsum Dolor Si Amet"
-tags: [
-    "markdown",
-    "text",
-]
-type: "post"
----
+author: Hugo Authors
+title: Placeholder Text
+date: 2019-12-17
+description: Lorem Ipsum Dolor Si Amet
+tags:
+- markdown
+- text
+type: post
+draft: true
 
+---
 Lorem est tota propiore conpellat pectoribus de pectora summo. <!--more-->
 Redit teque digerit hominumque toris verebor lumina non cervice
 subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc
