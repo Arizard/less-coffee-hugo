@@ -29,3 +29,13 @@ $coffee-dark: #996c55;
     fill: $coffee-dark;
   }
 }
+
+p {
+  img {
+    width: calc(100% - 24px);
+    max-width: 224px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+  }
+}
