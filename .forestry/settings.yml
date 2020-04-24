@@ -16,7 +16,7 @@ sections:
   label: Posts
   create: all
   match: "**/*"
-upload_dir: uploads
+upload_dir: upload
 public_path: https://s3-ap-southeast-2.amazonaws.com/less.coffee/uploads
 front_matter_path: ''
 use_front_matter_path: false
