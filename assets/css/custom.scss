@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 $junebud: #badc58;
 $pureapple: #6ab04c;
@@ -30,7 +31,7 @@ $coffee-dark: #996c55;
   }
 }
 
-p {
+.circle-img {
   img {
     width: calc(100% - 24px);
     max-width: 224px;
@@ -38,4 +39,14 @@ p {
     transform: translate(-50%);
     border-radius: 50%;
   }
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, .site-title > a {
+  font-family: "Inter", sans-serif;
+  font-weight: 700
 }
