@@ -28,9 +28,7 @@ outline the motivation for the project. explain what decaf is.
 
 DeXML is a scripting language layered on top of the Deputy core product (written in PHP). This feature enables custom behaviour to be implemented on a per-account basis. This professional service is carried out by the Customer Experience (CX) teams within each region.
 
-![](/uploads/deputy-dexml (1).jpg)
-
-dddd
+<img src="/uploads/deputy-dexml (1).jpg" />
 
 ### Limitations
 
