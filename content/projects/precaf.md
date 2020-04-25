@@ -1,10 +1,16 @@
 ---
-title: "Precaf"
-date: 2020-04-25T01:13:34+10:00
-draft: false
+title: Precaf
+date: 2020-04-24T15:13:34.000+00:00
+tags:
+- Precaf
+- Project
+- Deputy
+- Dexml
+- Decaf
+- Go
 menu:
   main:
-    parent: "projects"
----
+    parent: projects
 
+---
 Precaf is a templating tool for Decaf.
