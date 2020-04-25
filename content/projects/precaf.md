@@ -12,7 +12,6 @@ tags:
 menu:
   main:
     parent: projects
-draft: true
 
 ---
 **Contributors**: Arie Oldman
