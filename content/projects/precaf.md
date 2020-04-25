@@ -121,12 +121,10 @@ list of programming languages, libraries, tools used.
 * [CLI by urfave](https://github.com/urfave/cli)
 * [Fasttemplate by valyala](https://github.com/valyala/fasttemplate)
 
-**Patterns**
-
 **Tools**
 
 * Git + Github
-* 
+* Jetbrains GoLand IDE
 
 ## Retrospective
 
