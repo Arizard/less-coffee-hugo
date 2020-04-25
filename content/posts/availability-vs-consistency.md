@@ -1,11 +1,12 @@
 ---
-title: "How are Availability and Consistency Related?"
-author: "Arie Oldman"
-date: 2020-04-25T19:08:14+10:00
-description: "Explain how availability and consistency are related concepts in system design."
-draft: false
----
+title: How are Availability and Consistency Related?
+author: Arie Oldman
+date: 2020-04-25T09:08:14.000+00:00
+description: Explain how availability and consistency are related concepts in system
+  design.
+draft: true
 
+---
 Availability and consistency are fundamental concepts in systems design. This
 article outlines how the two are related, with plain english examples.
 
@@ -55,7 +56,3 @@ your question regarding yacht upholstery.
 In this case, the system was inconsistent because The Prime Minister received
 your letters in the wrong order, therefore the information he had was not up
 to date and he was puzzled by your question.
-
-
-
-

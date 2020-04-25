@@ -1,12 +1,11 @@
 ---
-title: "Projects"
-type: "section"
+title: Projects
+type: section
+layout: index
+description: Projects that I have contributed to
 menu:
-  main: 
-    name: "Projects"
-    identifier: "projects"
+  main:
+    identifier: projects
     weight: 15
-layout: "index"
----
 
-Projects that I have worked on.
+---
