@@ -11,10 +11,11 @@ tags:
 menu:
   main:
     parent: projects
+draft: true
 
 ---
-Contributors
+**Contributors**: Arie Oldman
 
-* Arie Oldman
+**Source Code**: Private Repository
 
-Precaf is a build-and-deploy tool for Decaf. It saves developer headache by allowing sharing common Decaf code between scripts. 
+_Precaf_ is a build-and-deploy tool used internally at Deputy. It provides a means for Decaf developers to standardise and automate the re-use of code snippets among teams.
