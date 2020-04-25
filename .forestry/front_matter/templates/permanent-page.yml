@@ -20,3 +20,9 @@ fields:
 - type: text
   name: type
   label: type
+- name: menu
+  type: text
+  config:
+    required: false
+  label: Menu
+  description: Zero or more menus that this page belongs to.
