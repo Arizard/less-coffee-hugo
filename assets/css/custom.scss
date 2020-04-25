@@ -50,3 +50,21 @@ h1, h2, h3, h4, h5, h6, .site-title > a {
   font-family: "Inter", sans-serif;
   font-weight: 700
 }
+
+.nav-menu {
+  a {
+    transition: 0.05s margin-left;
+    font-family: "Karla", sans-serif;
+  }
+  a:hover {
+    margin-left: 1mm;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 4mm;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1.2rem;
+
+  }
+}

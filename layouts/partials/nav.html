@@ -1,0 +1,23 @@
+<!-- Sidebar navigation -->
+<nav>
+  {{ partial "header.html" . }}
+  <div class="nav-menu">
+    <ul>
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+      <li>
+        <a class="color-link nav-link" href="{{ .URL | relLangURL }}" >{{ .Name }}</a>
+        {{ if .HasChildren }}
+          <ul>
+          {{ range .Children }}
+            <li><a class="color-link nav-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+          {{ end }}
+          </ul>
+        {{ end }}
+      </li>
+    {{ end }}
+    <li><a class="color-link nav-link" href="{{ .Site.RSSLink }}" target="_blank" rel="noopener" type="application/rss+xml">RSS</a></li>
+    </ul>
+  </div>
+{{ partial "footer.html" . }}
+</nav>
