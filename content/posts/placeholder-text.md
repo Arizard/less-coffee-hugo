@@ -6,7 +6,7 @@ description: Lorem Ipsum Dolor Si Amet
 tags:
 - markdown
 - text
-type: post
+type: ''
 
 ---
 Lorem est tota propiore conpellat pectoribus de pectora summo. <!--more-->
