@@ -16,6 +16,13 @@ sections:
   label: Posts
   create: all
   match: "**/*"
+- type: directory
+  path: content/projects
+  label: Projects
+  create: all
+  match: "**/*"
+  templates:
+  - permanent-page
 upload_dir: content/uploads
 public_path: "/uploads"
 front_matter_path: ''
