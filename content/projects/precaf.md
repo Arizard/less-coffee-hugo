@@ -90,7 +90,7 @@ This results in the creation of the new file:
             
             - build_calculate_overtime.coffee
 
-Inside the new file, the `include` statement above has been substituted for the contents of `someDependencyProcedure.coffee`. 
+Inside the new file, the `include` statement above has been substituted for the contents of `someDependencyProcedure.coffee`.
 
 Similar operations can be performed on an account-specific basis using a config file such as `prod.coffee`. The config file can contain variables which will be substituted using the following syntax:
 
@@ -129,4 +129,20 @@ list of programming languages, libraries, tools used.
 
 ## Retrospective
 
-what went well. what went poorly. what to change for next time.
+**What went well?**
+
+* The application was received well by the business. 
+* It solves old problems in a new way.
+
+**What went poorly?**
+
+* Precaf has not been widely adopted, despite being accepted by the engineers.
+* Codebase is messy.
+* No installation method or package manager support.
+* Creating a new precaf script is a manual process.
+
+**What to change for next time?**
+
+* Determine a clear design for the codebase before implementing anything.
+* Integrate with a package manager (e.g. `brew`)
+* Implement a `$ cx-precaf new` command which creates a blank script and config files in the current directory.
