@@ -1,5 +1,5 @@
 ---
-title: Browse Projects
+title: Projects
 type: section
 layout: index
 description: Projects that I have contributed to
