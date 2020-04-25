@@ -65,6 +65,24 @@ h1, h2, h3, h4, h5, h6, .site-title > a {
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 1.2rem;
+  }
+  li {
+    display: inline-flex;
+  }
+  text-align: center;
+}
 
+@mixin media($for-tablet-up) {
+  @media only screen and (min-width: $for-tablet-up) {
+    @content;
+  }
+}
+
+@include media(900px) {
+  .nav-menu {
+    li {
+      display: list-item;
+    }
+    text-align: left;
   }
 }
