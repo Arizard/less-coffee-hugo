@@ -21,6 +21,23 @@ draft: true
 
 _Precaf_ is a build-and-deploy tool used internally at Deputy. It provides a means for Decaf developers to standardise and automate the re-use of code snippets among teams. _Precaf_ was developed for the _2020_ _Love Bugs Hackathon_ at Deputy.
 
+## Technology
+
+**Programming Languages**
+
+* Go
+
+**Libraries**
+
+* [Golang Glog](https://github.com/golang/glog "Golang Glog Repo")
+* [CLI by urfave](https://github.com/urfave/cli)
+* [Fasttemplate by valyala](https://github.com/valyala/fasttemplate)
+
+**Tools**
+
+* Git + Github
+* Jetbrains GoLand IDE
+
 ## Problem Statement
 
 ### Decaf and DeXML
@@ -107,25 +124,6 @@ For **deployment**, the developer defines the **account subdomain, OAuth token, 
     calculate_overtime $ cx-precaf -d -c prod.json calculate_overtime.coffee
 
 This triggers Precaf to POST the script contents to the `codeupdate` API endpoint.
-
-## Technology
-
-list of programming languages, libraries, tools used.
-
-**Programming Languages**
-
-* Go
-
-**Libraries**
-
-* [Golang Glog](https://github.com/golang/glog "Golang Glog Repo")
-* [CLI by urfave](https://github.com/urfave/cli)
-* [Fasttemplate by valyala](https://github.com/valyala/fasttemplate)
-
-**Tools**
-
-* Git + Github
-* Jetbrains GoLand IDE
 
 ## Retrospective
 
