@@ -13,4 +13,8 @@ menu:
     parent: projects
 
 ---
-Precaf is a templating tool for Decaf.
+Contributors
+
+* Arie Oldman
+
+Precaf is a build-and-deploy tool for Decaf. It saves developer headache by allowing sharing common Decaf code between scripts. 
