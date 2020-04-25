@@ -8,8 +8,6 @@ title: About
     <img src="/uploads/ArieOldman300px.jpg"/>
 </span>
 
-Test
-
 My name is Arie - I'm a software developer based in Sydney. I started this blog to write about topics that I'm studying - whether that be for my job or just for personal interest. The goal is to improve my written communication skills while solidifying my knowledge.
 
 I'm working as a software engineer providing professional services at Deputy, developing platform customisations for enterprise customers.
