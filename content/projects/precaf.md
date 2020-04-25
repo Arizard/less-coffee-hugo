@@ -22,13 +22,17 @@ _Precaf_ is a build-and-deploy tool used internally at Deputy. It provides a mea
 
 ## Problem Statement
 
-outline the motivation for the project. explain what decaf is.
-
 ### Decaf and DeXML
 
 DeXML is a scripting language layered on top of the Deputy core product (written in PHP). This feature enables custom behaviour to be implemented on a per-account basis. This professional service is carried out by the Customer Experience (CX) teams within each region.
 
-{{< resize-image src="../uploads/deputy-dexml (1).jpg" alt="diagram explaining dexml in big picture" caption="How DeXML fits into the product." >}}
+<img width="100%" src="/uploads/deputy-dexml (1).jpg" />
+
+Some things can be customised with DeXML scripting:
+
+* Award interpretation for industry awards (GRIA, HIGA, etc.)
+* Payroll integration with external systems
+* 
 
 ### Limitations
 
