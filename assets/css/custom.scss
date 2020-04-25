@@ -86,3 +86,17 @@ h1, h2, h3, h4, h5, h6, .site-title > a {
     text-align: left;
   }
 }
+
+.callout p {
+  margin: 0px;
+}
+.callout.success {
+  border: 1px solid mediumseagreen;
+  background-color: palegreen;
+}
+.callout {
+  border: 1px solid lightgray;
+  background-color: whitesmoke;
+  text-align: center;
+  padding: 16px;
+}
