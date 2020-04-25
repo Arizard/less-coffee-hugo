@@ -7,7 +7,6 @@ tags:
 - markdown
 - text
 type: post
-draft: true
 
 ---
 Lorem est tota propiore conpellat pectoribus de pectora summo. <!--more-->
