@@ -1,7 +1,7 @@
 ---
 title: "Precaf"
 date: 2020-04-25T01:13:34+10:00
-draft: true
+draft: false
 menu:
   main:
     parent: "projects"
