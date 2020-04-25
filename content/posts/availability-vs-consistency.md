@@ -3,7 +3,7 @@ title: "How are Availability and Consistency Related?"
 author: "Arie Oldman"
 date: 2020-04-25T19:08:14+10:00
 description: "Explain how availability and consistency are related concepts in system design."
-draft: true
+draft: false
 ---
 
 Availability and consistency are fundamental concepts in systems design. This
@@ -55,11 +55,6 @@ your question regarding yacht upholstery.
 In this case, the system was inconsistent because The Prime Minister received
 your letters in the wrong order, therefore the information he had was not up
 to date and he was puzzled by your question.
-
-# Conclusion
-
-When designing a system, every decision is a trade-off between availability
-and consistency.
 
 
 
