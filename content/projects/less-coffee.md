@@ -6,7 +6,9 @@ draft = true
 menu = ""
 tags = []
 title = "Less Coffee"
-type = ""
-
+type = "project"
+menu:
+  main:
+    parent: projects
 +++
 Less Coffee
