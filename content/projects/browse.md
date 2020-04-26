@@ -7,5 +7,6 @@ menu:
   main:
     identifier: projects
     weight: 15
-
+type: section
+layout: "projects"
 ---
