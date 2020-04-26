@@ -12,7 +12,10 @@ tags:
 menu:
   main:
     parent: projects
-
+hero_image: /uploads/fabian-grohs-dC6Pb2JdAqs-unsplash.jpg
+hero_image_attribution: https://unsplash.com/@grohsfabian?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+hero_image_attribution_text: Photo by @grohsfabian on Unsplash
+type: project
 ---
 
 _Precaf_ is a build-and-deploy tool used internally at Deputy. It provides a means for Decaf developers to standardise and automate the re-use of code snippets among teams. _Precaf_ was developed for the _2020_ _Love Bugs Hackathon_ at Deputy.

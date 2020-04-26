@@ -5,7 +5,7 @@ date: 2020-04-25T09:08:14.000+00:00
 description: Explain how availability and consistency are related concepts in system
   design.
 draft: true
-
+hero_image: "https://camo.githubusercontent.com/13719354da7dcd34cd79ff5f8b6306a67bc18261/687474703a2f2f692e696d6775722e636f6d2f62674c4d4932752e706e67"
 ---
 Availability and consistency are fundamental concepts in systems design. This
 article outlines how the two are related, with plain english examples.

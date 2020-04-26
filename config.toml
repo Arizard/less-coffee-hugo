@@ -32,7 +32,7 @@ disqusShortname = ""
     # Set enableKofi to true to enable the Ko-fi support button. Add your Ko-fi ID to link to your account.
     enableKofi = false
     kofi = ""
-
+  mainSections = ["post", "project"]
 	# Add links to your accounts. Remove the ones you don't want to include.
 	# Main
 	linkedin = "https://www.linkedin.com/in/arieoldman/"
