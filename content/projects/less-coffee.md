@@ -11,3 +11,10 @@ menu:
 type: project
 ---
 
+<div style="display: none">
+    Technical details on how this website (less.coffee) is managed.
+</div>
+
+## System Map
+
+<img width="100%" src="/uploads/less-coffee-map.svg" />
