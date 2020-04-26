@@ -9,5 +9,6 @@ menu:
   main:
     parent: projects
 type: project
+draft: true
 ---
 

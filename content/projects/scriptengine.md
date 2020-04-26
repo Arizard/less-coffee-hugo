@@ -13,7 +13,14 @@ menu:
   main:
     parent: projects
 type: project
+hero_image: /uploads/ar_46-calorie-burn-960x540.jpg
+hero_image_attribution: https://www.lesmills.com/
+hero_image_attribution_text: "From Les Mills International"
 ---
+
+<div style="display: none">
+    A web application to help group fitness instructors deliver life-changing fitness experiences.
+</div>
 
 <img src="/uploads/scriptengine/2019-08-08-12-57.png" width="100%" />
 
