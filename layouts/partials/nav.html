@@ -6,13 +6,11 @@
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
       <li>
-        <a class="color-link nav-link" href="{{ .URL | relLangURL }}" >{{ .Name }}</a>
+        <a class="color-link nav-link" href="{{ .URL | relLangURL }}" >{{ .Pre }}{{ .Name }}</a>
         {{ if .HasChildren }}
-          <ul>
-          {{ range .Children }}
-            <li><a class="color-link nav-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+          {{ range sort .Children "Page.Date" "desc" }}
+            <li class="indent-1"><a class="color-link nav-link" href="{{ .URL | relLangURL }}">{{ .Pre }}{{ .Name }}</a></li>
           {{ end }}
-          </ul>
         {{ end }}
       </li>
     {{ end }}
