@@ -8,11 +8,9 @@
       <li>
         <a class="color-link nav-link" href="{{ .URL | relLangURL }}" >{{ .Pre }}{{ .Name }}</a>
         {{ if .HasChildren }}
-          <ul>
           {{ range sort .Children "Page.Date" "desc" }}
-            <li><a class="color-link nav-link" href="{{ .URL | relLangURL }}">{{ .Pre }}{{ .Name }}</a></li>
+            <li class="indent-1"><a class="color-link nav-link" href="{{ .URL | relLangURL }}">{{ .Pre }}{{ .Name }}</a></li>
           {{ end }}
-          </ul>
         {{ end }}
       </li>
     {{ end }}
