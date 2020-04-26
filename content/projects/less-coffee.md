@@ -7,8 +7,8 @@ menu = ""
 tags = []
 title = "Less Coffee"
 type = "project"
-menu:
-  main:
-    parent: projects
+menu =
+  main =
+    parent = projects
 +++
 Less Coffee
