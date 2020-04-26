@@ -26,3 +26,5 @@ fields:
     required: false
   label: Menu
   description: Zero or more menus that this page belongs to.
+pages:
+- content/projects/less-coffee.md
