@@ -9,6 +9,7 @@ tags:
 - Dexml
 - Decaf
 - Go
+- AWS
 menu:
   main:
     parent: projects

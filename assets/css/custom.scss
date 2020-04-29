@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@mixin media($for-tablet-up) {
+  @media only screen and (min-width: $for-tablet-up) {
+    @content;
+  }
+}
 
 $junebud: #badc58;
 $pureapple: #6ab04c;
@@ -72,46 +77,6 @@ h1, h2, h3, h4, h5, h6, .site-title > a {
   text-align: center;
 }
 
-@mixin media($for-tablet-up) {
-  @media only screen and (min-width: $for-tablet-up) {
-    @content;
-  }
-}
-
-@include media(900px) {
-  .nav-menu {
-    li {
-      display: list-item;
-    }
-    text-align: left;
-    li.indent-1 {
-      margin-left: 14px;
-    }
-  }
-
-  .article-list {
-    column-count: 2;
-    article {
-      display: inline-block;
-    }
-    article:first-of-type {
-      column-span: all;
-      -webkit-column-span: all;
-      -moz-column-span: all;
-      width: 100%;
-      display: block;
-      h2 {
-        font-size: 1.9em;
-        a {
-          text-decoration: none;
-          text-shadow: none;
-        }
-        margin-top: 16px;
-      }
-    }
-  }
-}
-
 .callout p {
   margin: 0px;
 }
@@ -170,4 +135,68 @@ article:first-of-type .hero-image:first-of-type {
   width: 100%;
   text-align: center;
   font-size: 0.8rem;
+}
+
+.super-container {
+}
+
+.github-stars {
+  margin-top: 16px;
+}
+
+.site-title {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.site-logo {
+  margin-top: .25em;
+  img {
+    width: 128px;
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+@include media(900px) {
+  .nav-menu {
+    li {
+      display: list-item;
+    }
+    text-align: left;
+    li.indent-1 {
+      margin-left: 14px;
+    }
+  }
+
+  .article-list {
+    column-count: 2;
+    article {
+      display: inline-block;
+    }
+    article:first-of-type {
+      column-span: all;
+      -webkit-column-span: all;
+      -moz-column-span: all;
+      width: 100%;
+      display: block;
+      h2 {
+        font-size: 1.9em;
+        a {
+          text-decoration: none;
+          text-shadow: none;
+        }
+        margin-top: 16px;
+      }
+    }
+  }
+
+  .site-logo {
+    margin-top: 2.9em;
+    img {
+      width: 50%;
+      margin-left: 50%;
+      transform: translate(-50%);
+    }
+  }
 }
