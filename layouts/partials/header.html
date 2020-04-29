@@ -1,6 +1,6 @@
 <header>
     <div class="site-logo">
-        <img src="uploads/coffee-cup.svg"/>
+        <img src="{{ "uploads/coffee-cup.svg" | relURL }}"/>
     </div>
     <div class="site-title">
         <a href="{{ "/" | relLangURL }}">{{ .Site.Title }}</a>
