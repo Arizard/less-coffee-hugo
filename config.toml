@@ -6,7 +6,6 @@ enableRobotsTXT = true
 paginate = 4 # Set the number of posts to show before overflowing to the next page.
 summaryLength = 10 # Configure how long the post summary should be on the homepage.
 enableInlineShortcodes = true
-enableGitInfo = true
 
 # Add your Google Analytics identifier: UA-XXXXXXXX-X
 googleAnalytics = ""
