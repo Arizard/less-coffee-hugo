@@ -10,11 +10,6 @@
             {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
             {{ range (.Paginate $pages).Pages }}
             <article>
-                {{ if .Params.hero_image }}
-                <div class="hero-image">
-                    <img src="{{ .Params.hero_image }}" />
-                </div>
-                {{ end }}
                 <h2>
                     <a href="{{ .Permalink }}">
                         {{ .Title }}
@@ -32,7 +27,7 @@
                     <!-- Display tags -->
                     {{if .Params.tags}}
                     {{ range .Params.tags }}
-                    <a class="tag" href="/tags/{{ . | urlize }}">#{{.}}</a>
+                    <a class="tag" href="/tags/{{ . | urlize }}">{{.}}</a>
                     {{ end }}
                     {{ end }}
                 </div>

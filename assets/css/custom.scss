@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 @mixin media($for-tablet-up) {
   @media only screen and (min-width: $for-tablet-up) {
     @content;
@@ -47,32 +47,35 @@ $coffee-dark: #996c55;
 }
 
 body {
-  font-family: "Karla", sans-serif;
+  font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
   font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1rem;
 }
 
 h1, h2, h3, h4, h5, h6, .site-title > a {
-  font-family: "Inter", sans-serif;
-  font-weight: 700
+  font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.25rem;
 }
 
 .nav-menu {
+  text-align: right;
   a {
-    transition: 0.05s margin-left;
-    font-family: "Karla", sans-serif;
-  }
-  a:hover {
-    margin-left: 1mm;
   }
   ul {
     list-style-type: none;
-    padding-left: 4mm;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 1.2rem;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1rem;
   }
   li {
     display: inline-flex;
+    margin: 0 0 0 0;
   }
   text-align: center;
 }
@@ -107,9 +110,6 @@ article .hero-image {
   }
 }
 
-article:first-of-type .hero-image:first-of-type {
-  height: 180px;
-}
 
 .post-footer {
   border-bottom: none;
@@ -134,7 +134,6 @@ article:first-of-type .hero-image:first-of-type {
 .page-hero-attribution {
   width: 100%;
   text-align: center;
-  font-size: 0.8rem;
 }
 
 .super-container {
@@ -158,15 +157,19 @@ article:first-of-type .hero-image:first-of-type {
   }
 }
 
+html {
+  line-height: 1.5;
+}
+
 @include media(900px) {
+  html {
+    font-size: 18px;
+  }
   .nav-menu {
     li {
       display: list-item;
     }
     text-align: left;
-    li.indent-1 {
-      margin-left: 14px;
-    }
   }
 
   .article-list {
@@ -181,7 +184,6 @@ article:first-of-type .hero-image:first-of-type {
       width: 100%;
       display: block;
       h2 {
-        font-size: 1.9em;
         a {
           text-decoration: none;
           text-shadow: none;
@@ -203,4 +205,8 @@ article:first-of-type .hero-image:first-of-type {
 
 .site-title a {
   color: #a75000;
+}
+
+.description {
+  font-style: normal;
 }

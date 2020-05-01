@@ -7,20 +7,9 @@
     {{ range .Site.Menus.main }}
       <li>
         <a class="color-link nav-link" href="{{ .URL | relLangURL }}" >{{ .Pre }}{{ .Name }}</a>
-        {{ if .HasChildren }}
-          {{ range sort .Children "Page.Date" "desc" }}
-            <li class="indent-1"><a class="color-link nav-link" href="{{ .URL | relLangURL }}">{{ .Pre }}{{ .Name }}</a></li>
-          {{ end }}
-        {{ end }}
       </li>
     {{ end }}
-      <li><a class="color-link nav-link" href="{{ .Site.RSSLink }}" target="_blank" rel="noopener" type="application/rss+xml">RSS</a></li>
     </ul>
-    <div class="github-stars">
-      <a href="https://github.com/Arizard/less-coffee-hugo" target="_blank">
-        <img alt="GitHub stars" src="https://img.shields.io/github/stars/Arizard/less-coffee-hugo?style=social">
-      </a>
-    </div>
   </div>
 {{ partial "footer.html" . }}
 </nav>

@@ -27,7 +27,7 @@ disqusShortname = ""
 [params]
 	math = true
 	# Blog description at the top of the homepage. Supports markdown.
-	description = "Software developer from Sydney. This website is a work in progress."
+	description = "I'm Arie Oldman, a software engineer from Sydney, Australia."
 
     showReadMore = false
 
@@ -48,7 +48,7 @@ disqusShortname = ""
 # Menu links along the sidebar navigation.
 [[menu.main]]
 	identifier = "about"
-	name = "About"
+	name = "Me"
 	url = "/about/"
 	weight = 10 # Weight is an integer used to sort the menu items. The sorting goes from smallest to largest numbers. If weight is not defined for each menu entry, Hugo will sort the entries alphabetically.
 
@@ -62,7 +62,7 @@ disqusShortname = ""
 	identifier = "tech"
 	name = "Tech"
 	url = "/tech/"
-	weight = 25
+	weight = 12
 
 [[menu.main]]
 	name = "Archives"
