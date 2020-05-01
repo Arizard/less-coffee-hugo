@@ -85,7 +85,7 @@ function initPlot() {
                 }
             },
             autotick: false,
-            dtick: 10,
+            dtick: 40,
             ticks: 'outside',
             tickcolor: 'rgb(102, 102, 102)'
         },

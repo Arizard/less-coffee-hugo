@@ -4,10 +4,6 @@ date: 2019-08-08T12:15:55+10:00
 tags:
 - Deep Dive
 - Scriptengine
-- Project
-- Go
-- React
-- JavaScript
 - Les Mills
 tech:
 - JavaScript

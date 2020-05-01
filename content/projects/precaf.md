@@ -4,12 +4,7 @@ date: 2020-04-24T15:13:34.000+00:00
 tags:
 - Deep Dive
 - Precaf
-- Project
 - Deputy
-- Dexml
-- Decaf
-- Go
-- AWS
 tech:
 - Dexml
 - Decaf
