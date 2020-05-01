@@ -36,7 +36,7 @@
         {{if .Params.tags}}
         <hr class="footer-divider">
         {{ range .Params.tags }}
-            <a class="tag" href="/tags/{{ . | urlize }}">#{{.}}</a>
+            <a class="tag" href="/tags/{{ . | urlize }}">{{.}}</a>
         {{ end }}
       {{ end }}
     </div>
