@@ -6,8 +6,11 @@ tags:
 - Scriptengine
 - Project
 - React
-- JavaScript
+- TypeScript
 - Les Mills
+tech:
+- React
+- TypeScript
 menu:
   main:
     parent: projects

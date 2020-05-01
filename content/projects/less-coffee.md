@@ -5,6 +5,9 @@ tags:
 - Hugo
 - Deep Dive
 - Website
+tech:
+- Hugo
+- AWS
 menu:
   main:
     parent: projects

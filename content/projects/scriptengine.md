@@ -9,6 +9,10 @@ tags:
 - React
 - JavaScript
 - Les Mills
+tech:
+- JavaScript
+- Go
+- React
 menu:
   main:
     parent: projects
