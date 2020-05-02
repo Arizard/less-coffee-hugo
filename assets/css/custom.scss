@@ -100,13 +100,15 @@ h2 a {
 
 article .hero-image {
   position: relative;
-  height: 100px;
+  height: 189px;
   overflow: hidden;
   img {
     position: absolute;
     width: 100%;
+    height: 100%;
     top: 50%;
     transform: translateY(-50%);
+    object-fit: cover;
   }
 }
 
@@ -119,21 +121,40 @@ article .hero-image {
   display: inline-block;
   position: relative;
   margin-top: 16px;
-  height: 200px;
-  min-height: 200px;
+  height: 378px;
+  min-height: 378px;
   min-width: 100%;
   overflow: hidden;
   img {
     width: 100%;
+    height: 100%;
     overflow: hidden;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    object-fit: cover;
   }
 }
 .page-hero-attribution {
+  position: relative;
   width: 100%;
   text-align: center;
+  font-size: 0.75rem;
+  margin-top: 8px;
+  box-sizing: border-box;
+  a {
+    position: absolute;
+    display: inline-block;
+    border-radius: 3px;
+    background: rgba(0,0,0,.15);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 3px 12px 3px 12px;
+    color: white;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 600;
+  }
 }
 
 .super-container {
@@ -188,7 +209,9 @@ html {
           text-decoration: none;
           text-shadow: none;
         }
-        margin-top: 16px;
+      }
+      .hero-image {
+        height: 378px;
       }
     }
   }
@@ -209,4 +232,8 @@ html {
 
 .description {
   font-style: normal;
+}
+
+.color-arrow {
+  fill: $coffee;
 }

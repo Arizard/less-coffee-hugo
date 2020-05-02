@@ -2,7 +2,6 @@
 title: Less Coffee
 date: 2020-04-26T12:00:00.000+10:00
 tags:
-- Hugo
 - Deep Dive
 - Website
 tech:

@@ -8,8 +8,13 @@
         <div class="article-list">
             <!-- Range over the pages and only include the ones that are a post type -->
             {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
-            {{ range (.Paginate $pages).Pages }}
+            {{ range (.Paginate $pages 5).Pages }}
             <article>
+                {{ if .Params.hero_image }}
+                <div class="hero-image">
+                    <img src="{{ .Params.hero_image }}" />
+                </div>
+                {{ end }}
                 <h2>
                     <a href="{{ .Permalink }}">
                         {{ .Title }}

@@ -3,13 +3,12 @@ title: Precaf
 date: 2020-04-24T15:13:34.000+00:00
 tags:
 - Deep Dive
-- Precaf
 - Deputy
 tech:
 - Dexml
 - Decaf
 - Go
-- AWS
+- Precaf
 menu:
   main:
     parent: projects

@@ -8,6 +8,9 @@ tech:
 - JavaScript
 - Plotly
 type: post
+hero_image: /images/national-cancer-institute-N_aihp118p8-unsplash.jpg
+hero_image_attribution_text: Photo by National Cancer Institute on Unsplash
+hero_image_attribution: https://unsplash.com/@nci?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge
 ---
 
 21 year 4 students submitted the number of reps of each exercise they were able to perform within the time limit of 1 minute.
