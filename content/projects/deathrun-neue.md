@@ -80,5 +80,5 @@ Deathrun Neue is a widely used deathrun gamemode, valued for it's simple install
 
 The gamemode is free and open-source. Supporters can "purchase" the gamemode on [GmodStore](https://gmodstore.com) to support the developer, but it is completely optional.
 
-VHS-7 (now officially inactive) still has a Deathrun server operated by one of the most tenured staff members of the original community, running the original codebase, complete with the original database and user generated content.
+VHS-7 (now officially inactive) still has a Deathrun server operated by one of the most tenured staff members of the original community, running the original codebase.
 
