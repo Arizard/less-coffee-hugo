@@ -236,16 +236,11 @@ html {
 }
 
 .menu-list {
-  a:hover {
-    &.color-link {
-      color: $coffee-dark;
-    }
+  a.color-link, a.color-link:visited {
+    color: $coffee;
   }
-
-  a:visited {
-    &.color-link {
-      color: $coffee;
-    }
+  a.color-link:hover {
+    color: $coffee-dark;
   }
 }
 
