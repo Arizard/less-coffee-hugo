@@ -1,15 +1,15 @@
 <!-- Sidebar navigation -->
 <nav>
   {{ partial "header.html" . }}
-  <div class="nav-menu">
-    <ul>
+  <aside class="menu">
+    <ul class="menu-list">
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
-      <li>
-        <a class="color-link nav-link" href="{{ .URL | relLangURL }}" >{{ .Pre }}{{ .Name }}</a>
+      <li class="">
+        <a class="content color-link" href="{{ .URL | relLangURL }}" >{{ .Pre }}{{ .Name }}</a>
       </li>
     {{ end }}
     </ul>
-  </div>
+  </aside>
 {{ partial "footer.html" . }}
 </nav>

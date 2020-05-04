@@ -24,12 +24,6 @@ _Precaf_ is a build-and-deploy tool used internally at Deputy. It provides a mea
 
 **Source Code**: Private Repository
 
-<div class="callout success">
-
-**Precaf reduces repetition and increases re-use.**
-
-</div>
-
 ## Technology
 
 **Programming Languages**

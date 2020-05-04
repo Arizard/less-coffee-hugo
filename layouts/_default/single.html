@@ -5,7 +5,7 @@
     </div>
     {{ if and .Params.hero_image_attribution .Params.hero_image_attribution_text }}
         <div class="page-hero-attribution">
-            <a href="{{ .Params.hero_image_attribution }}">{{ .Params.hero_image_attribution_text }}</a>
+            <a class="tag" href="{{ .Params.hero_image_attribution }}">{{ .Params.hero_image_attribution_text }}</a>
         </div>
     {{ end }}
 {{ end }}

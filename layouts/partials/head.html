@@ -14,9 +14,14 @@
 
     <!-- Styles -->
     <link type="text/css" rel="stylesheet" href="{{ "/" | relURL }}css/normalize.css">
+<!--    <link type="text/css" rel="stylesheet" href="{{ "/" | relURL }}css/bulma.min.css">-->
     <!-- Use Hugo Pipes to process the Sass file (convert to CSS, minify, and add a hash) -->
+    {{ $bulma_style := resources.Get "css/bulma/bulma.sass" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $bulma_style.Permalink }}"/>
     {{ $main_style := resources.Get "css/main.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $main_style.Permalink }}"/>
+
+
 
     <!-- Uncomment to add custom styles -->
     <!-- Modify the custom.scss file inside assets > css to use scss -->

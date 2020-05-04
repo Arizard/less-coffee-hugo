@@ -139,17 +139,8 @@ article .hero-image {
   position: relative;
   width: 100%;
   text-align: center;
-  font-size: 0.75rem;
   margin-top: 8px;
   box-sizing: border-box;
-  a {
-    border-radius: 3px;
-    background: rgba(0,0,0,.15);
-    padding: 3px 12px 3px 12px;
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-  }
 }
 
 .super-container {
@@ -178,6 +169,10 @@ html {
 }
 
 @include media(900px) {
+  .footer {
+    display: initial;
+  }
+
   html {
     font-size: 18px;
   }
@@ -232,3 +227,19 @@ html {
 .color-arrow {
   fill: $coffee;
 }
+
+.menu {
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+}
+
+.menu-list {
+  a:hover {
+    &.color-link {
+      color: $coffee-dark;
+    }
+  }
+}
+
