@@ -241,5 +241,11 @@ html {
       color: $coffee-dark;
     }
   }
+
+  a:visited {
+    &.color-link {
+      color: $coffee;
+    }
+  }
 }
 
