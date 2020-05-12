@@ -7,11 +7,7 @@ menu:
     weight: 1
 ---
 
-<article class="message is-warning">
-  <div class="message-body">
-    This document is a <strong>draft</strong> and is not up to date.
-  </div>
-</article>
+{{< callout is-warning "This document is a draft and is not up to date." >}}
 
 <div class="resume-contact">
 
@@ -28,12 +24,14 @@ menu:
 
 {{< annotatedH3 Deputy "Ultimo, September 2019 to present" >}}
 
-{{< resumeTagGroup CoffeeScript Go JavaScript Git AWS "Professional Services" >}}
+{{< resumeTagGroup "CoffeeScript (Decaf)" Go AWS >}}
 
 Software Engineer (Implementations) within APAC Customer Experience.
 
+[Visit Deputy](https://deputy.com)
+
 {{< annotatedH3 Spriggy "Sydney CBD, March 2019 to July 2019" >}}
-{{< resumeTagGroup "Python 2" "Python 3" "Git" "PostgreSQL" "Financial Software Infrastructure" >}}
+{{< resumeTagGroup Python "PostgreSQL" "Financial Software Infrastructure" >}}
 
 Junior platform developer working on the Spriggy Pocket Money microservices.
 
@@ -41,8 +39,10 @@ Junior platform developer working on the Spriggy Pocket Money microservices.
 -   Improved stability and uptime of the Spriggy platform by writing a Python daemon which rate-limited the number of transactions processed per minute.
 -   Improved the end user experience for Spriggy users by fixing 5XX errors in the Spriggy platform.
 
+[Visit Spriggy](https://spriggy.com.au/)
+
 {{< annotatedH3 "Singtel Optus" "Macquarie Park, July 2015 to March 2019" >}}
-{{< resumeTagGroup "Computer Networks" "Mobile Networks" "Python 3" "Mobile Device Testing" "JavaScript" >}}
+{{< resumeTagGroup "Computer Networks" "Mobile Networks" "Python" >}}
 
 Macquarie University Cadet Engineer. Completed two rotations per year in different teams within Optus Networks.
 
@@ -51,42 +51,54 @@ Macquarie University Cadet Engineer. Completed two rotations per year in differe
 -   Deployed Samsung J5 Pro mobile handset to Optus Business customers by coordinating third-party hardware and software tests and performing basic test cases.
 -   Identified suburban areas with an increased rate of call drops by collecting drive test data and visualising the distribution of mobile call dropouts using R.
 
+[Visit Optus](https://optus.com.au)
+
 ----
 ## Projects
 
+{{< annotatedH3 "Precaf" "Deputy, 2020 to present" >}}
+{{< resumeTagGroup "Go" "CoffeeScript (Decaf)" "Hackathon" >}}
+
+- Created the Precaf[^precaf] developer tool using Go.
+- Co-developed a new standard library of common procedures for CX Engineering.
+- Overcame many issues that exist in using Decaf[^decaf] as the main programming language for customer scripts (code reuse, standard library of procedures, manual deployment to instance, code readability, code review).
+- Create quick start guides and documentation for Precaf and standard procedures.
+
+[Read more about Precaf, Decaf and DeXML]({{< ref "projects/precaf.md" >}})
+
+{{< annotatedH3 "Tetra" "Deputy, 2019" >}}
+{{< resumeTagGroup "Go" "AWS Lambda" "Integration" >}}
+
+- Created a Lambda application to pre-process incoming CSV files using a series of transformations (e.g. slice rows, apply titlecase to column, merge two columns, omit a row depending on value)
+- Overcame a drawback with Tesseract[^tesseract] integration from external HR systems (e.g. _Frontier Chris21_). Incoming CSV files were incompatible with Tesseract until they were transformed using Tetra.
+- Overcame an issue with the development agility of Tesseract by separating Tetra features into an independent service.
+
+[Tetra on GitHub](https://github.com/Arizard/tetra)[^tetra-processor-private]
+
 {{< annotatedH3 "ScriptEngine 1 and 2" "2019 to present" >}}
-{{< resumeTagGroup "JavaScript" "TypeScript" "Go" "React" "Blueprint.js" "Progressive Web Application" >}}
+{{< resumeTagGroup "JavaScript" "React" "TypeScript" >}}
+
 -   Created an online platform for instructors to organise group fitness class plans (scripts) by following a specific format.
--   Implemented the user interface using React with the Blueprint component library, with Firebase as the authentication provider.
+-   Implemented the user interface using React with the `blueprintjs` component library, with Firebase as the authentication provider.
 -   Implemented the application middleware using Go and Cloud Firestore as the database provider.
+- Rewrite from scratch using TypeScript in V2, adding improvements to appearance and drag-and-drop using `react-beautiful-dnd`.
 
 
 {{< annotatedH3 "Video Game Modding" "2016 to 2018" >}}
 {{< resumeTagGroup "Lua" "Garry's Mod" "Video Games" >}}
--   Created and published Deathrun Neue, RedactedHub, bodyGroupr, PerkShop doorSkin and doorHandle addons for Garry’s Mod. Written in **Lua**, available on GitHub and [GmodStore](https://www.gmodstore.com/teams/18/addons).
+
+-   Created and published Deathrun Neue, RedactedHub, bodyGroupr, PerkShop doorSkin and doorHandle addons for Garry’s Mod. Written in Lua, available on GitHub and [GmodStore](https://www.gmodstore.com/teams/18/addons).
 
 ----
 ## Education
 
 
 {{< annotatedH3 "Bachelor of Engineering (Honours)" "2019, Major in Telecommunications Engineering" >}}
+{{< resumeTagGroup "Software Defined Networks" "Python" "Openflow" >}}
 
 #### Inline DDoS Detection for SMB
 
 Protected a simulated network against denial of service attacks by writing an SDN controller middleware with Python to integrate Openflow and the Bro Intrusion Detection System.
-
-----
-## Software
-
--   Google Cloud Platform, Firebase and AWS
--   Git, Jira, Confluence
--   PostgreSQL
--   Linux, Bash
-
-----
-## Languages
-
--   Python, Go, JavaScript
 
 ----
 ## Training
@@ -94,3 +106,11 @@ Protected a simulated network against denial of service attacks by writing an SD
 -   Presenting With Impact (Black Isle, 2017)
 -   Optus IPv6 In Practice (Singtel Optus, 2017)
 -   Optus TCP/IP In Practice (Singtel Optus, 2015)
+
+[^tesseract]: Tesseract is a suite of automated Lambda services which enable Deputy integration with external HR systems using a CSV file. Tesseract is used when performance with Decaf becomes an issue due to a large number of rows in the CSV.
+
+[^decaf]: Decaf is a programming language which resembles CoffeeScript. It is used inside a Deputy instance to provide scripting functionality. Internally, it is transpiled into DeXML and then interpreted using PHP.
+
+[^precaf]: Precaf is a Decaf developer tool which renders a code template and then deploys the code to a Deputy instance.
+
+[^tetra-processor-private]: The Lambda service, _Tetra Processor_ is a private repository.
