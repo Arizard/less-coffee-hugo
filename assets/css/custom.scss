@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
 @mixin media($for-tablet-up) {
   @media only screen and (min-width: $for-tablet-up) {
     @content;
@@ -264,4 +269,33 @@ html {
   a {
     margin-right: 16px;
   }
+}
+
+.tag-group {
+  position: relative;
+  .tag {
+    margin-bottom: 6px;
+    margin-right: 3px;
+  }
+}
+
+.tag-group-name {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  font-weight: 600;
+  font-variant: all-small-caps;
+}
+
+.professional-heading {
+  p {
+    margin-top: 1.25em;
+    margin-bottom: 0.75em;
+  }
+}
+
+.resume-contact ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
 }
