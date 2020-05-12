@@ -121,8 +121,7 @@ article .hero-image {
   display: inline-block;
   position: relative;
   margin-top: 16px;
-  height: 378px;
-  min-height: 378px;
+  height: 80px;
   min-width: 100%;
   overflow: hidden;
   img {
@@ -151,7 +150,9 @@ article .hero-image {
 }
 
 .site-title {
-  margin-top: 16px;
+  margin-top: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
   text-align: center;
 }
 
@@ -168,7 +169,10 @@ html {
   line-height: 1.5;
 }
 
-@include media(900px) {
+@include media(769px) {
+  .page-hero {
+    height: 378px;
+  }
   .footer {
     display: initial;
   }
@@ -222,6 +226,7 @@ html {
 
 .description {
   font-style: normal;
+  text-align: left;
 }
 
 .color-arrow {
@@ -244,3 +249,19 @@ html {
   }
 }
 
+.site-logo-mobile {
+  width: 35px;
+  height: 35px;
+  margin-top: 8px;
+}
+
+.site-title-mobile {
+  font-size: .7rem !important;
+}
+
+.nav-mobile {
+  font-size: .9rem;
+  a {
+    margin-right: 16px;
+  }
+}

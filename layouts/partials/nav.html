@@ -1,7 +1,7 @@
 <!-- Sidebar navigation -->
 <nav>
   {{ partial "header.html" . }}
-  <aside class="menu">
+  <aside class="menu is-hidden-mobile">
     <ul class="menu-list">
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
@@ -11,5 +11,11 @@
     {{ end }}
     </ul>
   </aside>
+  <div class="nav-mobile is-hidden-tablet">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+    <a class="content color-link" href="{{ .URL | relLangURL }}" >{{ .Pre }}{{ .Name }}</a>
+    {{ end }}
+  </div>
 {{ partial "footer.html" . }}
 </nav>

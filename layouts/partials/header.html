@@ -1,8 +1,14 @@
-<header>
-    <div class="site-logo">
+<header class="is-flex-mobile">
+    <div class="site-logo is-hidden-mobile">
         <img src="{{ "uploads/coffee-cup.svg" | relURL }}"/>
     </div>
-    <div class="site-title">
+    <div class="site-logo-mobile is-hidden-tablet is-flex-mobile">
+        <img src="{{ "uploads/coffee-cup.svg" | relURL }}"/>
+    </div>
+    <div class="site-title is-hidden-mobile">
+        <a href="{{ "/" | relLangURL }}">{{ .Site.Title }}</a>
+    </div>
+    <div class="site-title site-title-mobile is-flex-mobile is-hidden-tablet">
         <a href="{{ "/" | relLangURL }}">{{ .Site.Title }}</a>
     </div>
 </header>
