@@ -6,9 +6,6 @@ menu:
   main:
     weight: 1
 ---
-
-{{< callout is-warning "This document is a draft and is not up to date." >}}
-
 <div class="resume-contact">
 
 * 👨‍💻 Arie Oldman
@@ -27,6 +24,29 @@ menu:
 {{< resumeTagGroup "CoffeeScript (Decaf)" Go AWS >}}
 
 Software Engineer (Implementations) within APAC Customer Experience.
+
+<!--
+
+- Write and maintain custom scripts for customers
+- Pay conditions
+- Rostering logic
+- Integration logic
+    - Deputy Syncs
+    - Deputy API
+    - Tesseract
+    - Tetra
+- Code review
+- Develop internal tools
+- Solution design
+
+--> 
+
+- Enabled Deputy customers to stay compliant across numerous industry awards by designing and implementing bespoke account behaviours relating to pay, leave and employee entitlements[^example-awards-nsw].
+- Automated script deployment and reduce code re-use friction by developing an [internal developer tool](#precaf).
+- Gained experience with AWS Lambda by developing internal integration software within customer projects.
+- Conducted stakeholder, design and engineering requirements meetings.
+- Acquired broad knowledge of hospitality and healthcare industry awards by working closely with customers within each industry.
+- Conducted code reviews approximately twice per week.
 
 [Visit Deputy](https://deputy.com)
 
@@ -114,3 +134,5 @@ Protected a simulated network against denial of service attacks by writing an SD
 [^precaf]: Precaf is a Decaf developer tool which renders a code template and then deploys the code to a Deputy instance.
 
 [^tetra-processor-private]: The Lambda service, _Tetra Processor_ is a private repository.
+
+[^example-awards-nsw]: See the following for an example of the industry and occupation awards listed by Fair Work NSW: https://www.fairwork.gov.au/awards-and-agreements/awards/list-of-awards
