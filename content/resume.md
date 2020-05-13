@@ -86,6 +86,13 @@ Macquarie University Cadet Engineer. Completed two rotations per year in differe
 
 [Read more about Precaf, Decaf and DeXML]({{< ref "projects/precaf.md" >}})
 
+{{< annotatedH3 "Less Coffee" "2020 to present" >}}
+{{< resumeTagGroup "Hugo" "AWS" "Web" >}}
+
+- Created Less Coffee - a personal website built with Hugo to publish a resumé and occasional articles.
+- Implemented an automatic deployment pipeline using GitHub Actions and AWS S3.
+- Secured static website with HTTPS using AWS CloudFront and Route 53.
+
 {{< annotatedH3 "Tetra" "Deputy, 2019" >}}
 {{< resumeTagGroup "Go" "AWS Lambda" "Integration" >}}
 
@@ -102,7 +109,6 @@ Macquarie University Cadet Engineer. Completed two rotations per year in differe
 -   Implemented the user interface using React with the `blueprintjs` component library, with Firebase as the authentication provider.
 -   Implemented the application middleware using Go and Cloud Firestore as the database provider.
 - Rewrite from scratch using TypeScript in V2, adding improvements to appearance and drag-and-drop using `react-beautiful-dnd`.
-
 
 {{< annotatedH3 "Video Game Modding" "2016 to 2018" >}}
 {{< resumeTagGroup "Lua" "Garry's Mod" "Video Games" >}}
