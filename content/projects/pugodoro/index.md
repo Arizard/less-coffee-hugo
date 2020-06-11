@@ -10,7 +10,7 @@ tech:
 - TinyTimer
 - MomentJS
 type: project
-hero_image: charles-deluvio-ieEv01cucy0-unsplash.jpg
+hero_image: /projects/pugodoro/charles-deluvio-ieEv01cucy0-unsplash.jpg
 hero_image_attribution_text: Photo by Charles Deluvio on Unsplash
 hero_image_attribution: https://unsplash.com/wallpapers/cute/pug?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 ---
