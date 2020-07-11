@@ -28,12 +28,11 @@ disqusShortname = ""
 	math = true
 	# Blog description at the top of the homepage. Supports markdown.
 	description = "I'm Arie Oldman, a software engineer from Sydney, Australia."
-
-    showReadMore = false
-
-    # Set enableKofi to true to enable the Ko-fi support button. Add your Ko-fi ID to link to your account.
-    enableKofi = false
-    kofi = ""
+	subTitle = "Arie Oldman"
+  # Set enableKofi to true to enable the Ko-fi support button. Add your Ko-fi ID to link to your account.
+  showReadMore = true
+  enableKofi = false
+  kofi = ""
   mainSections = ["post", "project"]
 	# Add links to your accounts. Remove the ones you don't want to include.
 	# Main

@@ -21,32 +21,16 @@ menu:
 
 {{< annotatedH3 Deputy "Ultimo, September 2019 to present" >}}
 
-{{< resumeTagGroup "CoffeeScript (Decaf)" Go AWS >}}
+{{< resumeTagGroup "CoffeeScript (Decaf)" Go AWS Vue "Solutions Design" >}}
 
 Software Engineer (Implementations) within APAC Customer Experience.
 
-<!--
-
-- Write and maintain custom scripts for customers
-- Pay conditions
-- Rostering logic
-- Integration logic
-    - Deputy Syncs
-    - Deputy API
-    - Tesseract
-    - Tetra
-- Code review
-- Develop internal tools
-- Solution design
-
---> 
-
-- Enabled Deputy customers to stay compliant across numerous industry awards by designing and implementing bespoke account behaviours relating to pay, leave and employee entitlements[^example-awards-nsw].
-- Automated script deployment and reduce code re-use friction by developing an [internal developer tool](#precaf).
-- Gained experience with AWS Lambda by developing internal integration software within customer projects.
+- Designed and built the _Bunnings - Bank Of Hours_[^boh] Deputy implementation, a single account with over 50,000 users.
+- Designed and built the _Bunnings - Public Holiday Not Worked_[^phnw] Deputy implementation.
+- Improved team productivity by developing [Precaf](#precaf)[^precaf].
+- Improved security and testability with the _Environment Variables Custom App_[^evca] Deputy implementation.
+- Developed Deputy integrations for _AAP_ and _NRMA Marine_ using _AWS Lambda_ and _AWS API Gateway_.
 - Conducted stakeholder, design and engineering requirements meetings.
-- Acquired broad knowledge of hospitality and healthcare industry awards by working closely with customers within each industry.
-- Conducted code reviews approximately twice per week.
 
 [Visit Deputy](https://deputy.com)
 
@@ -142,3 +126,9 @@ Protected a simulated network against denial of service attacks by writing an SD
 [^tetra-processor-private]: The Lambda service, _Tetra Processor_ is a private repository.
 
 [^example-awards-nsw]: See the following for an example of the industry and occupation awards listed by Fair Work NSW: https://www.fairwork.gov.au/awards-and-agreements/awards/list-of-awards
+
+[^boh]: The Bank Of Hours is a process used within Bunnings which aims to provide flexible working arrangements to staff while maintaining a required number of contract hours per year. Staff can enter "debt" or "surplus" for their Bank Of Hours balance, which is then either paid to the employee at the end of the Bank Of Hours year (as overtime) or deducted from the employee's pay.
+
+[^phnw]: Certain staff members at Bunnings are eligible to be paid for public holidays where they are not rostered on.
+
+[^evca]: The Environment Variables Custom App provides a means of accessing account-scoped variables within Decaf/DeXML scripts. The values of these variables can be configured through the Environment Variables Custom App. This allows non-technical staff at Deputy to configure the account in ways they could not before.
