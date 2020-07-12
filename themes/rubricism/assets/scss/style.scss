@@ -214,6 +214,18 @@ strong {
   margin-bottom: 1rem;
 }
 
+.article-divider {
+  font-variant: all-small-caps;
+  margin-right: 1rem;
+  color: red;
+  font-weight: 500;
+  border-bottom: 1px solid red;
+
+  &:first-of-type {
+    margin-top: calc(3rem - 6px);
+  }
+}
+
 .all-small-caps {
   font-variant: all-small-caps;
 }
