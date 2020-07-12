@@ -2,6 +2,7 @@
 title: "Pug Go Doro: My DIY Terminal Pomodoro Timer"
 date: 2020-07-11T00:04:42+10:00
 draft: false
+author: "Arie Oldman"
 tags:
 - Organisation
 - Terminal

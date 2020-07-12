@@ -8,7 +8,7 @@ summaryLength = 10 # Configure how long the post summary should be on the homepa
 enableInlineShortcodes = true
 
 # Add your Google Analytics identifier: UA-XXXXXXXX-X
-googleAnalytics = ""
+googleAnalytics = "UA-172481330-1"
 
 # Add your Disqus shortname here.
 disqusShortname = ""
@@ -27,7 +27,7 @@ disqusShortname = ""
 [params]
 	math = true
 	# Blog description at the top of the homepage. Supports markdown.
-	description = "I'm Arie Oldman, a software engineer from Sydney, Australia."
+	description = "I'm Arie Oldman, a software engineer from Sydney, Australia. Here you will find projects and blog posts about the work that I do."
 	subTitle = "Arie Oldman"
   # Set enableKofi to true to enable the Ko-fi support button. Add your Ko-fi ID to link to your account.
   showReadMore = true
@@ -61,12 +61,6 @@ disqusShortname = ""
 	name = "Tech"
 	url = "/tech/"
 	weight = 12
-
-[[menu.main]]
-	name = "Archives"
-	identifier = "archives"
-	url = "/archives/"
-	weight = 30
 
 # Privacy configurations: https://gohugo.io/about/hugo-and-gdpr/
 [privacy]

@@ -1,5 +1,5 @@
 {{ define "main" }}
-	<main>
+	<main class="space-above-more">
 		{{ if or .Title .Content }}
 		<div>
 			{{ with .Title }}<h1>{{ . }}</h1>{{ end }}
@@ -12,5 +12,5 @@
 		{{ end }}
 		{{ partial "pagination.html" . }}
 	</main>
-{{ partial "sidebar.html" . }}
+{{ partial "latest.html" . }}
 {{ end }}

@@ -2,6 +2,7 @@
 date: 2019-05-28
 type: section
 title: About
+author: Arie Oldman
 
 ---
 <span class="circle-img">

@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="space-above-more">
+  <h1>
+    {{ .Title }}
+  </h1>
+  <!-- Range over the pages and only include the ones that are a post type -->
+  {{ range .Paginator.Pages }}
+    {{ .Render "summary" }}
+  {{ end }}
+  {{ partial "pagination.html" . }}
+</div>
+
+{{ end }}
