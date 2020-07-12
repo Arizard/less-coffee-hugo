@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "Less Coffee"
-theme = "noteworthy"
+theme = "rubricism"
 enableRobotsTXT = true
 paginate = 4 # Set the number of posts to show before overflowing to the next page.
 summaryLength = 10 # Configure how long the post summary should be on the homepage.
@@ -32,7 +32,6 @@ disqusShortname = ""
   # Set enableKofi to true to enable the Ko-fi support button. Add your Ko-fi ID to link to your account.
   showReadMore = true
   enableKofi = false
-  kofi = ""
   mainSections = ["post", "project"]
 	# Add links to your accounts. Remove the ones you don't want to include.
 	# Main
