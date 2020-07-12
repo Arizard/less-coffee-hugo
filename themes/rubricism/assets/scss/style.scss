@@ -31,7 +31,7 @@ a {
 
 header {
   margin-right: 0;
-  margin-top: 0;
+  margin-top: 1rem;
   text-align: left;
   nav {
     ul {
@@ -72,6 +72,7 @@ article {
   margin-top: 3rem;
   > time {
     color: darkgrey;
+    font-variant: all-small-caps;
   }
   > .content {
     margin-top: 2rem;
@@ -84,7 +85,7 @@ article {
 }
 
 .tag {
-  text-transform: capitalize;
+  font-variant: all-small-caps;
   &:before {
     content: "["
   }
@@ -211,4 +212,8 @@ strong {
   font-weight: 500;
   border-bottom: 1px solid red;
   margin-bottom: 1rem;
+}
+
+.all-small-caps {
+  font-variant: all-small-caps;
 }
