@@ -4,11 +4,11 @@ date: 2019-08-08T12:15:55+10:00
 tags:
 - Deep Dive
 - Scriptengine
-- Project
+- Les Mills
+tech:
+- JavaScript
 - Go
 - React
-- JavaScript
-- Les Mills
 menu:
   main:
     parent: projects

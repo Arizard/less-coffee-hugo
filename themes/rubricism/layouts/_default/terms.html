@@ -1,0 +1,24 @@
+{{ define "main" }}
+<main>
+  <article>
+    <h1>{{ .Title }}</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Term</th>
+          <th>Count</th>
+        </tr>
+      </thead>
+      <tbody>
+      {{ range .Data.Terms.ByCount }}
+        <tr>
+          <td><a href="{{ .Page.Permalink }}" class="tag">{{ .Page.Title }}</a></td>
+          <td>{{ .Count }}</td>
+        </tr>
+      {{ end }}
+      </tbody>
+    </table>
+  </article>
+
+</main>
+{{ end }}

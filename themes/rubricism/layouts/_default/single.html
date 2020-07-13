@@ -1,0 +1,20 @@
+{{ define "main" }}
+	<main>
+		<article>
+			<h1>{{ .Title }}</h1>
+			<p class="has-text-darkgrey all-small-caps">{{ $.Param "author" }} on
+			<time>{{ .Date.Format "2 January 2006" }}</time></p>
+			<p>{{ range .Params.tags }}
+				<a class="tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+				{{ end }}</p>
+			<div class="content">
+				{{ .Content }}
+			</div>
+			{{ with .Site.DisqusShortname }}
+			<div>
+				{{ template "_internal/disqus.html" . }}
+			</div>
+			{{ end }}
+		</article>
+	</main>
+{{ end }}

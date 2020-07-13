@@ -1,0 +1,23 @@
+<header>
+	<h1 class="site-heading">
+		<a href="{{ .Site.BaseURL }}">
+			<i class="fas fa-coffee"></i>&nbsp;
+			{{ .Site.Title }}
+		</a>
+	</h1>
+	<p class="justified">{{ .Site.Params.Description }}</p>
+	{{ with .Site.Menus.main }}
+	<nav>
+		<div class="nav-divider">Navigation</div>
+		<ul>
+			{{ range . }}
+			<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+			{{ end }}
+		</ul>
+	</nav>
+	{{ end }}
+	<div class="has-text-centered-mobile has-text-right-desktop u-full-width has-large-icons">
+		<a href="{{ .Site.Params.Github }}"><i class="fab fa-github"></i></a>
+		<a href="{{ .Site.Params.Linkedin }}"><i class="fab fa-linkedin"></i></a>
+	</div>
+</header>

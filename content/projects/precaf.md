@@ -3,13 +3,12 @@ title: Precaf
 date: 2020-04-24T15:13:34.000+00:00
 tags:
 - Deep Dive
-- Precaf
-- Project
 - Deputy
+tech:
 - Dexml
 - Decaf
 - Go
-- AWS
+- Precaf
 menu:
   main:
     parent: projects
@@ -24,12 +23,6 @@ _Precaf_ is a build-and-deploy tool used internally at Deputy. It provides a mea
 **Contributors**: Arie Oldman
 
 **Source Code**: Private Repository
-
-<div class="callout success">
-
-**Precaf reduces repetition and increases re-use.**
-
-</div>
 
 ## Technology
 

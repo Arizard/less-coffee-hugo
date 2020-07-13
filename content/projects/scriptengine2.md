@@ -4,10 +4,10 @@ date: 2020-04-26T22:19:39+1000
 tags:
 - Deep Dive
 - Scriptengine
-- Project
-- React
-- JavaScript
 - Les Mills
+tech:
+- React
+- TypeScript
 menu:
   main:
     parent: projects
