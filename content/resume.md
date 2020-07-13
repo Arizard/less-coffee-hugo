@@ -26,7 +26,7 @@ menu:
 
 Software Engineer (Implementations) within APAC Customer Experience.
 
-- Designed and built the _Bunnings - Bank Of Hours_[^boh] Deputy implementation, a single account with over 50,000 users.
+- Designed and built the _Bunnings[^bunnings] - Bank Of Hours_[^boh] Deputy implementation.
 - Designed and built the _Bunnings - Public Holiday Not Worked_[^phnw] Deputy implementation.
 - Improved team productivity by developing [Precaf](#precaf)[^precaf].
 - Improved security and testability with the _Environment Variables Custom App_[^evca] Deputy implementation.
@@ -133,3 +133,5 @@ Protected a simulated network against denial of service attacks by writing an SD
 [^phnw]: Certain staff members at Bunnings are eligible to be paid for public holidays where they are not rostered on.
 
 [^evca]: The Environment Variables Custom App provides a means of accessing account-scoped variables within Decaf/DeXML scripts. The values of these variables can be configured through the Environment Variables Custom App. This allows non-technical staff at Deputy to configure the account in ways they could not before.
+
+[^bunnings]: The Bunnings account is a Deputy Enterprise account with over 50,000 active users.
