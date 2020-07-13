@@ -1,6 +1,1 @@
-[submodule "themes/noteworthy"]
-	path = themes/noteworthy
-	url = https://github.com/kimcc/hugo-theme-noteworthy.git
-[submodule "themes/blank"]
-	path = themes/blank
-	url = https://github.com/vimux/blank
+
