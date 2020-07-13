@@ -2,7 +2,7 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 author: "Arie Oldman"
-type: "post"
+type: "project"
 tags:
 - Misc
 tech:
