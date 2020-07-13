@@ -1,8 +1,8 @@
 {{ define "main" }}
-<div class="space-above-more">
-  <h1>
+<div class="">
+  <div class="article-divider">
     {{ .Title }}
-  </h1>
+  </div>
   <!-- Range over the pages and only include the ones that are a post type -->
   {{ range .Paginator.Pages }}
     {{ .Render "summary" }}
