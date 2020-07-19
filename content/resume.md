@@ -3,9 +3,6 @@ title: "Resumé"
 date: 2020-05-12T08:18:56+0000
 draft: false
 author: Arie Oldman
-menu:
-  main:
-    weight: 1
 ---
 <div class="resume-contact">
 
