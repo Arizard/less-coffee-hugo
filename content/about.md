@@ -12,6 +12,10 @@ My name is Arie - I'm a software developer based in Sydney. I started this blog 
 
 I'm working as a software engineer at [Deputy](https://deputy.com), developing platform customisations for enterprise customers.
 
+* [**Resumé (Software Engineering)**]({{< relref resume.md >}})
+* [**Resumé (Group Fitness)**]({{< relref gfi_resume.md >}})
+* [**Tree of Links**]({{< relref links.md >}})
+
 <div class="about-contact">
 <strong>Contact</strong>
 
