@@ -1,6 +1,11 @@
 {{ define "main" }}
 	<main id="index-main">
-		<div class="article-divider">Articles</div>
+		<div class="article-divider">Newest Article</div>
+		{{ $newest := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+		{{ range first 1 $newest }}
+			{{ .Render "summary" }}
+		{{ end }}
+		<div class="article-divider">All Articles</div>
 		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
 		{{ range $paginator.Pages }}
 			{{ .Render "summary" }}
