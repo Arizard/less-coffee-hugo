@@ -1,12 +1,12 @@
 {{ define "main" }}
 	<main id="index-main">
-		<div class="article-divider">Newest Article</div>
-		{{ $newest := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
-		{{ range first 1 $newest }}
+		<div class="article-divider newest">Newest Article</div>
+		{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+		{{ range first 1 $pages }}
 			{{ .Render "summary" }}
 		{{ end }}
 		<div class="article-divider">All Articles</div>
-		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+		{{ $paginator := .Paginate (after 1 $pages) }}
 		{{ range $paginator.Pages }}
 			{{ .Render "summary" }}
 		{{ end }}

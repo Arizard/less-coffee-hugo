@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  transition: background-color .1s;
+  transition: background-color .05s;
 }
 
 code {
@@ -81,6 +81,9 @@ article {
   li {
     list-style-position: outside;
     margin-left: 1cm;
+  }
+  .newest {
+    margin-bottom: 3rem;
   }
 }
 
