@@ -15,6 +15,11 @@
 				{{ template "_internal/disqus.html" . }}
 			</div>
 			{{ end }}
+			{{ if isset .Site.Params "talkyardserverurl"}}
+			<div>
+				{{ template "partials/talkyard.html" . }}
+			</div>
+			{{ end }}
 		</article>
 	</main>
 {{ end }}

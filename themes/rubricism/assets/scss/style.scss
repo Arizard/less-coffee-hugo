@@ -237,11 +237,14 @@ strong {
 
 header {
   li {
-    a.active {
-      border-right: 2px solid red;
+    a {
       padding-right: .5rem;
       padding-left: .5rem;
-      background: rgba(255,0,0,.1);
+      box-sizing: border-box;
+      &.active {
+        border-right: 1px solid red;
+        background: rgba(255, 0, 0, .1);
+      }
     }
   }
 }

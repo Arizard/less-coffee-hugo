@@ -32,6 +32,8 @@ disqusShortname = ""
   showReadMore = true
   enableKofi = false
   mainSections = ["post", "project"]
+  talkyardServerUrl = "https://comments-for-less-coffee.talkyard.net"
+  talkyardScriptUrl = "https://c1.ty-cdn.net/-/talkyard-comments.min.js"
 	# Add links to your accounts. Remove the ones you don't want to include.
 	# Main
 	linkedin = "https://www.linkedin.com/in/arieoldman/"
