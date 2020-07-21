@@ -23,6 +23,8 @@ In the first month, I was tracking rather well with tickets and projects - it fe
 
 3 months in is where things started getting prickly.
 
+## Discovering Burnout
+
 _Burnout_ is a term often used to describe being mentally and physically exhausted as a result of long periods of work or focus. It's a very broad term - a person who burns out might not even be doing something productive - burnout is a state of mind which manifests as frustration, irritability, apathy, and a low mood.
 
 _Burnout_ is when you're doing too much at once, but not getting very far. Spinning the tyres, so to speak.
@@ -32,6 +34,8 @@ That's me. I was _burning out_.
 After a a very brief Google search to find ways to avoid burnout, all results had one thing in common: **take short, frequent breaks**.
 
 In the office, we have coworkers to pull us away from our desks. We can stand up and walk over to a coworker to have a conversation. At home, we are glued to our screens.
+
+## Pomodoro
 
 This is when I learned about the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) from [this YouTube video by Socratica](https://www.youtube.com/watch?v=TxdLBxNMbtw). To summarise: **Work for 25 minutes, then drop everything and take a 5 minute break. Repeat.**
 
