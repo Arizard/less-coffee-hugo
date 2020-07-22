@@ -1,8 +1,12 @@
 {{ define "main" }}
 	<main class="space-above-more">
-		{{ if or .Title .Content }}
+		{{ if .Title }}
+		<div class="article-divider">
+			{{ with .Title }}<span>{{ . }}</span>{{ end }}
+		</div>
+		{{ end }}
+		{{ if .Content }}
 		<div>
-			{{ with .Title }}<h1>{{ . }}</h1>{{ end }}
 			{{ with .Content }}<div>{{ . }}</div>{{ end }}
 		</div>
 		{{ end }}
