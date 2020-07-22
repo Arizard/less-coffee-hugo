@@ -2,11 +2,12 @@
 	<main>
 		<article>
 			<h1>{{ .Title }}</h1>
-			<p class="has-text-darkgrey all-small-caps">{{ $.Param "author" }} on
-			<time>{{ .Date.Format "2 January 2006" }}</time></p>
-			<p>{{ range .Params.tags }}
+			<span class="has-text-darkgrey all-small-caps">{{ $.Param "author" }} on
+			<time>{{ .Date.Format "2 January 2006" }}</time></span>
+			<i class="fas fa-tags has-text-darkgrey has-small-icons"></i>
+			<span>{{ range .Params.tags }}
 				<a class="tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-				{{ end }}</p>
+				{{ end }}</span>
 			<div class="content">
 				{{ .Content }}
 			</div>
@@ -14,6 +15,9 @@
 			<div>
 				{{ template "_internal/disqus.html" . }}
 			</div>
+			{{ end }}
+			{{ if isset .Site.Params "socialbarpartial" }}
+				{{ partial .Site.Params.socialBarPartial . }}
 			{{ end }}
 			{{ if isset .Site.Params "talkyardserverurl"}}
 			<div>

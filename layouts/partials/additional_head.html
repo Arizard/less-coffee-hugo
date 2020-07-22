@@ -1,0 +1,6 @@
+{{ $custom_style := resources.Get "scss/lesscoffee.scss" | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $custom_style.Permalink }}"/>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f1834669a087c9d"></script>
+
+
