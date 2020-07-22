@@ -13,8 +13,28 @@
 	<meta name="msapplication-TileColor" content="#ff0000">
 	<meta name="msapplication-config" content="/favicon/browserconfig.xml">
 	<meta name="theme-color" content="#ff0000">
-	<title>{{ .Title }}</title>
-	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+	{{ if eq .Title .Site.Title }}
+		<title>{{ .Title }}</title>
+		<meta name="og:title" content="{{ .Title }}">
+		<meta name="twitter:title" content="{{ .Title }}">
+	{{ else }}
+		<title>{{ .Title }} - {{ .Site.Title }}</title>
+		<meta name="og:title" content="{{ .Title }} - {{ .Site.Title }}">
+		<meta name="twitter:title" content="{{ .Title }} - {{ .Site.Title }}">
+	{{ end }}
+	{{ if isset .Params "subtitle" }}
+		{{ with .Params.subTitle }}
+	<meta name="description" content="{{ . }}">
+	<meta name="og:description" content="{{ . }}">
+	<meta name="twitter:description" content="{{ . }}">
+		{{ end }}
+	{{ else }}
+		{{ with .Site.Params.description }}
+	<meta name="description" content="{{ . }}">
+	<meta name="og:description" content="{{ . }}">
+	<meta name="twitter:description" content="{{ . }}">
+		{{ end }}
+	{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
 	<link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}">

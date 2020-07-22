@@ -5,7 +5,7 @@ description = "Rubricism theme - fork of Blank theme."
 homepage = ""
 tags = ["blog", "rubricism", "development"]
 features = ["blog"]
-min_version = "0.20"
+min_version = "0.70"
 
 [author]
   name = "Arizard"
