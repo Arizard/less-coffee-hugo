@@ -11,3 +11,59 @@
     max-width: 66.67%;
   }
 }
+
+.message {
+  padding: 2rem;
+  border-radius: 4px;
+  position: relative;
+  box-sizing: border-box;
+  &.info {
+    background-color: rgba(0,0,0,.1);
+    .message-icon {
+      color: dimgrey;
+    }
+  }
+  &.danger {
+    background-color: rgba(255,0,0,.1);
+    .message-icon {
+      color: darkred;
+    }
+  }
+  &.success {
+    background-color: rgba(0,255,0,.1);
+    .message-icon {
+      color: darkgreen;
+    }
+  }
+  .message-icon {
+    box-sizing: border-box;
+    width: 2rem;
+    position: absolute;
+    display: none;
+  }
+}
+
+.message.info {
+  .message-icon.info {
+    display: block;
+  }
+}
+
+.message.danger {
+  .message-icon.danger {
+    display: block;
+  }
+}
+
+.message.success {
+  .message-icon.success {
+    display: block;
+  }
+}
+
+.message-body {
+  color: rgba(0,0,0,0.65);
+  margin-left: 2.8rem;
+  margin-right: 0;
+  box-sizing: border-box;
+}

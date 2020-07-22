@@ -1,7 +1,11 @@
 <article>
 	<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
 	<div class="space-above">
-		{{ .Summary }}
+		{{ if isset .Params "subtitle" }}
+			{{ .Params.subtitle }}
+		{{ else }}
+			{{ .Summary }}
+		{{ end }}
 	</div>
 	{{ range .Params.tags }}
 	<a class="tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>

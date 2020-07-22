@@ -1,8 +1,8 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
+title: "Bank of Hours"
+date: 2020-07-13T10:37:21+10:00
 author: "Arie Oldman"
-type: "post"
+type: "project"
 tags:
 - Misc
 tech:

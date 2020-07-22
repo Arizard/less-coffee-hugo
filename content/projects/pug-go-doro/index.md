@@ -1,5 +1,6 @@
 ---
-title: "Pug Go Doro: My DIY Terminal Pomodoro Timer"
+title: "Pug Go Doro"
+subtitle: "Pomodoro, but in your terminal!"
 date: 2020-07-11T00:04:42+10:00
 draft: false
 author: "Arie Oldman"

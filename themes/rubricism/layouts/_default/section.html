@@ -3,6 +3,12 @@
   <div class="article-divider">
     {{ .Title }}
   </div>
+  <p>{{ range .Params.tags }}
+    <a class="tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+    {{ end }}</p>
+  <div class="content">
+    {{ .Content }}
+  </div>
   <!-- Range over the pages and only include the ones that are a post type -->
   {{ range .Paginator.Pages }}
     {{ .Render "summary" }}

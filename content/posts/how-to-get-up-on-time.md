@@ -1,13 +1,11 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-subtitle: ""
-date: {{ .Date }}
+title: "How to Get Out of Bed"
+subtitle: "Even when you don't feel like it."
+date: 2020-07-22T19:09:04+10:00
 author: "Arie Oldman"
 type: "post"
 tags:
-- Misc
-tech:
-- Hugo
+- Productivity
 draft: true
 hero_image: ""
 hero_image_attribution: "#"

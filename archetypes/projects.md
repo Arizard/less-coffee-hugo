@@ -1,5 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
+subtitle: ""
 date: {{ .Date }}
 author: "Arie Oldman"
 type: "project"

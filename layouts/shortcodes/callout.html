@@ -1,5 +1,16 @@
-<article class="message {{ .Get 0 }}">
-    <div class="message-body">
-        {{ .Get 1 }}
+<article class="message {{ .Get 0 }} {{ .Get 2 }}">
+    <div>
+        <div class="message-icon info">
+            <i class="fa fa-info-circle"></i>
+        </div>
+        <div class="message-icon danger">
+            <i class="fa fa-exclamation-triangle"></i>
+        </div>
+        <div class="message-icon success">
+            <i class="fa fa-check-circle"></i>
+        </div>
+        <div class="message-body">
+            <p>{{ .Get 1 }}</p>
+        </div>
     </div>
 </article>
