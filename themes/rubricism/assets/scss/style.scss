@@ -1,13 +1,24 @@
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 500;
   color: black;
   a {
     color: black;
   }
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 1.7rem;
   font-size: 2rem;
+  letter-spacing: 0px;
+  font-weight: 500;
 }
+
+h2, h3, h4, h5, h6 {
+  font-size: 1.7rem;
+}
+
+h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+
 
 a {
   transition: background-color .05s;
@@ -85,6 +96,13 @@ article {
   .newest {
     margin-bottom: 3rem;
   }
+  .content > h1, h2, h3, h4, h5, h6 {
+    display: inline-block;
+    background-color: whitesmoke;
+    padding: 4px 32px 4px 24px;
+    margin-left: -24px;
+    margin-right: 24px;
+  }
 }
 
 .tag {
@@ -103,6 +121,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-size: 1.7em;
   background: white;
+  font-weight: 400;
 }
 
 .latest {
@@ -247,7 +266,6 @@ header {
       padding-left: .5rem;
       box-sizing: border-box;
       &.active {
-        border-right: 1px solid red;
         background: rgba(255, 0, 0, .1);
       }
     }
