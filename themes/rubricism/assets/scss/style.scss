@@ -50,40 +50,107 @@ a.button:hover {
 }
 
 header {
+  transition: height .45s;
+  background-color: white;
+  z-index: 999;
   margin-right: 0;
   margin-top: 1rem;
   text-align: left;
+  width: calc(100% + 48px);
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 24px;
+  top: -10px;
+  left: 0;
+  position: fixed;
+  overflow: hidden;
   nav {
     ul {
       li {
         list-style: none;
         margin-bottom: .25rem;
         margin-right: 1rem;
+        margin-left: -24px;
         a {
+          padding-left: 24px;
           color: black;
         }
-        display: inline;
       }
     }
+  }
+
+  -webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.05);
+  box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.1);
+
+  #navigation-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  &.navigation-mobile-shown {
+    height: 100vh;
+  }
+  height: 80px;
+  &.navigation-mobile-hidden {
+    height: 80px;
+  }
+}
+
+main {
+  margin-top: 96px;
+  &.space-above-more {
+    margin-top: 96px;
   }
 }
 
 @media (min-width: 750px) {
+  main {
+    margin-top: 0;
+    &.space-above-more {
+      margin-top: initial;
+    }
+  }
   header {
+    z-index: initial;
     margin-right: 0cm;
     margin-top: 3rem;
     text-align: right;
+    padding: initial;
+    position: initial;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    transition: none;
+    overflow: initial;
+    .navigation-list {
+      overflow: initial;
+    }
+    &.navigation-mobile-shown, &.navigation-mobile-hidden {
+      height: auto;
+    }
+    height: auto;
     nav {
       ul {
         li {
           list-style: none;
           margin-bottom: .25rem;
+          margin-right: -24px;
+
           a {
             color: black;
+            padding-right: 24px;
+            padding-left: 4px;
           }
           display: list-item;
         }
       }
+    }
+    .navigation-mobile-hidden {
+      height: auto;
     }
   }
 }
@@ -155,9 +222,21 @@ body {
   border: solid 1px darkgrey;
   background: lightgrey;
 }
+
+#navigation-hamburger {
+  display: block;
+  position: fixed;
+  right: 24px;
+  top: 22px;
+  font-size: 2rem;
+}
+
 @media (min-width: 750px) {
   .padded-mobile {
     padding: 0;
+  }
+  #navigation-hamburger {
+    display: none;
   }
 }
 
@@ -216,6 +295,8 @@ th {
 .has-text-right-desktop {
   text-align: initial;
 }
+
+
 
 @media (min-width: 750px) {
   .has-text-centered-mobile {
@@ -331,4 +412,8 @@ header {
 
 .pad24 {
   padding: 24px;
+}
+
+.clickable {
+  cursor: pointer;
 }

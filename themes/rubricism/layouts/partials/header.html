@@ -1,20 +1,27 @@
-<header>
-	<h1 class="site-heading">
-		<a href="{{ .Site.BaseURL }}">
-			<i class="fas fa-coffee"></i>&nbsp;
-			{{ .Site.Title }}
-		</a>
-	</h1>
-	<p class="has-text-right-desktop">{{ .Site.Params.Description }}</p>
-	{{ $page := . }}
-	{{ with .Site.Menus.main }}
-	<nav>
-		<div class="nav-divider">Navigation</div>
-		<ul>
-			{{ range . }}
-			<li><a class="{{ if eq $page.URL .URL }}active{{ end }}" href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-			{{ end }}
-		</ul>
-	</nav>
-	{{ end }}
+<header id="navigation" :class="className">
+		<h1 class="site-heading">
+			<a href="{{ .Site.BaseURL }}">
+				<i class="fas fa-coffee"></i>&nbsp;
+				{{ .Site.Title }}
+			</a>
+		</h1>
+		<p class="has-text-right-desktop">{{ .Site.Params.Description }}</p>
+		{{ $page := . }}
+		<div id="navigation-hamburger" class="clickable">
+			<HamburgerButton icon="fa fa-bars" :click-handler="toggle" />
+		</div>
+		{{ with .Site.Menus.main }}
+		<nav>
+			<div class="navigation-inner">
+				<div class="navigation-list space-above">
+					<div class="nav-divider u-full-width">Navigation</div>
+					<ul>
+						{{ range . }}
+						<li><a class="{{ if eq $page.URL .URL }}active{{ end }}" href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+						{{ end }}
+					</ul>
+				</div>
+			</div>
+		</nav>
+		{{ end }}
 </header>

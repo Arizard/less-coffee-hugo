@@ -49,6 +49,12 @@
 	{{ if isset .Site.Params "additionalheadpartial" }}
 		{{ partial .Site.Params.additionalHeadPartial . }}
 	{{ end }}
+	{{ if .Site.IsServer }}
+	<script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
+	{{ else }}
+	<script src="https://unpkg.com/vue@2.6.11/dist/vue.min.js"></script>
+	{{ end }}
+	<script src="{{ "js/navigation/navigation.js" | relURL }}"></script>
 </head>
 <body>
 	<div class="row u-full-width">

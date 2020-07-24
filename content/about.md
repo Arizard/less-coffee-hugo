@@ -4,6 +4,9 @@ type: section
 title: About
 author: Arie Oldman
 ---
+
+## Arie Oldman
+
 <span class="circle-img">
     <img src="/uploads/ArieOldman300px.jpg"/>
 </span>
@@ -16,6 +19,7 @@ I'm working as a software engineer at [Deputy](https://deputy.com), developing p
 * [**Resumé (Group Fitness)**]({{< relref gfi_resume.md >}})
 * [**Tree of Links**]({{< relref links.md >}})
 
+{{< callout info >}}
 <div class="about-contact">
 <strong>Contact</strong>
 
@@ -25,6 +29,11 @@ I'm working as a software engineer at [Deputy](https://deputy.com), developing p
 * 🌏 [Arizard on GitHub](https://github.com/Arizard)
 
 </div>
+{{< /callout >}}
+
+{{< callout info >}}
+Less Coffee is built with [Hugo](https://gohugo.io) and [Vue](https://vuejs.org).
+{{< /callout >}}
 
 <style>
 .about-contact ul {

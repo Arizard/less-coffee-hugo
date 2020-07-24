@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="">
+<main>
   <div class="article-divider">
     {{ .Title }}
   </div>
@@ -14,6 +14,6 @@
     {{ .Render "summary" }}
   {{ end }}
   {{ partial "pagination.html" . }}
-</div>
+</main>
 
 {{ end }}
