@@ -118,7 +118,6 @@ You can't avoid network congestion.
 
 
 
-
 [^sidecar]: [O'Reilly Sidecar Pattern](https://www.oreilly.com/library/view/designing-distributed-systems/9781491983638/ch02.html#:~:text=The%20sidecar%20pattern%20is%20a,there%20is%20a%20sidecar%20container.)
 [^action-pattern]: Refers to RESTful Action Pattern.
 [^data-patterns]: A data pattern defines the way in which the data collected (semi-structured data) can be structured, indexed, and made available for searching. One of the primary functions of creating a data pattern is to specify fields that must be extracted from the data collected. [Managing Data Patterns](https://docs.bmc.com/docs/display/public/bmcitda10/Managing+data+patterns#:~:text=A%20data%20pattern%20defines%20the,extracted%20from%20the%20data%20collected.)

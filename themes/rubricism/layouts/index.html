@@ -1,12 +1,22 @@
 {{ define "main" }}
 	<main id="index-main">
-		<div class="article-divider newest">Newest Article</div>
-		{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
-		{{ range first 1 $pages }}
-			{{ .Render "summary" }}
+		{{ $pages := where .Site.RegularPages "Section" "in" .Site.Params.mainSections }}
+		{{ $paginator := (.Paginate (after 1 $pages)) }}
+		{{ if eq .Paginator.PageNumber 1 }}
+			<div class="article-divider newest space-below-more">Latest</div>
+			{{ $first := index $pages 0 }}
+			{{ with $first }}
+				<article class="article-preview space-below">
+					{{ template "partials/article.html" . }}
+					<div class="overlay"></div>
+				</article>
+				<div class="article-preview-read-more-button u-full-width space-above-more space-below-more">
+					<a href="{{ .Permalink }}" class="button is-centered">Continue Reading</a>
+				</div>
+			{{ end }}
 		{{ end }}
+
 		<div class="article-divider">All Articles</div>
-		{{ $paginator := .Paginate (after 1 $pages) }}
 		{{ range $paginator.Pages }}
 			{{ .Render "summary" }}
 		{{ end }}

@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Less Coffee"
 theme = "rubricism"
 enableRobotsTXT = true
-paginate = 4 # Set the number of posts to show before overflowing to the next page.
+paginate = 3 # Set the number of posts to show before overflowing to the next page.
 summaryLength = 10 # Configure how long the post summary should be on the homepage.
 enableInlineShortcodes = true
 
@@ -31,7 +31,7 @@ disqusShortname = ""
   # Set enableKofi to true to enable the Ko-fi support button. Add your Ko-fi ID to link to your account.
   showReadMore = true
   enableKofi = false
-  mainSections = ["post", "project"]
+  mainSections = ["posts", "projects"]
   talkyardServerUrl = "https://comments-for-less-coffee.talkyard.net"
   talkyardScriptUrl = "https://c1.ty-cdn.net/-/talkyard-comments.min.js"
   # Add links to your accounts. Remove the ones you don't want to include.
@@ -50,22 +50,40 @@ disqusShortname = ""
 	weight = 5
 
 [[menu.main]]
-	identifier = "about"
-	name = "About"
-	url = "/about/"
-	weight = 40
+	identifier = "posts"
+	name = "Posts"
+	url = "/posts/"
+	weight = 10
 
 [[menu.main]]
-	identifier = "tags"
-	name = "Tags"
-	url = "/tags/"
+	identifier = "projects"
+	name = "Projects"
+	url = "/projects/"
+	weight = 15
+
+[[menu.main]]
+	identifier = "notes"
+	name = "Notes"
+	url = "/notes/"
 	weight = 20
 
 [[menu.main]]
+	identifier = "tags"
+	name = "Find by Tag"
+	url = "/tags/"
+	weight = 30
+
+[[menu.main]]
 	identifier = "tech"
-	name = "Tech"
+	name = "Find by Tech"
 	url = "/tech/"
-	weight = 12
+	weight = 40
+
+[[menu.main]]
+	identifier = "about"
+	name = "About"
+	url = "/about/"
+	weight = 50
 
 # Privacy configurations: https://gohugo.io/about/hugo-and-gdpr/
 [privacy]
