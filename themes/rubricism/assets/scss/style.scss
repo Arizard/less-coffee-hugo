@@ -79,6 +79,10 @@ header {
     }
   }
 
+  #site-description {
+    width: 200vw;
+  }
+
   -webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.05);
   -moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.05);
   box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.05);
@@ -131,6 +135,9 @@ main {
     }
     &.navigation-mobile-shown, &.navigation-mobile-hidden {
       height: auto;
+    }
+    #site-description {
+      width: auto;
     }
     height: auto;
     nav {

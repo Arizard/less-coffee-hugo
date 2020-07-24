@@ -5,7 +5,7 @@
 				{{ .Site.Title }}
 			</a>
 		</h1>
-		<p class="has-text-right-desktop">{{ .Site.Params.Description }}</p>
+		<p class="has-text-right-desktop" id="site-description">{{ .Site.Params.Description }}</p>
 		{{ $page := . }}
 		<div id="navigation-hamburger" class="clickable">
 			<HamburgerButton icon="fa fa-bars" :click-handler="toggle" />
