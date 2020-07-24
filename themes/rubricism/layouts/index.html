@@ -6,6 +6,7 @@
 			<div class="article-divider newest space-below-more">Latest</div>
 			{{ $first := index $pages 0 }}
 			{{ with $first }}
+				<div class="rounded elevate elevate-hover space-below-more">
 				<article class="article-preview space-below">
 					{{ template "partials/article.html" . }}
 					<div class="overlay"></div>
@@ -13,13 +14,16 @@
 				<div class="article-preview-read-more-button u-full-width space-above-more space-below-more">
 					<a href="{{ .Permalink }}" class="button is-centered">Continue Reading</a>
 				</div>
+				</div>
 			{{ end }}
 		{{ end }}
 
 		<div class="article-divider">All Articles</div>
-		{{ range $paginator.Pages }}
+			{{ range $paginator.Pages }}
+			<div class="">
 			{{ .Render "summary" }}
-		{{ end }}
+			</div>
+			{{ end }}
 		{{ partial "pagination.html" . }}
 	</main>
 {{ end }}
