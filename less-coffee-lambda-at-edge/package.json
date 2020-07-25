@@ -1,0 +1,15 @@
+{
+  "name": "less-coffee-lambda-at-edge",
+  "version": "1.0.0",
+  "description": "Lambda@Edge for Less Coffee",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.1.0",
+    "url-parse": "^1.4.7"
+  }
+}

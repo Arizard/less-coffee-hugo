@@ -1,3 +1,5 @@
 resources/**
 /public/
 /.idea/
+/less-coffee-lambda-at-edge/node_modules/
+/less-coffee-lambda-at-edge.zip
