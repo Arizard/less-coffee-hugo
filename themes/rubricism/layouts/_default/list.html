@@ -1,7 +1,7 @@
 {{ define "main" }}
 	<main class="space-above-more">
 		{{ if .Title }}
-		<div class="article-divider">
+		<div class="article-divider space-below-more">
 			{{ with .Title }}<span>{{ . }}</span>{{ end }}
 		</div>
 		{{ end }}
@@ -12,7 +12,9 @@
 		{{ end }}
 
 		{{ range .Paginator.Pages }}
+			<div class="rounded elevate elevate-hover space-below space-above pad24-sides">
 			{{ .Render "summary" }}
+			</div>
 		{{ end }}
 		{{ partial "pagination.html" . }}
 	</main>

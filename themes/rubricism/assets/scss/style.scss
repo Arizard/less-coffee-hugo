@@ -95,7 +95,7 @@ header {
   }
 
   &.navigation-mobile-shown {
-    height: 200vh;
+    height: 100vh;
   }
   height: 80px;
   &.navigation-mobile-hidden {
@@ -275,7 +275,7 @@ p {
 }
 
 footer {
-  margin-top: 5rem;
+  margin-top: 3rem;
   border-top: 1px solid darkgray;
 }
 
@@ -421,6 +421,27 @@ header {
   padding: 24px;
 }
 
+.pad24-sides {
+  padding: 0 24px 0 24px;
+}
+
 .clickable {
   cursor: pointer;
+}
+
+#center-column {
+  margin-left: auto;
+  min-width: 56%;
+}
+
+.paginator {
+  text-transform: uppercase;
+  i {
+    margin-bottom: -7px;
+  }
+  a, .spacer {
+    display: inline-block;
+    width: 48px;
+    text-align: center;
+  }
 }
