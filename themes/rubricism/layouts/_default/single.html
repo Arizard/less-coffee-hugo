@@ -1,3 +1,14 @@
+{{ define "single_buttongroup" }}
+<div id="comments-button" class="space-above has-text-centered">
+	<a href="#after-article" class="has-text-darkgrey">
+		<i class="far fa-comment-alt"></i>
+		<span id="comments-button-label">
+			Comments
+		</span>
+	</a>
+</div>
+{{ end }}
+
 {{ define "main" }}
 	<main>
 		<article>
@@ -9,14 +20,21 @@
 				</div>
 				{{ end }}
 				{{ if isset .Site.Params "socialbarpartial" }}
+					<a id="social-bar"></a>
 					{{ partial .Site.Params.socialBarPartial . }}
 				{{ end }}
 				{{ if isset .Site.Params "talkyardserverurl"}}
-				<div>
+				<div id="comments">
 					{{ template "partials/talkyard.html" . }}
 				</div>
 				{{ end }}
 			</div>
+			<p class="has-text-centered space-above-more">
+				<a class="button" href="#">
+					<i class="fas fa-arrow-circle-up"></i>
+					Back to Top
+				</a>
+			</p>
 		</article>
 	</main>
 {{ end }}

@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://less.coffee/"
 languageCode = "en-us"
 title = "Less Coffee"
 theme = "rubricism"

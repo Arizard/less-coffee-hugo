@@ -7,6 +7,7 @@
   <a class="tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
   {{ end }}
 </span>
+{{ block "single_buttongroup" . }}{{ end }}
 <div class="content">
   {{ .Content }}
 </div>
