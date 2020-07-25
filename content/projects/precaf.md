@@ -1,5 +1,6 @@
 ---
 title: Precaf
+description: My Deputy Love Bugs Hackathon project.
 date: 2020-04-24T15:13:34.000+00:00
 tags:
 - Deep Dive

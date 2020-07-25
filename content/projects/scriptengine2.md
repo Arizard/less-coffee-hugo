@@ -1,5 +1,6 @@
 ---
 title: ScriptEngine 2
+description: The improved edition of ScriptEngine - using TypeScript, React Hooks, React Contexts, Blueprint and React Beautiful DND.
 date: 2020-04-26T22:19:39+1000
 tags:
 - Deep Dive
@@ -16,10 +17,6 @@ hero_image: "/uploads/Screen Shot 2020-04-26 at 10.20.10 pm.png"
 hero_image_attribution: http://script.less.coffee/
 hero_image_attribution_text: "From Arie Oldman"
 ---
-
-<div style="display: none">
-    The improved edition of ScriptEngine - using TypeScript, React Hooks, React Contexts, Blueprint and React Beautiful DND.
-</div>
 
 ScriptEngine 2 helps instructors plan their classes to create life-changing fitness experiences.
 

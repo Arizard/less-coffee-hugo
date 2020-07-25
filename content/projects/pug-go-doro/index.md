@@ -1,6 +1,6 @@
 ---
 title: "Pug Go Doro"
-subtitle: "Pomodoro, but in your terminal!"
+description: "Pomodoro, but in your terminal!"
 date: 2020-07-11T00:04:42+10:00
 draft: false
 author: "Arie Oldman"

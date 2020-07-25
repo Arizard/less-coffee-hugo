@@ -1,5 +1,6 @@
 ---
 title: Less Coffee
+description: How I publish this website.
 date: 2020-04-26T12:00:00.000+10:00
 tags:
 - Deep Dive
@@ -15,11 +16,6 @@ hero_image: /uploads/shaah-shahidh--subrrYxv8A-unsplash.jpg
 hero_image_attribution: https://unsplash.com/@shaahshahidh?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 hero_image_attribution_text: Photo by Shaah Shahidh on Unsplash
 ---
-
-<div style="display: none">
-    Technical details on how this website (less.coffee) is managed using Hugo, GitHub and AWS.
-</div>
-
 
 [less.coffee](http://less.coffee) is a static website generated with Hugo, hosted on Amazon S3.
 
