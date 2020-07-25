@@ -20,24 +20,17 @@ I'm working as a software engineer at [Deputy](https://deputy.com), developing p
 * [**Tree of Links**]({{< relref links.md >}})
 
 {{< callout info >}}
-<div class="about-contact">
-<strong>Contact</strong>
+
+**Contact**
 
 * 🏡 Sydney, NSW
 * 📞 +61 432 934 970
 * 📧 arie.oldman@vhs7.tv
 * 🌏 [Arizard on GitHub](https://github.com/Arizard)
 
-</div>
 {{< /callout >}}
 
 {{< callout info >}}
 Less Coffee is built with [Hugo](https://gohugo.io) and [Vue](https://vuejs.org).
 {{< /callout >}}
-
-<style>
-.about-contact ul {
-    list-style: none;
-}
-</style>
 

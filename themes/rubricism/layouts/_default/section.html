@@ -9,7 +9,6 @@
   <div class="content">
     {{ .Content }}
   </div>
-  <!-- Range over the pages and only include the ones that are a post type -->
   {{ range .Paginator.Pages }}
     <div class="rounded elevate elevate-hover space-below space-above pad24-sides">
     {{ .Render "summary" }}

@@ -19,11 +19,11 @@
 		{{ end }}
 
 		<div class="article-divider space-below-more">All Articles</div>
-			{{ range $paginator.Pages }}
+		{{ range $paginator.Pages }}
 			<div class="rounded elevate elevate-hover space-below space-above pad24-sides">
 			{{ .Render "summary" }}
 			</div>
-			{{ end }}
+		{{ end }}
 		{{ partial "pagination.html" . }}
 	</main>
 {{ end }}
