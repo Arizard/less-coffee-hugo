@@ -18,21 +18,24 @@
   position: relative;
   box-sizing: border-box;
   &.info {
-    background-color: rgba(0,0,0,.1);
+    background-color: #d8e8ff;
+    border-left: 2px solid #70a1ff;
     .message-icon {
-      color: dimgrey;
+      color: #70a1ff;
     }
   }
   &.danger {
     background-color: rgba(255,0,0,.1);
+    border-left: 2px solid #ff4757;
     .message-icon {
-      color: darkred;
+      color: #ff4757;
     }
   }
   &.success {
     background-color: rgba(0,255,0,.1);
+    border-left: 2px solid #7bed9f;
     .message-icon {
-      color: darkgreen;
+      color: #7bed9f;
     }
   }
   .message-icon {
@@ -62,7 +65,7 @@
 }
 
 .message-body {
-  color: rgba(0,0,0,0.65);
+  color: black;
   margin-left: 2.8rem;
   margin-right: 0;
   box-sizing: border-box;

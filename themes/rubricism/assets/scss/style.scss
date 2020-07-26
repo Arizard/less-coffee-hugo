@@ -9,20 +9,29 @@ h1, h2, h3, h4, h5, h6 {
   }
   display: block;
   margin-bottom: 1.7rem;
-  font-size: 1.7rem;
-  letter-spacing: 0px;
-  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -1px;
 }
 
-h2, h3, h4, h5, h6 {
-  font-size: 1.5rem;
+h1 {
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 2.2rem;
 }
 
 h3, h4, h5, h6 {
-  font-weight: 400;
+  font-size: 1.8rem;
 }
 
+h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
 
+h1 {
+  font-weight: 700;
+}
 
 a {
   transition: background-color .05s;
@@ -126,6 +135,7 @@ main {
       margin-left: -100%;
     }
     width: 100%;
+    max-width: 220px;
     background: $background;
     z-index: initial;
     margin-right: 0;
@@ -190,7 +200,6 @@ article {
   }
   .content > h1, h2, h3, h4, h5, h6 {
     display: table;
-    background-color: #dfe4ea;
     padding: 4px 32px 4px 24px;
     margin-left: -24px;
     margin-right: 24px;
@@ -260,6 +269,7 @@ body {
 }
 
 .site-heading {
+  margin-bottom: 2rem;
   font-size: 1.7rem;
   color: $softred;
   a {
@@ -286,7 +296,8 @@ p {
 
 footer {
   margin-top: 3rem;
-  border-top: 1px solid darkgray;
+  font-variant: all-small-caps;
+  max-width: 50em;
 }
 
 .has-text-red {
@@ -344,17 +355,19 @@ strong {
   font-variant: all-small-caps;
   margin-right: 1rem;
   color: $softred;
-  font-weight: 500;
+  font-weight: 700;
   border-bottom: 1px solid $softred;
   margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .article-divider {
   font-variant: all-small-caps;
   margin-right: 1rem;
   color: $softred;
-  font-weight: 500;
+  font-weight: 700;
   border-bottom: 1px solid $softred;
+  font-family: 'Montserrat', sans-serif;
   width: 100%;
 
   &:first-of-type {
@@ -516,4 +529,8 @@ article {
 
 .hero {
   position: relative;
+}
+
+.article-inner {
+  max-width: 50em;
 }
