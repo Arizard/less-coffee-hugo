@@ -22,8 +22,8 @@ Double click on the legend to isolate one trace.
 
 Created using [Plotly](https://plotly.com/javascript/).
 
-<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
-<script src='plot.js'></script>
+<script async defer src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<script async defer src='plot.js'></script>
 <style>
 .gtitle, .g-xtitle, .g-ytitle {
     font-weight: 600 !important;
