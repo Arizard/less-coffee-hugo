@@ -1,6 +1,6 @@
 ---
 title: "{{ .Name | humanize }}"
-subtitle: ""
+description: ""
 date: {{ .Date }}
 author: "Arie Oldman"
 type: "post"
