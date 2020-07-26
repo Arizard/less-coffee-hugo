@@ -1,19 +1,24 @@
 {{ define "main" }}
 <main>
-  <div class="article-divider">
-    {{ .Title }}
-  </div>
-  <p>{{ range .Params.tags }}
-    <a class="tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-    {{ end }}</p>
-  <div class="content">
-    {{ .Content }}
-  </div>
-  {{ range .Paginator.Pages }}
-    <div class="rounded elevate elevate-hover space-below space-above pad24-sides">
-    {{ .Render "summary" }}
+  <div class="space-above-more">
+    <h1>
+      {{ .Title }}
+    </h1>
+    <p>{{ range .Params.tags }}
+      <a class="tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+      {{ end }}</p>
+    <div class="content">
+      {{ .Content }}
     </div>
-  {{ end }}
+    {{ range .Paginator.Pages.GroupByDate "January-2006" }}
+      <div class="article-divider space-below-more">{{ index (split .Key "-") 0 }}</div>
+      {{ range .Pages }}
+        <div class="rounded elevate elevate-hover space-below space-above pad24-sides">
+        {{ .Render "summary" }}
+        </div>
+      {{ end }}
+    {{ end }}
+  </div>
   {{ partial "pagination.html" . }}
 </main>
 

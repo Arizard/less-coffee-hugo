@@ -467,11 +467,30 @@ article {
     #comments-button-label {
       vertical-align: text-bottom;
     }
-    //&:hover {
-    //  right: 12px;
-    //  #comments-button-label {
-    //    opacity: 1;
-    //  }
-    //}
   }
+}
+
+.index-button-group {
+  position: relative;
+  clear: both;
+  content: "";
+  display: block;
+  padding: 0 25px 0 25px;
+  .index-button-container {
+    display: block;
+    float: left;
+    margin-right: 0;
+    margin-left: 8px;
+    &:first-of-type {
+      margin-left: 0;
+    }
+    width: calc(50% - 4px);
+    a {
+      overflow: hidden;
+    }
+  }
+}
+
+.hero {
+  position: relative;
 }

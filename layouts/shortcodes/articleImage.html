@@ -1,0 +1,3 @@
+{{ $image := ((.Page.Resources.GetMatch (.Get 0)).Resize "800x") }}
+
+<img class="u-full-width" alt="{{ .Get 1 }}" src="{{ $image.RelPermalink }}" />

@@ -1,29 +1,45 @@
 {{ define "main" }}
+	{{ $countPosts := len (where .Site.RegularPages "Section" "eq" "posts") }}
+	{{ $countProjects := len (where .Site.RegularPages "Section" "eq" "projects") }}
 	<main id="index-main">
 		{{ $pages := where .Site.RegularPages "Section" "in" .Site.Params.mainSections }}
-		{{ $paginator := (.Paginate (after 1 $pages)) }}
-		{{ if eq .Paginator.PageNumber 1 }}
-			<div class="article-divider newest space-below-more">Latest</div>
-			{{ $first := index $pages 0 }}
-			{{ with $first }}
-				<div class="rounded elevate elevate-hover space-below-more">
-				<article class="article-preview space-below">
-					{{ template "partials/article.html" . }}
-					<div class="overlay"></div>
-				</article>
-				<div class="article-preview-read-more-button u-full-width space-above-more space-below-more">
-					<a href="{{ .Permalink }}" class="button is-centered">Continue Reading</a>
-				</div>
+		{{ $first := index $pages 0 }}
+		{{ with $first }}
+			<div class="rounded elevate elevate-hover space-below-more space-above-more">
+			<article class="article-preview space-below">
+				{{ template "partials/article.html" . }}
+				<div class="overlay"></div>
+			</article>
+			<div class="article-preview-read-more-button u-full-width space-above-more space-below-more">
+				<a href="{{ .Permalink }}" class="button is-centered">
+					<i class="fas fa-arrow-circle-right"></i>
+					Read
+				</a>
+			</div>
+			</div>
+		{{ end }}
+		{{ range (first 3 (after 1 $pages)).GroupByDate "January-2006" }}
+			<div class="article-divider space-below-more">{{ index (split .Key "-") 0 }}</div>
+			{{ range .Pages }}
+				<div class="rounded elevate elevate-hover space-below space-above pad24-sides">
+				{{ .Render "summary" }}
 				</div>
 			{{ end }}
 		{{ end }}
-
-		<div class="article-divider space-below-more">All Articles</div>
-		{{ range $paginator.Pages }}
-			<div class="rounded elevate elevate-hover space-below space-above pad24-sides">
-			{{ .Render "summary" }}
+		<div class="index-button-group u-full-width space-above-more">
+			<div class="index-button-container">
+				<a href="/posts/" class="button u-full-width">
+					<i class="fas fa-newspaper"></i>
+					Browse {{ $countPosts }} Post{{ if ne $countPosts 1 }}s{{ end }}
+				</a>
 			</div>
-		{{ end }}
-		{{ partial "pagination.html" . }}
+			<div class="index-button-container">
+				<a href="/projects/" class="button u-full-width">
+					<i class="fas fa-lightbulb"></i>
+					Browse {{ $countProjects }} Project{{ if ne $countProjects 1 }}s{{ end }}
+				</a>
+			</div>
+			<div style="clear: both"></div>
+		</div>
 	</main>
 {{ end }}

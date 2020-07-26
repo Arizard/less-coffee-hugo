@@ -8,7 +8,7 @@ tech:
 - JavaScript
 - Plotly
 type: post
-hero_image: /images/ed-robertson-eeSdJfLfx1A-unsplash.jpg
+hero_image: ed-robertson-eeSdJfLfx1A-unsplash.jpg
 hero_image_attribution_text: Photo by Ed Robertson on Unsplash
 hero_image_attribution: https://unsplash.com/@eddrobertson?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge
 ---

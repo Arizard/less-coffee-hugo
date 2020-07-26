@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Less Coffee"
 theme = "rubricism"
 enableRobotsTXT = true
-paginate = 4 # Set the number of posts to show before overflowing to the next page.
+paginate = 8 # Set the number of posts to show before overflowing to the next page.
 summaryLength = 10 # Configure how long the post summary should be on the homepage.
 enableInlineShortcodes = true
 
@@ -31,7 +31,7 @@ disqusShortname = ""
   # Set enableKofi to true to enable the Ko-fi support button. Add your Ko-fi ID to link to your account.
   showReadMore = true
   enableKofi = false
-  mainSections = ["posts", "projects"]
+  mainSections = ["posts"]
   talkyardServerUrl = "https://comments-for-less-coffee.talkyard.net"
   talkyardScriptUrl = "https://c1.ty-cdn.net/-/talkyard-comments.min.js"
   # Add links to your accounts. Remove the ones you don't want to include.
