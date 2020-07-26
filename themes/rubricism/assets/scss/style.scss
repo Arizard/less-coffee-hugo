@@ -449,10 +449,8 @@ header {
 article {
   position: relative;
   #comments-button {
+    display: inline;
     font-weight: 500;
-    position: absolute;
-    top: -12px;
-    right: 0;
     font-variant: all-small-caps;
     i {
 
@@ -462,34 +460,48 @@ article {
     }
     //transition: right .5s;
     a {
-      padding: 4px 8px 2px 8px;
-    }
-    #comments-button-label {
-      vertical-align: text-bottom;
+      //padding: 4px 8px 2px 8px;
     }
   }
 }
 
 .index-button-group {
-  position: relative;
-  clear: both;
-  content: "";
-  display: block;
   padding: 0 25px 0 25px;
   .index-button-container {
     display: block;
     float: left;
     margin-right: 0;
-    margin-left: 8px;
-    &:first-of-type {
-      margin-left: 0;
-    }
-    width: calc(50% - 4px);
+    margin-left: 0;
+    width: 100%;
     a {
       overflow: hidden;
     }
   }
 }
+
+@media (min-width: 750px) {
+  .index-button-group {
+    position: relative;
+    clear: both;
+    content: "";
+    display: block;
+    padding: 0 25px 0 25px;
+    .index-button-container {
+      display: block;
+      float: left;
+      margin-right: 0;
+      margin-left: 8px;
+      &:first-of-type {
+        margin-left: 0;
+      }
+      width: calc(50% - 4px);
+      a {
+        overflow: hidden;
+      }
+    }
+  }
+}
+
 
 .hero {
   position: relative;

@@ -10,8 +10,8 @@
         {{ $text := . }}
         {{ with ($page.Params.hero_image_attribution) }}
             {{ $href := . }}
-            <div class="hero-attribution u-full-width has-text-centered has-text-darkgrey">
-                <a href="{{ $href }}" class="pad24-sides">
+            <div class="hero-attribution u-full-width pad24-sides has-text-centered has-text-darkgrey">
+                <a href="{{ $href }}" class="">
                     <i class="fas fa-camera-retro"></i>
                     {{ $text }}
                 </a>
