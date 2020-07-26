@@ -1,3 +1,7 @@
+
+$softred: #ff4757;
+$background: #f1f2f6;
+
 h1, h2, h3, h4, h5, h6 {
   color: black;
   a {
@@ -5,13 +9,13 @@ h1, h2, h3, h4, h5, h6 {
   }
   display: block;
   margin-bottom: 1.7rem;
-  font-size: 2rem;
+  font-size: 1.7rem;
   letter-spacing: 0px;
   font-weight: 500;
 }
 
 h2, h3, h4, h5, h6 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 h3, h4, h5, h6 {
@@ -40,6 +44,9 @@ a {
   }
 }
 
+a.button {
+  background-color: white;
+}
 a.button:hover {
   background-color: white;
 }
@@ -79,10 +86,6 @@ header {
     }
   }
 
-  #site-description {
-    width: 200vw;
-  }
-
   -webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.05);
   -moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.05);
   box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.05);
@@ -97,16 +100,16 @@ header {
   &.navigation-mobile-shown {
     height: 100vh;
   }
-  height: 80px;
+  height: 43px;
   &.navigation-mobile-hidden {
-    height: 80px;
+    height: 43px;
   }
 }
 
 main {
-  margin-top: 96px;
+  margin-top: 60px;
   &.space-above-more {
-    margin-top: 96px;
+    margin-top: 60px;
   }
 }
 
@@ -118,8 +121,14 @@ main {
     }
   }
   header {
+    .site-heading {
+      width: 200%;
+      margin-left: -100%;
+    }
+    width: 100%;
+    background: $background;
     z-index: initial;
-    margin-right: 0cm;
+    margin-right: 0;
     margin-top: 3rem;
     text-align: right;
     padding: initial;
@@ -181,7 +190,7 @@ article {
   }
   .content > h1, h2, h3, h4, h5, h6 {
     display: table;
-    background-color: whitesmoke;
+    background-color: #dfe4ea;
     padding: 4px 32px 4px 24px;
     margin-left: -24px;
     margin-right: 24px;
@@ -202,8 +211,7 @@ article {
 
 body {
   -webkit-font-smoothing: antialiased;
-  font-size: 1.7em;
-  background: white;
+  background: $background;
   font-weight: 400;
 }
 
@@ -235,7 +243,7 @@ body {
   position: fixed;
   right: 24px;
   top: 22px;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 @media (min-width: 750px) {
@@ -252,8 +260,10 @@ body {
 }
 
 .site-heading {
-  font-size: 2rem;
+  font-size: 1.7rem;
+  color: $softred;
   a {
+    color: $softred;
     text-decoration: none;
   }
 }
@@ -280,7 +290,7 @@ footer {
 }
 
 .has-text-red {
-  color: red;
+  color: $softred;
 }
 
 .justified {
@@ -333,18 +343,18 @@ strong {
 .nav-divider {
   font-variant: all-small-caps;
   margin-right: 1rem;
-  color: red;
+  color: $softred;
   font-weight: 500;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid $softred;
   margin-bottom: 1rem;
 }
 
 .article-divider {
   font-variant: all-small-caps;
   margin-right: 1rem;
-  color: red;
+  color: $softred;
   font-weight: 500;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid $softred;
   width: 100%;
 
   &:first-of-type {
@@ -375,6 +385,7 @@ header {
   box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.05);
   border: 1px solid rgba(0,0,0,0);
   transition: border .1s;
+  background: white;
 }
 
 .elevate-hover:hover {
@@ -449,7 +460,7 @@ header {
 article {
   position: relative;
   #comments-button {
-    display: inline;
+    display: inline-block;
     font-weight: 500;
     font-variant: all-small-caps;
     i {
