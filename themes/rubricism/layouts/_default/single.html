@@ -12,9 +12,10 @@
 
 {{ define "main" }}
 	<main>
-		{{ template "partials/hero.html" . }}
 		<article>
 			<div class="article-inner">
+				{{ template "partials/hero.html" . }}
+				<div class="space-above-more">&nbsp;</div>
 				{{ template "partials/article.html" . }}
 				<div id="after-article" class="rounded elevate elevate-hover pad24">
 					{{ with .Site.DisqusShortname }}
