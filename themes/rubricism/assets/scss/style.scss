@@ -130,6 +130,18 @@ main {
     }
   }
   header {
+    nav ul li a {
+      opacity: 0.25;
+      transition: opacity .1s;
+    }
+    nav ul li a.active {
+      opacity: 1;
+    }
+    &:hover {
+      nav ul li a {
+        opacity: 1;
+      }
+    }
     .site-heading {
       width: 200%;
       margin-left: -100%;
