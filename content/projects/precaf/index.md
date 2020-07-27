@@ -13,7 +13,7 @@ tech:
 menu:
   main:
     parent: projects
-hero_image: /uploads/fabian-grohs-dC6Pb2JdAqs-unsplash.jpg
+hero_image: fabian-grohs-dC6Pb2JdAqs-unsplash.jpg
 hero_image_attribution: https://unsplash.com/@grohsfabian?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 hero_image_attribution_text: Photo by @grohsfabian on Unsplash
 type: project

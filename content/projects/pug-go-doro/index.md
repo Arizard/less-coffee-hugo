@@ -46,7 +46,7 @@ Pug Go Doro is the result: It's a pomodoro app which is rendered as a [text-base
 
 To create the interface, I used [gocui](https://github.com/jroimartin/gocui). To render the timer digits I used [go-figure](https://github.com/common-nighthawk/go-figure) and to push native notifications I used [notify](https://github.com/martinlindhe/notify).
 
-![Screenshot of Pug Go Doro](https://github.com/Arizard/pug-go-doro/raw/master/puggodoro.png)
+{{< articleImage puggodoro.png >}}
 
 [GitHub Repository](https://github.com/Arizard/pug-go-doro)
 

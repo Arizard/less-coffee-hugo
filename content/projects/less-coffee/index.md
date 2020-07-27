@@ -12,7 +12,7 @@ menu:
   main:
     parent: projects
 type: project
-hero_image: /uploads/shaah-shahidh--subrrYxv8A-unsplash.jpg
+hero_image: shaah-shahidh--subrrYxv8A-unsplash.jpg
 hero_image_attribution: https://unsplash.com/@shaahshahidh?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 hero_image_attribution_text: Photo by Shaah Shahidh on Unsplash
 ---

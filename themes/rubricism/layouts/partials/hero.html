@@ -3,7 +3,7 @@
 <div class="hero u-full-width space-above-more space-below-more">
     {{ with ($page.Params.hero_image) }}
         {{ with ($page.Resources.GetMatch .) }}
-            {{ $image := .Fill "1600x1000" }}
+            {{ $image := .Fill "1000x625 jpeg q80 center" }}
                 <img class="hero-image u-full-width elevate elevate-hover" alt="" src="{{ $image.RelPermalink }}"/>
         {{ end }}
     {{ end }}

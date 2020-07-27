@@ -5,7 +5,7 @@
 		{{ $pages := where .Site.RegularPages "Section" "in" .Site.Params.mainSections }}
 		{{ $first := index $pages 0 }}
 		{{ with $first }}
-		<div class="overflow-auto rounded elevate elevate-hover space-below-more space-above-more">
+		<div class="article-preview-container overflow-auto rounded elevate elevate-hover space-below-more space-above-more">
 			<div class="article-preview-hero-container">
 				{{ template "partials/hero.html" . }}
 			</div>

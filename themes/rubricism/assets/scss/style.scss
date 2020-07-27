@@ -435,11 +435,18 @@ header {
   border-radius: 4px;
 }
 
+.article-preview-container {
+  max-height: 65em;
+  position: relative;
+}
+
 .article-preview {
-  max-height: 66.66vh;
+  margin-top: 0;
+  max-height: calc(65em - 42.5em);
+  margin-bottom: 0;
   overflow: hidden;
   position: relative;
-  padding: 0px 24px 0 24px;
+  padding: 0 24px 0 24px;
   .overlay {
     position: absolute;
     height: 100%;

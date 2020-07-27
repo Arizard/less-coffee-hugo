@@ -13,7 +13,7 @@ menu:
   main:
     parent: projects
 type: project
-hero_image: "/uploads/Screen Shot 2020-04-26 at 10.20.10 pm.png"
+hero_image: "Screen Shot 2020-04-26 at 10.20.10 pm.png"
 hero_image_attribution: http://script.less.coffee/
 hero_image_attribution_text: "From Arie Oldman"
 ---
