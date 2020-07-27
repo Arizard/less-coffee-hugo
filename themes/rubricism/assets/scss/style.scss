@@ -33,6 +33,18 @@ h1 {
   font-weight: 700;
 }
 
+.small-headings {
+  h1 {
+    font-size: 2.6rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  h3, h4, h5, h6 {
+    font-size: 1.8rem;
+  }
+}
+
 a {
   transition: background-color .05s;
 }
@@ -408,7 +420,6 @@ header {
   -webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.05);
   -moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.05);
   box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.05);
-  border: 1px solid rgba(0,0,0,0);
   transition: border .1s;
   background: white;
 }
@@ -417,7 +428,6 @@ header {
   -webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.05);
   -moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.05);
   box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.05);
-  border: 1px solid rgba(0,0,0,0.1);
   transition: border .1s;
 }
 
@@ -545,4 +555,16 @@ article {
 
 .article-inner {
   max-width: 50em;
+}
+
+.article-preview-hero-container {
+  border-radius: 4px;
+  overflow: hidden;
+  .hero {
+    margin-top: 0;
+  }
+}
+
+.overflow-auto {
+  overflow: auto;
 }

@@ -11,7 +11,7 @@ menu:
     parent: projects
 type: project
 draft: false 
-hero_image: /images/deathrun_emerald_a3.jpg
+hero_image: deathrun_emerald_a3.jpg
 hero_image_attribution: "#"
 hero_image_attribution_text: Image of deathrun_emerald_a3 by Arie Oldman
 ---

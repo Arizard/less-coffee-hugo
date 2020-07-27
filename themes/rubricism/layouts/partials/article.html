@@ -1,4 +1,4 @@
-<h1>{{ .Title }}</h1>
+<h1>{{ .Title }}{{ if .Page.Draft }}<span class="has-text-darkgrey">[DRAFT]</span>{{ end }}</h1>
 <span class="has-text-darkgrey all-small-caps">{{ $.Param "author" }} on
 <time>{{ .Date.Format "2 January 2006" }}</time></span>
 <i class="fas fa-tags has-text-darkgrey has-small-icons"></i>

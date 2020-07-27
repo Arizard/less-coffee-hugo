@@ -1,5 +1,10 @@
-<article>
-	<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+<article class="small-headings">
+	<h1>
+		<a href="{{ .Permalink }}">{{ .Title }}</a>
+		{{ if .Page.Draft }}
+		<span class="has-text-darkgrey">[DRAFT]</span>
+		{{ end }}
+	</h1>
 	<div class="space-above">
 		{{ if isset .Params "description" }}
 			{{ .Params.description }}
