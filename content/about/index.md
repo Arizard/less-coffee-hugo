@@ -5,13 +5,11 @@ title: About
 author: Arie Oldman
 ---
 
-## Arie Oldman
-
 <span class="circle-img">
     {{< articleImage "ArieOldman.jpg" >}}
 </span>
 
-My name is Arie - I'm a software developer based in Sydney. I started this blog to write about topics that I'm studying and projects I'm working on.
+**I'm Arie** - I'm a software developer based in Sydney. I started this blog to write about topics that I'm studying and projects I'm working on.
 
 I'm working as a software engineer at [Deputy](https://deputy.com), developing platform customisations for enterprise customers.
 

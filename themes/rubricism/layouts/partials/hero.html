@@ -1,5 +1,6 @@
 {{ $page := .Page }}
-<div class="hero u-full-width space-above-more">
+{{ if isset $page.Params "hero_image" }}
+<div class="hero u-full-width space-above-more space-below-more">
     {{ with ($page.Params.hero_image) }}
         {{ with ($page.Resources.GetMatch .) }}
             {{ $image := .Fill "1600x1000" }}
@@ -19,3 +20,4 @@
         {{ end }}
     {{ end }}
 </div>
+{{ end }}
