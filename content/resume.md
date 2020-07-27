@@ -8,7 +8,6 @@ author: Arie Oldman
 
 * 👨‍💻 Arie Oldman
 * 🏡 Sydney, NSW
-* 📞 +61 432 934 970
 * 📧 arie.oldman@vhs7.tv
 * 🌏 [Arizard on GitHub](https://github.com/Arizard)
 
