@@ -1,13 +1,26 @@
-<h1>{{ .Title }}{{ if .Page.Draft }}<span class="has-text-darkgrey">[DRAFT]</span>{{ end }}</h1>
-<span class="has-text-darkgrey all-small-caps">{{ $.Param "author" }} on
-<time>{{ .Date.Format "2 January 2006" }}</time></span>
-<i class="fas fa-tags has-text-darkgrey has-small-icons"></i>
-<span>
-  {{ range .Params.tags }}
-  <a class="tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-  {{ end }}
-</span>
-{{ block "single_buttongroup" . }}{{ end }}
+<h1>{{ .Title }}{{ if .Page.Draft }} <span class="has-text-darkgrey">[DRAFT]</span>{{ end }}</h1>
+<div class="has-text-darkgrey front-matter-cluster space-below">
+  <table class="">
+    <tr>
+      <td><i class="fas fa-user has-text-darkgrey has-small-icons"></i></td>
+      <td>
+        {{ $.Param "author" }} on
+        <time>{{ .Date.Format "2 January 2006" }}</time>
+      </td>
+    </tr>
+    <tr>
+      <td><i class="fas fa-tags has-text-darkgrey has-small-icons"></i></td>
+      <td>
+        {{ range .Params.tags }}
+        <a class="tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+        {{ end }}
+      </td>
+    </tr>
+    <tr>
+    </tr>
+  </table>
+  {{ block "single_buttongroup" . }}{{ end }}
+</div>
 <div class="content">
   {{ .Content }}
 </div>

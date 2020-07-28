@@ -231,15 +231,12 @@ article {
 }
 
 .tag {
-  font-variant: all-small-caps;
-  &:before {
-    content: "["
-  }
-  &:after {
-    content: "]"
-  }
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
   color: darkgrey;
   text-decoration: none;
+  margin: 0 .5rem 0 0;
 }
 
 body {
@@ -501,21 +498,6 @@ header {
 
 article {
   position: relative;
-  #comments-button {
-    display: inline-block;
-    font-weight: 500;
-    font-variant: all-small-caps;
-    i {
-
-    }
-    a {
-      text-decoration: none;
-    }
-    //transition: right .5s;
-    a {
-      //padding: 4px 8px 2px 8px;
-    }
-  }
 }
 
 .index-button-group {
@@ -578,4 +560,12 @@ article {
 
 main {
   max-width: 50em;
+}
+
+.front-matter-cluster {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  a {
+    text-transform: uppercase;
+  }
 }

@@ -1,10 +1,10 @@
 {{ define "single_buttongroup" }}
-<div id="comments-button" class="space-above">
-	<a href="#after-article" class="has-text-darkgrey">
+<div id="comments-button" class="u-full-width space-below">
+	<a href="#after-article" class="button">
 		&nbsp;
-		<i class="fas fa-arrow-circle-right has-small-icons"></i>
+		<i class="fas fa-arrow-circle-down has-small-icons"></i>
 		<span id="comments-button-label">
-			Comments
+			Skip To Comments
 		</span>
 	</a>
 </div>
@@ -33,6 +33,10 @@
 					{{ end }}
 				</div>
 				<p class="has-text-centered space-above-more">
+					<a class="button" href="{{ .Page.CurrentSection.RelPermalink }}">
+						<i class="fas fa-arrow-circle-left"></i>
+						Back to {{ .Page.Section }}
+					</a>
 					<a class="button" href="#">
 						<i class="fas fa-arrow-circle-up"></i>
 						Back to Top
