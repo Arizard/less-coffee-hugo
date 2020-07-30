@@ -1,6 +1,6 @@
 {{ $image := ((.Page.Resources.GetMatch (.Get 0)).Fit "2400x2400 q90") }}
 
-<div class="article-image elevate elevate-hover pad12 space-below-more has-background-dark">
+<div class="article-image elevate elevate-hover pad12 space-below-more">
   <img class="u-full-width" alt="{{ .Get 1 }}" src="{{ $image.RelPermalink }}" />
   {{ if gt (len (.Get 2)) 0 }}
     <p class="article-image-caption has-text-centered has-text-darkgrey">

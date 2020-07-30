@@ -6,12 +6,16 @@ author: Arie Oldman
 ---
 
 <span class="circle-img">
-    {{< articleImage "ArieOldman.jpg" >}}
+    <img src="ArieOldman300px.jpg">
 </span>
 
-**I'm Arie** - I'm a software developer based in Sydney. I started this blog to write about topics that I'm studying and projects I'm working on.
+**Hi, I'm Arie** - I love programming and software development so much that I made it my career. This website contains a broad range of content topics - some articles are about software engineering, others might be about productivity or human interactions, and occasionally I write about fitness.
 
 I'm working as a software engineer at [Deputy](https://deputy.com), developing platform customisations for enterprise customers.
+
+I hope you find this website useful and interesting. You can get in touch with me via the comments on this page, or [send me an email](mailto:arie.oldman@vhs7.tv).
+
+Thanks for your visit!
 
 * [**Resumé (Software Engineering)**]({{< relref resume.md >}})
 * [**Resumé (Group Fitness)**]({{< relref gfi_resume.md >}})
