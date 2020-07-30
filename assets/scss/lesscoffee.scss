@@ -70,3 +70,19 @@
   margin-right: 0;
   box-sizing: border-box;
 }
+
+.has-background-dark {
+  //background: #2f3542;
+  background: white;
+}
+
+.article-image {
+  display: inline-block;
+  img {
+    margin: 0;
+  }
+}
+
+.pad12 {
+  padding: 12px;
+}

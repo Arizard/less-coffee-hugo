@@ -49,10 +49,6 @@ a {
   transition: background-color .05s;
 }
 
-code {
-  color: darkred;
-}
-
 .has-text-darkgrey {
   color: darkgrey;
 }
@@ -242,7 +238,7 @@ article {
 body {
   -webkit-font-smoothing: antialiased;
   background: $background;
-  font-weight: 400;
+  //font-weight: 400;
 }
 
 .latest {
@@ -568,4 +564,16 @@ main {
   a {
     text-transform: uppercase;
   }
+}
+
+.highlight pre {
+  background: none !important;
+  overflow: hidden;
+}
+
+code {
+  background: #2f3542;
+  color: white;
+  font-weight: bold;
+  overflow-x: auto;
 }

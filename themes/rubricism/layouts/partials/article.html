@@ -2,6 +2,10 @@
 <div class="has-text-darkgrey front-matter-cluster space-below">
   <table class="">
     <tr>
+      <td><i class="fas fa-book has-text-red"></i></td>
+      <td class="has-text-red">{{ .Page.Params.Type }}</td>
+    </tr>
+    <tr>
       <td><i class="fas fa-user has-text-darkgrey has-small-icons"></i></td>
       <td>
         {{ $.Param "author" }} on

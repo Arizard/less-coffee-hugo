@@ -123,7 +123,7 @@ html {
 body {
   font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
-  font-weight: 400;
+  /*font-weight: 400;*/
   font-family: "Inter", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
 
@@ -298,7 +298,7 @@ ul ul,
 ul ol,
 ol ol,
 ol ul {
-  margin: 1.5rem 0 1.5rem 3rem;
+  margin: 1.5rem 0 1.5rem 0;
   font-size: 90%; }
 li {
   margin-bottom: 1rem; }
