@@ -1,4 +1,3 @@
----
 title: "{{ .Name | humanize }}"
 description: ""
 date: {{ .Date }}
