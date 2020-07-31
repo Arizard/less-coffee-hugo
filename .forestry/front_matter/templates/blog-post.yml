@@ -20,3 +20,5 @@ fields:
 - type: text
   name: type
   label: type
+pages:
+- content/notes/Patterns of Enterprise Application Architecture/patterns-of-enterprise-application-architecture.md
