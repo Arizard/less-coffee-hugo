@@ -1,5 +1,5 @@
 ---
-title: Why Great Developers have Web Portfolios
+title: 3 Reasons Why Great Developers have Web Portfolios
 description: 'Hint: It''s not for the recruiter.'
 date: 2020-07-31T17:00:00+10:00
 author: Arie Oldman
