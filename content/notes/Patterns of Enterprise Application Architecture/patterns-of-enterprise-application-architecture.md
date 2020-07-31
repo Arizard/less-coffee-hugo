@@ -7,4 +7,8 @@ tags = ["Software Engineering"]
 title = "Patterns of Enterprise Application Architecture"
 
 +++
-Hello World
+{{< callout info >}}
+
+Assorted notes sourced from the book _Patterns of Enterprise Application Architecture_ by Martin Fowler
+
+{{< /callout >}}
