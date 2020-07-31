@@ -12,10 +12,10 @@ hero_image_attribution_text: Photo by Christopher Rusev on Unsplash
 draft: true
 
 ---
-Introduction
+_TODO Introduction_
 
-## It can be expressive
+## It highlights your creativity
 
-## It can be memorable
+## It's memorable
 
-## It shows you are passionate
+## It shows that you are passionate
