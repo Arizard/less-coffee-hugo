@@ -1,7 +1,7 @@
 ---
 title: Why Great Developers have Web Portfolios
 description: 'Hint: It''s not for the recruiter.'
-date: 2020-07-28T17:24:12+10:00
+date: 2020-07-31T17:00:00+10:00
 author: Arie Oldman
 type: post
 tags:
