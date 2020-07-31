@@ -1,0 +1,25 @@
+---
+label: Projects
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: list
+  name: tags
+  label: tags
+- type: file
+  name: hero_image
+  label: hero_image
+- type: text
+  name: hero_image_attribution
+  label: hero_image_attribution
+- type: text
+  name: hero_image_attribution_text
+  label: hero_image_attribution_text
+- type: text
+  name: type
+  label: type
