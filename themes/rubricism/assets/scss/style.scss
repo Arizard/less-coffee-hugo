@@ -586,3 +586,29 @@ code {
 .pad12 {
   padding: 12px;
 }
+
+.toc {
+  width: auto;
+  display: inline-block;
+  ul {
+    counter-reset: section;
+    list-style-type: none;
+  }
+  li::before {
+    counter-increment: section;
+    content: counters(section,".") " ";
+  }
+  ul {
+    li {
+      list-style: none;
+      margin-left: 2rem;
+      margin-bottom: .5rem;
+      ul {
+        margin-top: .5rem;
+        li {
+          margin-bottom: .5rem;
+        }
+      }
+    }
+  }
+}

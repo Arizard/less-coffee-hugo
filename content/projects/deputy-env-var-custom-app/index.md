@@ -14,6 +14,7 @@ image: "nazarii-yurkov-m-VhHYQ4yFg-unsplash.jpg"
 hero_image: "nazarii-yurkov-m-VhHYQ4yFg-unsplash.jpg"
 hero_image_attribution: "https://unsplash.com/@simple_shooter?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
 hero_image_attribution_text: Photo by Nazarii Yurkov on Unsplash
+toc: true
 ---
 
 Environment Variables Custom App provides configurable global DeXML variables in a Deputy Account.

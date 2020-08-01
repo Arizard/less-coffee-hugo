@@ -30,6 +30,9 @@
   </table>
   {{ block "single_buttongroup" . }}{{ end }}
 </div>
+{{ if .Params.toc }}
+  {{ template "partials/toc.html" . }}
+{{ end }}
 <div class="content">
   {{ .Content }}
 </div>

@@ -1,11 +1,13 @@
 ---
 title: "Decomposition Patterns"
+description: "Notes on decomposition patterns"
 date: 2020-07-22T14:38:30+10:00
 author: "Arie Oldman"
 type: "notes"
 tags:
 - Notes
 draft: false
+toc: true
 ---
 
 ## Decomposition of a System

@@ -1,13 +1,7 @@
 {{ define "single_buttongroup" }}
-<div id="comments-button" class="u-full-width space-below">
-	<a href="#after-article" class="button">
-		&nbsp;
-		<i class="fas fa-arrow-circle-down has-small-icons"></i>
-		<span id="comments-button-label">
-			Skip To Comments
-		</span>
-	</a>
-</div>
+	{{ if isset .Site.Params "socialbarpartial" }}
+		{{ partial .Site.Params.socialBarPartial . }}
+	{{ end }}
 {{ end }}
 
 {{ define "main" }}
@@ -26,10 +20,6 @@
 					<div id="comments">
 						{{ template "partials/talkyard.html" . }}
 					</div>
-					{{ end }}
-					{{ if isset .Site.Params "socialbarpartial" }}
-						<a id="social-bar"></a>
-						{{ partial .Site.Params.socialBarPartial . }}
 					{{ end }}
 				</div>
 				<p class="has-text-centered space-above-more">
