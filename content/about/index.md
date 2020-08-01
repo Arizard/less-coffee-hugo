@@ -5,9 +5,7 @@ title: About
 author: Arie Oldman
 ---
 
-<span class="circle-img">
-    <img src="ArieOldman300px.jpg">
-</span>
+{{< articleImage ArieOldman.jpg "photograph of website author" "Photo of me, 2019" >}}
 
 **Hi, I'm Arie** - I love programming and software development so much that I made it my career. This website contains a broad range of content topics - some articles are about software engineering, others might be about productivity or human interactions, and occasionally I write about fitness.
 

@@ -45,7 +45,7 @@ disqusShortname = ""
 # Menu links along the sidebar navigation.
 [[menu.main]]
 	identifier = "index"
-	name = "Index"
+	name = "Home"
 	url = "/"
 	weight = 5
 
