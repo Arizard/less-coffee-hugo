@@ -98,7 +98,11 @@ header {
         margin-left: -24px;
         a {
           padding-left: 24px;
-          color: black;
+          color: dimgrey;
+          text-decoration: none;
+          &:hover {
+            color: $softred;
+          }
         }
       }
     }
@@ -174,8 +178,6 @@ main {
           list-style: none;
           margin-bottom: .25rem;
           margin-right: -24px;
-          font-family: "montserrat", sans-serif;
-          font-weight: 500;
           a {
             color: dimgrey;
             padding-right: 24px;
