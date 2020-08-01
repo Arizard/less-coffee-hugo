@@ -11,6 +11,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.7rem;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: -1px;
+  hyphens: auto;
 }
 
 h1 {
@@ -138,18 +139,6 @@ main {
     }
   }
   header {
-    nav ul li a {
-      opacity: 0.25;
-      transition: opacity .1s;
-    }
-    nav ul li a.active {
-      opacity: 1;
-    }
-    &:hover {
-      nav ul li a {
-        opacity: 1;
-      }
-    }
     .site-heading {
       width: 200%;
       margin-left: -100%;
@@ -185,11 +174,16 @@ main {
           list-style: none;
           margin-bottom: .25rem;
           margin-right: -24px;
-
+          font-family: "montserrat", sans-serif;
+          font-weight: 500;
           a {
-            color: black;
+            color: dimgrey;
             padding-right: 24px;
             padding-left: 4px;
+            text-decoration: none;
+            &:hover, &.active {
+              color: $softred;
+            }
           }
           display: list-item;
         }
@@ -577,4 +571,11 @@ code {
   color: white;
   font-weight: bold;
   overflow-x: auto;
+}
+
+.pad8 {
+  padding: 8px;
+}
+.pad12 {
+  padding: 12px;
 }

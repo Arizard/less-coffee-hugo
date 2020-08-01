@@ -12,7 +12,7 @@
 		{{ end }}
 
 		{{ range .Paginator.Pages }}
-			<div class="rounded elevate elevate-hover space-below space-above pad24-sides">
+			<div class="overflow-auto rounded elevate elevate-hover space-below space-above pad24-sides">
 			{{ .Render "summary" }}
 			</div>
 		{{ end }}

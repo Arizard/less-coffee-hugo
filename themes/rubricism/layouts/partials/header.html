@@ -14,7 +14,7 @@
 		<nav>
 			<div class="navigation-inner">
 				<div class="navigation-list space-above">
-					<div class="nav-divider u-full-width">Navigation</div>
+					<div class="nav-divider u-full-width"></div>
 					<ul>
 						{{ range . }}
 						<li><a class="{{ if eq $page.URL .URL }}active{{ end }}" href="{{ .URL | relURL }}">{{ .Name }}</a></li>

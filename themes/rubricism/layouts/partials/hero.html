@@ -4,7 +4,7 @@
     {{ with ($page.Params.hero_image) }}
         {{ with ($page.Resources.GetMatch .) }}
             {{ $image := .Fill "1000x625 jpeg q80 center" }}
-                <img class="hero-image u-full-width elevate elevate-hover" alt="" src="{{ $image.RelPermalink }}"/>
+                <img class="rounded hero-image u-full-width elevate elevate-hover" alt="" src="{{ $image.RelPermalink }}"/>
         {{ end }}
     {{ end }}
     {{ with ($page.Params.hero_image_attribution_text) }}
