@@ -6,6 +6,11 @@
       <td class="has-text-red">{{ .Page.Params.Type }}</td>
     </tr>
     <tr>
+      <td><i class="fas fa-book-open"></i></td>
+      <td>{{ .ReadingTime }} minute read</td>
+    </tr>
+
+    <tr>
       <td><i class="fas fa-user has-text-darkgrey has-small-icons"></i></td>
       <td>
         {{ $.Param "author" }} on
