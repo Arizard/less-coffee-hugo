@@ -83,7 +83,7 @@ objParams = getObjectFromEnv({strKey: "FEATURE_PARAMS"})
 
 Environment variables are cached using Redis, so performance drop should be neglible. Regardless, it's best to only retrieve the variable once at the start of your script, because it's possible for the value to change part way through a script execution.
 
-# Conventions
+## Conventions
 
 1. Environment Variable names:
     1. only contain **alphanumeric characters** and the **underscore character**.
@@ -95,7 +95,7 @@ Environment variables are cached using Redis, so performance drop should be negl
     2. are formatted as comma-separated lists when defining arrays.
     3. are formatted as JSON when defining objects.
     
-# Screenshots
+## Screenshots
 
 {{< articleImage env-var-custom-app.png "Screenshot of Env Var custom app" "Screenshot of Env Var Custom App in Bunnings Sandbox" >}}
 {{< articleImage editing-variable.png "Filtering and editing an environment variable." "Filtering and editing an environment variable. Interacting with the text field for a variable causes Save and Delete to be shown." >}}
