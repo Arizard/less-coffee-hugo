@@ -41,15 +41,12 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
 </head>
 <body>
-	{{ partial "navigation" . }}
-	<div class="row u-full-width">
-		<div class="three columns padded-mobile">
-		</div>
-		<div id="center-column" class="six columns padded-mobile">
+	<div class="u-full-width overflow-auto">
+		{{ partial "navigation" . }}
+		<div id="center-column" class="width-50em block-centered border-box pad12">
 			{{ block "main" . }}{{ end }}
 			{{ partial "footer" . }}
 		</div>
-		<div class="three columns padded-mobile"></div>
 	</div>
 </body>
 </html>

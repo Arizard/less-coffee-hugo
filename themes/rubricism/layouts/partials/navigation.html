@@ -16,7 +16,7 @@
       {{ with .Site.Menus.main }}
       {{ range . }}
       <li>
-        <a class="{{ if eq $page.URL .URL }}active{{ end }}" href="{{ .URL | relURL }}">
+        <a class="{{ if or (eq $page.Section .Identifier) (eq $page.URL .URL) }}active{{ end }}" href="{{ .URL | relURL }}">
           {{ .Name }}
         </a>
       </li>

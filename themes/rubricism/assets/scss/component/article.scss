@@ -2,4 +2,23 @@
   .hero {
     display: none;
   }
+  //margin-top: -5rem;
+}
+
+.width-small {
+  max-width: 33.33%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.width-medium {
+  max-width: 66.66%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.width-full {
+  max-width: 100%;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }

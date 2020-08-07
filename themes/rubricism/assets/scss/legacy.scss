@@ -322,11 +322,6 @@ strong {
   cursor: pointer;
 }
 
-#center-column {
-  margin-left: auto;
-  min-width: 56%;
-}
-
 .paginator {
   text-transform: uppercase;
   i {
@@ -399,10 +394,6 @@ article {
 
 .overflow-auto {
   overflow: auto;
-}
-
-main {
-  max-width: 50em;
 }
 
 .front-matter-cluster {

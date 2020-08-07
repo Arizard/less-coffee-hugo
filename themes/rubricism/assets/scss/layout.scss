@@ -9,3 +9,21 @@
 a.button {
   text-overflow: ellipsis;
 }
+
+.width-50em {
+  width: 100%;
+  max-width: 50em;
+}
+
+.block-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#center-column {
+  padding-top: 60px;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
