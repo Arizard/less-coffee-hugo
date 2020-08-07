@@ -67,17 +67,17 @@ disqusShortname = ""
 	url = "/notes/"
 	weight = 20
 
-[[menu.main]]
-	identifier = "tags"
-	name = "Find by Tag"
-	url = "/tags/"
-	weight = 30
-
-[[menu.main]]
-	identifier = "tech"
-	name = "Find by Tech"
-	url = "/tech/"
-	weight = 40
+#[[menu.main]]
+#	identifier = "tags"
+#	name = "Find by Tag"
+#	url = "/tags/"
+#	weight = 30
+#
+#[[menu.main]]
+#	identifier = "tech"
+#	name = "Find by Tech"
+#	url = "/tech/"
+#	weight = 40
 
 [[menu.main]]
 	identifier = "about"
