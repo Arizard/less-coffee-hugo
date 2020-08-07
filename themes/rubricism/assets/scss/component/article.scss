@@ -22,3 +22,15 @@
   margin-left: 50%;
   transform: translateX(-50%);
 }
+
+.article-preview-hero-container {
+  .hero-attribution {
+    display: none;
+  }
+}
+
+.article-inner {
+  h1 {
+    text-align: center;
+  }
+}
