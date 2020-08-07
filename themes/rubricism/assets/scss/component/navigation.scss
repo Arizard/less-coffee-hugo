@@ -1,0 +1,140 @@
+#navigation {
+  display: flex;
+  position: fixed;
+  height: 48px;
+  z-index: 999;
+  header {
+    padding-left: 24px;
+    padding-right: 24px;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    .site-heading {
+      font-size: 1.7rem;
+      color: $softred;
+      a {
+        color: $softred;
+        text-decoration: none;
+      }
+      margin: 0;
+    }
+  }
+  nav {
+    width: 100%;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    justify-content: center;
+    flex-direction: unset;
+    display: block;
+    background: white;
+    border-bottom: none;
+    overflow: hidden;
+    padding: 0;
+    height: auto;
+    max-height: 0;
+
+    &.navigation-mobile-hidden, &.navigation-mobile-shown {
+      padding-left: 42px;
+      padding-bottom: 24px;
+      padding-top: 12px;
+    }
+
+    &.navigation-mobile-hidden {
+      max-height: 0;
+      padding: 0;
+    }
+
+    &.navigation-mobile-shown {
+      max-height: 50vh;
+      border-bottom: 1px solid lightgrey;
+    }
+
+    ul {
+      list-style: none;
+      margin-bottom: 12px;
+      li {
+        display: list-item;
+        margin: 4px 12px 4px 12px;
+      }
+    }
+    a {
+      text-decoration: none;
+      box-sizing: border-box;
+      &.active {
+        color: $softred;
+        border-bottom: 2px solid $softred;
+      }
+    }
+
+    #navigation-hamburger {
+      display: flex;
+      flex-direction: unset;
+      position: fixed;
+      right: 24px;
+      top: 16px;
+      font-size: 1.7rem;
+    }
+  }
+}
+@media (min-width: 750px) {
+  #navigation {
+    display: flex;
+    position: fixed;
+    height: 48px;
+    z-index: 999;
+    header {
+      box-sizing: border-box;
+      padding-left: 24px;
+      padding-right: 24px;
+      justify-content: center;
+      flex-direction: column;
+      display: flex;
+      .site-heading {
+        font-size: 1.7rem;
+        color: $softred;
+        a {
+          color: $softred;
+          text-decoration: none;
+        }
+        margin: 0;
+      }
+    }
+    nav {
+      width: auto;
+      position: relative;
+      top: 0;
+      left: 0;
+      height: 100%;
+      justify-content: center;
+      flex-direction: column;
+      display: flex;
+      padding: 0;
+      border: none;
+      ul {
+        list-style: none;
+        margin: 0;
+        li {
+          display: inline-block;
+          margin: 4px 12px 4px 12px;
+          &:first-of-type {
+            margin-left: 0
+          }
+        }
+      }
+      a {
+        text-decoration: none;
+        &.active {
+          color: $softred;
+        }
+      }
+      #navigation-hamburger {
+        display: none;
+      }
+      max-height: 100vh;
+      &.navigation-mobile-shown, &.navigation-mobile-hidden {
+        max-height: 100vh;
+      }
+    }
+  }
+}

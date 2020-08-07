@@ -22,7 +22,7 @@
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 	<link rel="stylesheet" href="{{ "css/normalize.css" | relURL }}">
 	<link rel="stylesheet" href="{{ "css/skeleton.css" | relURL }}">
-	{{ $main_style := resources.Get "scss/style.scss" | toCSS | minify | fingerprint }}
+	{{ $main_style := resources.Get "scss/index.scss" | toCSS | minify | fingerprint }}
 	<link rel="stylesheet" href="{{ $main_style.Permalink }}"/>
 	{{ with .OutputFormats.Get "RSS" -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
@@ -41,9 +41,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
 </head>
 <body>
+	{{ partial "navigation" . }}
 	<div class="row u-full-width">
 		<div class="three columns padded-mobile">
-			{{ partial "header" . }}
 		</div>
 		<div id="center-column" class="six columns padded-mobile">
 			{{ block "main" . }}{{ end }}

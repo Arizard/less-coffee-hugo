@@ -1,15 +1,18 @@
 <h1>{{ .Title }}{{ if .Page.Draft }} <span class="has-text-darkgrey">[DRAFT]</span>{{ end }}</h1>
-<div class="has-text-darkgrey front-matter-cluster space-below">
-  <table class="">
+<p class="has-text-darkgrey"><i class="fas fa-book-open"></i>
+{{ .ReadingTime }} minute read</p>
+{{ if .Params.toc }}
+  {{ template "partials/toc.html" . }}
+{{ end }}
+<div class="content">
+  {{ .Content }}
+</div>
+<div class="has-text-darkgrey front-matter-cluster space-below u-full-width">
+  <table class="u-full-width">
     <tr>
       <td><i class="fas fa-book has-text-red"></i></td>
       <td class="has-text-red">{{ .Page.Params.Type }}</td>
     </tr>
-    <tr>
-      <td><i class="fas fa-book-open"></i></td>
-      <td>{{ .ReadingTime }} minute read</td>
-    </tr>
-
     <tr>
       <td><i class="fas fa-user has-text-darkgrey has-small-icons"></i></td>
       <td>
@@ -29,10 +32,4 @@
     </tr>
   </table>
   {{ block "single_buttongroup" . }}{{ end }}
-</div>
-{{ if .Params.toc }}
-  {{ template "partials/toc.html" . }}
-{{ end }}
-<div class="content">
-  {{ .Content }}
 </div>
