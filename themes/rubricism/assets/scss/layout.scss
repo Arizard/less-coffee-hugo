@@ -22,8 +22,18 @@ a.button {
 
 #center-column {
   padding-top: $navbar-height + 12px;
+  flex: 1;
 }
 
 .border-box {
   box-sizing: border-box;
+}
+
+.min-view-height {
+  min-height: 100vh;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
 }
