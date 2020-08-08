@@ -19,15 +19,15 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-    
+
     - name: Install git submodules
       run: |
         git submodule init
         git submodule update
-    
-    - name: Hugo Actions
-      uses: srt32/hugo-action@v0.0.3
-      
+
+    - name: Build Hugo
+      uses: lowply/build-hugo@v0.74.1
+
     - name: S3 Sync
       uses: jakejarvis/s3-sync-action@v0.5.1
       with:
@@ -38,4 +38,4 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_REGION: 'ap-southeast-2'   # optional: defaults to us-east-1
         SOURCE_DIR: 'public'      # optional: defaults to entire repository
-      
+
