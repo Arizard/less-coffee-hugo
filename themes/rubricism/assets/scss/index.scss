@@ -1,12 +1,16 @@
-@import "variables.scss";
-@import "color.scss";
+@import "helper/normalize";
+@import "helper/skeleton";
+@import "helper/fonts";
 
-@import "legacy.scss";
-@import "layout.scss";
+@import "variables";
+@import "color";
 
-@import "component/heading.scss";
-@import "component/navigation.scss";
-@import "component/main.scss";
-@import "component/article.scss";
-@import "component/callout.scss";
-@import "component/footer.scss";
+@import "legacy";
+@import "layout";
+
+@import "component/heading";
+@import "component/navigation";
+@import "component/main";
+@import "component/article";
+@import "component/callout";
+@import "component/footer";

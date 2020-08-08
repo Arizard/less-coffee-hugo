@@ -20,8 +20,6 @@
 	{{ end }}
 	{{ template "_internal/opengraph.html" . }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-	<link rel="stylesheet" href="{{ "css/normalize.css" | relURL }}">
-	<link rel="stylesheet" href="{{ "css/skeleton.css" | relURL }}">
 	{{ $main_style := resources.Get "scss/index.scss" | toCSS | minify | fingerprint }}
 	<link rel="stylesheet" href="{{ $main_style.Permalink }}"/>
 	{{ with .OutputFormats.Get "RSS" -}}
@@ -32,12 +30,11 @@
 		{{ partial .Site.Params.additionalHeadPartial . }}
 	{{ end }}
 	{{ if .Site.IsServer }}
-	<script defer src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
+	<script async src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
 	{{ else }}
-	<script defer src="https://unpkg.com/vue@2.6.11/dist/vue.min.js"></script>
+	<script async src="https://unpkg.com/vue@2.6.11/dist/vue.min.js"></script>
 	{{ end }}
-	<script async defer src="{{ "js/navigation/navigation.js" | relURL }}"></script>
-	<link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}">
+	<script async src="{{ "js/navigation/navigation.js" | relURL }}"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
 </head>
 <body>
