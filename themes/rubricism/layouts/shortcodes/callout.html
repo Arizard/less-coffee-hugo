@@ -1,5 +1,5 @@
 {{ if gt (len (.Get 1)) 0 }}
-<article class="message {{ .Get 0 }}">
+<aside class="message {{ .Get 0 }}">
     <div>
         <div class="message-icon info">
             <i class="fa fa-info-circle"></i>
@@ -14,9 +14,9 @@
             <p>{{ .Get 1 }}</p>
         </div>
     </div>
-</article>
+</aside>
 {{ else }}
-<article class="message {{ .Get 0 }}">
+<aside class="message {{ .Get 0 }}">
     <div>
         <div class="message-icon info">
             <i class="fa fa-info-circle"></i>
@@ -31,6 +31,6 @@
             {{ .Inner | markdownify }}
         </div>
     </div>
-</article>
+</aside>
 {{ end }}
 

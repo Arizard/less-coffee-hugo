@@ -1,0 +1,27 @@
+footer {
+  position: relative;
+  margin-top: 2rem;
+  background-color: $twinkleblue;
+  height: $navbar-height*2;
+  width: 100%;
+  font-weight: bold;
+  a:hover {
+    color: $softred;
+  }
+  .footer-inner {
+    width: calc(100% - 24px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    ul {
+      margin: 0;
+      list-style: none;
+      li {
+        display: inline-block;
+        margin: 0 6px 0 6px;
+      }
+    }
+  }
+}

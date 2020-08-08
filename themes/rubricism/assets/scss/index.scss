@@ -1,9 +1,12 @@
 @import "variables.scss";
+@import "color.scss";
 
 @import "legacy.scss";
 @import "layout.scss";
-@import "color.scss";
 
+@import "component/heading.scss";
 @import "component/navigation.scss";
 @import "component/main.scss";
 @import "component/article.scss";
+@import "component/callout.scss";
+@import "component/footer.scss";
