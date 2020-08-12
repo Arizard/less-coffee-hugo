@@ -3,14 +3,14 @@ a {
 }
 
 .has-text-darkgrey {
-  color: darkgrey;
+  color: $peace;
 }
 
 a {
   color: inherit;
+  transition: color 50ms;
   &:hover {
-    color: black;
-    background-color: rgba(255,0,0,0.1);
+    color: $softred;
   }
 }
 
@@ -34,8 +34,7 @@ a.button:hover {
 .tag {
   font-size: 1.2rem;
   text-transform: uppercase;
-  font-weight: 500;
-  color: darkgrey;
+  color: $peace;
   text-decoration: none;
   margin: 0 .5rem 0 0;
 }
@@ -51,9 +50,9 @@ body {
 }
 
 .space-above {
-  margin-top: 1rem;
+  margin-top: 1rem !important;
   &-more {
-    margin-top: 3rem;
+    margin-top: 3rem !important;
   }
 }
 
@@ -65,7 +64,7 @@ body {
 }
 
 .boxed {
-  border: solid 1px darkgrey;
+  border: solid 1px #a4b0be;
   background: lightgrey;
 }
 
@@ -179,12 +178,6 @@ strong {
   border-radius: 4px;
 }
 
-.article-preview-read-more-button {
-  .button {
-    width: calc(100% - 48px);
-  }
-}
-
 .pad24 {
   padding: 24px;
 }
@@ -209,12 +202,7 @@ strong {
   }
 }
 
-article {
-  position: relative;
-}
-
 .index-button-group {
-  padding: 0 25px 0 25px;
   .index-button-container {
     display: block;
     float: left;
@@ -233,7 +221,6 @@ article {
     clear: both;
     content: "";
     display: block;
-    padding: 0 25px 0 25px;
     .index-button-container {
       display: block;
       float: left;

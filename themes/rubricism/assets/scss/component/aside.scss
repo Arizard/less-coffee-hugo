@@ -1,0 +1,12 @@
+aside {
+  padding: 0;
+  &.left-border {
+    border-left: solid 2px $peace;
+  }
+}
+
+.toc {
+  ul {
+    margin-bottom: 0;
+  }
+}

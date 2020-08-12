@@ -1,10 +1,10 @@
-<article class="small-headings">
-	<h1>
+<article>
+	<h2>
 		<a href="{{ .Permalink }}">{{ .Title }}</a>
 		{{ if .Page.Draft }}
 		<span class="has-text-darkgrey">[DRAFT]</span>
 		{{ end }}
-	</h1>
+	</h2>
 	<div class="space-above">
 		{{ if isset .Params "description" }}
 			{{ .Params.description }}
@@ -12,8 +12,8 @@
 			{{ .Summary }}
 		{{ end }}
 	</div>
-	<i class="fas fa-book has-text-red has-small-icons"></i>
-	<span class="has-text-red small-uppercase">{{ .Params.Type }}</span>
+	<i class="fas fa-book has-text-darkgrey has-small-icons"></i>
+	<span class="has-text-darkgrey small-uppercase">{{ .Params.Type }}</span>
 	<i class="fas fa-book-open has-text-darkgrey has-small-icons"></i>
 	<span class="has-text-darkgrey small-uppercase">{{ .ReadingTime }} minute read</span>
 <!--	<i class="fas fa-user has-text-darkgrey has-small-icons"></i>-->

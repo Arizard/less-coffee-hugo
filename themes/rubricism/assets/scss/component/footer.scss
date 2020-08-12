@@ -2,20 +2,16 @@ footer {
   position: relative;
   margin-top: 2rem;
   margin-bottom: 0;
-  background-color: $twinkleblue;
+  background-color: $background-footer;
   height: $navbar-height*2;
   width: 100%;
-  font-weight: bold;
-  a:hover {
-    color: $softred;
-  }
   .footer-inner {
     width: calc(100% - 24px);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: $text-footer;
     ul {
       margin: 0;
       list-style: none;

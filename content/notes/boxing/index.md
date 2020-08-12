@@ -1,7 +1,7 @@
 ---
 title: "The Encyclopædia Pugilum"
 date: 2006-10-05
-author: "Arie Oldman"
+author: "Unknown"
 type: "notes"
 tags:
 - Notes

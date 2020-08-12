@@ -5,15 +5,14 @@
 		{{ $pages := where .Site.RegularPages "Section" "in" .Site.Params.mainSections }}
 		{{ $first := index $pages 0 }}
 		{{ with $first }}
-		<div class="article-preview-container overflow-auto rounded elevate elevate-hover liftoff">
+		<div class="article-preview-container overflow-auto space-below-more">
 			<div class="article-preview-hero-container">
 				{{ template "partials/hero.html" . }}
 			</div>
-			<article class="article-preview space-below">
-				{{ template "partials/article.html" . }}
-				<div class="overlay"></div>
-			</article>
-			<div class="article-preview-read-more-button u-full-width space-above-more space-below-more">
+			<div class="article-preview has-text-centered space-above">
+				{{ .Render "summary" }}
+			</div>
+			<div class="article-preview-read-more-button u-full-width space-above-more">
 				<a href="{{ .Permalink }}" class="button is-centered">
 					<i class="fas fa-arrow-circle-right"></i>
 					Read
@@ -21,10 +20,10 @@
 			</div>
 		</div>
 		{{ end }}
-		{{ range (first 3 (after 1 $pages)).GroupByDate "January-2006" }}
-			<div class="article-divider">{{ index (split .Key "-") 0 }}</div>
+		{{ range (first 3 (after 1 $pages)).GroupByDate "January 2006" }}
+			<div class="article-divider space-above-more">Articles from {{ .Key }}</div>
 			{{ range .Pages }}
-				<div class="overflow-auto rounded elevate elevate-hover space-below space-above pad24-sides liftoff">
+				<div class="overflow-auto space-below-more">
 				{{ .Render "summary" }}
 				</div>
 			{{ end }}

@@ -10,10 +10,10 @@
     <div class="content">
       {{ .Content }}
     </div>
-    {{ range .Paginator.Pages.GroupByDate "January-2006" }}
-      <div class="article-divider space-below-more">{{ index (split .Key "-") 0 }}</div>
+    {{ range .Paginator.Pages.GroupByDate "January 2006" }}
+      <div class="article-divider space-above-more">{{ .Key }}</div>
       {{ range .Pages }}
-        <div class="overflow-auto rounded elevate elevate-hover space-below space-above pad24-sides liftoff">
+        <div class="overflow-auto space-below-more">
         {{ .Render "summary" }}
         </div>
       {{ end }}

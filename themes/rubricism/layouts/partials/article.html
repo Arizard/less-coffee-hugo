@@ -2,10 +2,10 @@
 <p class="has-text-darkgrey has-text-centered"><i class="fas fa-book-open"></i>
   {{ .ReadingTime }} minute read</p>
 {{ template "partials/hero.html" . }}
-{{ if .Params.toc }}
+<div class="content space-above-more">
+  {{ if .Params.toc }}
   {{ template "partials/toc.html" . }}
-{{ end }}
-<div class="content">
+  {{ end }}
   {{ .Content }}
 </div>
 <div class="has-text-darkgrey front-matter-cluster space-below u-full-width">

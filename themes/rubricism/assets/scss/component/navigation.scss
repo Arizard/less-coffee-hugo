@@ -62,6 +62,10 @@
     a {
       text-decoration: none;
       box-sizing: border-box;
+      color: $grisaille;
+      &:hover {
+        color: $softred;
+      }
       &.active {
         color: $softred;
         border-bottom: 2px solid $softred;
