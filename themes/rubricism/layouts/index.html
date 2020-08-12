@@ -5,7 +5,7 @@
 		{{ $pages := where .Site.RegularPages "Section" "in" .Site.Params.mainSections }}
 		{{ $first := index $pages 0 }}
 		{{ with $first }}
-		<div class="article-preview-container overflow-auto rounded elevate elevate-hover">
+		<div class="article-preview-container overflow-auto rounded elevate elevate-hover liftoff">
 			<div class="article-preview-hero-container">
 				{{ template "partials/hero.html" . }}
 			</div>
@@ -24,7 +24,7 @@
 		{{ range (first 3 (after 1 $pages)).GroupByDate "January-2006" }}
 			<div class="article-divider">{{ index (split .Key "-") 0 }}</div>
 			{{ range .Pages }}
-				<div class="overflow-auto rounded elevate elevate-hover space-below space-above pad24-sides">
+				<div class="overflow-auto rounded elevate elevate-hover space-below space-above pad24-sides liftoff">
 				{{ .Render "summary" }}
 				</div>
 			{{ end }}

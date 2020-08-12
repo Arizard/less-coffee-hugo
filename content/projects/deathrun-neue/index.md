@@ -20,8 +20,7 @@ hero_image_attribution_text: Image of deathrun_emerald_a3 by Arie Oldman
 
 ## Overview
 
-<p><img src="/images/deathrun-neue-screenshot-01.png" width="100%" alt="Screenshot of Deathrun Neue"/></p>
-
+![Screenshot of Deathrun Neue](/images/deathrun-neue-screenshot-01.png)
 
 Deathrun is a _Garry's Mod_ gamemode which involves two teams - Runners and Deaths - and a series of elaborate traps. 
 

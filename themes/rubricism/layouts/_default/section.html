@@ -13,7 +13,7 @@
     {{ range .Paginator.Pages.GroupByDate "January-2006" }}
       <div class="article-divider space-below-more">{{ index (split .Key "-") 0 }}</div>
       {{ range .Pages }}
-        <div class="overflow-auto rounded elevate elevate-hover space-below space-above pad24-sides">
+        <div class="overflow-auto rounded elevate elevate-hover space-below space-above pad24-sides liftoff">
         {{ .Render "summary" }}
         </div>
       {{ end }}

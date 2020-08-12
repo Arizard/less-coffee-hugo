@@ -1,10 +1,8 @@
-console.log('rubricism/navigation.js');
+window.addEventListener('load', (event) => {
+    initNavigation();
+});
 
-window.onload = function(ev) {
-    main();
-};
-
-function main() {
+function initNavigation() {
     Vue.component('hamburgerbutton', {
         props: ['icon', 'click-handler'],
         template: `

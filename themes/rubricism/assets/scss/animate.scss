@@ -1,0 +1,13 @@
+.liftoff {
+
+  transform: translateY(0);
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  &:hover, & {
+    transition: transform .25s;
+  }
+}
+
+
