@@ -6,6 +6,9 @@ table {
       .article-divider {
         margin: 0;
       }
+      &:first-of-type {
+        width: 96px;
+      }
     }
   }
 }

@@ -24,7 +24,7 @@
 			{{ range (first 3 (after 1 $pages)).GroupByDate "January 2006" }}
 				<tr>
 					<td>
-						<div class="article-divider">Articles from {{ .Key }}</div>
+						<div class="article-divider">{{ .Key }}</div>
 					</td>
 					<td>
 						{{ range .Pages }}
