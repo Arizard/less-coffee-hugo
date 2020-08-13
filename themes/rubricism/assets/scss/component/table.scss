@@ -1,0 +1,11 @@
+table {
+  &.article-list {
+    td {
+      vertical-align: top;
+      border: none;
+      .article-divider {
+        margin: 0;
+      }
+    }
+  }
+}

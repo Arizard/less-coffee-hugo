@@ -20,14 +20,22 @@
 			</div>
 		</div>
 		{{ end }}
-		{{ range (first 3 (after 1 $pages)).GroupByDate "January 2006" }}
-			<div class="article-divider space-above-more">Articles from {{ .Key }}</div>
-			{{ range .Pages }}
-				<div class="overflow-auto space-below-more">
-				{{ .Render "summary" }}
-				</div>
+		<table class="article-list">
+			{{ range (first 3 (after 1 $pages)).GroupByDate "January 2006" }}
+				<tr>
+					<td>
+						<div class="article-divider">Articles from {{ .Key }}</div>
+					</td>
+					<td>
+						{{ range .Pages }}
+						<div class="overflow-auto space-below">
+							{{ .Render "summary" }}
+						</div>
+						{{ end }}
+					</td>
+				</tr>
 			{{ end }}
-		{{ end }}
+		</table>
 		<div class="index-button-group u-full-width space-above-more">
 			<div class="index-button-container">
 				<a href="/posts/" class="button u-full-width">

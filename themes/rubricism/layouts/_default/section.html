@@ -4,20 +4,25 @@
     <h1 class="has-text-centered">
       {{ .Title }}
     </h1>
-    <p>{{ range .Params.tags }}
-      <a class="tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-      {{ end }}</p>
     <div class="content">
       {{ .Content }}
     </div>
-    {{ range .Paginator.Pages.GroupByDate "January 2006" }}
-      <div class="article-divider space-above-more">{{ .Key }}</div>
-      {{ range .Pages }}
-        <div class="overflow-auto space-below-more">
-        {{ .Render "summary" }}
-        </div>
+    <table class="article-list">
+      {{ range .Paginator.Pages.GroupByDate "January 2006" }}
+        <tr>
+          <td>
+            <div class="article-divider">{{ .Key }}</div>
+          </td>
+          <td>
+            {{ range .Pages }}
+            <div class="overflow-auto space-below">
+              {{ .Render "summary" }}
+            </div>
+            {{ end }}
+          </td>
+        </tr>
       {{ end }}
-    {{ end }}
+    </table>
   </div>
   {{ partial "pagination.html" . }}
 </main>
