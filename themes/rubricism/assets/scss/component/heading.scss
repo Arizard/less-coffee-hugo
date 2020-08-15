@@ -5,13 +5,17 @@ h1, h2, h3, h4, h5, h6 {
   }
   display: block;
   margin-bottom: 1.7rem;
-  font-family: 'Montserrat', sans-serif;
   //letter-spacing: -1px;
   hyphens: auto;
 }
 
+h2, h3, h4, h5, h6 {
+  font-family: "Inter", sans-serif;
+}
+
 h1 {
   font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h2 {
@@ -39,5 +43,11 @@ h1 {
   }
   h3, h4, h5, h6 {
     font-size: 1.8rem;
+  }
+}
+
+.article-preview, .article-list {
+  h2 {
+    font-family: 'Montserrat', sans-serif;
   }
 }
