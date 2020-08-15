@@ -93,4 +93,10 @@ article {
   .newest {
     margin-bottom: 3rem;
   }
+
+  blockquote {
+    border-left: 3px solid $peace;
+    padding-left: 12px;
+    font-style: italic;
+  }
 }
