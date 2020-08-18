@@ -22,8 +22,10 @@ function initNavigation() {
         methods: {
             toggle: function() {
                 this.hide = !this.hide;
-                console.log(this.hide);
             },
+            hideNav: function() {
+                this.hide = true;
+            }
         },
     });
 

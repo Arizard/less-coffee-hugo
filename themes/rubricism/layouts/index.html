@@ -13,7 +13,7 @@
 				{{ .Render "summary" }}
 			</div>
 			<div class="article-preview-read-more-button u-full-width space-above-more">
-				<a href="{{ .Permalink }}" class="button is-centered">
+				<a href="{{ .Permalink }}" class="button is-centered button-primary u-full-width">
 					<i class="fas fa-arrow-circle-right"></i>
 					Read
 				</a>
@@ -21,19 +21,12 @@
 		</div>
 		{{ end }}
 		<table class="article-list">
-			{{ range (first 3 (after 1 $pages)).GroupByDate "January 2006" }}
-				<tr>
-					<td>
-						<div class="article-divider">{{ .Key }}</div>
-					</td>
-					<td>
-						{{ range .Pages }}
-						<div class="overflow-auto space-below-more">
-							{{ .Render "summary" }}
-						</div>
-						{{ end }}
-					</td>
-				</tr>
+			{{ range (first 3 (after 1 $pages)) }}
+				<div class="article-list-item has-border-top">
+					<div class="overflow-auto space-below">
+						{{ .Render "summary" }}
+					</div>
+				</div>
 			{{ end }}
 		</table>
 		<div class="index-button-group u-full-width space-above-more">

@@ -3,10 +3,10 @@ h1, h2, h3, h4, h5, h6 {
   a {
     color: $grisaille;
   }
+  font-family: 'Inter', Helvetica, sans-serif;
   display: block;
-  margin-bottom: 1.7rem;
-  //letter-spacing: -1px;
   hyphens: auto;
+  font-weight: bold;
 }
 
 h2, h3, h4, h5, h6 {
@@ -14,40 +14,25 @@ h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3rem;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 2.9rem;
 }
 
 h2 {
-  font-size: 2.2rem;
-}
-
-h3, h4, h5, h6 {
   font-size: 2rem;
 }
 
-h2, h3, h4, h5, h6 {
-  font-weight: 700;
+h3 {
+  font-size: 1.9rem
 }
 
-h1 {
-  font-weight: 700;
+h4 {
+  font-size: 1.8rem
 }
 
-.small-headings {
-  h1 {
-    font-size: 2.6rem;
-  }
-  h2 {
-    font-size: 2.2rem;
-  }
-  h3, h4, h5, h6 {
-    font-size: 1.8rem;
-  }
+h5 {
+  font-size: 1.7rem
 }
 
-.article-preview, .article-list {
-  h2 {
-    font-family: 'Montserrat', sans-serif;
-  }
+h6 {
+  font-size: 1.6rem
 }

@@ -1,9 +1,10 @@
 {{ define "main" }}
 	<main class="space-above-more">
 		{{ if .Title }}
-		<div class="article-divider space-below-more">
-			{{ with .Title }}<span>{{ . }}</span>{{ end }}
+		<div class="space-below-more">
+			{{ with .Title }}<span>Posts tagged <strong>{{ . }}</strong>:</span>{{ end }}
 		</div>
+
 		{{ end }}
 		{{ if .Content }}
 		<div>
@@ -11,11 +12,15 @@
 		</div>
 		{{ end }}
 
-		{{ range .Paginator.Pages }}
-			<div class="overflow-auto rounded elevate elevate-hover space-below space-above pad24-sides">
-			{{ .Render "summary" }}
+		<div class="article-list">
+			{{ range .Paginator.Pages }}
+			<div class="article-list-item has-border-top">
+				<div class="overflow-auto space-below">
+				{{ .Render "summary" }}
+				</div>
 			</div>
-		{{ end }}
+			{{ end }}
+		</div>
 		{{ partial "pagination.html" . }}
 	</main>
 {{ end }}

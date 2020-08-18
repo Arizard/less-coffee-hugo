@@ -4,7 +4,7 @@
   height: $navbar-height;
   z-index: 999;
   header {
-    padding-left: 24px;
+    padding-left: 12px;
     padding-right: 24px;
     justify-content: center;
     flex-direction: column;
@@ -76,8 +76,9 @@
       display: flex;
       flex-direction: unset;
       position: fixed;
-      right: 24px;
-      top: $navbar-height/3 + 2px;
+      right: 12px;
+      top: $navbar-height/2;
+      transform: translateY(-50%);
       font-size: 1.7rem;
     }
   }
@@ -90,7 +91,6 @@
     z-index: 999;
     header {
       box-sizing: border-box;
-      padding-left: 24px;
       padding-right: 24px;
       justify-content: center;
       flex-direction: column;

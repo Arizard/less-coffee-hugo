@@ -10,7 +10,7 @@
   {{ $page := . }}
   <nav :class="className">
     <div id="navigation-hamburger" class="clickable">
-      <HamburgerButton icon="fa fa-bars" :click-handler="toggle" />
+      <HamburgerButton icon="fa fa-bars" :click-handler="toggle"/>
     </div>
     <ul>
       {{ with .Site.Menus.main }}
