@@ -21,7 +21,7 @@
 		</div>
 		{{ end }}
 		<table class="article-list">
-			{{ range (first 3 (after 1 $pages)) }}
+			{{ range (first 8 (after 1 $pages)) }}
 				<div class="article-list-item has-border-top">
 					<div class="overflow-auto space-below">
 						{{ .Render "summary" }}

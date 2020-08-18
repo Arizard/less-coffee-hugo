@@ -4,12 +4,6 @@ type: section
 title: Arie Oldman
 author: Arie Oldman
 ---
-{{< box medium >}}
-
-{{< articleImage ArieOldman.jpg "photograph of website author" "Photo of me, 2019" >}}
-
-{{< /box >}}
-
 **Hi, I'm Arie** - I love programming and software development so much that I made it my career. This website contains a broad range of content topics - some articles are about software engineering, others might be about productivity or human interactions, and occasionally I write about fitness.
 
 I'm working as a software engineer at [Deputy](https://deputy.com), developing platform customisations for enterprise customers.

@@ -21,8 +21,10 @@ a.button {
 }
 
 #center-column {
-  padding-top: $navbar-height + 12px;
+  padding-top: 12px;
+  margin-top: $navbar-height + 12px;
   flex: 1;
+  background-color: white;
 }
 
 .border-box {
