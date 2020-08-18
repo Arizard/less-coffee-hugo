@@ -9,7 +9,7 @@
 		<article class="space-above-more">
 			<div class="article-inner">
 				{{ template "partials/article.html" . }}
-				<div id="after-article" class="rounded elevate elevate-hover pad8">
+				<div id="after-article">
 					{{ with .Site.DisqusShortname }}
 					<div>
 						{{ template "_internal/disqus.html" . }}
