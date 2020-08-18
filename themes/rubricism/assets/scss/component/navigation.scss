@@ -4,8 +4,8 @@
   height: $navbar-height;
   z-index: 999;
   header {
-    padding-left: 12px;
-    padding-right: 24px;
+    padding-left: 22px;
+    padding-right: 12px;
     justify-content: center;
     flex-direction: column;
     display: flex;
@@ -73,16 +73,29 @@
     }
 
     #navigation-hamburger {
+      color: $softred;
       display: flex;
       flex-direction: unset;
       position: fixed;
-      right: 12px;
+      right: 22px;
       top: $navbar-height/2;
       transform: translateY(-50%);
       font-size: 1.7rem;
     }
   }
 }
+
+.site-subtitle {
+  margin-right: 24px;
+  vertical-align: middle;
+  height: $navbar-height;
+  .site-subtitle-text {
+    display: inline-block;
+    margin-top: $navbar-height/2;
+    transform: translateY(-50%);
+  }
+}
+
 @media (min-width: 750px) {
   #navigation {
     display: flex;
@@ -91,7 +104,7 @@
     z-index: 999;
     header {
       box-sizing: border-box;
-      padding-right: 24px;
+      padding-right: 12px;
       justify-content: center;
       flex-direction: column;
       display: flex;

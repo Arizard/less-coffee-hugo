@@ -27,7 +27,7 @@ disqusShortname = ""
 [params]
   math = true
   description = "Software Engineering, Fitness and Humans."
-  subTitle = "Arie Oldman"
+  subTitle = "by Arie Oldman"
   # Set enableKofi to true to enable the Ko-fi support button. Add your Ko-fi ID to link to your account.
   showReadMore = true
   enableKofi = false

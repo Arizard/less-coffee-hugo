@@ -7,6 +7,9 @@
       </a>
     </h1>
   </header>
+  <div class="site-subtitle">
+    <span class="site-subtitle-text">{{ .Site.Params.subTitle }}</span>
+  </div>
   {{ $page := . }}
   <nav :class="className">
     <div id="navigation-hamburger" class="clickable">
