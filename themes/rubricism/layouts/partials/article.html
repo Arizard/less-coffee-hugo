@@ -1,6 +1,16 @@
+<div class="has-text-small">
+  <span class="u-pull-right">
+    {{ with .Params.tags }}
+      {{ range (first 1 .) }}
+        <a class="tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+      {{ end }}
+    {{ end }}
+  </span>
+  <span class="has-text-darkgrey">
+    <time>{{ .Date.Format "2 January 2006" }}</time>
+  </span>
+</div>
 <h1>{{ .Title }}{{ if .Page.Draft }} <span class="has-text-darkgrey">[DRAFT]</span>{{ end }}</h1>
-<p class="has-text-darkgrey has-text-centered"><i class="fas fa-book-open"></i>
-  {{ .ReadingTime }} minute read</p>
 {{ template "partials/hero.html" . }}
 <div class="content space-above-more">
   {{ if .Params.toc }}

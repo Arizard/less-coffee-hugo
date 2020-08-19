@@ -1,7 +1,7 @@
 {{ define "main" }}
 	{{ $countPosts := len (where .Site.RegularPages "Section" "eq" "posts") }}
 	{{ $countProjects := len (where .Site.RegularPages "Section" "eq" "projects") }}
-	<main id="index-main">
+	<main id="index-main" class="">
 		{{ $pages := where .Site.RegularPages "Section" "in" .Site.Params.mainSections }}
 		{{ $first := index $pages 0 }}
 		{{ with $first }}
@@ -20,7 +20,7 @@
 			</div>
 		</div>
 		{{ end }}
-		<table class="article-list">
+		<div class="article-list">
 			{{ range (first 8 (after 1 $pages)) }}
 				<div class="article-list-item has-border-top">
 					<div class="overflow-auto space-below">
@@ -28,7 +28,7 @@
 					</div>
 				</div>
 			{{ end }}
-		</table>
+		</div>
 		<div class="index-button-group u-full-width space-above-more">
 			<div class="index-button-container">
 				<a href="/posts/" class="button u-full-width">

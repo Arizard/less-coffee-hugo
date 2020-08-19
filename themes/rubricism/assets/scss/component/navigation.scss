@@ -1,9 +1,14 @@
+#navigation-inner {
+  display: flex;
+}
+
 #navigation {
   display: flex;
   position: fixed;
   height: $navbar-height;
   z-index: 999;
   header {
+    flex-shrink: 0;
     padding-left: 22px;
     padding-right: 12px;
     justify-content: center;
@@ -20,6 +25,7 @@
     }
   }
   nav {
+    flex-grow: 1;
     width: 100%;
     position: absolute;
     top: 48px;
@@ -86,6 +92,7 @@
 }
 
 .site-subtitle {
+  flex-shrink: 0;
   margin-right: 24px;
   vertical-align: middle;
   height: $navbar-height;
@@ -96,7 +103,13 @@
   }
 }
 
+
+
 @media (min-width: 750px) {
+  #navigation-inner {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
   #navigation {
     display: flex;
     position: fixed;
@@ -119,7 +132,9 @@
       }
     }
     nav {
-      width: auto;
+      flex-grow: 1;
+      text-align: right;
+      margin-right: 10px;
       position: relative;
       top: 0;
       left: 0;

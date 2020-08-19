@@ -1,30 +1,32 @@
 <div id="navigation" class="elevate elevate-hover u-full-width">
-  <header class="u-full-height has-text-middle">
-    <h1 class="site-heading">
-      <a href="{{ .Site.BaseURL }}" class="margin-left-24">
-        <i class="fas fa-coffee"></i>&nbsp;
-        {{ .Site.Title }}
-      </a>
-    </h1>
-  </header>
-  <div class="site-subtitle">
-    <span class="site-subtitle-text">{{ .Site.Params.subTitle }}</span>
-  </div>
-  {{ $page := . }}
-  <nav :class="className">
-    <div id="navigation-hamburger" class="clickable">
-      <HamburgerButton icon="fa fa-bars" :click-handler="toggle"/>
-    </div>
-    <ul>
-      {{ with .Site.Menus.main }}
-      {{ range . }}
-      <li>
-        <a class="{{ if or (eq $page.Section .Identifier) (eq $page.URL .URL) }}active{{ end }}" href="{{ .URL | relURL }}">
-          {{ .Name }}
+  <div id="navigation-inner" class="width-50em">
+    <header class="u-full-height has-text-middle">
+      <h1 class="site-heading">
+        <a href="{{ .Site.BaseURL }}">
+          <i class="fas fa-coffee"></i>&nbsp;
+          {{ .Site.Title }}
         </a>
-      </li>
-      {{ end }}
-      {{ end }}
-    </ul>
-  </nav>
+      </h1>
+    </header>
+    <div class="site-subtitle">
+      <span class="site-subtitle-text">{{ .Site.Params.subTitle }}</span>
+    </div>
+    {{ $page := . }}
+    <nav :class="className">
+      <div id="navigation-hamburger" class="clickable">
+        <HamburgerButton icon="fa fa-bars" :click-handler="toggle"/>
+      </div>
+      <ul>
+        {{ with .Site.Menus.main }}
+        {{ range . }}
+        <li>
+          <a class="{{ if or (eq $page.Section .Identifier) (eq $page.URL .URL) }}active{{ end }}" href="{{ .URL | relURL }}">
+            {{ .Name }}
+          </a>
+        </li>
+        {{ end }}
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
 </div>

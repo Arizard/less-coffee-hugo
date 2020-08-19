@@ -1,19 +1,23 @@
 ---
-title: "Resumé"
+title: "Arie Oldman"
 date: 2020-05-12T08:18:56+0000
 draft: false
 author: Arie Oldman
 ---
-<div class="resume-contact">
+## Summary
+
+{{< callout info >}}
+**Contact**
 
 * 👨‍💻 Arie Oldman
 * 🏡 Sydney, NSW
 * 📧 arie.oldman@vhs7.tv
 * 🌏 [Arizard on GitHub](https://github.com/Arizard)
 
-</div>
+{{< /callout >}}
 
-----
+&nbsp;
+
 ## Professional Experience
 
 {{< annotatedH3 Deputy "Ultimo, September 2019 to present" >}}

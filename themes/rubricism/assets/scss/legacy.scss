@@ -33,11 +33,12 @@ a.button:hover {
 }
 
 .tag {
-  font-size: 1.2rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: $peace;
   text-decoration: none;
-  margin: 0 .5rem 0 0;
+  &::before {
+    content: "#";
+  }
 }
 
 body {
