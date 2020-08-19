@@ -1,31 +1,9 @@
-#navigation-inner {
-  display: flex;
-}
-
 #navigation {
   display: flex;
   position: fixed;
   height: $navbar-height;
   z-index: 999;
-  header {
-    flex-shrink: 0;
-    padding-left: 22px;
-    padding-right: 12px;
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    .site-heading {
-      font-size: 1.7rem;
-      color: $softred;
-      a {
-        color: $softred;
-        text-decoration: none;
-      }
-      margin: 0;
-    }
-  }
   nav {
-    flex-grow: 1;
     width: 100%;
     position: absolute;
     top: 48px;
@@ -91,48 +69,14 @@
   }
 }
 
-.site-subtitle {
-  flex-shrink: 0;
-  margin-right: 24px;
-  vertical-align: middle;
-  height: $navbar-height;
-  .site-subtitle-text {
-    display: inline-block;
-    margin-top: $navbar-height/2;
-    transform: translateY(-50%);
-  }
-}
-
 
 
 @media (min-width: 750px) {
-  #navigation-inner {
-    margin-left: 50%;
-    transform: translateX(-50%);
-  }
   #navigation {
-    display: flex;
     position: fixed;
     height: $navbar-height;
     z-index: 999;
-    header {
-      box-sizing: border-box;
-      padding-right: 12px;
-      justify-content: center;
-      flex-direction: column;
-      display: flex;
-      .site-heading {
-        font-size: 1.7rem;
-        color: $softred;
-        a {
-          color: $softred;
-          text-decoration: none;
-        }
-        margin: 0;
-      }
-    }
     nav {
-      flex-grow: 1;
       text-align: right;
       margin-right: 10px;
       position: relative;
@@ -173,5 +117,61 @@
         padding-left: 0;
       }
     }
+  }
+}
+
+
+.site-heading {
+  display: block;
+  margin-right: 12px;
+  margin-left: 22px;
+  height: $navbar-height;
+  .site-heading-inner {
+    h1 {
+      font-size: 1.7rem;
+      margin: 0;
+    }
+    color: $softred;
+    a {
+      color: $softred;
+      text-decoration: none;
+    }
+    margin-top: $navbar-height/2;
+    transform: translateY(-50%);
+  }
+}
+
+.site-subtitle {
+  margin-right: 24px;
+  vertical-align: middle;
+  height: $navbar-height;
+  .site-subtitle-text {
+    display: inline-block;
+    margin-top: $navbar-height/2;
+    transform: translateY(-50%);
+  }
+}
+
+// Flex Layout
+
+#navigation-inner {
+  position: absolute;
+  top: 0;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  header {
+    position: relative;
+    flex-shrink: 0;
+
+  }
+  .site-subtitle {
+    flex-shrink: 0;
+    display: block;
+  }
+  nav {
+    flex-grow: 1;
+    flex-basis: 100%;
   }
 }
