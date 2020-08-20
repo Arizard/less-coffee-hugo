@@ -4,12 +4,12 @@ title: Placeholder Text
 date: 2019-12-17
 description: Lorem Ipsum Dolor Si Amet
 tags:
-- markdown
-- text
-type: ''
+  - markdown
+  - text
+type: ""
 draft: true
-
 ---
+
 Lorem est tota propiore conpellat pectoribus de pectora summo. <!--more-->
 Redit teque digerit hominumque toris verebor lumina non cervice
 subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc
@@ -53,7 +53,9 @@ Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit 
 Propoetides **parte**.
 
 {{< css.inline >}}
+
 <style>
 .canon { background: white; width: 100%; height: auto;}
 </style>
+
 {{< /css.inline >}}

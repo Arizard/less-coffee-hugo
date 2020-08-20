@@ -3,13 +3,13 @@ title: Precaf
 description: My Deputy Love Bugs Hackathon project.
 date: 2020-04-24T15:13:34.000+00:00
 tags:
-- Deep Dive
-- Deputy
+  - Deep Dive
+  - Deputy
 tech:
-- Dexml
-- Decaf
-- Go
-- Precaf
+  - Dexml
+  - Decaf
+  - Go
+  - Precaf
 menu:
   main:
     parent: projects
@@ -29,18 +29,18 @@ _Precaf_ is a build-and-deploy tool used internally at Deputy. It provides a mea
 
 **Programming Languages**
 
-* Go
+- Go
 
 **Libraries**
 
-* [Golang Glog](https://github.com/golang/glog "Golang Glog Repo")
-* [CLI by urfave](https://github.com/urfave/cli)
-* [Fasttemplate by valyala](https://github.com/valyala/fasttemplate)
+- [Golang Glog](https://github.com/golang/glog "Golang Glog Repo")
+- [CLI by urfave](https://github.com/urfave/cli)
+- [Fasttemplate by valyala](https://github.com/valyala/fasttemplate)
 
 **Tools**
 
-* Git + Github
-* Jetbrains GoLand IDE
+- Git + Github
+- Jetbrains GoLand IDE
 
 ## Problem Statement
 
@@ -52,15 +52,15 @@ _Precaf_ is a build-and-deploy tool used internally at Deputy. It provides a mea
 
 Some things can be customised with varying complexity using DeXML scripting:
 
-* Award interpretation for industry awards (GRIA, HIGA, etc.)
-* Payroll integration with external systems
-* Leave policies for staff
-* Scheduling rules
+- Award interpretation for industry awards (GRIA, HIGA, etc.)
+- Payroll integration with external systems
+- Leave policies for staff
+- Scheduling rules
 
 **Decaf** is another scripting language which looks like CoffeeScript. Under the hood, the following transpilation occurs:
 
-* Decaf to DeXML
-* DeXML to PHP
+- Decaf to DeXML
+- DeXML to PHP
 
 Decaf was developed because DeXML is difficult for humans to read and write. All scripts at Deputy are written in Decaf.
 
@@ -69,7 +69,7 @@ Decaf was developed because DeXML is difficult for humans to read and write. All
 The main limitation that motivated this project was the **lack of language features**. In Decaf, there is no `import`, `require` or `include` statement available. In the past, when code was shared between scripts, the following approach was taken:
 
 1. Copy-paste the code from the other script.
-2. Use the `runscript` language feature to execute another script on the current account, with all variable and procedure* declarations made in the scope of the calling script.
+2. Use the `runscript` language feature to execute another script on the current account, with all variable and procedure\* declarations made in the scope of the calling script.
 
 These two approaches have a high risk of introducing errors. Number 2 is extremely hard to debug.
 
@@ -108,7 +108,7 @@ This results in the creation of the new file:
     	calculate_overtime:
         	- calculate_overtime.coffee
             - prod.coffee
-            
+
             - build_calculate_overtime.coffee
 
 Inside the new file, the `include` statement above has been substituted for the contents of `someDependencyProcedure.coffee`.
@@ -133,18 +133,18 @@ This triggers Precaf to POST the script contents to the `codeupdate` API endpoin
 
 **What went well?**
 
-* The application was received well by the business. 
-* It solves old problems in a new way.
+- The application was received well by the business.
+- It solves old problems in a new way.
 
 **What went poorly?**
 
-* Precaf has not been widely adopted, despite being accepted by the engineers.
-* Codebase is messy.
-* No installation method or package manager support.
-* Creating a new precaf script is a manual process.
+- Precaf has not been widely adopted, despite being accepted by the engineers.
+- Codebase is messy.
+- No installation method or package manager support.
+- Creating a new precaf script is a manual process.
 
 **What to change for next time?**
 
-* Determine a clear design for the codebase before implementing anything.
-* Integrate with a package manager (e.g. `brew`)
-* Implement a `$ cx-precaf new` command which creates a blank script and config files in the current directory.
+- Determine a clear design for the codebase before implementing anything.
+- Integrate with a package manager (e.g. `brew`)
+- Implement a `$ cx-precaf new` command which creates a blank script and config files in the current directory.

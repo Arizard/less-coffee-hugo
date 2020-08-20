@@ -5,7 +5,7 @@ date: 2020-07-22T19:09:04+10:00
 author: "Arie Oldman"
 type: "post"
 tags:
-- Productivity
+  - Productivity
 draft: true
 hero_image: ""
 hero_image_attribution: "#"

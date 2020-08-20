@@ -5,11 +5,11 @@ date: 2020-07-11T00:04:42+10:00
 draft: false
 author: "Arie Oldman"
 tags:
-- Organisation
-- Terminal
-- Work From Home
+  - Organisation
+  - Terminal
+  - Work From Home
 tech:
-- Go
+  - Go
 type: project
 hero_image: charles-deluvio-ieEv01cucy0-unsplash.jpg
 hero_image_attribution_text: Photo by Charles Deluvio on Unsplash
@@ -49,5 +49,3 @@ To create the interface, I used [gocui](https://github.com/jroimartin/gocui). To
 {{< articleImage puggodoro.png >}}
 
 [GitHub Repository](https://github.com/Arizard/pug-go-doro)
-
-

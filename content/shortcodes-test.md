@@ -5,9 +5,9 @@ date: 2020-07-27T09:15:49+10:00
 author: "Arie Oldman"
 type: "post"
 tags:
-- Misc
+  - Misc
 tech:
-- Hugo
+  - Hugo
 draft: false
 hero_image: ""
 hero_image_attribution: "#"
@@ -36,4 +36,3 @@ Danger Callout Description
 Success Callout Description
 
 {{< /callout >}}
-

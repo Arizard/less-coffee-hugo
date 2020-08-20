@@ -30,5 +30,3 @@ Created using [Plotly](https://plotly.com/javascript/).
     font-weight: 600 !important;
 }
 </style>
-
-

@@ -3,11 +3,11 @@ title: Less Coffee
 description: How I publish this website.
 date: 2020-04-26T12:00:00.000+10:00
 tags:
-- Deep Dive
-- Website
+  - Deep Dive
+  - Website
 tech:
-- Hugo
-- AWS
+  - Hugo
+  - AWS
 menu:
   main:
     parent: projects
@@ -27,16 +27,16 @@ hero_image_attribution_text: Photo by Shaah Shahidh on Unsplash
 
 **Legend**
 
-  1. Local `staging` branch of `less-coffee-hugo`
-  2. [forestry.io](https://forestry.io) site
-  3. Remote `master` branch of `less-coffee-hugo`
-  4. Remote `staging` branch of `less-coffee-hugo`
-  5. Remote `forestry` branch of `less-coffee-hugo`
-  6. GitHub git repository `arizard/less-coffee-hugo`
-  7. "Deploy Hugo To S3" workflow
-  8. `less.coffee` S3 bucket.
-  9. DNS alias A record for less.coffee.
-  
+1. Local `staging` branch of `less-coffee-hugo`
+2. [forestry.io](https://forestry.io) site
+3. Remote `master` branch of `less-coffee-hugo`
+4. Remote `staging` branch of `less-coffee-hugo`
+5. Remote `forestry` branch of `less-coffee-hugo`
+6. GitHub git repository `arizard/less-coffee-hugo`
+7. "Deploy Hugo To S3" workflow
+8. `less.coffee` S3 bucket.
+9. DNS alias A record for less.coffee.
+
 ## Content Management
 
 Content can be managed using **forestry.io** or by cloning the staging branch locally.
@@ -56,8 +56,8 @@ On any push to `master`, a GitHub workflow is triggered:
 1. The `master` branch is checked out
 2. **Hugo** is installed.
 3. Hugo builds the site into the `public` directory.
-3. The **AWS CLI** is installed.
-4. The contents of `public` are uploaded to the less.coffee S3 bucket.
+4. The **AWS CLI** is installed.
+5. The contents of `public` are uploaded to the less.coffee S3 bucket.
 
 {{< gist Arizard a125e6d8ab4c9c8848bd2ffe7ecf38d0 >}}
 
