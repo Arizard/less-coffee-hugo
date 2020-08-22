@@ -24,7 +24,7 @@
 				<p class="has-text-centered space-above-more">
 					<a class="button" href="{{ .Page.CurrentSection.RelPermalink }}">
 						<i class="fas fa-arrow-circle-left"></i>
-						Back to {{ .Page.Section }}
+						Back to {{ .Page.CurrentSection.Title | title }}
 					</a>
 					<a class="button" href="#">
 						<i class="fas fa-arrow-circle-up"></i>

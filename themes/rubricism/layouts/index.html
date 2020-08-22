@@ -5,7 +5,7 @@
 		{{ $pages := where .Site.RegularPages "Section" "in" .Site.Params.mainSections }}
 		{{ $first := index $pages 0 }}
 		{{ with $first }}
-		<div class="article-preview-container overflow-auto space-below-more">
+		<div class="article-preview-container space-below-more">
 			<div class="article-preview-hero-container">
 				{{ template "partials/hero.html" . }}
 			</div>
@@ -15,7 +15,7 @@
 			<div class="article-preview-read-more-button u-full-width space-above-more">
 				<a href="{{ .Permalink }}" class="button is-centered button-primary u-full-width">
 					<i class="fas fa-arrow-circle-right"></i>
-					Read
+					Go to article
 				</a>
 			</div>
 		</div>
