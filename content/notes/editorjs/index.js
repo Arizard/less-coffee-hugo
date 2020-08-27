@@ -91,7 +91,7 @@ class OutcomesBlock {
             cell.setAttribute('contenteditable', 'true');
             cell.id = cellName;
             if (this.data) {
-                cell.innerText = this.data[cellName];
+                cell.innerHTML = this.data[cellName];
             }
             this.wrapper.appendChild(cell);
         });
@@ -102,10 +102,10 @@ class OutcomesBlock {
     save(wrapper) {
         console.log(wrapper);
         return {
-            counts: wrapper.querySelector('#counts').innerText,
-            moveName: wrapper.querySelector('#moveName').innerText,
-            outcome: wrapper.querySelector('#outcome').innerText,
-            cues: wrapper.querySelector('#cues').innerText,
+            counts: wrapper.querySelector('#counts').innerHTML,
+            moveName: wrapper.querySelector('#moveName').innerHTML,
+            outcome: wrapper.querySelector('#outcome').innerHTML,
+            cues: wrapper.querySelector('#cues').innerHTML,
         }
     }
 }
@@ -120,10 +120,13 @@ function initEditorJSTutorial() {
                 inlineToolbar: ['link'],
             },
             image: SimpleImage,
-            outcomes: OutcomesBlock,
+            outcomes: {
+                class: OutcomesBlock,
+                inlineToolbar: ['bold', 'italic'],
+            },
         },
         data: {
-            "time": 1598532788341,
+            "time": 1598533181902,
             "blocks": [
                 {
                     "type": "image",
@@ -170,7 +173,7 @@ function initEditorJSTutorial() {
                         "counts": "Counts",
                         "moveName": "Move Name",
                         "outcome": "Move Outcomes",
-                        "cues": "Coaching/Cues"
+                        "cues": "Example of <b>BOLD CUE</b> support."
                     }
                 },
                 {
@@ -179,7 +182,7 @@ function initEditorJSTutorial() {
                         "counts": "Counts",
                         "moveName": "Move Name",
                         "outcome": "Move Outcomes",
-                        "cues": "Coaching/Cues"
+                        "cues": "<b>Coaching/Cues</b>"
                     }
                 },
                 {

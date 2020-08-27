@@ -26,7 +26,7 @@
     width: 100%;
     align-items: flex-start;
     flex-wrap: nowrap;
-    height: 41px;
+    margin-bottom: 8px;
 }
 
 .outcomes-block-cell {
