@@ -35,4 +35,9 @@ Experiment with writing an _outcomes block_:
 | -------------------- | ----------------------------------------- | ---------------- | ----------------------------- | -------------------------------- |
 | **Cell Contents ->** | Num. counts the move or sequence goes for | Name of the move | Coaching outcome for the move | Coaching cues to achieve outcome |
 
+## Update 27/08
+
+Check the demo for an example of the Outcomes Block. What I really like about Editor.js
+is the included support for Ctrl+C and Ctrl+V on custom blocks! Big win for UX.
+
 
