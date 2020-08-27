@@ -67,6 +67,49 @@ class SimpleImage {
         }
     }
 }
+
+class OutcomesBlock {
+    static get toolbox() {
+        return {
+            title: "Outcomes Block",
+            icon: '<i class="fas fa-running"></i>',
+        }
+    }
+
+    constructor({data}) {
+        this.data = data;
+    }
+
+    render() {
+        this.wrapper = document.createElement('div');
+        this.wrapper.classList.add('outcomes-block');
+        this.wrapper.innerHTML = '';
+
+        ['counts','moveName','outcome','cues'].map((cellName) => {
+            let cell = document.createElement('div');
+            cell.classList.add('outcomes-block-cell');
+            cell.setAttribute('contenteditable', 'true');
+            cell.id = cellName;
+            if (this.data) {
+                cell.innerText = this.data[cellName];
+            }
+            this.wrapper.appendChild(cell);
+        });
+
+        return this.wrapper;
+    }
+
+    save(wrapper) {
+        console.log(wrapper);
+        return {
+            counts: wrapper.querySelector('#counts').innerText,
+            moveName: wrapper.querySelector('#moveName').innerText,
+            outcome: wrapper.querySelector('#outcome').innerText,
+            cues: wrapper.querySelector('#cues').innerText,
+        }
+    }
+}
+
 let editor = null;
 function initEditorJSTutorial() {
     editor = new EditorJS({
@@ -77,9 +120,10 @@ function initEditorJSTutorial() {
                 inlineToolbar: ['link'],
             },
             image: SimpleImage,
+            outcomes: OutcomesBlock,
         },
         data: {
-            "time": 1598436527804,
+            "time": 1598532788341,
             "blocks": [
                 {
                     "type": "image",
@@ -112,6 +156,111 @@ function initEditorJSTutorial() {
                     "type": "paragraph",
                     "data": {
                         "text": "As conceived in 1632 by Portuguese printing press operator Andre Felipe, boxing was a gentleman’s game, in which two men would square off and regale each other with stories monotonous for days on end, until one of them fell to the ground from boredom or exhaustion. Over the next few years the new sport developed a respectable following of a few hundred local socialites."
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "data": {
+                        "text": "-"
+                    }
+                },
+                {
+                    "type": "outcomes",
+                    "data": {
+                        "counts": "Counts",
+                        "moveName": "Move Name",
+                        "outcome": "Move Outcomes",
+                        "cues": "Coaching/Cues"
+                    }
+                },
+                {
+                    "type": "outcomes",
+                    "data": {
+                        "counts": "Counts",
+                        "moveName": "Move Name",
+                        "outcome": "Move Outcomes",
+                        "cues": "Coaching/Cues"
+                    }
+                },
+                {
+                    "type": "outcomes",
+                    "data": {
+                        "counts": "Counts",
+                        "moveName": "Move Name",
+                        "outcome": "Move Outcomes",
+                        "cues": "Coaching/Cues"
+                    }
+                },
+                {
+                    "type": "outcomes",
+                    "data": {
+                        "counts": "Counts",
+                        "moveName": "Move Name",
+                        "outcome": "Move Outcomes",
+                        "cues": "Coaching/Cues"
+                    }
+                },
+                {
+                    "type": "outcomes",
+                    "data": {
+                        "counts": "Counts",
+                        "moveName": "Move Name",
+                        "outcome": "Move Outcomes",
+                        "cues": "Coaching/Cues"
+                    }
+                },
+                {
+                    "type": "outcomes",
+                    "data": {
+                        "counts": "Counts",
+                        "moveName": "Move Name",
+                        "outcome": "Move Outcomes",
+                        "cues": "Coaching/Cues"
+                    }
+                },
+                {
+                    "type": "outcomes",
+                    "data": {
+                        "counts": "Counts",
+                        "moveName": "Move Name",
+                        "outcome": "Move Outcomes",
+                        "cues": "Coaching/Cues"
+                    }
+                },
+                {
+                    "type": "outcomes",
+                    "data": {
+                        "counts": "Counts",
+                        "moveName": "Move Name",
+                        "outcome": "Move Outcomes",
+                        "cues": "Coaching/Cues"
+                    }
+                },
+                {
+                    "type": "outcomes",
+                    "data": {
+                        "counts": "Counts",
+                        "moveName": "Move Name",
+                        "outcome": "Move Outcomes",
+                        "cues": "Coaching/Cues"
+                    }
+                },
+                {
+                    "type": "outcomes",
+                    "data": {
+                        "counts": "Counts",
+                        "moveName": "Move Name",
+                        "outcome": "Move Outcomes",
+                        "cues": "Coaching/Cues"
+                    }
+                },
+                {
+                    "type": "outcomes",
+                    "data": {
+                        "counts": "Counts",
+                        "moveName": "Move Name",
+                        "outcome": "Move Outcomes",
+                        "cues": "Coaching/Cues"
                     }
                 }
             ],
