@@ -9,7 +9,7 @@ tags:
 draft: false
 hero_image: ""
 hero_image_attribution: "#"
-hero_image_attribution_text: Image of Object by Photographer
+hero_image_attribution_text: ""
 ---
 
 I came across a javascript library called [Editor.js](https://editorjs.io) - it's a block-based
