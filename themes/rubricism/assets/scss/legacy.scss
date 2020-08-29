@@ -274,10 +274,13 @@ strong {
 }
 
 code {
-  background: #2f3542;
-  color: white;
-  font-weight: 600;
+  background: $antiflashwhite;
+  color: $softred;
   overflow-x: auto;
+}
+
+.highlight code {
+  background-color: #2f3542;
 }
 
 .pad8 {

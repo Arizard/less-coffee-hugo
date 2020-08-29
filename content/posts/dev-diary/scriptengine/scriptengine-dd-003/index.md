@@ -83,4 +83,5 @@ I'm working in Storybook and building out the core editor. I've got the outcomes
 
 * Editor needs to accept an `onSave` callback which receives the `data` object as the first argument.
 * Then, the editor can auto-save ~1sec after any changes and call `onSave`.
+* Build some common UI components using tailwindcss styles.
 
