@@ -1,11 +1,38 @@
 ---
 title: "Arie Oldman"
-date: 2020-05-12T08:18:56+0000
+date: 2020-09-03
 draft: false
 author: Arie Oldman
+toc: true
 ---
 
 ## Summary
+
+A Sydney based software engineer who has 1 year of experience building software
+and 4 years of experience working in telecommunications. Passionate about software
+development, demonstrated by side projects conducted beyond work hours.
+
+### Skills and Key Technologies
+
+* Go (Golang)
+* JavaScript, TypeScript
+* React, Vue
+* AWS (serverless, microservices architecture)
+* Computer Networks
+
+### Learning Goals
+
+Become an expert in the following areas:
+
+* Object-oriented software design
+* Designing microservices architecture from scratch
+* Migrating from monolithic architecture to service-oriented architecture
+
+Improve current ability in:
+
+* Project documentation
+* Frontend software architecture patterns
+* Leading project design by communicating justifiable technical decisions
 
 {{< callout info >}}
 **Contact**
@@ -17,7 +44,7 @@ author: Arie Oldman
 
 {{< /callout >}}
 
-&nbsp;
+---
 
 ## Professional Experience
 
@@ -62,6 +89,11 @@ Macquarie University Cadet Engineer. Completed two rotations per year in differe
 ---
 
 ## Projects
+
+{{< annotatedH3 "Bunnings AU 2013 EBA Features" "Deputy, 2020 to present" >}}
+{{< resumeTagGroup "Deputy" "CoffeeScript (Decaf)" >}}
+
+{{< callout info "Pending update near the end of the project." />}}
 
 {{< annotatedH3 "Precaf" "Deputy, 2020 to present" >}}
 {{< resumeTagGroup "Go" "CoffeeScript (Decaf)" "Hackathon" >}}

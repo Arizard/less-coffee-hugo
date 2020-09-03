@@ -20,10 +20,12 @@
 </div>
 <div class="has-text-darkgrey front-matter-cluster space-below u-full-width">
   <table class="u-full-width">
+    {{ with .Page.Params.Type }}
     <tr>
       <td><i class="fas fa-book has-text-red"></i></td>
-      <td class="has-text-red">{{ .Page.Params.Type }}</td>
+      <td class="has-text-red">{{ . }}</td>
     </tr>
+    {{ end }}
     <tr>
       <td><i class="fas fa-user has-text-darkgrey has-small-icons"></i></td>
       <td>
@@ -31,14 +33,16 @@
         <time>{{ .Date.Format "2 January 2006" }}</time>
       </td>
     </tr>
+    {{ with .Params.tags }}
     <tr>
       <td><i class="fas fa-tags has-text-darkgrey has-small-icons"></i></td>
       <td>
-        {{ range .Params.tags }}
+        {{ range . }}
         <a class="tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
         {{ end }}
       </td>
     </tr>
+    {{ end }}
     <tr>
     </tr>
   </table>
