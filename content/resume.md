@@ -141,7 +141,7 @@ Macquarie University Cadet Engineer. Completed two rotations per year in differe
 {{< annotatedH3 "Bachelor of Engineering (Honours)" "2019, Major in Telecommunications Engineering" >}}
 {{< resumeTagGroup "Software Defined Networks" "Python" "Openflow" >}}
 
-#### Inline DDoS Detection for SMB
+**Inline DDoS Detection for SMB**
 
 Protected a simulated network against denial of service attacks by writing an SDN controller middleware with Python to integrate Openflow and the Bro Intrusion Detection System.
 
