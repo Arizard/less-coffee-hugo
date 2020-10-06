@@ -1,5 +1,5 @@
 ---
-title: "Stuff I learned from the boook \"Advent of Go Microservices\" by Tit Petric"
+title: "Stuff I learned from the book \"Advent of Go Microservices\" by Tit Petric"
 description: ""
 date: 2020-10-02T21:04:55+10:00
 author: "Arie Oldman"
