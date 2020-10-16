@@ -15,9 +15,3 @@ hero_image_attribution_text: Image of Object by Photographer
 {{< linkbox "GitHub" "fab fa-github" "Code repositories and project source" "https://github.com/arizard" >}}
 
 {{< linkbox "LinkedIn" "fab fa-linkedin" "Professional profile" "https://www.linkedin.com/in/arieoldman/" >}}
-
-<style>
-  header, footer {
-    display: none;
-  }
-</style>
