@@ -1,9 +1,24 @@
 {{ define "main" }}
+	<style>
+		#navigation {
+			display: none;
+		}
+		#center-column {
+			margin-top: 0px;
+			padding-top: 0;
+		}
+		footer {
+			display: none;
+		}
+		#links-article p, #links-article h1, #links-article h2, #links-article h3 {
+			text-align: center;
+		}
+		#links-article h1 {
+			color: #ff4757;
+		}
+	</style>
 	<main>
-		<article>
-			<div class="article-divider">{{ .Title }}</div>
-			<p class="has-text-darkgrey all-small-caps">Updated on
-			<time>{{ .Date.Format "2 January 2006" }}</time></p>
+		<article id="links-article">
 			<p>{{ range .Params.tags }}
 				<a class="tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
 				{{ end }}</p>
