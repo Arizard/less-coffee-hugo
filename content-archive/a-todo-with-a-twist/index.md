@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "A To-Do List With a Twist"
 description: "How I use a personal kanban at work"
 date: 2020-08-15T19:29:20+10:00
@@ -7,7 +8,6 @@ type: "post"
 tags:
   - Software Engineering
   - Productivity
-draft: false
 hero_image: "will-turner-bJlQOClnEGs-unsplash.jpg"
 hero_image_attribution: "https://unsplash.com/@turner_imagery?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
 hero_image_attribution_text: Photo by Will Turner on Unsplash
