@@ -4,7 +4,9 @@
 {{ else }}
 	<span class="spacer">&nbsp;&nbsp;</span>
 {{ end }}
-{{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}
+{{ if gt .Paginator.TotalPages 0 }}
+	{{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}
+{{ end }}
 {{ if .Paginator.HasNext }}
 	<a href="{{ .Paginator.Next.URL }}"><i class="fas fa-chevron-right"></i></a>
 {{ else }}

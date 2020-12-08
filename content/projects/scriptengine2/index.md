@@ -22,6 +22,8 @@ ScriptEngine 2 helps instructors plan their classes to create life-changing fitn
 
 It is the second version of ScriptEngine with a completely new codebase.
 
+{{< articleImage "script.less.coffee_.png" "screenshot of scriptengine 2" "ScriptEngine" >}}
+
 - **TypeScript** instead of plain JavaScript for type safety and stricter interfaces.
 - **React function components** instead of React class components - they are simpler to reason about.
 - **React hooks** instead of class state - again, this is easier to reason about and separate state concerns within a component.

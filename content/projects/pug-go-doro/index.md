@@ -16,6 +16,8 @@ hero_image_attribution_text: Photo by Charles Deluvio on Unsplash
 hero_image_attribution: https://unsplash.com/wallpapers/cute/pug?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 ---
 
+{{< articleImage puggodoro.png "" "Pug Go Doro" >}}
+
 I started working from home halfway through March 2020 - our CEO released an email on a Friday, ordering us to work from home and to take with us any office supplies we needed to continue our work.
 
 In the first week, it took me some time to adjust to the new BAU.
@@ -45,7 +47,5 @@ Fast forward to June. Our CEO announced that the following Friday will be a "Men
 Pug Go Doro is the result: It's a pomodoro app which is rendered as a [text-based user interface](https://en.wikipedia.org/wiki/Text-based_user_interface) in the user's terminal. Why? My plan was to run it in the JetBrains IDE embedded terminal. Also, text-based user interfaces are cool and retro 😎. Why is it named after pugs? Why not! They are very cute dogs. I would know. I have two.
 
 To create the interface, I used [gocui](https://github.com/jroimartin/gocui). To render the timer digits I used [go-figure](https://github.com/common-nighthawk/go-figure) and to push native notifications I used [notify](https://github.com/martinlindhe/notify).
-
-{{< articleImage puggodoro.png >}}
 
 [GitHub Repository](https://github.com/Arizard/pug-go-doro)

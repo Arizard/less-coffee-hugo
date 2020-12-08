@@ -1,0 +1,21 @@
+#navigation, #after-article, .front-matter-cluster, #after-article-buttons, footer {
+  display: none;
+}
+
+#center-column {
+  margin: 0;
+}
+
+a:link, a:visited {background: transparent; color:#333; text-decoration:none;}
+a:link[href^="http://"]:after, a[href^="http://"]:visited:after {content: " (" attr(href) ") "; font-size: 11px;}
+a[href^="http://"] {color:#000;}
+a:link[href^="https://"]:after, a[href^="https://"]:visited:after {content: " (" attr(href) ") "; font-size: 11px;}
+a[href^="https://"] {color:#000;}
+
+body {
+  line-height: 1.2;
+}
+
+.page-break {
+  page-break-before: always;
+}

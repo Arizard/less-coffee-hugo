@@ -8,7 +8,8 @@
       {{ .Content }}
     </div>
     <div>
-      <p>{{ len .Paginator.Pages }} articles found in <strong>{{ .Title }}</strong>:</p>
+      <p>{{ len .Paginator.Pages }} articles found in <strong>{{ .Title }}</strong>{{ if gt (len .Paginator.Pages) 0 }}:{{ else }}.{{ end }}
+      </p>
     </div>
     <div class="article-list">
       {{ range .Paginator.Pages }}

@@ -22,6 +22,8 @@
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 	{{ $main_style := resources.Get "scss/index.scss" | toCSS | minify | fingerprint }}
 	<link rel="stylesheet" href="{{ $main_style.Permalink }}"/>
+	{{ $print_style := resources.Get "scss/print.scss" | toCSS | minify | fingerprint }}
+	<link rel="stylesheet" href="{{ $print_style.Permalink }}" media="print"/>
 	{{ with .OutputFormats.Get "RSS" -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 	{{- end }}
