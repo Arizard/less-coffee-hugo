@@ -29,8 +29,8 @@ h1 {
 
 <span class="has-text-centered">
 
-A Sydney based software engineer who has 1.5 years of experience in a software engineering role
-and 4 years of experience working in telecommunications.
+A Sydney-based software engineer experienced in discovery, design and
+implementation of service oriented architecture projects.
 
 </span>
 
@@ -38,7 +38,7 @@ and 4 years of experience working in telecommunications.
 
 ## Professional Experience
 
-### <span>Deputy</span> <span>Sep 2019 to present</span> {#deputy}
+### <span>Deputy</span> <span>Sep 2019 -- present</span> {#deputy}
 
 Software Engineer (Implementations) within Customer Experience (CX).
 
@@ -49,13 +49,13 @@ incidents.
 * Design and build the _Bunnings - Bank Of Hours_ and _Bunnings - Public Holiday Not Worked_ Deputy implementation.
 * Improved account security and implementation testability with the _Environment Variables Custom App_.
 * Improved developer productivity by developing the [Precaf](#precaf) command line tool.
-* Developed Deputy integrations using _AWS Lambda_ and _Go_.
+* Developed Deputy integrations using _AWS Lambda_ and _Go_ (refer to Projects section).
 * Technical advisory, solution design and implementation engineer for Qantas GroundStar integration and Compass Australia Employee Sync.
-* Elicit customer pain points and requirements for Compass Australia engineering support.
+* Elicit requirements and customer pain points for Compass Australia engineering support.
 
 [Visit Deputy](https://deputy.com)
 
-### <span>Spriggy</span> <span>Mar 2019 to Jul 2019</span> {#spriggy}
+### <span>Spriggy</span> <span>Mar 2019 -- Jul 2019</span> {#spriggy}
 
 Junior platform developer working on the Spriggy Pocket Money microservices.
 
@@ -69,7 +69,7 @@ Junior platform developer working on the Spriggy Pocket Money microservices.
 
 [Visit Spriggy](https://spriggy.com.au/)
 
-### <span>Singtel Optus</span> <span>Jul 2015 to Mar 2019</span> {#optus}
+### <span>Singtel Optus</span> <span>Jul 2015 -- Mar 2019</span> {#optus}
 
 Macquarie University Cadet Engineer. Completed two rotations per year in 
 different teams within Optus Networks.
@@ -88,77 +88,104 @@ different teams within Optus Networks.
 
 ## Projects
 
-### <span>Bunnings AU 2013 EBA Features</span> <span>Deputy, 2020 to present</span> {#bunnings}
+### <span>Deputy Export Aggregator</span> <span>Deputy, 2020 -- 2021</span>
+
+A service which periodically collects data from one or more Deputy 
+instances and then collates and combines the data into a single file. The file 
+is submitted via SFTP to a configurable destination server.
+
+Original use case is aggregating schedule data across multiple Qantas accounts,
+then submitting the file to Qantas via SFTP to be consumed by GroundStar 
+RealTime.
+
+Considerations made to account for future extension and re-use with other
+accounts.
+
+Created with Go, AWS Lambda and AWS CloudWatch.
+
+### <span>Deputy Environment Variables Custom App</span> <span>Deputy, 2020</span>
+
+A Deputy custom app to provide a configuration GUI for account-scoped variables 
+used within Decaf/DeXML scripts.
+
+A repeated anti-pattern within the CX team is the practice of including
+account-specific configuration in scripts. This project provides a standard
+approach to avoiding this anti-pattern.
+
+Solution consultants can change configuration variables as frequently as the
+customer's requirements change.
+
+Created with Vue and Decaf.
+
+### <span>Bunnings AU 2013 EBA</span> <span>Deputy, 2020</span> {#bunnings}
 
 Designed and implemented _Bunnings - Bank Of Hours_ features in the Bunnings
-Australia account:
-    
-  * Engineer a solution to keep a ledger recording the difference between 
-    worked and contracted hours per employee per 52-week period.
-  * Design award interpretation for _Bank Of Hours_. Ensure employees are paid
-    correctly based on the discrepancy between worked and contracted hours 
-    (a.k.a Overtime)
-  * Build graphical interfaces in **Vue** to manage, report, export, and view 
-    _Bank Of Hours_ information.
-  * Build HTTP endpoints to allow Bunnings to import historic _Bank Of Hours_ 
-    data.
-      
+Australia account.
+
+* Engineer a solution to keep a ledger recording the difference between 
+  worked and contracted hours per employee per 52-week period.
+* Design award interpretation for _Bank Of Hours_. Ensure employees are paid
+  correctly based on the discrepancy between worked and contracted hours 
+  (a.k.a Overtime)
+* Build graphical interfaces in Vue to manage, report, export, and view 
+  _Bank Of Hours_ information.
+* Build HTTP endpoints to allow Bunnings to import historic _Bank Of Hours_ 
+  data.
+
 Designed and implemented _Bunnings - Public Holiday Not Worked_ features in
 the Bunnings Australia account:
-    
-  * Engineer a solution to allow employees to receive conditional pay for 
-    public holidays which they were not rostered.
-  * Build HTTP endpoints to allow Bunnings to import historic work data (Work
-    History) which drives the conditional Public Holiday Not Worked pay.
-    
-Ongoing professional services engineering work and support engineering work:
-    
-  * Compass Group Australia, Compass Group New Zealand (Hospitality)
-  * NRMA Marine, NRMA Parks and Resorts (Hospitality)
-  * Challenger (Cleaning)
-  * Living My Way (Disability Support)
-  * Sealink (Maritime Services)
-  * Everlight Radiology (Tele-medicine)
-  * Moët Hennessy Louis Vitton Hong Kong (Luxury Retail)
 
-### <span>Precaf</span> <span>Deputy, 2020 to present</span> {#precaf}
+* Engineer a solution to allow employees to receive conditional pay for 
+  public holidays which they were not rostered.
+* Build HTTP endpoints to allow Bunnings to import historic work data (Work
+  istory) which drives the conditional Public Holiday Not Worked pay.
 
-* Created the Precaf developer tool using **Go**.
-* Co-developed a new standard library for CX Engineering.
-* Overcame many issues that exist in using Decaf as the main programming language for customer scripts (code reuse, standard library, manual deployment to instance, code readability, code review).
-* Create documentation for Precaf and standard library.
+### <span>Precaf</span> <span>Deputy, 2020</span> {#precaf}
+
+Precaf is a command line tool to automate bundling and deployment of Decaf
+scripts. 
+
+As part of this project, a library of common functions was co-developed for
+the team to use (similar to a Standard Library).
+
+Created with Go.
 
 [Read more about Precaf, Decaf and DeXML]({{< ref "projects/precaf.md" >}})
 
-### <span>Less Coffee</span> <span>2020 to present</span>
+### <span>Less Coffee</span> <span>2020 -- present</span>
 
-* Created Less Coffee - a personal website built with Hugo to publish a resumé and occasional articles.
-* Implemented an automatic deployment pipeline using GitHub Actions and AWS S3.
-* Secured static website with HTTPS using AWS CloudFront and Route 53.
+Less Coffee is a personal website used to publish a web resumé and a project
+portfolio. It is a static site hosted on S3, served over HTTPS using CloudFront.
+It is deployed automatically via a GitHub Action which executes on any commit
+to the master git branch.
 
 ### <span>Tetra</span> <span>Deputy, 2019</span> {#tetra}
 
-* Created a **Lambda** application to pre-process incoming CSV files using a series of transformations (e.g. slice rows, apply titlecase to column, merge two columns, omit a row depending on value)
-* Overcame a drawback with Tesseract integration from external HR systems (e.g. _Frontier Chris21_). Incoming CSV files were incompatible with Tesseract until they were transformed using Tetra.
-* Overcame an issue with the development agility of Tesseract by separating Tetra features into an independent service.
+Tetra is a service to pre-process incoming CSV files using a sequence of
+standard transformations, such as slice rows, apply title case, convert date 
+format, or merge two columns.
 
-[Tetra on GitHub](https://github.com/Arizard/tetra)[^tetra-processor-private]
+### <span>ScriptEngine 1 and 2</span> <span>2019</span>
 
-### <span>ScriptEngine 1 and 2</span> <span>2019 to present</span>
+An online platform for instructors to organise group fitness class 
+plans (scripts) by following a specific format.
 
-* Created an online platform for instructors to organise group fitness class plans (scripts) by following a specific format.
-* Implemented the user interface using **React** with the `blueprintjs` component library, with Firebase as the authentication provider.
-* Implemented the application middleware using **Go** and Cloud Firestore as the database provider.
-* Rewrite from scratch using **TypeScript** in V2, adding improvements to appearance and drag-and-drop using `react-beautiful-dnd`.
+* Implemented the user interface using React with the blueprintjs component 
+  library, with Firebase as the authentication provider.
+* Implemented the application middleware using Go and Cloud Firestore as the 
+  database provider.
+* Rewrite from scratch using TypeScript in V2, adding improvements to appearance 
+  and drag-and-drop using react-beautiful-dnd.
 
-### <span>Video Game Modding</span> <span>2016 to 2018</span> {#gmod}
+### <span>Video Game Modding</span> <span>2016 -- 2018</span> {#gmod}
 
-Created and published Deathrun Neue, RedactedHub, bodyGroupr, PerkShop, doorSkin and doorHandle addons for Garry’s Mod. Written in Lua, available on GitHub and [GmodStore](https://www.gmodstore.com/teams/18/addons).
+Created and published Deathrun Neue, RedactedHub, bodyGroupr, PerkShop, doorSkin 
+and doorHandle addons for Garry’s Mod. Written in Lua, available on GitHub and 
+[GmodStore](https://www.gmodstore.com/teams/18/addons).
 
 ## Education
 
 ### <span>Bachelor of Engineering (Honours)</span> <span>2019, Major in Telecommunications Engineering</span> {#degree}
-
 
 **Inline DDoS Detection for SMB**
 
