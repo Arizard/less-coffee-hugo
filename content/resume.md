@@ -183,7 +183,7 @@ and doorHandle addons for Garry’s Mod. Written in Lua, available on GitHub and
 
 ## Education
 
-### <span>Bachelor of Engineering (Honours)</span> <span>2019, Major in Telecommunications Engineering</span> {#degree}
+### <span>Bachelor of Engineering (Honours) in Telecommunications Engineering</span> <span>2015 -- 2018</span> {#degree}
 
 **Inline DDoS Detection for SMB**
 
