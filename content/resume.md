@@ -38,9 +38,7 @@ implementation of service oriented architecture projects.
 
 ## Professional Experience
 
-### <span>Deputy</span> <span>Sep 2019 -- present</span> {#deputy}
-
-Software Engineer (Implementations) within Customer Experience (CX).
+### <span>Software Engineer - Implementations at Deputy</span> <span>Sep 2019 -- present</span> {#deputy}
 
 Provide professional services to Deputy enterprise customers. Custom engineering 
 work within the Deputy application, bug fixes, and response to support 
@@ -52,12 +50,11 @@ incidents.
 * Developed Deputy integrations using _AWS Lambda_ and _Go_ (refer to Projects section).
 * Technical advisory, solution design and implementation engineer for Qantas GroundStar integration and Compass Australia Employee Sync.
 * Elicit requirements and customer pain points for Compass Australia engineering support.
+* Implemented solutions with vanilla JS, Vue or Go, often hosted in AWS.
 
 [Visit Deputy](https://deputy.com)
 
-### <span>Spriggy</span> <span>Mar 2019 -- Jul 2019</span> {#spriggy}
-
-Junior platform developer working on the Spriggy Pocket Money microservices.
+### <span>Junior Platform Developer at Spriggy</span> <span>Mar 2019 -- Jul 2019</span> {#spriggy}
 
 * Reduced technical debt and improved maintainability of the Spriggy platform by 
   designing modular and testable code based on the Clean Architecture model and 
@@ -66,12 +63,13 @@ Junior platform developer working on the Spriggy Pocket Money microservices.
   daemon which rate-limited the number of transactions processed per minute.
 * Improved the end user experience for Spriggy users by fixing 5XX errors in the 
   Spriggy platform.
+* Implemented platform features in Python.
 
 [Visit Spriggy](https://spriggy.com.au/)
 
-### <span>Singtel Optus</span> <span>Jul 2015 -- Mar 2019</span> {#optus}
+### <span>Macquarie University Cadet Engineer at Singtel Optus</span> <span>Jul 2015 -- Mar 2019</span> {#optus}
 
-Macquarie University Cadet Engineer. Completed two rotations per year in 
+Completed two rotations per year in 
 different teams within Optus Networks.
 
 * Visualised network topology by building an interactive network telemetry web 
