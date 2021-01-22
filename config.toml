@@ -1,109 +1,44 @@
 baseURL = "https://less.coffee/"
-languageCode = "en-us"
 title = "Less Coffee"
-theme = "rubricism"
-enableRobotsTXT = true
-paginate = 8 # Set the number of posts to show before overflowing to the next page.
-summaryLength = 10 # Configure how long the post summary should be on the homepage.
+theme = "etch-less-coffee"
+languageCode = "en-US"
 enableInlineShortcodes = true
-
-# Add your Google Analytics identifier: UA-XXXXXXXX-X
-googleAnalytics = "UA-172481330-1"
-
-# Add your Disqus shortname here.
-disqusShortname = ""
-
-[taxonomies]
-  tag = "tags"
-  tech = "tech"
-
-[author]
-	name = "Arie Oldman"
-
-# Set to false to disallow raw HTML in markdown files
-[markup.goldmark.renderer]
-    unsafe = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
 
 [params]
-  math = true
-  description = "Software Engineering, Fitness and Humans."
-  subTitle = "by Arie Oldman"
-  # Set enableKofi to true to enable the Ko-fi support button. Add your Ko-fi ID to link to your account.
-  showReadMore = true
-  enableKofi = false
-  mainSections = ["posts", "projects"]
-  talkyardServerUrl = "https://comments-for-less-coffee.talkyard.net"
-  talkyardScriptUrl = "https://c1.ty-cdn.net/-/talkyard-comments.min.js"
-  # Add links to your accounts. Remove the ones you don't want to include.
-  linkedin = "https://www.linkedin.com/in/arieoldman/"
-  github = "https://github.com/Arizard"
+  description = "I'm Arie Oldman, a software engineer from Sydney, Australia."
+  copyright = "Copyright © 2020 Arie Oldman"
+  dark = "auto"
+  highlight = true
 
-  additionalHeadPartial = "additional_head"
-  socialBarPartial = "socialbar"
+[menu]
+  [[menu.main]]
+    identifier = "resume"
+    name = "resume"
+    title = "resume"
+    url = "/resume"
+    weight = 1
+  [[menu.main]]
+        identifier = "cv"
+        name = "cv"
+        title = "cv"
+        url = "/cv"
+        weight = 5
+  [[menu.main]]
+      identifier = "contact"
+      name = "contact"
+      title = "contact"
+      url = "/contact"
+      weight = 10
 
+[permalinks]
+  posts = "/:title/"
 
-# Menu links along the sidebar navigation.
-[[menu.main]]
-	identifier = "index"
-	name = "Home"
-	url = "/"
-	weight = 5
+[markup.goldmark.renderer]
+  # Allow HTML in Markdown
+  unsafe = true
 
-[[menu.main]]
-	identifier = "posts"
-	name = "Posts"
-	url = "/posts/"
-	weight = 10
+  [markup.tableOfContents]
+    ordered = true
 
-[[menu.main]]
-	identifier = "projects"
-	name = "Projects"
-	url = "/projects/"
-	weight = 15
-
-[[menu.main]]
-	identifier = "notes"
-	name = "Notes"
-	url = "/notes/"
-	weight = 20
-
-#[[menu.main]]
-#	identifier = "tags"
-#	name = "Find by Tag"
-#	url = "/tags/"
-#	weight = 30
-#
-#[[menu.main]]
-#	identifier = "tech"
-#	name = "Find by Tech"
-#	url = "/tech/"
-#	weight = 40
-
-[[menu.main]]
-	identifier = "about"
-	name = "About"
-	url = "/about/"
-	weight = 50
-
-# Privacy configurations: https://gohugo.io/about/hugo-and-gdpr/
-[privacy]
-  [privacy.disqus]
-    disable = false
-  [privacy.googleAnalytics]
-    anonymizeIP = true
-    disable = false
-    respectDoNotTrack = true
-    useSessionStorage = false
-  [privacy.instagram]
-    disable = false
-    simple = false
-  [privacy.twitter]
-    disable = false
-    enableDNT = false
-    simple = false
-  [privacy.vimeo]
-    disable = false
-    simple = false
-  [privacy.youtube]
-    disable = false
-    privacyEnhanced = true

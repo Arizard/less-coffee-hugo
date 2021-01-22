@@ -1,3 +1,0 @@
-{{ $custom_style := resources.Get "scss/lesscoffee.scss" | toCSS | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $custom_style.Permalink }}"/>
-

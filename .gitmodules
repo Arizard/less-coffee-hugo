@@ -1,1 +1,7 @@
 
+[submodule "themes/etch"]
+	path = themes/etch
+	url = https://github.com/LukasJoswiak/etch.git
+[submodule "themes/etch-less-coffee"]
+	path = themes/etch-less-coffee
+	url = https://github.com/Arizard/etch
