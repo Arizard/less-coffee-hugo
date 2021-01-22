@@ -1,0 +1,23 @@
+{
+  "name": "less-coffee-hugo",
+  "version": "1.0.0",
+  "description": "This is the source code for the Less Coffee website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pdf": "",
+    "serve": "hugo serve -D",
+    "serve-prod": "hugo serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arizard/less-coffee-hugo.git"
+  },
+  "author": "Arie Oldman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arizard/less-coffee-hugo/issues"
+  },
+  "homepage": "https://github.com/Arizard/less-coffee-hugo#readme",
+  "dependencies": {}
+}
