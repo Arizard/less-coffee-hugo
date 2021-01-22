@@ -16,7 +16,7 @@ Software engineer experienced in writing Go applications. Proven ability to work
 
 Deputy offers a workforce management SaaS product and raised A$111m in their most recent funding round.
 
-* Major contributor to design and implementation of custom engineering work for Deputy's strategic partnership with Bunnings Australia and Bunnings New Zealand, which ensures over 50,000 users are paid correctly according to industry awards, and generates approximately A$2m AUD annual revenue.
+* Major contributor to design and implementation of custom engineering work for Deputy's strategic partnership with Bunnings Australia and Bunnings New Zealand, which ensures over 50,000 users are paid correctly according to industry awards, and generates approximately A$2m annual revenue.
 * Responsible for design, implementation, deployment and maintenance of integration service for Qantas, which aggregates employee scheduling data across 9 Deputy accounts and exports to Qantas internal systems via REST API. Enables Qantas staff to have real-time updates of scheduling information in their _GroundStar_ system.
 * Provide support to Deputy strategic partner Compass Australia to elicit requirements for custom work and identify areas of improvement in the existing service. Design and implement features and fixes.
 * Design and implement internal tooling to increase developer productivity and enhance communication between engineers and consultants.
