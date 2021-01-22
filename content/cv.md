@@ -5,33 +5,7 @@ author: Arie Oldman
 toc: false
 ---
 
-<style>
-
-h3 {
-  display: flex;
-  justify-content: space-between;
-}
-
-</style>
-
-<span class="resume-cv">
-
-<span id="contact-details">
-
-<strong>Contact</strong>
-
-* 🏡 Sydney, NSW
-* 📧 arie.oldman@vhs7.tv
-* 🌏 [Arizard on GitHub](https://github.com/Arizard)
-
-</span>
-
-<span class="has-text-centered">
-
-A Sydney-based software engineer experienced in discovery, design and
-implementation of service oriented architecture projects.
-
-</span>
+Sydney, Australia<br>arie.oldman@vhs7.tv<br>0432&nbsp;934&nbsp;970
 
 ## Professional Experience
 
