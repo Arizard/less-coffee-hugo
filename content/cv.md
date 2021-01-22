@@ -18,6 +18,8 @@ h3 {
 
 <span id="contact-details">
 
+<strong>Contact</strong>
+
 * 🏡 Sydney, NSW
 * 📧 arie.oldman@vhs7.tv
 * 🌏 [Arizard on GitHub](https://github.com/Arizard)
