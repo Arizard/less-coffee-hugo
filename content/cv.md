@@ -1,6 +1,6 @@
 ---
 title: "Arie Oldman - CV"
-draft: false
+draft: true
 author: Arie Oldman
 toc: false
 ---

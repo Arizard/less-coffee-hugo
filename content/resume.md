@@ -1,6 +1,6 @@
 ---
 title: "Arie Oldman - Resume"
-draft: false
+draft: true
 author: Arie Oldman
 toc: false
 ---
