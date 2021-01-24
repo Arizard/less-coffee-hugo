@@ -1,12 +1,11 @@
 ---
 title: "Arie Oldman - Resume"
-draft: false
+draft: true
 author: Arie Oldman
 toc: false
 ---
 
 <style>
-
 h3 {
   display: flex;
   justify-content: space-between;
