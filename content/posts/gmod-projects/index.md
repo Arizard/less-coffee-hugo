@@ -39,7 +39,7 @@ Sauke is a projectile weapon free-for-all deathmatch gamemode. Players use rocke
 Beautiful custom maps were created for this gamemode by Zelpa.
 
 {{< figure src="sauke-01.png" width="525px" caption="Sauke FAQ and welcome pane" >}}
-{{< figure src="sauke-03.jpg" width="525px" caption="sk_dawn, by Zelpa" >}}
+{{< figure src="sauke-03.jpg" width="525px" caption="sk_dawn, by me" >}}
 {{< figure src="sauke-04.jpg" width="525px" caption="sk_dusk, by Zelpa" >}}
 
 ## bodyGroupr (Paid)
