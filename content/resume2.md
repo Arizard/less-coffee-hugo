@@ -8,7 +8,7 @@ Sydney, Australia<br>arie.oldman@vhs7.tv<br>0432&nbsp;934&nbsp;970
 
 ## Summary
 
-Software engineer experienced in writing Go applications. Proven ability to work with frontend frameworks such as Vue and React. Extensive experience in designing and building in-house software and systems. Strong background in engineering for professional services. Good technical and non-technical communication skills. Confident in public speaking and presentations. Bachelor of Engineering (Honours), majoring in Telecommunications Engineering.
+Software engineer experienced in writing Go applications. Ability to work with frontend frameworks such as Vue and React. Extensive experience in designing and building in-house software and systems. Strong background in engineering for professional services. Good technical and non-technical communication skills. Confident in public speaking and presentations. Bachelor of Engineering (Honours), major in Telecommunications Engineering.
 
 ## Experience
 
