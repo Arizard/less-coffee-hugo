@@ -4,7 +4,7 @@ date: 2021-01-25T21:45:50+11:00
 draft: false 
 ---
 
-When I was in highschool and early univeristy, I loved the game [Garry's Mod](https://store.steampowered.com/app/4000/Garrys_Mod/). It was the community where I worked on my first major personal projects - some of which generated my first ever income. Many are still in use!
+When I was in high school and early university, I loved the game [Garry's Mod](https://store.steampowered.com/app/4000/Garrys_Mod/). It was the community where I worked on my first major personal projects - some of which generated my first ever income. Many are still in use!
 
 The following is a collection of my works spanning 2014 -- 2018.
 
@@ -63,7 +63,7 @@ Features:
 
 [GitHub](https://github.com/Arizard/redactedhub)
 
-{{< figure src="redactedhub-01.jpg" width="525px" caption="RedactedHub inventory pane, where players can manage their ingame belongings." >}}
+{{< figure src="redactedhub-01.jpg" width="525px" caption="RedactedHub inventory pane, where players can manage their in-game belongings." >}}
 
 ## doorHandle (Paid)
 
