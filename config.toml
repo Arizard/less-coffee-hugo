@@ -17,7 +17,7 @@ pygmentsUseClasses = true
     identifier = "resume"
     name = "resume"
     title = "resume"
-    url = "/resume3"
+    url = "/resume"
     weight = 1
   [[menu.main]]
       identifier = "contact"

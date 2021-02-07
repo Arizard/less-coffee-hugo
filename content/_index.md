@@ -7,7 +7,7 @@ Hi there, my name is Arie Oldman.
 I'm a software engineer at [Deputy](https://deputy.com), developing 
 integrations and other custom work for enterprise customers.
 
-[**More about me 👉**]({{< relref resume3.html >}})<br>
+[**More about me 👉**]({{< relref resume >}})<br>
 
 ### Links
 
