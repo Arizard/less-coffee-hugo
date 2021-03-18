@@ -2,10 +2,10 @@
 title: "Home"
 ---
 
-Hi there, my name is Arie Oldman. 
+Hi, I'm Arie. 
 
-I'm a software engineer at [Deputy](https://deputy.com), developing 
-integrations and other custom work for enterprise customers.
+I'm a software engineer at [Deputy](https://deputy.com), simplifying shift work
+for businesses and employees around the world.
 
 [**More about me 👉**]({{< relref resume >}})<br>
 
