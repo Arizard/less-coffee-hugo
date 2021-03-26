@@ -17,7 +17,8 @@ components.
 Crucial for building large systems which are resilient
 during changing requirements.
 
-**UPDATE**: 
+**UPDATE**: After reading some opinions from other engineers about this book, it
+might be mostly BS - at least the SOLID parts. Putting this one down for now. 
 
 ### Microservices Patterns (Chris Richardson)
 
