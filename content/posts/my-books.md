@@ -17,6 +17,8 @@ components.
 Crucial for building large systems which are resilient
 during changing requirements.
 
+**UPDATE**: 
+
 ### Microservices Patterns (Chris Richardson)
 
 <span class="status orange">in progress</span>
@@ -61,6 +63,10 @@ Henderson puts forward a new framework for the way businesses should operate - a
 
 This book has shaped the way I think about corporations, and now I believe all businesses have a social and environmental duty of care - towards employees, customers, suppliers, and the planet.
 
+### Inspired (Marty Cagan)
+
+<span class="status green">finished reading</span>
+
 ## For Personal Development
 
 ### Atomic Habits (James Clear)
@@ -73,11 +79,19 @@ Great book if you're looking to start building routines into your day.
 
 ### Ikigai (Héctor García and Francesc Miralles)
 
-<span class="status orange">in progress</span>
+<span class="status green">finished reading</span>
 
 An *ikigai* is your reason for getting out of bed in the morning. This book investigates the lifestyles of some of Japan's oldest human residents, and in particular, tries to determine what actions, beliefs and values these individuals hold which allow them to live long and happy lives. 
 
 This comforting book inspires readers to prioritise healthy habits, shrug off the small stuff, and find ones own purpose.
+
+### Dare To Lead (Brené Brown) 
+
+<span class="status green">finished reading</span>
+
+### Never Split The Difference (Chris Voss)
+
+<span class="status orange">in progress</span>
 
 ## Fiction
 
