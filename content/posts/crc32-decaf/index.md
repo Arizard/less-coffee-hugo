@@ -16,14 +16,14 @@ Decaf has no `import`, `require` or `include`. There are no custom data types, d
 
 The reason for these limitations is that Decaf is first transpiled into XML (or DeXML as it is known within the company). So really, the PHP application is reading XML to execute a series of commands -- this is in contrast to other languages which actually get compiled.
 
-Is it possible to implement a CRC-32 algorithm in Decaf, despite all the limitations of the language? Answer: Of course! In the spirit of _Deputy CX Engineering_, some workarounds are required. Read on to find out how.
+Is it possible to implement a CRC-32 algorithm in Decaf, despite all the limitations of the language? Of course! In the spirit of _Deputy CX Engineering_, some workarounds are required. Read on to find out how.
 
 ## Algorithm Summary
+
 
 ## Start With a Readable Example
 
 ## Work Around The Limitations
-
 
 We're going to need some way of converting between an array of bits and base-10 integers.
 
@@ -78,4 +78,33 @@ binaryToInt = (arrBit) ->
 
 ## Bring It All Together
 
+## Appendix A
 
+**Explanation of each function**
+
+* `crc32(strData)`
+  * generate a CRC32 hexadecimal string using input string `strData`.
+* `makeFastTable()`
+  * generate the polynomial lookup table (256 element array).
+  * only need to execute this once, manually - the lookup table is constant. I copied the result inside `crc32` as a constant.
+* `intToBinary(intA)`
+  * convert integer to an array of bits (integer 0 or 1).
+* `binaryToInt(arrBit)`
+  * convert array of bits into integer.
+* `logicalRightShift(arrBit, intShift)`
+  * perform a bitwise right-shift operation on an array of bits `arrBit` by the amount `intShift`.
+* `logicalAnd(arrBitA, arrBitB)`
+  * perform bitwise AND operation using `arrBitA` and `arrBitB`.
+* `logicalXOR(arrBitA, arrBitB)`
+  * perform bitwise XOR (exclusive-OR) operation using `arrBitA` and `arrBitB`.
+* `logicalNot(arrBitA)`
+  * perform bitwise NOT on `arrBitA`.
+* `binaryToHex(arrBit)`
+  * convert array of bits into hexadecimal number (stored as string).
+
+
+## Appendix B
+
+**Source code for crc32.coffee**
+
+[View crc32.coffee here]({{< relref crc32-source >}})
