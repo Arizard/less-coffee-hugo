@@ -1,12 +1,117 @@
 ---
-title: "Implementing CRC-32 (in Decaf, so that I suffer)"
+title: "Implementing CRC-32 in Decaf"
 date: 2021-01-30T19:24:38+11:00
-draft: true
+draft: false
 ---
 
-CRC-32 is an extremely common hashing algorithm, usually used to detect data corruption during a transmission -- one example is the use of CRC-32 to provide a CRC hash to the [Frame Check Sequence](https://en.wikipedia.org/wiki/Frame_check_sequence) in Ethernet transmissions.
+CRC-32 is a used to detect data corruption during a transmission -- one example is the use of CRC-32 to provide a CRC hash to the [Frame Check Sequence](https://en.wikipedia.org/wiki/Frame_check_sequence) in Ethernet transmissions.
 
 It is a straightforward algorithm to implement in most languages, and code samples can be easily found online.
+
+The challenge is to implement in a high-level language which does not come with bitwise abstractions!
+
+You may ask, why would I spend time implementing something like this, writing an article to go with it, all in a language nobody will ever use or even hear of? The answer is because I can[^reason]. What are you, the reader, going to do? Call the software police? Call my _boss_? Not likely.
+
+
+
+## Algorithm Summary
+
+1. Start by generating the _lookup table_ (or _fast table_).
+    * Create an array of length 256 to store the _table_.
+    * Iterate over each element of the _table_ and note the _index_.
+        * Perform logical right shift on the _index_ to get _right shifted index_.
+        * (In binary) if the value of the 1s column in the _index_ is 1:
+        * Then, perform logical XOR on the _right shifted index_ with the magic value `0xEDB88320` to get the _XORed index_.
+        * Update the current element of _table_ with the _XORed index_.
+    * Return the filled the 256-element _table_.
+    * **Notice that the result of this is constant! It only needs to be generated once. Or not at all, as long as you can find a it on the internet.**
+2. Take the _input_ as a string of 8-bit symbols.
+3. Set the _crc value_ as 0.
+4. For each _symbol_ in the _input_
+    * Truncate (mask) the _crc value_ by setting the upper 24 bits to 0 (just like the inverse of a `/8`, if you have a computer networks background).
+    * Logical XOR the _symbol_ with the truncated _crc value_.
+    * Use this value as the index in the _lookup table_. Get the value.
+    * Right shift the original _crc value_ by 8 bits.
+    * Set the _crc value_ to be the logical XOR of the _lookup table_ value and the right-shifted original _crc value_.
+    * **This way, each _symbol_ changes the _crc value_.**
+5. Once all symbols are processed from _input_, return the logical NOT of the _crc value_
+
+Phew! If you're confused at this point, so am I. Stay with me, code samples up next.
+
+### Wait, what's with this "magic value" 0xEDB88320?
+
+The value 0xEDB88320 is actually hexadecimal value for a _generator polynomial_ which was mathematically determined[^determined] to optimise error detection, compatibility with hardware, and performance during calculation of the CRC-32 checksum. 
+
+The procedure above where the _lookup table_ is generated is actually mathematically equivalent taking a polynomial function `g(x)` and calculating the each element of the array as `g(current index)`.
+
+The "magic value" is a way to store this polynomial as a constant, and then generate the values for the _lookup table_ using a set of bitwise operations.
+
+## Implemented in Decaf
+
+Here's the main `crc32` function (with the _lookup table_ truncated for brevity):
+
+```coffeescript
+crc32 = (strData) ->
+  arrFastTable = [
+    0, 1996959894, 3993919788, 
+    # ... 250 values omitted ...  
+    3272380065, 1510334235, 755167117
+  ]
+
+  arrBitZero = intToBinary({intA: 0})
+  arrBit24Zeros = [
+    0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,
+    1,1,1,1,1,1,1,1,
+  ]
+
+  arrCRCBit = logicalNot({arrBitA: arrBitZero})
+  arrOrd = []
+  intLength = length({var: strData})
+  intIndex = 0
+  while intIndex < intLength
+    strChar = string({function: "substr", input: strData, arg1: intIndex, arg2: 1})
+    strOrd = string({function: "ord", input: strChar})
+    arrOrd[intIndex] = strOrd
+    intIndex = intIndex + 1
+
+  for intOrd in arrOrd
+    arrOrdBit = intToBinary({intA: intOrd})
+    arrCRCBitTruncated = logicalAnd({arrBitA: arrCRCBit, arrBitB: arrBit24Zeros})
+    arrCRCXOROrd = logicalXOR({arrBitA: arrOrdBit, arrBitB: arrCRCBitTruncated})
+    intCRCXOROrd = binaryToInt({arrBit: arrCRCXOROrd})
+    intFastTableValue = arrFastTable[intCRCXOROrd]
+    arrFastTableValue = intToBinary({intA: intFastTableValue})
+    arrCRCRightShift8 = logicalRightShift({arrBit: arrCRCBit, intShift: 8})
+    arrCRCBit = logicalXOR({arrBitA: arrFastTableValue, arrBitB: arrCRCRightShift8})
+
+  arrCRCBit = logicalNot({arrBitA: arrCRCBit})
+
+  return binaryToHex({arrBit: arrCRCBit})
+```
+
+You might notice that in order to process integers in binary, they are converted
+to arrays of bits. All the "logical" functions will operate on arrays of bits.
+
+* This maintains the correct length for each value.
+* This also avoids constant conversion between binary and base-10.
+
+Yes, I also wrote a bunch of bitwise abstractions to go with this, and make the code a bit easier to follow. Will anyone ever need these abstractions? Maybe, for IP addresses or something. If you know any applications of bitwise operations which apply to workforce management, then please [contact me]({{< relref contact >}}).
+
+### Validation
+
+The following table shows a few validations of crc32.coffee, which has been compared against [crc32.online](https://crc32.online/) which uses the same _magic value_.
+
+| Input | crc32.coffee | crc32.online |
+|---|---|---|
+|Hello World|4a17b156|4a17b156|
+|Arie is epic|def989f5|def989f5|
+|[The script of Bee Movie](https://web.njit.edu/~cm395/theBeeMovieScript/)|1ec6c44a (instant)| timeout :( |
+
+### Performance
+
+This is super slow (>1s)! It has to perform a lot of looping and string splitting. For this reason, it was never used in production.
 
 ## You Haven't Heard of Decaf?
 
@@ -18,12 +123,7 @@ The reason for these limitations is that Decaf is first transpiled into XML (or 
 
 Is it possible to implement a CRC-32 algorithm in Decaf, despite all the limitations of the language? Of course! In the spirit of _Deputy CX Engineering_, some workarounds are required. Read on to find out how.
 
-## Algorithm Summary
-
-
-## Start With a Readable Example
-
-## Work Around The Limitations
+<!-- ## Work Around The Limitations
 
 We're going to need some way of converting between an array of bits and base-10 integers.
 
@@ -75,8 +175,7 @@ binaryToInt = (arrBit) ->
   return intInt
 
 ```
-
-## Bring It All Together
+ -->
 
 ## Appendix A
 
@@ -108,3 +207,12 @@ binaryToInt = (arrBit) ->
 **Source code for crc32.coffee**
 
 [View crc32.coffee here]({{< relref crc32-source >}})
+
+## References
+
+* [CRC-32 (OSDev Wiki)](https://wiki.osdev.org/CRC32)
+* [Cyclic Redundancy Check](https://en.wikipedia.org/wiki/Cyclic_redundancy_check)
+
+[^reason]: The original reason for creating this in Decaf was that I needed to hash some environment variable names because the database field only accepted 32 characters. At the time, there was a way to generate an MD5 checksum, but the implementation was broken.
+
+[^determined]: https://en.wikipedia.org/wiki/Cyclic_redundancy_check#Designing_polynomials

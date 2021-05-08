@@ -92,11 +92,9 @@ makeFastTable = () ->
       arrAnd = logicalAnd({arrBitA: arrI, arrBitB: arr0001})
       intAnd = binaryToInt({arrBit: arrAnd})
 
+      arrI = logicalRightShift({arrBit: arrI, intShift: 1})
       if intAnd == 1
-        arrI = logicalRightShift({arrBit: arrI, intShift: 1})
         arrI = logicalXOR({arrBitA: arrI, arrBitB: arr0xEDB88320})
-      else
-        arrI = logicalRightShift({arrBit: arrI, intShift: 1})
     arrFastTable[intIndex] = binaryToInt({arrBit: arrI})
 
   return arrFastTable
