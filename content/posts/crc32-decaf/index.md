@@ -103,7 +103,7 @@ Yes, I also wrote a bunch of bitwise abstractions to go with this, and make the 
 
 The following table shows a few validations of crc32.coffee, which has been compared against [crc32.online](https://crc32.online/) which uses the same _magic value_.
 
-| Input | crc32.coffee | crc32.online |
+| Input | crc32.online | crc32.coffee |
 |---|---|---|
 |Hello World|4a17b156|4a17b156|
 |Arie is epic|def989f5|def989f5|
