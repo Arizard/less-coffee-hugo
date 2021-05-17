@@ -94,6 +94,10 @@ This comforting book inspires readers to prioritise healthy habits, shrug off th
 
 <span class="status orange">in progress</span>
 
+### Quiet: The Power of Introverts in a World That Can't Stop Talking (Susan Cain)
+
+<span class="status orange">in progress</span>
+
 ## Fiction
 
 ### 20,000 Leagues Under The Sea (Jules Verne)
