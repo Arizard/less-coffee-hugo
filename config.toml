@@ -8,7 +8,7 @@ pygmentsUseClasses = true
 
 [params]
   description = "Arie Oldman is a software engineer from Sydney, Australia."
-  copyright = "Copyright © 2021 Arie Oldman."
+  copyright = ""
   dark = "auto"
   highlight = true
 
