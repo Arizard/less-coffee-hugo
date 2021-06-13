@@ -1,7 +1,7 @@
 ---
 title: "Sight Words Generator"
 date: 2021-06-13T15:41:57+10:00
-draft: true
+draft: false
 ---
 
 <!-- https://dcpcqtbsxy.us-east-1.awsapprunner.com/sight-words-generate -->
