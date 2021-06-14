@@ -76,7 +76,7 @@ Your sight words are listed below, and will be used to generate the worksheets:
 
 <p id="sw-list" style="border: 1px solid grey; padding: 4px;"></p>
 
-## References
+## Resources
 
 * [Super Coloring](http://www.supercoloring.com/) -- Free printable colouring sheets.
 * [NSW Foundation Font (unofficial)](https://www.fontspace.com/nsw-font-f28230) -- Handwriting font, freeware, unofficial version of the *NSW/ACT Foundation* font.
