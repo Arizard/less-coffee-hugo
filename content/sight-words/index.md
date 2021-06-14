@@ -74,5 +74,22 @@ Enter sight words, one per line. **Tip:** the generator works better with 10 or 
 
 Your sight words are listed below, and will be used to generate the worksheets:
 
-<p id="sw-list"></p>
+<p id="sw-list" style="border: 1px solid grey; padding: 4px;"></p>
+
+## References
+
+* [Super Coloring](http://www.supercoloring.com/) -- Free printable colouring sheets.
+* [NSW Foundation Font (unofficial)](https://www.fontspace.com/nsw-font-f28230) -- Handwriting font, freeware, unofficial version of the *NSW/ACT Foundation* font.
+
+## Technical Information
+
+* Language: Go (backend) and Javascript (frontend)
+* Deployment: Docker, AWS ECR, AWS AppRunner
+* Packages: 
+    * github.com/nfnt/resize
+    * github.com/nu7hatch/gouuid
+    * github.com/phpdave11/gofpdi 
+    * github.com/pkg/errors 
+    * github.com/rs/cors 
+    * github.com/signintech/gopdf
 
