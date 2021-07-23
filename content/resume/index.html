@@ -36,7 +36,7 @@ draft: false
     width: 100%;
     height: 1px;
     margin: .5cm 0 .5cm 0;
-    background-color: #313a3d;
+    background-color: #FF4757;
   }
 
   .resume .indent {
@@ -53,6 +53,17 @@ draft: false
 
   @media print {
     header, footer { display: none !important; }
+    body {
+      width: 1050px;
+    }
+  }
+
+  .resume-accent-color {
+    color: #FF4757;
+  }
+
+  .resume h4 {
+    color: #FF4757;
   }
 
   th, td {
@@ -64,9 +75,9 @@ draft: false
   <div class="has-simple-margins has-simple-padding">
     <div id="contact" class="has-text-centered full-width">
       <p>
-      <h3>Arie Oldman</h3><br>
-      <span>Sydney, Australia</span><br>
-      <span>arie.oldman@vhs7.tv</span><br>
+      <h3 class="resume-accent-color">Arie Oldman</h3>
+      <span>Sydney, Australia</span><br/>
+      <span>arie.oldman@vhs7.tv</span><br/>
       <span>0432&nbsp;934&nbsp;970</span>
       </p>
     </div>
@@ -76,11 +87,10 @@ draft: false
     <div id="skills" class="full-width">
       <h4>Major Qualifications</h4>
       <ul>
-        <li>Created cloud based service oriented systems using Go and Javascript.</li>
-        <li>Ability to work within agile teams under minimal supervision.</li>
-        <li>Excellent communication skills, including the production of
-          technical documentation.</li>
-        <li>Bachelor of Engineering (Honours), major in Telecommunications Engineering.</li>
+        <li>Create and maintain service oriented systems written in Go, Javascript and PHP.</li>
+        <li>Upgrade existing applications to be more secure, performant and reliable, in line with the Twelve-Factor App methodology.</li>
+        <li>Mentor and train junior engineers and interns, explaining complex ideas in a simple way.</li>
+        <li>Produce technical documentation, including how-to guides, tutorials, and references documents.</li>
       </ul>
     </div>
 
@@ -96,24 +106,37 @@ draft: false
             <td class="has-text-right no-padding">Sydney</td>
           </tr>
           <tr>
-            <td class="no-padding"><strong>Software Engineer (Implementations)</strong></td>
-            <td class="has-text-right no-padding">Sep. 2019 to present</td>
+            <td class="no-padding"><strong>Software Engineer (Compliance)</strong></td>
+            <td class="has-text-right no-padding">May 2021 to present</td>
           </tr>
         </table>
       </div>
       <ul>
-        <li>Generated and supported revenue streams by creating plug-ins for
-          Deputy's strategic partners.</li>
-        <li>Launched cloud services written in Go and JavaScript as
-          platform integration middleware.</li>
-        <li>Advised performance and architecture considerations for major
-          engineering projects.</li>
-        <li>Increased developer productivity by building internal tools.</li>
-        <li>Improved communication between teams by creating technical documentation.</li>
-        <li>Mentored team members to decrease the time taken for them to start
-          adding value.</li>
-        <li>Reviewed technical tests to assist the recruitment of valuable
-          engineering candidates.</li>
+        <li>Refactor API client and resolve implicit dependency between PHP monolith and Go web service, in order to deliver the Agreed Hours feature to premium-tier customers.</li>
+        <li>Implement JWT authentication with resource-based access control to secure the Compliance webservice (Go).</li>
+        <li>Diagnose and resolve UI bugs in Deputy's Vue2 and Vue3 frontends.</li>
+        <li>Diagnose and resolve issues in Shift Pay Calculation logic to ensure Deputy calculates correct pay rates for around 1 million employees.</li>
+      </ul>
+
+      <div class="indent">
+        <table class="full-width no-padding">
+          <tr>
+            <td class="no-padding">Deputy</td>
+            <td class="has-text-right no-padding">Sydney</td>
+          </tr>
+          <tr>
+            <td class="no-padding"><strong>Software Engineer (Implementations)</strong></td>
+            <td class="has-text-right no-padding">Sep. 2019 to May 2021</td>
+          </tr>
+        </table>
+      </div>
+      <ul>
+        <li>Advise performance and architecture decisions for major engineering projects (Bunnings,  Qantas).</li>
+        <li>Enforce strict separation of config and code — enabling non-technical team members to change configuration — by creating Vue SPAs (Bunnings, Environment Variable Custom App).</li>
+        <li>Independently direct project life cycle (requirements, design, implementation, maintenance) of the Deputy-Groundstar integration (Qantas).</li>
+        <li>Upgrade distributed serverless system to deliver Deputy employee sync integration (Tesseract).</li>
+        <li>Create and launch internal tooling to improve daily developer productivity (Precaf).</li>
+        <li>Review technical tests to assist the recruitment of engineers.</li>
       </ul>
 
       <div class="indent">
@@ -129,18 +152,19 @@ draft: false
         </table>
       </div>
       <ul>
-        <li>Improved reliability and uptime of the Spriggy platform by creating
-          a service to rate-limit transaction processing.</li>
-        <li>Implemented features and repaired defects in the Spriggy platform.</li>
+        <li>Improve reliability and availability of the Spriggy platform by using rate-limiting to prevent system overload due to high message volume.</li>
+        <li>Implement new Billing Period feature and repair defects in the Spriggy platform.</li>
       </ul>
     </div>
+
+    <p><strong>Prior:</strong> Cadet Engineer (2015 - 2019, Singtel Optus).</p>
 
     <span class="horizontal-rule"></span>
 
     <div id="education" class="full-width">
       <h4>Education</h4>
       <p class="indent">
-        <strong>Bachelor of Engineering (Honours) in Telecommunications Engineering</strong> (2015 to 2018)
+        <strong>Bachelor of Engineering (Honours) in Telecommunications Engineering</strong> (2015 to 2018, Macquarie University)
       </p>
     </div>
   </div>
