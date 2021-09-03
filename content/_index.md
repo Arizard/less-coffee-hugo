@@ -23,6 +23,7 @@ title: "Home"
   position: absolute;
   left: 0;
   top: -45px;
+  filter: brightness(1.25);
 }
 
 
