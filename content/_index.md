@@ -45,7 +45,7 @@ Prior to Deputy, I worked at Spriggy (Software Engineering) and Singtel Optus
 I hold a Bachelor of Engineering (Honours) in Telecommunications Engineering,
 from Macquarie University, Australia.
 
-[**Continue to resume ->**]({{< relref resume >}})<br>
+[**Continue to résumé ->**]({{< relref resume >}})<br>
 
 ### Links
 
