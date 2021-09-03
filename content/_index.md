@@ -38,7 +38,13 @@ Hi, I'm Arie.
 I'm a software engineer at [Deputy](https://deputy.com), simplifying shift work
 for businesses and employees around the world.
 
-[**More about me**]({{< relref resume >}})<br>
+Prior to Deputy, I worked at Spriggy (Software Engineering) and Singtel Optus 
+(Telecommunications Engineering). 
+
+I hold a Bachelor of Engineering (Honours) in Telecommunications Engineering,
+from Macquarie University, Australia.
+
+[**Continue to resume ->**]({{< relref resume >}})<br>
 
 ### Links
 
