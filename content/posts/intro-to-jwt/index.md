@@ -1,7 +1,7 @@
 ---
 title: "Intro to JSON Web Tokens"
 date: 2021-07-26T17:56:04+10:00
-draft: false
+draft: true
 ---
 
 ## Abstract
