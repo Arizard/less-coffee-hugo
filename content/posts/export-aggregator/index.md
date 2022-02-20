@@ -22,8 +22,8 @@ via API call and then consolidating the results in memory. To retrieve the
 result, the service can be configured to upload the output via SFTP or managed
 file transfer.
 
-In this blog post, I'll briefly cover the process we (Jack, the implementation
-consultant, and myself) took to build this, the challenges we encountered along
+In this blog post, I'll briefly cover the process we (the implementation
+consultant Jack, and myself) took to build this, the challenges we encountered along
 the way, and the end result.
 
 ## Takeoff
