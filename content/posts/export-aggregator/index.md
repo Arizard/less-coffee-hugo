@@ -21,27 +21,27 @@ via API call and then consolidating the results in memory. To retrieve the
 result, the service can be configured to upload the output via SFTP or managed
 file transfer.
 
-In this blog post, I'll briefly cover the process we took to build this, the
-challenges we encountered along the way, and the end result.
+In this blog post, I'll briefly cover the process we (Jack, the implementation
+consultant, and myself) took to build this, the challenges we encountered along
+the way, and the end result.
 
-## Project Kick-off
+## Takeoff
 
-The airline company Qantas makes heavy use of Deputy within its ground teams --
+[Qantas](https://en.wikipedia.org/wiki/Qantas) makes heavy use of Deputy within its ground teams --
 technicians, engineers, cleaners, and other staff essential to the safe
 operation of Qantas aircraft.
 
-The earliest engineering work that I produced for Qantas was called the
+The earliest engineering work that I produced for Qantas was the
 _GroundStar RealTime Roster Export_ in 2019. In brief terms, this was a button on the
-_Schedule_ tab of Deputy which a manager could use to download a formatted
+_Schedule_ tab of Deputy which would download a formatted
 plain text file containing the data for all the shifts in the upcoming week.
-This text file could be imported into GroundStar RealTime in order to sync the
-schedules between the two systems[^2-systems].
+This text file could be imported into GroundStar RealTime (scheduling system) in order to sync the
+schedules[^2-systems].
 
 Qantas were reportedly very happy with the end result. It performed exactly how
 they wanted.
 
-They were so happy that after a few months of using this feature, they asked
-(via the implementation consultant, Jack) for more.
+They were so happy that after a few months of using this feature, they asked for more.
 
 ## Scaling Out
 
@@ -51,7 +51,7 @@ The above quote is paraphrased, but it sums it up well.
 Qantas has multiple accounts, each for a different division of their ground
 teams. Simple enough, we could just install it in each account. Low complexity.
 
-> We also want automate it, so that we don't have to have someone performing
+> We also want automate it, so that we don't have someone performing
 > this procedure multiple times per day.
 
 Okay, a bit more engineering work, but we can do it.
@@ -107,13 +107,13 @@ implement the following:
 ### Over-Engineering for Other Use Cases
 
 In CX, it is discouraged to write code which can only be used by a single
-customer. Its preferred to write code which leans towards more generic,
+customer. It's preferable to write code which leans towards generic,
 covering a particular domain, while allowing configuration changes for specific
 customers.
 
 For this reason, the following design decisions were made:
 
-* The Lambda would be configured using a combination of lambda environment
+* The Lambda would be configured using a combination of Lambda environment
   variables and JSON configuration. The JSON configuration was to be stored in
   **AWS S3**. The environment variables contained the path to the configuration
   file.
@@ -124,10 +124,69 @@ For this reason, the following design decisions were made:
   environment variables for one customer. Therefore we could have two customers
   on the same Lambda, but different versions. We could also test the latest
   changes without disturbing the existing configuration.
-* 
+
+
+Thanks to these decisions, we were able to adapt the system for an American
+customer, [Au Bon Pain](https://en.wikipedia.org/wiki/Au_Bon_Pain).
+
+These decisions were partially inspired by the [12-factor app methodology](https://12factor.net/): Store config in the environment, Execute as stateless process.
+
+## Implementation
+
+The engineering work went mostly smoothly. I was able to apply what I already
+knew about Go. I also learnt a lot about Lambda, S3, and CloudWatch.
+
+Using ideas from [SOLID](), [The Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+and also [12-factor applications](https://12factor.net/) allowed rapid
+development by explicitly isolating and mocking dependencies.
+
+The system can be thought of as 4 interfaces, where the implementations are
+determined at runtime:
+
+1. The _Config Loader_, which loads configuration files. In production, this is
+   using S3 via the AWS SDK. In development, this can be substituted for a
+   different concrete implementation which reads from the local directory.
+2. The _Event Listener_, which is responsible for beginning the export procedure.
+   In production, the implementation starts a listener for CloudWatch triggers.
+   In development, it starts immediately.
+3. The _Export Generator_, which is responsible for executing API calls to the
+   Deputy accounts and combining the results. This component is typically the
+   same in production and development, because in Qantas' case, the export
+   script on the account is read-only, and there are no consequences.
+4. The _Export Submitter_ is responsible for taking the output of the Export
+   Generator and sending the result somewhere. For production, this would be to
+   submit via API to QMFT[^abp-sftp]. In development, it would write to the local
+   directory. This component also handles the encryption of the output file!
+
+{{< figure src="components.png" caption="White: interface, green: development environment implementation, amber: production implementation" >}}
+
+The impact of this decision was I could test one component in isolation by
+selecting the development implementations for the other components.
+
+## Landing
+
+Overall, the project was a success. As of writing this post, Qantas is still
+using this system to export 4 Ports spread across 3 accounts. The trigger is
+set to execute the Lambda every hour on the half hour, 24/7 -- way better than
+having a manager trigger this manually.
+
+As mentioned before, the Export Aggregator was easily adapted to support
+another customer asking for similar (yet simpler) behaviour.
+
+I had a lot of fun designing and building this with Jack. I felt that I learned
+a lot and grew as an engineer from this experience.
+
+There is only one factor I can't control. Occasionally, QMFT will fail for no
+known reason. It's confirmed it's not on Deputy's side.
+
+Can't win them all, I guess!
 
 [^2-systems]: Why have two systems? The reason is that GroundStar RealTime
 is their preferred system to handle scheduling for multiple months in
 advance, while Deputy is preferred for handling last-minute schedule changes. By blending the two
 systems together, Qantas ground teams had the benefits of far-in-advance
 scheduling and short-notice schedule changes.
+[^abp-sftp]: After launching this service for Qantas, another implementation of the Export
+Submitter was built in order to upload files via SFTP for Au Bon Pain.
+Amazingly, the implementation was straightforward, since this dependency was
+well isolated!
