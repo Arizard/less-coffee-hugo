@@ -32,7 +32,7 @@ Here is why believe Neovim, Vim and Vi are really useful: **commands are atomic,
 Say you have some code like the following:
 
 ```javascript
-function greet(name) {
+function sayHello(name) {
   console.log("Hello, " + name = "!");
 }
 ```
@@ -40,9 +40,15 @@ function greet(name) {
 To change the function name, `greet`, to something else such as `sayHello`:
 
 1. In `NORMAL` mode, move the cursor to the `g` in `greet`
-2. Press `c` for **c**hange, then `e` for **e**nd of word[^what-is-word]. This removes `greet` and switches to `INSERT` with the cursor just before `(`.
+2. Press `c` for **c**hange, then `e` for **e**nd of word. This removes `greet` and switches to `INSERT` with the cursor just before `(`.
 3. Type the new name, `sayHello`.
 4. Press `Esc` to return to `NORMAL` mode.
+
+<video width="100%" controls autoplay>
+  <source src="neovim-sayHello.webm" type="video/webm" />
+</video>
+
+Perhaps this sounds like a lot stuff to learn, compared to point-and-click graphical IDEs. I disagree.
 
 ## Performance in a monolith codebase
 
