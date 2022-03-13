@@ -183,6 +183,7 @@ known reason. It's confirmed it's not on Deputy's side.
 
 Can't win them all, I guess!
 
+[^airline]: Name omitted.
 [^2-systems]: Why have two systems? The reason is that GroundStar RealTime
 is their preferred system to handle scheduling for multiple months in
 advance, while Deputy is preferred for handling last-minute schedule changes. By blending the two
