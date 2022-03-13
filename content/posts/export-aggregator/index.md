@@ -28,18 +28,19 @@ the way, and the end result.
 
 ## Takeoff
 
-[Qantas](https://en.wikipedia.org/wiki/Qantas) makes heavy use of Deputy within its ground teams --
+Well-known Australian Airline[^airline] (I will refer to this company as Airline)
+makes heavy use of Deputy within its ground teams --
 technicians, engineers, cleaners, and other staff essential to the safe
-operation of Qantas aircraft.
+operation of aircraft.
 
-The earliest engineering work that I produced for Qantas was the
+The earliest engineering work that I produced for Airline was the
 _GroundStar RealTime Roster Export_ in 2019. In brief terms, this was a button on the
 _Schedule_ tab of Deputy which would download a formatted
 plain text file containing the data for all the shifts in the upcoming week.
 This text file could be imported into GroundStar RealTime (scheduling system) in order to sync the
 schedules[^2-systems].
 
-Qantas were reportedly very happy with the end result. It performed exactly how
+Airline were reportedly very happy with the end result. It performed exactly how
 they wanted.
 
 They were so happy that after a few months of using this feature, they asked for more.
@@ -49,7 +50,7 @@ They were so happy that after a few months of using this feature, they asked for
 > We would like to use this across the rest of our Deputy accounts.
 
 The above quote is paraphrased, but it sums it up well.
-Qantas has multiple accounts, each for a different division of their ground
+Airline has multiple accounts, each for a different division of their ground
 teams. Simple enough, we could just install it in each account. Low complexity.
 
 > We also want automate it, so that we don't have someone performing
@@ -79,7 +80,7 @@ something like the following.
 * Needs to run arbitrarily frequently (frequency was not determined)
 * Creates a single file from exporting the same Port in multiple accounts.
 * Creates a single file for each Port, e.g. SYD, BNE, MEL, PER.
-* Submits each file to a specific directory in Qantas' managed file transfer,
+* Submits each file to a specific directory in Airline's managed file transfer,
   QMFT.
 
 From my experience (or perhaps inexperience, you be the judge!) I suggested we
@@ -152,7 +153,7 @@ determined at runtime:
    In development, it starts immediately.
 3. The _Export Generator_, which is responsible for executing API calls to the
    Deputy accounts and combining the results. This component is typically the
-   same in production and development, because in Qantas' case, the export
+   same in production and development, because in Airline's case, the export
    script on the account is read-only, and there are no consequences.
 4. The _Export Submitter_ is responsible for taking the output of the Export
    Generator and sending the result somewhere. For production, this would be to
@@ -166,7 +167,7 @@ selecting the development implementations for the other components.
 
 ## Landing
 
-Overall, the project was a success. As of writing this post, Qantas is still
+Overall, the project was a success. As of writing this post, Airline is still
 using this system to export 4 Ports spread across 3 accounts. The trigger is
 set to execute the Lambda every hour on the half hour, 24/7 -- way better than
 having a manager trigger this manually.
@@ -185,9 +186,9 @@ Can't win them all, I guess!
 [^2-systems]: Why have two systems? The reason is that GroundStar RealTime
 is their preferred system to handle scheduling for multiple months in
 advance, while Deputy is preferred for handling last-minute schedule changes. By blending the two
-systems together, Qantas ground teams had the benefits of far-in-advance
+systems together, Airline ground teams had the benefits of far-in-advance
 scheduling and short-notice schedule changes.
-[^abp-sftp]: After launching this service for Qantas, another implementation of the Export
+[^abp-sftp]: After launching this service for Airline, another implementation of the Export
 Submitter was built in order to upload files via SFTP for Au Bon Pain.
 Amazingly, the implementation was straightforward, since this dependency was
 well isolated!
