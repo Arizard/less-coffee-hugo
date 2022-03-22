@@ -1,7 +1,8 @@
 ---
 title: "Rebase: A Double-Edged Sword"
 date: 2022-03-22T10:53:38+11:00
-draft: true
+author: Arie
+draft: false
 ---
 
 _This is the blog post version of a presentation I made for my team at Deputy. Enjoy!_
