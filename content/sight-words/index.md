@@ -37,7 +37,7 @@ window.addEventListener("load", function() {
       submit.removeAttribute("disabled");
     }, 5000);
 
-    downloadContainer.innerHTML = "";
+    downloadContainer.innerHTML = "Generating PDF document...";
 
     fetch(url, {
       method: "POST",
