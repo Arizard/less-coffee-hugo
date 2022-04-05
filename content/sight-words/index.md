@@ -1,10 +1,8 @@
 ---
 title: "Sight Words Generator"
 date: 2021-06-13T15:41:57+10:00
-draft: true
+draft: false
 ---
-
-<!-- https://dcpcqtbsxy.us-east-1.awsapprunner.com/sight-words-generate -->
 
 <style>
 
@@ -22,7 +20,7 @@ const renderSightWordBullets = (words) => {
 
 let words = [];
 
-let url = "https://dcpcqtbsxy.us-east-1.awsapprunner.com/sight-words-generate";
+let url = "https://sight-words-alb-1566415029.ap-southeast-2.elb.amazonaws.com/";
 
 // url = "http://localhost:8080/sight-words-generate";
 
@@ -38,16 +36,16 @@ window.addEventListener("load", function() {
     setTimeout(() => {
       submit.removeAttribute("disabled");
     }, 5000);
-    
+
     downloadContainer.innerHTML = "";
-    
+
     fetch(url, {
       method: "POST",
       mode: "cors",
       headers: {
             'Content-Type': 'application/json'
       },
-      body: JSON.stringify({words: words})  
+      body: JSON.stringify({words: words})
     })
       .then((response) => {
         let resp = response.json();
@@ -83,13 +81,13 @@ Your sight words are listed below, and will be used to generate the worksheets:
 
 ## Technical Information
 
-* Language: Go (backend) and Javascript (frontend)
-* Deployment: Docker, AWS ECR, AWS AppRunner
-* Packages: 
+* Language: Go (backend) and Hugo + Javascript (frontend)
+* Deployment: Docker + AWS ECR, running containers on AWS ECS behind AWS ALB.
+* Packages:
     * github.com/nfnt/resize
     * github.com/nu7hatch/gouuid
-    * github.com/phpdave11/gofpdi 
-    * github.com/pkg/errors 
-    * github.com/rs/cors 
+    * github.com/phpdave11/gofpdi
+    * github.com/pkg/errors
+    * github.com/rs/cors
     * github.com/signintech/gopdf
 
