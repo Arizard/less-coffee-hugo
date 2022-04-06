@@ -20,7 +20,7 @@ const renderSightWordBullets = (words) => {
 
 let words = [];
 
-let url = "https://sight-words-alb-1566415029.ap-southeast-2.elb.amazonaws.com/";
+let url = "https://sight-words.less.coffee";
 
 // url = "http://localhost:8080/sight-words-generate";
 
