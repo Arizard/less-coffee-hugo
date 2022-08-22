@@ -22,16 +22,12 @@ title: "Home"
   padding: 0 !important;
   position: absolute;
   left: 0;
-  top: -45px;
-  filter: brightness(1.25);
 }
-
-
 
 </style>
 
 <div id="profile">
-  <img src="arie-profile.jpeg" />
+  <img src="arie-profile-2.jpeg" />
 </div>
 
 Hi, I'm Arie. 
