@@ -26,7 +26,7 @@ jobs:
         git submodule update
 
     - name: Build Hugo
-      uses: lowply/build-hugo@v0.74.1
+      uses: lowply/build-hugo@v0.102.3
 
     - name: S3 Sync
       uses: jakejarvis/s3-sync-action@v0.5.1
