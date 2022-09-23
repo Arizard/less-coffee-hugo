@@ -29,9 +29,8 @@ draft: false
 Sydney, Australia • arie.oldman@vhs7.tv • +61 432 934 970
 
 <span class="hide-on-print">
-  <a href="arie-oldman-resume.pdf">⬇️ Download PDF</a>
+  <a href='/resume/arie-oldman-resume.pdf'>⬇️ Download PDF</a>
 </span>
-
 
 ----
 
