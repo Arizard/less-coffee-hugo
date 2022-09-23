@@ -11,18 +11,27 @@ draft: false
   @media print {
     header, footer { display: none !important; }
     body {
-      width: auto;
+      width: 1150px;
     }
 
     p {
       line-height: 1.2 !important;
     }
+    .hide-on-print {
+      display: none;
+    }
   }
 </style>
+
 
 ## Arie Oldman
 
 Sydney, Australia • arie.oldman@vhs7.tv • +61 432 934 970
+
+<span class="hide-on-print">
+  <a href="arie-oldman-resume.pdf">⬇️ Download PDF</a>
+</span>
+
 
 ----
 
