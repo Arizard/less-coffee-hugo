@@ -45,7 +45,7 @@ In search of a Senior Software Engineer position with the goal of becoming a Tec
 
 **Technical**
 
-* Programming languages: **PHP, Javascript, Go, and shell scripts** with secondary languages **Lua and Scala**.
+* Programming languages: **PHP, Javascript, Go**.
 * Build and maintain distributed systems with **AWS, Docker, Linux, MySQL**.
 * Design major features according to **SOLID, domain-driven design (DDD), 12-factor**.
 * **Unit testing**, test-driven development (**TDD**).
