@@ -28,15 +28,11 @@ draft: false
 
 Sydney, Australia • arie.oldman@vhs7.tv • +61 432 934 970
 
-<span class="hide-on-print">
-  <a href='/resume/arie-oldman-resume.pdf'>⬇️ Download PDF</a>
-</span>
-
 ----
 
 ### Summary
 
-Competent and compassionate software engineer specialising in backend development who has an interest in team leadership.
+Software engineer interested in backend development.
 <!-- Product-focused, and responsible for backend architecture of modern and legacy software projects. -->
 
 In search of a Senior Software Engineer position with the goal of becoming a Technical Lead by 2026.
@@ -55,7 +51,7 @@ In search of a Senior Software Engineer position with the goal of becoming a Tec
 
 **Interpersonal**
 
-* **Communication**, knowledge sharing, deliver technical presentations.
+* **Communication**, knowledge sharing, deliver technical presentations, write RFCs.
 * **Agile** (scrum, kanban, stand-ups, retros).
 * **Mentoring** intern and junior engineers, pair programming, code review.
 
@@ -67,7 +63,13 @@ In search of a Senior Software Engineer position with the goal of becoming a Tec
 
 <!-- FOCUS ON KEYWORDS -->
 
-**Deputy • Software Engineer (Compliance)**<br/>_September 2019 -- present_
+**Deputy • Senior Software Engineer**<br/>_since October 2022_
+
+* Improved performance of Deputy's Timesheet feature to take P95 round-trip time from 10 seconds to 1 second.
+* Modernised Deputy's Timesheet feature by creating a timesheet search engine, using AWS OpenSearch.
+* Coordinated project delivery for a team of 5 engineers.
+
+**Deputy • Software Engineer**<br/>_September 2019 -- October 2022_
 
 <!-- * **Pay Comparison**: -->
 <!-- * **Enterprise Employee Profile**: -->
@@ -78,7 +80,7 @@ In search of a Senior Software Engineer position with the goal of becoming a Tec
 
 * Built major compliance features on Deputy's PHP, Vue and Go stack, much of which is legacy code (10+ years old). <!-- enterprise profile, pay comparison, svc-compliance -->
 * Responsible for planning and executing projects as part of a cross-functional team. <!-- export aggr, bunnings, enterprise profile, pay comparison -->
-* Deliver technical workshops, guides, and documentation to software engineers.
+* Delivered technical workshops, guides, and documentation to software engineers.
 * Mentored two interns, guiding them through their 3-month intern projects. Both accepted permanent positions at Deputy.
 * Pioneered new developer workflows which enable faster feature delivery. <!-- precaf, common funcs, pay comparison scripts -->
 
