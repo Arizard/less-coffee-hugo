@@ -17,13 +17,13 @@ pygmentsUseClasses = true
     identifier = "resume"
     name = "résumé"
     title = "resume"
-    url = "/resume"
+    url = "/resume/"
     weight = 1
   [[menu.main]]
       identifier = "contact"
       name = "contact"
       title = "contact"
-      url = "/contact"
+      url = "/contact/"
       weight = 10
 
 [permalinks]
