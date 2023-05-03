@@ -24,22 +24,15 @@ draft: false
 </style>
 
 
-## Arie Oldman
+# Arie Oldman
 
-Sydney, Australia • arie.oldman@vhs7.tv • +61 432 934 970
-
-----
-
-### Summary
 
 Software engineer interested in backend development.
 <!-- Product-focused, and responsible for backend architecture of modern and legacy software projects. -->
 
 In search of a Senior Software Engineer position with the goal of becoming a Technical Lead by 2026.
 
-### Skills
-
-**Technical**
+## Technical Skills
 
 * Programming languages: **PHP, Javascript, Go**.
 * Build and maintain distributed systems with **AWS, Docker, Linux, MySQL**.
@@ -49,7 +42,7 @@ In search of a Senior Software Engineer position with the goal of becoming a Tec
 * Create APIs with **gRPC and Protobuf**.
 * Create web front-ends with **Vue and Javascript**.
 
-**Interpersonal**
+## Interpersonal Skills
 
 * **Communication**, knowledge sharing, deliver technical presentations, write RFCs.
 * **Agile** (scrum, kanban, stand-ups, retros).
@@ -59,7 +52,7 @@ In search of a Senior Software Engineer position with the goal of becoming a Tec
 <!-- * Documentation (guides, tutorials, references, READMEs) and RFCs. -->
 <!-- * Professional feedback. -->
 
-### Professional History
+## Professional History
 
 <!-- FOCUS ON KEYWORDS -->
 
@@ -97,13 +90,13 @@ In search of a Senior Software Engineer position with the goal of becoming a Tec
 * Cleanse legacy IP network data using Perl.
 * Manage maintenance orders for Optus mobile sites to deliver improved 4G coverage.
 
-**Self Employed**<br/>_2015 -- present_
+**Self Employed**<br/>_since 2015_
 
 * Creator of open-source project Deathrun Neue (61 stars, 18 contributors), a gamemode for Garry's Mod.
 * Create and sell addon products for Garry's Mod servers to enrich the player's online experience, written in the Lua programming language (4805 units sold).
 * Manage sales, promotions and marketing media using the _gmodstore_ marketplace platform.
 
-### Educational History
+## Education
 
 **Macquarie University • BEng (Honours) in Telecommunications Engineering**<br/>_2015 -- 2018_
 

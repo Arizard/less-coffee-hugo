@@ -30,16 +30,14 @@ title: "Home"
   <img src="arie-profile-2.jpeg" />
 </div>
 
-Hi, I'm Arie. 
+Hi, I'm Arie.
 
 I'm a software engineer at [Deputy](https://deputy.com), simplifying shift work
 for businesses and employees around the world.
 
-Prior to Deputy, I worked at Spriggy (Software Engineering) and Singtel Optus 
-(Telecommunications Engineering). 
+I like running, [taking photos](https://unsplash.com/@arizard), and [modal text editors](https://github.com/neovim/neovim).
 
-I hold a Bachelor of Engineering (Honours) in Telecommunications Engineering,
-from Macquarie University, Australia.
+Welcome to my website!
 
 [**Continue to résumé ->**]({{< relref resume >}})<br>
 
