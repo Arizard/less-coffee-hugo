@@ -63,7 +63,8 @@ In search of a Senior Software Engineer position with the goal of becoming a Tec
 
 **Deputy • Senior Software Engineer**<br/>_since October 2022_
 
-* Improved performance of Deputy's Timesheet feature to take P95 round-trip time from 10 seconds to 1 second.
+* Improved performance of Deputy's Timesheet Approval feature to take P95 round-trip time from 10 seconds to 1 second.
+* Designed high-volume bulk actions that allow users to process up to 10,000 timesheets in one command.
 * Modernised Deputy's Timesheet feature by creating a timesheet search engine, using AWS OpenSearch.
 * Coordinated project delivery for a team of 5 engineers.
 

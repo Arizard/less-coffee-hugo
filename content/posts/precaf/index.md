@@ -59,7 +59,7 @@ Precaf solves the lack of language features by introducing a preliminary templat
 
 Examine the directory structure:
 
-```
+```plaintext
 /common
   - someDependencyProcedure.coffee
 /shift-pay_calculation
@@ -75,13 +75,13 @@ Inside `calculate_overtime.coffee` there is this line:
 
 Now the developer executes Precaf like so:
 
-```
+```plaintext
 precaf calculate_overtime.coffee
 ```
 
 This results in the creation of the new file:
 
-```
+```plaintext
 /common
   - someDependencyProcedure.coffee
 /shift-pay_calculation:
@@ -102,7 +102,7 @@ Similar operations can be performed on an account-specific basis using a config 
 
 While running the following command:
 
-```
+```plaintext
 precaf -c prod.json calculate_overtime.coffee
 ```
 
@@ -110,7 +110,7 @@ You can think of Precaf as a templating tool for Decaf.
 
 For **deployment**, the developer defines the **account subdomain, OAuth token, script ID** and optionally the **script label**. Then, they deploy like this:
 
-```
+```plaintext
 precaf -d -c prod.json calculate_overtime.coffee
 ```
 
