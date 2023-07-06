@@ -12,20 +12,25 @@ draft: false
     header, footer { display: none !important; }
     body {
       width: 1150px;
+      color: black !important;
     }
 
     p {
       line-height: 1.2 !important;
     }
+
     .hide-on-print {
       display: none;
+    }
+
+    main#content p {
+        color: black !important;
     }
   }
 </style>
 
 
 # Arie Oldman
-
 
 Software engineer interested in backend development.
 <!-- Product-focused, and responsible for backend architecture of modern and legacy software projects. -->

@@ -4,31 +4,37 @@ title: "Home"
 
 <style>
 
+#profile-container {
+    width: 220px;
+    text-align: center;
+    margin-left: calc(50% - 110px);
+    border-radius: 8px;
+    border: solid 2px #ff4757;
+    padding: 0;
+    box-sizing: border-box;
+    padding: 1.4rem;
+}
+
 #profile {
   position: relative;
   overflow: hidden;
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
+  width: 128px;
+  height: 128px;
+  border-radius: 64px;
   padding: 0px;
   box-sizing: border-box;
-  margin-left: calc(50% - 100px);
-  border: solid 2px #ff4757;
+  margin-left: calc(50% - 64px);
+  margin-bottom: 0.8rem;
 }
 
 #profile > img {
   width: 100%;
-  margin: 0 !important;
   padding: 0 !important;
   position: absolute;
   left: 0;
 }
 
 </style>
-
-<div id="profile">
-  <img src="arie-profile-2.jpeg" />
-</div>
 
 Hi, I'm Arie.
 
@@ -39,7 +45,14 @@ I like running, [taking photos](https://unsplash.com/@arizard), and [modal text 
 
 Welcome to my website!
 
-[**Continue to résumé ->**]({{< relref resume >}})<br>
+<div id="profile-container">
+    <a href="{{< relref resume >}}">
+        <div id="profile">
+          <img src="arie-profile-2.jpeg" />
+        </div>
+        <strong>continue to résumé -></strong>
+    </a>
+</div>
 
 ### Links
 
