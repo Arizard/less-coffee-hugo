@@ -1,6 +1,7 @@
 ---
 title: "Implementing CRC-32 in Decaf"
 date: 2021-01-30T19:24:38+11:00
+author: Arie Oldman
 draft: false
 ---
 
