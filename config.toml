@@ -14,17 +14,17 @@ pygmentsUseClasses = true
 
 [menu]
   [[menu.main]]
+    identifier = "posts"
+    name = "posts"
+    title = "posts"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
     identifier = "resume"
     name = "résumé"
     title = "resume"
     url = "/resume/"
     weight = 1
-  [[menu.main]]
-      identifier = "contact"
-      name = "contact"
-      title = "contact"
-      url = "/contact/"
-      weight = 10
 
 [permalinks]
   posts = "/:title/"
