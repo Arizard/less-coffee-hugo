@@ -1,7 +1,7 @@
 ---
 title: "Deputec Locking and Timesheet Concurrency Problems"
 date: 2023-06-19T16:19:00+1000
-draft: true
+draft: false
 author: Arie Oldman
 ---
 
