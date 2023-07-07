@@ -8,7 +8,7 @@ pygmentsUseClasses = true
 
 [params]
   description = "Arie Oldman is a software engineer from Sydney, Australia."
-  copyright = "Made with [Hugo](https://gohugo.io/) using the `etch-less-coffee` theme, a fork of `etch`."
+  copyright = 'Made with [Hugo](https://gohugo.io/) using the <span style="white-space: nowrap"><code>etch-less-coffee</code></span> theme, a fork of `etch`.'
   dark = "auto"
   highlight = true
 
