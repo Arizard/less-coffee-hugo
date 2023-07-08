@@ -13,6 +13,7 @@ pygmentsUseClasses = true
   highlight = true
   github = "https://github.com/Arizard"
   linkedin = "https://au.linkedin.com/in/arieoldman"
+  profilePicture = "arie-profile-2.jpeg"
 
 [menu]
   [[menu.main]]
