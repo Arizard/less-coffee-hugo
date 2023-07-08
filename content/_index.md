@@ -37,15 +37,12 @@ title: "Home"
 }
 
 .grid-super-container {
-    border-radius: 8px;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    padding: 0 0 0 16px;
 }
 
 @media (min-width: 770px) {
     .grid-container {
-        margin-right: 64px;
         display: grid;
         grid-template-columns: 160px 1fr;
         grid-template-rows: 192px;
@@ -109,7 +106,7 @@ Welcome to my website!
 </div>
 </div>
 
-### Links
+<!-- ### Links -->
 
-[**My GitHub**](https://github.com/arizard)<br>
-[**My LinkedIn**](https://www.linkedin.com/in/arieoldman/)<br>
+<!-- [**My GitHub**](https://github.com/arizard)<br> -->
+<!-- [**My LinkedIn**](https://www.linkedin.com/in/arieoldman/)<br> -->
