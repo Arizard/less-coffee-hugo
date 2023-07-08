@@ -4,37 +4,88 @@ title: "Home"
 
 <style>
 
-#profile-container {
-    width: 220px;
+#profile-container-inner {
+    width: 100%;
+    height: 100%;
     text-align: center;
-    margin-left: calc(50% - 110px);
-    border-radius: 8px;
-    border: solid 2px #ff4757;
-    padding: 0;
-    box-sizing: border-box;
-    padding: 1.4rem;
+    margin: 0 auto 0 auto;
+    padding: 16px 0 16px 0;
+    max-width: 3.6cm;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#profile {
+.profile-circle {
   position: relative;
   overflow: hidden;
-  width: 128px;
-  height: 128px;
-  border-radius: 64px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
   padding: 0px;
   box-sizing: border-box;
-  margin-left: calc(50% - 64px);
-  margin-bottom: 0.8rem;
 }
 
-#profile > img {
+.profile-circle img {
+    display: block;
   width: 100%;
+  height: 100%;
   padding: 0 !important;
-  position: absolute;
-  left: 0;
+  margin: 0 !important;
+}
+
+@media (min-width: 770px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 160px 1fr;
+        grid-template-rows: 192px;
+        gap: 0px 16px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "grid-profile grid-intro";
+
+        justify-content: stretch;
+        align-items: stretch;
+
+        height: 192px;
+    }
+
+    .grid-profile {
+        grid-area: grid-profile;
+        box-sizing: border-box;
+    }
+
+    .grid-intro {
+        grid-area: grid-intro;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid-intro span p:last-child {
+        margin-bottom: 0 !important;
+    }
+
+    #profile-container-inner {
+        max-width: 100%;
+    }
 }
 
 </style>
+
+<div class="grid-container">
+    <div class="grid-profile">
+        <div id="profile-container-inner">
+            <div class="profile-circle">
+                <img src="arie-profile-2.jpeg" />
+            </div>
+    <!-- <a href="{{< relref resume >}}"> -->
+        <!-- <strong>continue to résumé -></strong> -->
+    <!-- </a> -->
+        </div>
+    </div>
+    <div class="grid-intro"><span>
 
 Hi, I'm Arie.
 
@@ -44,14 +95,7 @@ for businesses and employees around the world.
 I like running, [taking photos](https://unsplash.com/@arizard), and [modal text editors](https://github.com/neovim/neovim).
 
 Welcome to my website!
-
-<div id="profile-container">
-    <a href="{{< relref resume >}}">
-        <div id="profile">
-          <img src="arie-profile-2.jpeg" />
-        </div>
-        <strong>continue to résumé -></strong>
-    </a>
+</span></div>
 </div>
 
 ### Links
