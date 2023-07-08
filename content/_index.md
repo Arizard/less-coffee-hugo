@@ -18,13 +18,14 @@ title: "Home"
 }
 
 .profile-circle {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  padding: 0px;
-  box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 0px;
+    box-sizing: border-box;
+    border: solid 2px #ff4757;
 }
 
 .profile-circle img {
@@ -35,8 +36,16 @@ title: "Home"
   margin: 0 !important;
 }
 
+.grid-super-container {
+    border-radius: 8px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0 0 0 16px;
+}
+
 @media (min-width: 770px) {
     .grid-container {
+        margin-right: 64px;
         display: grid;
         grid-template-columns: 160px 1fr;
         grid-template-rows: 192px;
@@ -74,6 +83,7 @@ title: "Home"
 
 </style>
 
+<div class="grid-super-container">
 <div class="grid-container">
     <div class="grid-profile">
         <div id="profile-container-inner">
@@ -96,6 +106,7 @@ I like running, [taking photos](https://unsplash.com/@arizard), and [modal text 
 
 Welcome to my website!
 </span></div>
+</div>
 </div>
 
 ### Links
