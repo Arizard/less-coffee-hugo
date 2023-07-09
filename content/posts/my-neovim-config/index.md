@@ -45,11 +45,15 @@ Use ALE with [Deoplete](https://github.com/Shougo/deoplete.nvim) to add code com
 
 [Fugitive](https://github.com/tpope/vim-fugitive) is the #1 git plugin for Vim, and it really is "so awesome it should be illegal". You get the productivity of a [TUI](https://en.wikipedia.org/wiki/Text-based_user_interface) without having to open another `tmux`[^tmux-plug] window or [iTerm2](https://iterm2.com/) tab[^iterm2-plug].
 
+![screenshot of Neovim with a fugitive window open at the top](fugitive.png)
+
 Fugitive is a lot faster to use than the git command line. Open a Fugitive window with `:Git`, use the arrow keys to navigate. Press `s` to do `git add` and press `cc` to commit.
 
-Because it's a git client inside of Vim, you can chain commands together. For example, you can `git add` more than one file at a time while not `add`ing all files: `3s` (`git add` 3 times).
+You can view a file in diff view as well. Press `dd` and you get:
 
-![screenshot of Neovim with a fugitive window open at the top](fugitive.png)
+![screenshot of large neovim window showing the fugitive window at the top, and a diff view below](fugitive-diff.png)
+
+Because it's a git client inside of Vim, you can chain commands together. For example, you can `git add` more than one file at a time while not `add`ing all files: `3s` (`git add` 3 times).
 
 Once the commits are made, you can push them with `s`.
 
