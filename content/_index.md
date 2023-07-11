@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: Less Coffee
 ---
 
 I'm Arie. I've been a software engineer working in the tech industry since 2019. Welcome to my blog!
