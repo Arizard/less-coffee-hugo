@@ -3,6 +3,7 @@ title: "Thoughts on Neovim & Some Configs"
 date: 2023-07-08T23:05:21+10:00
 author: Arie Oldman
 draft: false
+subtitle: How I've customised Neovim to my personal taste.
 ---
 
 Some programmers might consider the Vim learning curve[^vimtutor] quite steep, and they'd be correct. However, I think that the upfront time investment is totally worth it.

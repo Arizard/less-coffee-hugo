@@ -3,6 +3,7 @@ title: "Deputec Locking and Timesheet Concurrency Problems"
 date: 2023-06-19T16:19:00+1000
 draft: false
 author: Arie Oldman
+subtitle: "Implementing bulk actions into Deputy presents synchronisation challenges."
 ---
 
 At Deputy, we are starting to introduce bulk actions for timesheets: bulk approve, bulk discard, and so on.
