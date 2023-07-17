@@ -1,8 +1,8 @@
 ---
 title: "Troubleshooting Glossy Nail Photos"
+subtitle: "A quick article on how to avoid unsightly reflections."
 author: Arie Oldman
 date: 2023-07-17T21:00:00+10:00
-draft: true
 ---
 
 When photographing glossy nails in a studio setting using a softbox, you might find that there is an annoying white streak obscuring the nail art. I've been calling this "glare" for lack of a better term.
@@ -22,7 +22,7 @@ My solution (which still needs work) is to set the speedlight to maximum power, 
 
 This gave the light a soft, diffused quality, even softer than the softbox on its own. I observed that the relative brightness of the glare was much lower compared to the rest of the nail art. I made sure to carefully angle the softbox so as to not have any softbox light spill onto the subject.
 
-{{< figure src="Capture One Catalog5784.jpg" caption="Same shot as before, with the ceiling used as a massive bounce. `1/100s, f/8, ISO 250`" alt="photo of hand with painted nails. the nails are purple with dark red glitter in a striped design at the tip. there is only a subtle white streak lengthwise along each nail, caused by the light bounced off the ceiling." >}}
+{{< figure src="Capture One Catalog5784.jpg" caption="Same shot as before, with the ceiling used as a massive bounce. Flash power had to be at maximum. `1/100s, f/8, ISO 250`" alt="photo of hand with painted nails. the nails are purple with dark red glitter in a striped design at the tip. there is only a subtle white streak lengthwise along each nail, caused by the light bounced off the ceiling." >}}
 
 I was using a Godox AD200 speedlight with an 80cm Neewer octagonal softbox. Shooting on my Sony A7III with the Sony 85mm GM.
 
