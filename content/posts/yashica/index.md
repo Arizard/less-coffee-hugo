@@ -46,6 +46,8 @@ Don't forget: when we take photos, it's often about saving a memory for later. T
 
 {{< figure src="IMG_0203.jpg" caption="The Electro 35 GSN right after I bought it." >}}
 
+The Yashica Electro 35 was a line of rangefinder cameras manufactured by Yashica in the early 1970s. They feature a 45mm f/1.7 unit-focusing fixed lens, aperture priority automatic shutter speed, and a cadmium sulfide (CdS) photoresistor.
+
 On Facebook marketplace, one will find that there are plenty of individuals selling vintage cameras (in Sydney at least). I was lucky enough to find a listing for the [Yashica Electro 35 GSN](https://en.wikipedia.org/wiki/Yashica_Electro_35) in my own suburb, for A$100.
 
 > Vintage Yashica Electro 35 GSN (not sure if working) - $100
@@ -140,4 +142,16 @@ I loaded up some **Ilford HP5+**, here are some shots:
 
 <!-- TODO -->
 
+## Final notes
 
+Overall, I'm really happy with the camera. It feels solid and weighty in the hands, and the leaf shutter is whisper-quiet. The glass is excellent and fast as well.
+
+There is a unique appeal to how mechanical everything is. For example, while the Ricoh has excellent build quality, the shutter release button uses a rubber membrane to close a circuit inside the top cover. The Electro 35 has a mechanical release rod, you can feel all the components moving into place when you take a picture.
+
+When taking a photo with a slow shutter, you can actually hear a capacitor charging up right before the shutter closes. I think this capacitor must power a solenoid or something, to "unlock" the shutter so it can close? The experience is a new one for me.
+
+And how could anybody fault the stylish atom badge? It was literally "the style at the time" and symbolised "electronic control" in early electronic cameras.
+
+You know, considering that the pad of death was completely deteriorated, I would have assumed the camera body had never been taken off. However, I also see scratches and other cosmetic damage on the ASA dial, winding lever and lens front plate. Maybe a past owner had attempted to access the pad of death, only to find that they couldn't get the top cover off? I guess I'll never know.
+
+{{< figure src="damage.jpg" >}}
