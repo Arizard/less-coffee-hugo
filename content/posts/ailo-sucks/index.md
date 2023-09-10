@@ -3,7 +3,7 @@ title: "Ailo: didn't ask, don't want, don't need."
 subtitle: "Property agents and UI dark patterns, together at last."
 date: 2023-09-10T10:05:40+10:00
 author: Arie Oldman
-draft: true
+draft: false
 ---
 
 {{< figure src="hero.png" caption="Because if you shout, we won't renew your lease." >}}
