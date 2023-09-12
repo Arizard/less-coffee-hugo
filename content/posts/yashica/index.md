@@ -1,7 +1,7 @@
 ---
 title: "Analog Photography (featuring the Yashica Electro 35)"
 subtitle: "Getting a 50-year-old camera back into working order."
-date: 2023-08-22T15:56:01+10:00
+date: 2023-09-12
 author: Arie Oldman
 draft: true
 ---
@@ -134,11 +134,24 @@ After that, just a few more repairs: gluing the `SLOW` and `OVER` light covers b
 
 Finally, after putting it all back together, I had an operational Yashica Electro 35, and an elevated sense of self worth.
 
+### Repair Summary
+
+I used the following tools and materials:
+
+* **Precision phillips head screwdriver** (it was labelled `PH00`)
+* **Angled tweezers** and straight tweezers
+* **Black cloth/electric tape** to create a pad with some elasticity
+* **Ruler/vernier calipers** to measure the dimensions of the new pad
+* **Box cutter** to cut the tape to size
+* **Cutting mat** to protect the desk!
+
 ## Results after fixing the Pad of Death
 
 After the fix, there were no more issues with the shutter getting stuck. The warning lights are activated with much less shutter release actuation, which makes it easier to test exposure before taking the shot.
 
 I loaded up some **Ilford HP5+**, here are some shots:
+
+{{< figure src="hp5-plus.jpg" caption="Scanned these using my A7iii and a makeshift light box. [View full size](hp5-plus-2048.jpg)" >}}
 
 <!-- TODO -->
 
