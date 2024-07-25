@@ -9,9 +9,8 @@ draft: false
   }
 
   @media print {
-    header, footer { display: none !important; }
+    header, footer, nav#banner { display: none !important; }
     body {
-      width: 1150px;
       color: black !important;
     }
 
@@ -32,10 +31,7 @@ draft: false
 
 # Arie Oldman
 
-Software engineer interested in backend development.
-<!-- Product-focused, and responsible for backend architecture of modern and legacy software projects. -->
-
-In search of a Senior Software Engineer position with the goal of becoming a Technical Lead by 2026.
+Software engineer interested in backend development. Responsible for backend architecture of modern and legacy software projects.
 
 ## Technical Skills
 
@@ -52,6 +48,7 @@ In search of a Senior Software Engineer position with the goal of becoming a Tec
 * **Communication**, knowledge sharing, deliver technical presentations, write RFCs.
 * **Agile** (scrum, kanban, stand-ups, retros).
 * **Mentoring** intern and junior engineers, pair programming, code review.
+* **Project Planning**, breaking down work into tasks and assigning tasks to team members based on individual strengths.
 
 <!-- * Code review (frontend and backend). -->
 <!-- * Documentation (guides, tutorials, references, READMEs) and RFCs. -->
@@ -63,10 +60,11 @@ In search of a Senior Software Engineer position with the goal of becoming a Tec
 
 **Deputy • Senior Software Engineer**<br/>_since October 2022_
 
-* Improved performance of Deputy's Timesheet Approval feature to take P95 round-trip time from 10 seconds to 1 second.
-* Designed high-volume bulk actions that allow users to process up to 10,000 timesheets in one command.
-* Modernised Deputy's Timesheet feature by creating a timesheet search engine, using AWS OpenSearch.
-* Coordinated project delivery for a team of 5 engineers.
+* **Scaled up** Deputy's Timesheet Approval feature to make the product offering desirable for mid-market business customers.
+* **Wrote RFCs** for architectural changes and paradigm shifts to Deputy's backend, taking a previously synchronous product and making it asynchronous in order to scale users and data volume.
+* **Designed high-volume bulk actions** that allow users to process up to 10,000 timesheets in one command.
+* **Modernised** Deputy's Timesheet feature by creating a timesheet search engine, using AWS OpenSearch.
+* **Coordinated project delivery** for a team of 10 engineers.
 
 **Deputy • Software Engineer**<br/>_September 2019 -- October 2022_
 
@@ -77,11 +75,11 @@ In search of a Senior Software Engineer position with the goal of becoming a Tec
 <!-- * **Precaf**: -->
 <!-- * **Environment Variables Custom App**: -->
 
-* Built major compliance features on Deputy's PHP, Vue and Go stack, much of which is legacy code (10+ years old). <!-- enterprise profile, pay comparison, svc-compliance -->
-* Responsible for planning and executing projects as part of a cross-functional team. <!-- export aggr, bunnings, enterprise profile, pay comparison -->
-* Delivered technical workshops, guides, and documentation to software engineers.
-* Mentored two interns, guiding them through their 3-month intern projects. Both accepted permanent positions at Deputy.
-* Pioneered new developer workflows which enable faster feature delivery. <!-- precaf, common funcs, pay comparison scripts -->
+* **Built major compliance product offerings** on Deputy's PHP, Vue and Go stack, much of which is legacy code (10+ years old). <!-- enterprise profile, pay comparison, svc-compliance -->
+* **Responsible for planning and executing** projects as part of a cross-functional team. <!-- export aggr, bunnings, enterprise profile, pay comparison -->
+* **Delivered technical workshops**, guides, and documentation to software engineers.
+* **Mentored** two interns, guiding them through their 3-month intern projects. Both accepted permanent positions at Deputy.
+* **Pioneered new developer workflows** which enable faster feature delivery. <!-- precaf, common funcs, pay comparison scripts -->
 
 **Spriggy • Junior Software Developer**<br/>_March 2019 -- July 2019_
 
@@ -96,7 +94,7 @@ In search of a Senior Software Engineer position with the goal of becoming a Tec
 * Cleanse legacy IP network data using Perl.
 * Manage maintenance orders for Optus mobile sites to deliver improved 4G coverage.
 
-**Self Employed**<br/>_since 2015_
+**Self Employed & Side Projects**<br/>_since 2015_
 
 * Creator of open-source project Deathrun Neue (61 stars, 18 contributors), a gamemode for Garry's Mod.
 * Create and sell addon products for Garry's Mod servers to enrich the player's online experience, written in the Lua programming language (4805 units sold).
@@ -106,7 +104,7 @@ In search of a Senior Software Engineer position with the goal of becoming a Tec
 
 **Macquarie University • BEng (Honours) in Telecommunications Engineering**<br/>_2015 -- 2018_
 
-* Coursework includes systems engineering, physics, linear algebra, calculus, electronics, engineering statistics, computer networks, signal processing.
-* Thesis paper: Inline DDoS Detection for Small to Medium Businesses.
+* **Published undergrad thesis** _Inline DDoS Detection for Small to Medium Businesses_, which examines software-defined networking approaches to intrusion detection and mitigation on the small (home) to medium (small business) scale.
+* Systems engineering, physics, linear algebra, calculus, electronics, engineering statistics, computer networks, signal processing.
 
 
