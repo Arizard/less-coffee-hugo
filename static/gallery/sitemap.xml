@@ -2,10 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://less.coffee/gallery/bondi/</loc>
-    <lastmod>2024-09-14T15:07:49+10:00</lastmod>
-  </url><url>
     <loc>https://less.coffee/gallery/</loc>
+    <lastmod>2024-09-16T20:38:16+10:00</lastmod>
+  </url><url>
+    <loc>https://less.coffee/gallery/polaroid-go/</loc>
+    <lastmod>2024-09-16T20:38:16+10:00</lastmod>
+  </url><url>
+    <loc>https://less.coffee/gallery/bondi/</loc>
     <lastmod>2024-09-14T15:07:49+10:00</lastmod>
   </url><url>
     <loc>https://less.coffee/gallery/categories/</loc>
