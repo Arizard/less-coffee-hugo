@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Portrait on Less Coffee Gallery</title>
+    <link>https://less.coffee/gallery/tags/portrait/</link>
+    <description>Recent content in Portrait on Less Coffee Gallery</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Arie Oldman</copyright>
+    <lastBuildDate>Wed, 18 Sep 2024 22:46:26 +1000</lastBuildDate><atom:link href="https://less.coffee/gallery/tags/portrait/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Renee</title>
+      <link>https://less.coffee/gallery/renee/</link>
+      <pubDate>Wed, 18 Sep 2024 22:46:26 +1000</pubDate>
+      <guid>https://less.coffee/gallery/renee/</guid><media:content url="https://less.coffee/gallery/renee/2023-04-DSC03418_huf1796524e777f4eb58ac9dafef6b8c89_682580_900x600_fill_q90_catmullrom_smart1.jpg" type="image/jpeg"/>
+        <description>
+          &lt;img src=&quot;https://less.coffee/gallery/renee/2023-04-DSC03418_huf1796524e777f4eb58ac9dafef6b8c89_682580_900x600_fill_q90_catmullrom_smart1.jpg&quot; /&gt;
+          &lt;p&gt;&lt;no value&gt;&lt;/p&gt;
+        </description></item>
+  </channel>
+</rss>

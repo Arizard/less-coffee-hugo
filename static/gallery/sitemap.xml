@@ -2,17 +2,45 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://less.coffee/gallery/tags/analog/</loc>
+    <lastmod>2024-09-18T22:46:26+10:00</lastmod>
+  </url><url>
+    <loc>https://less.coffee/gallery/tags/black-and-white/</loc>
+    <lastmod>2024-09-18T22:46:26+10:00</lastmod>
+  </url><url>
     <loc>https://less.coffee/gallery/</loc>
+    <lastmod>2024-09-18T22:46:26+10:00</lastmod>
+  </url><url>
+    <loc>https://less.coffee/gallery/tags/portrait/</loc>
+    <lastmod>2024-09-18T22:46:26+10:00</lastmod>
+  </url><url>
+    <loc>https://less.coffee/gallery/renee/</loc>
+    <lastmod>2024-09-18T22:46:26+10:00</lastmod>
+  </url><url>
+    <loc>https://less.coffee/gallery/tags/</loc>
+    <lastmod>2024-09-18T22:46:26+10:00</lastmod>
+  </url><url>
+    <loc>https://less.coffee/gallery/tags/street/</loc>
+    <lastmod>2024-09-18T22:46:11+10:00</lastmod>
+  </url><url>
+    <loc>https://less.coffee/gallery/street/</loc>
+    <lastmod>2024-09-18T22:46:11+10:00</lastmod>
+  </url><url>
+    <loc>https://less.coffee/gallery/tags/instant-film/</loc>
+    <lastmod>2024-09-16T20:38:16+10:00</lastmod>
+  </url><url>
+    <loc>https://less.coffee/gallery/tags/polaroid/</loc>
     <lastmod>2024-09-16T20:38:16+10:00</lastmod>
   </url><url>
     <loc>https://less.coffee/gallery/polaroid-go/</loc>
     <lastmod>2024-09-16T20:38:16+10:00</lastmod>
   </url><url>
+    <loc>https://less.coffee/gallery/tags/architecture/</loc>
+    <lastmod>2024-09-14T15:07:49+10:00</lastmod>
+  </url><url>
     <loc>https://less.coffee/gallery/bondi/</loc>
     <lastmod>2024-09-14T15:07:49+10:00</lastmod>
   </url><url>
     <loc>https://less.coffee/gallery/categories/</loc>
-  </url><url>
-    <loc>https://less.coffee/gallery/tags/</loc>
   </url>
 </urlset>
