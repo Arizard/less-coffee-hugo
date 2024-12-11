@@ -28,10 +28,11 @@ draft: false
   }
 </style>
 
-
 # Arie Oldman
 
-Software engineer interested in backend development. Responsible for backend architecture of modern and legacy software projects.
+<!-- Sydney, Australia • +61 432 934 970 • arie.oldman@vhs7.tv -->
+
+Software engineer interested in backend development. 5 years of experience with modern and legacy software projects.
 
 ## Technical Skills
 
