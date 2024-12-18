@@ -8,6 +8,12 @@ draft: false
     display: none !important;
   }
 
+  @media screen {
+    .show-on-print {
+      display: none;
+    }
+  }
+
   @media print {
     header, footer, nav#banner { display: none !important; }
     body {
@@ -30,7 +36,7 @@ draft: false
 
 # Arie Oldman
 
-<!-- Sydney, Australia • +61 432 934 970 • arie.oldman@vhs7.tv -->
+<p class="show-on-print">Sydney, Australia • +61 432 934 970 • arie.oldman@vhs7.tv</p>
 
 Software engineer interested in backend development. 5 years of experience with modern and legacy software projects.
 
