@@ -37,7 +37,7 @@ Software engineer interested in backend development. 5 years of experience with 
 ## Technical Skills
 
 * Programming languages: **PHP, Javascript, Go**.
-* Build and maintain distributed systems with **AWS, Docker, Linux, MySQL**.
+* Build and maintain distributed systems with **AWS, Docker, Linux, MySQL, Elasticsearch**.
 * Design major features according to **SOLID, domain-driven design (DDD), 12-factor**.
 * **Unit testing**, test-driven development (**TDD**).
 * **Refactoring and optimisation** of legacy code.
