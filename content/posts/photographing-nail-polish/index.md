@@ -1,5 +1,5 @@
 ---
-title: "Troubleshooting Glossy Nail Photos"
+title: "Troubleshooting Reflections in Product Photography"
 subtitle: "A quick article on how to avoid unsightly reflections."
 author: Arie Oldman
 date: 2023-07-17T21:00:00+10:00
