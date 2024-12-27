@@ -3,7 +3,7 @@ title: "Personalised Careers Pages Made With Generative AI"
 subtitle: "Our hackathon project, built with Anthropic Claude, powered by AWS."
 date: 2024-12-26T10:29:16+11:00
 author: Arie Oldman
-draft: true
+draft: false
 ---
 
 {{< figure src="01.jpg" caption="(Courtesy of Natasha)" >}}
