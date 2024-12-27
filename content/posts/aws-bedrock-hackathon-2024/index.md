@@ -57,6 +57,8 @@ The desired journey looked like this:
 
 ## Is generative AI a good fit?
 
+Before we continue with the project, let's take a moment to examine whether generative AI is actually a good fit.
+
 While generative AI is powerful and is advancing at a breakneck pace, I still believe it should not be trusted to make decisions where a lot is at stake. Therefore, good use cases for generative AI will save a human time by making them more productive, instead of completely replacing a person.
 
 In my opinion, our use case is a good fit: it doesn't require 100% correctness, it will always have human oversight, and the end goal is not to replace a person, but rather to show the prospect the potential value they could unlock from our _Hire_ product.
@@ -73,7 +75,7 @@ For our project we considered using Amazon Bedrock's [Knowledge Bases](https://a
 
 With this outcome, we revised our approach. After some discussion and experimentation with the language models available in Bedrock, we determined that we can actually generate enough content for a compelling careers page by scraping a single home page or about page of the prospect's website. Thanks to this breakthrough, we revised the implementation to provide the source code of the webpage in the prompt sent to the language model.
 
-In the end, our prompt was literally:
+In the end, our prompt was this:
 
 ```javascript
 const PROMPT = `${pageSource}
@@ -136,7 +138,7 @@ Finally, on the `deputy.com` website, we would display a page allowing the submi
 
 ### How can we handle dynamic and static websites?
 
-The simple answer was to use a headless Chromium browser to execute the javascript required for dynamic webpages. We achieved this using Puppeteer. However, this increased the memory and CPU usage of the Lambda, and added an extra 10s to the crawling time.
+To handle dynamic websites, we used a headless Chromium browser. We achieved this using Puppeteer. However, this increased the memory and CPU usage of the Lambda, and added an extra 10s to the crawling time.
 
 ### The fastest time-to-market
 
@@ -144,7 +146,7 @@ We used Lambda as the compute, because it allows fast iteration and offers out-o
 
 Where possible, we used existing Deputy architecture. Whichever approach would take the least time to achieve our goals, we would choose -- resulting in us building the Lambda-side from scratch while re-using the Deputy website and the dummy instance.
 
-{{< figure src="poc-gen-ai-careers.jpg" caption="Architecture diagram for the proof-of-concept" >}}
+{{< figure src="poc-gen-ai-careers.jpg" caption="High-level architecture of our proof-of-concept, showing key components and interactions." >}}
 
 ## What we learned
 
@@ -164,9 +166,7 @@ By the 4th day, we had a working system - albeit without any security, rate limi
 
 Unfortunately we didn't earn an award (robbed!), but overall it was the most fun I've had on the job all year. It was great to collaborate outside my usual team, with fresh faces and new perspectives.
 
-Despite no awards, I still believe we validated the feasibility of this idea. It is indeed possible to auto-generate careers pages based on a company website, but more importantly, it can be done in a user-friendly way.
-
-As for whether the project is viable as a lead generation tool? Not sure. Maybe next year we'll get an opportunity to take it to production!
+Although we didn't take home any awards, the project was still a success in validating the feasibility of auto-generating careers pages. We've learned valuable lessons by solving this problem, and are excited to explore its potential in future iterations.
 
 {{< figure src="submit-form.png" caption="From this page, the prospect submits their website URL.">}}
 {{< figure src="result-page.png" caption="After a short wait, we show them the personalised careers page.">}}
