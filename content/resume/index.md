@@ -1,5 +1,5 @@
 ---
-title: "Arie Oldman - Senior Software Engineer"
+title: "Arie Oldman, Senior Software Engineer"
 draft: false
 ---
 
@@ -22,10 +22,17 @@ draft: false
     header, footer, nav#banner { display: none !important; }
     body {
       color: black !important;
+      font-size: 12pt;
+      margin: 0;
+    }
+
+    main#content article li {
+        margin-bottom: 4pt;
+        line-height: 16pt;
     }
 
     p {
-      line-height: 1.2 !important;
+      line-height: 16pt !important;
     }
 
     .hide-on-print {
@@ -42,7 +49,7 @@ draft: false
   }
 </style>
 
-# Arie Oldman - Senior Software Engineer
+# Arie Oldman, Senior Software Engineer
 
 <p class="show-on-print font-weight-bold">Sydney, Australia • +61 432 934 970 • arie.oldman@vhs7.tv</p>
 
