@@ -118,6 +118,15 @@ We learned a lot, but the main 3 takeaways are:
 
 ## Outcome
 
+By the 4th day, we had a working system - albeit without any security, rate limiting, or ability to scale (it was a prototype after all). It took around 30 seconds to generate a personalised careers page.
+
+{{< figure src="submit-form.png" caption="From this page, the prospect submits their website URL.">}}
+{{< figure src="result-page.png" caption="After a short wait, we show them the personalised careers page.">}}
+
+### Sample careers pages
+
+The following screenshots show careers pages that were generated entirely from the business' website.
+
 {{< figure src="merivale.png" caption="Merivale's auto-generated careers page." >}}
 {{< figure src="trafalgar-st-espresso.png" caption="Trafalgar Street Espresso's auto-generated careers page." >}}
 
