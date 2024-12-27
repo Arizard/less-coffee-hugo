@@ -160,13 +160,11 @@ We learned a lot, but the main 3 takeaways are:
 3. **Puppeteer** enables effective scraping of dynamic, client-side rendered websites. E.g. Merivale's site.
 4. **Optimisation**: the prompting can be sped up (and will consume fewer tokens) if we strip any HTML tags like `<script>`, `<style>`, and `<svg>`, since these usually don't provide any information relevant to the end result.
 
-## Outcome
+## Project outcome
 
 By the 4th day, we had a working system - albeit without any security, rate limiting, or ability to scale (it was a prototype after all). It took around 30 seconds to generate a personalised careers page.
 
 Unfortunately we didn't earn an award (robbed!), but overall it was the most fun I've had on the job all year. It was great to collaborate outside my usual team, with fresh faces and new perspectives.
-
-Although we didn't take home any awards, the project was still a success in validating the feasibility of auto-generating careers pages. We've learned valuable lessons by solving this problem, and are excited to explore its potential in future iterations.
 
 {{< figure src="submit-form.png" caption="From this page, the prospect submits their website URL.">}}
 {{< figure src="result-page.png" caption="After a short wait, we show them the personalised careers page.">}}
@@ -177,6 +175,12 @@ The following screenshots show careers pages that were generated entirely from t
 
 {{< figure src="merivale.png" caption="Merivale's auto-generated careers page." >}}
 {{< figure src="trafalgar-st-espresso.png" caption="Trafalgar Street Espresso's auto-generated careers page." >}}
+
+## Reflection and final comments
+
+Although we didn't take home any awards, the project was still a success in validating the feasibility of auto-generating careers pages. We've learned valuable lessons by solving this problem, and are excited to explore its potential in future iterations.
+
+Have you built something using generative AI? What challenges did you face? Let me know at arie.oldman@vhs7.tv.
 
 ## Acknowledgements
 
