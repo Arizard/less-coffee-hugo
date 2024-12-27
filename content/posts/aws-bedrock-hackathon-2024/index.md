@@ -61,7 +61,7 @@ While generative AI is powerful and is advancing at a breakneck pace, I still be
 
 In my opinion, our use case is a good fit: it doesn't require 100% correctness, it will always have human oversight, and the end goal is not to replace a person, but rather to show the prospect the potential value they could unlock from our _Hire_ product.
 
-Also, as you will read about below, it will automate a _mundane_ task which would have been difficult to achieve without a language model.
+Also, as you will read about below, it will automate a mundane task for which automation was difficult prior to the popularity of large language models.
 
 **Any new technology (Gen AI, Blockchain, etc.) is only worth using if you can't achieve the same outcome without it.**
 
@@ -72,6 +72,47 @@ Also, as you will read about below, it will automate a _mundane_ task which woul
 For our project we considered using Amazon Bedrock's [Knowledge Bases](https://aws.amazon.com/bedrock/knowledge-bases/), which is a managed solution that provides out-of-the-box web crawling. However, when we experimented with this, we discovered that web crawling takes a long time. For large websites it would recursively scrape all the pages on the website by following any hyperlinks it could find. This could take hours, and we would have to do it for every prospect's website that uses the service.
 
 With this outcome, we revised our approach. After some discussion and experimentation with the language models available in Bedrock, we determined that we can actually generate enough content for a compelling careers page by scraping a single home page or about page of the prospect's website. Thanks to this breakthrough, we revised the implementation to provide the source code of the webpage in the prompt sent to the language model.
+
+In the end, our prompt was literally:
+
+```javascript
+const PROMPT = `${pageSource}
+  
+  Examine the above HTML source code for a company webpage.
+  We are trying to generate a career page which consist of "header", "hero" and "about" sections.
+  We are trying to generate a JSON file which will be used to generate the page. We are trying to generate the JSON file using the following format.
+  
+  {
+    "header":{
+      "title":"",
+      "logo":""
+    },
+    "hero":{
+      "title": "",
+      "text":"",
+      "image":""
+    },
+    "about":{
+      "title": "",
+      "text":"",
+      "image":""
+    },
+    "socials":[
+      {
+        "key": "",
+        "url": ""
+      }
+    ]
+  }
+  For images and logo try and extract the relevant URL from the HTML provided. If the URL is relative, prepend the base path. The HTML is scraped from ${data.scrapeURL} which contains the base path. Prioritise images where the path contains words similar to: staff, team, member. Note that sometimes, the image can be found inside the style attributed, for example: style="background-image: url(&quot;https://s3.ap-southeast-2.amazonaws.com/production.assets.merivale.com.au/wp-content/uploads/2024/10/15114711/JIMROOF_Website_640x416.jpg&quot;);"
+  For hero title, this should be a call-to-action statement for the reader to join the team.
+  For hero text use the company info to generate the text, and invite the reader to apply for a role at the company.
+  For about text use the company info to generate the text.
+  For the socials array, extract any social URLs for the company from the HTML provided. The array should be filled with objects containing a "key" and a "url" property. The "key" should be one of the following: FACEBOOK, INSTAGRAM, TIKTOK, YOUTUBE, TWITTER, LINKEDIN. If socials are not found then leave the socials array empty.
+  
+  Answer explicilty in valid JSON format and do not include any comments in the JSON file. Make sure to escape all double apostrophes and special characters.
+  If an output cannot be generated, return the empty format example shown above.`;
+```
 
 ## Building the proof-of-concept
 
@@ -110,15 +151,22 @@ Where possible, we used existing Deputy architecture. Whichever approach would t
 We learned a lot, but the main 3 takeaways are:
 
 1. **Anthropic Claude 3.5 Sonnet** produces impressive results, remarkably quickly:
-    * It can extract information from complex varied data, such as webpage source HTML
-    * It can create valid JSON objects, even with complex nested structures.
-    * Prompting in plain english allows incredibly fast prototyping.
-2. **Efficient Data Retrieval**: Direct HTML fetching is faster than web crawling for knowledge base updates.
+    * It can extract information from complex varied data, such as webpage source HTML. This is where large language models really shine: extracting information from data with incredibly inconsistent structure.
+    * It can create valid JSON objects, even with complex nested structures. This is another strength of language models: they recognise patterns and syntax so well that they can re-create it with the desired information in the correct places.
+    * Prompting in plain english allows incredibly fast prototyping. This is will be the biggest driver of generative AI uptake: plain text allows for a much broader user base. We just need to be careful not to assume the language model is correct 100% of the time.
+2. **Efficient Data Retrieval**: Direct HTML fetching is faster than a web crawling knowledge base. Suitable if you need to use numerous, user-defined retrieval sources on-demand. The tradeoff is that you add latency, but for our use case, we can't do the crawling in advance -- this is the approach with lowest latency.
 3. **Puppeteer** enables effective scraping of dynamic, client-side rendered websites. E.g. Merivale's site.
+4. **Optimisation**: the prompting can be sped up (and will consume fewer tokens) if we strip any HTML tags like `<script>`, `<style>`, and `<svg>`, since these usually don't provide any information relevant to the end result.
 
 ## Outcome
 
 By the 4th day, we had a working system - albeit without any security, rate limiting, or ability to scale (it was a prototype after all). It took around 30 seconds to generate a personalised careers page.
+
+Unfortunately we didn't earn an award (robbed!), but overall it was the most fun I've had on the job all year. It was great to collaborate outside my usual team, with fresh faces and new perspectives.
+
+Despite no awards, I still believe we validated the feasibility of this idea. It is indeed possible to auto-generate careers pages based on a company website, but more importantly, it can be done in a user-friendly way.
+
+As for whether the project is viable as a lead generation tool? Not sure. Maybe next year we'll get an opportunity to take it to production!
 
 {{< figure src="submit-form.png" caption="From this page, the prospect submits their website URL.">}}
 {{< figure src="result-page.png" caption="After a short wait, we show them the personalised careers page.">}}
@@ -134,8 +182,8 @@ The following screenshots show careers pages that were generated entirely from t
 
 I am grateful for my hackathon team at Deputy:
 
-* **Natasha** and **Paula** for their product- and customer-conscious input, data collection, and for the visual cohesion of the final presentation (which is featured in the slides of this article).
-* **Yooshin** and **Toby** for their teamwork and collaboration on the engineering side, thanks to them we could bring it all together.
+* **Natasha** (PM) and **Paula** (PD) for their product- and customer-conscious input, data collection, and for the visual cohesion of the final presentation (which is featured in the slides of this article).
+* **Yooshin** (FE Engineer) and **Toby** (Website/FE Engineer) for their teamwork and collaboration on the engineering side, thanks to them we could bring it all together.
 
 ## Appendix
 ### Lambda source code
