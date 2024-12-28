@@ -22,17 +22,23 @@ draft: false
     header, footer, nav#banner { display: none !important; }
     body {
       color: black !important;
-      font-size: 12pt;
+      font-size: 12pt !important;
+      line-height: 16pt !important;
       margin: 0;
     }
 
-    main#content article li {
-        margin-bottom: 4pt;
-        line-height: 16pt;
+    h1 {
+      font-size: 24pt !important;
+      line-height: 24pt !important;
     }
 
-    p {
-      line-height: 16pt !important;
+    h2 {
+      font-size: 20pt !important;
+      line-height: 20pt !important;
+    }
+
+    main#content article li {
+      margin-bottom: 0.66rem;
     }
 
     .hide-on-print {

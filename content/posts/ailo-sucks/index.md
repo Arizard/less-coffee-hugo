@@ -49,13 +49,13 @@ Based on the [Ailo website](https://ailo.io/), there are three overarching user 
 
 Wait a minute. That sounds like a [Customer Relationship Management](https://en.wikipedia.org/wiki/Customer_relationship_management) system! Remember, the customer is the property investor. The [demo risk report](https://s3-ap-southeast-2.amazonaws.com/ailo-assets/pdfs/demo+protect+report.pdf) seems to support this theory -- Ailo is used primarily to manage investor relationships.
 
-{{< figure src="demo-risk-report.png" caption="Screenshot from the demo risk report" >}}
+{{< figure src="demo-risk-report.png" class="portrait" caption="Screenshot from the demo risk report" >}}
 
 ## UX Dark Patterns that cost renters money
 
 I have a personal gripe related to this topic.
 
-{{< figure src="ailo-service-fee.png" caption="This is a payment being made using saved bank details" >}}
+{{< figure src="ailo-service-fee.png" class="portrait" caption="This is a payment being made using saved bank details" >}}
 
 **Ailo will charge you a service fee to store your banking details**. By law, property agencies must provide tenants one fee-free way to pay rent. However the law does not prevent agencies from making it require a great deal of effort. Ailo will charge you a service fee for payments made using saved bank details, **but you can avoid the service fee by making one-off payments and typing your bank details each week**. This is how they have squirmed around the law.
 

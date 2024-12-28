@@ -14,7 +14,7 @@ This post was titled "Yashica Electro 35", but I need to give context first. I'l
 
 Last year, while browsing my local Vinnies (an Australian thrift store/charity organisation) I found a **Ricoh XR-10** with a **Rikenon 35-70mm** lens for only A$20. At the time, I had no idea if it worked, but since it was dirt cheap I took a chance on it. I learned to [replace light seals](https://www.youtube.com/watch?v=6jvQP-IZIC8), ordered a new battery, and filled a roll of film with "test shots" (just me snapping whatever I was doing that week).
 
-{{< figure src="IMG_7544.jpg" caption="A bargain? We'll see." >}}
+{{< figure src="IMG_7544.jpg" class="portrait" caption="A bargain? We'll see." >}}
 
 I was quite pleased with the condition of the lens. The body at first appeared to also be in good condition. At one point, the winding lever was jammed. I removed the bottom cover and found strange brown crumbs lodged in one of the mechanical components. I cleared it out and the lever worked again. Not sure what that was. Maybe I don't want to know.
 
@@ -44,7 +44,7 @@ Don't forget: when we take photos, it's often about saving a memory for later. T
 
 ## The Yashica Electro 35 GSN
 
-{{< figure src="IMG_0203.jpg" caption="The Electro 35 GSN right after I bought it." >}}
+{{< figure src="IMG_0203.jpg" class="portrait" caption="The Electro 35 GSN right after I bought it." >}}
 
 The Yashica Electro 35 was a line of rangefinder cameras manufactured by Yashica in the early 1970s. They feature a 45mm f/1.7 unit-focusing fixed lens, aperture priority automatic shutter speed, and a cadmium sulfide (CdS) photoresistor.
 
@@ -104,13 +104,13 @@ More searching led me to [Yashica Guy's repair guides](http://www.yashica-guy.co
 
 How hard could it be? After all, it's not brain surgery... just micro-surgery?
 
-{{< figure src="old-pad.jpg" caption="The old pad of death. It turned to dust with minimal scraping. It's on the _underside_ of that horizontal metal plate." >}}
+{{< figure src="old-pad.jpg" class="portrait" caption="The old pad of death. It turned to dust with minimal scraping. It's on the _underside_ of that horizontal metal plate." >}}
 
 It was a bit trickier than expected, but I managed.
 
 I had ordered a tool kit from Jaycar for this exact purpose. I'm not sponsored but this kit is awesome. It had everything I needed (except for a very specific tool called a _watch spanner_ which would have made it easier to unscrew the winding lever and ASA adjustment).
 
-{{< figure src="tools.jpg" caption="The angled tweezers were really useful" >}}
+{{< figure src="tools.jpg" class="portrait" caption="The angled tweezers were really useful" >}}
 
 I was able to scrape out the old gunk using Pointy Black Stick (name I just made up for one of the tools) and isopropyl alcohol (loosens the glue).
 
@@ -120,9 +120,9 @@ Since apparently the pad used to be made of the same stuff as the light seals, I
 
 The Youtube commenter before said he used double-sided tape with one side still covered, but I didn't have any of that on hand. Instead, I saw a passing Flickr comment where a user said that the used **electrical tape layered to the desired thickness**. So I took the closest thing to electrical tape I had and layered away.
 
-{{< figure src="tape.jpg" >}}
+{{< figure src="tape.jpg" class="portrait" >}}
 
-{{< figure src="new-pad.jpg" caption="This was a PITA to get in." >}}
+{{< figure src="new-pad.jpg" class="portrait" caption="This was a PITA to get in." >}}
 
 According to Yashica Guy, the pad needs to be about 4x5mm with 2mm thickness. When I tried this, it was too thick, so I actually used closer to 1mm thickness. This may be because Yashica Guy used a _neoprene_ washer, which compresses more under load, while the tape I used is less elastic and more firm.
 
