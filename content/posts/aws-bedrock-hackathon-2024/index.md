@@ -182,7 +182,7 @@ Although we didn't take home any awards, the project was still a success in vali
 
 Have you built something using generative AI? What challenges did you face? Let me know at arie.oldman@vhs7.tv.
 
-## Acknowledgements
+## Credits
 
 I am grateful for my hackathon team at Deputy:
 
