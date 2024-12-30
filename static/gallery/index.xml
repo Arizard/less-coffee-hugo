@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Photos on Less Coffee Gallery</title>
+    <title>Less Coffee Gallery</title>
     <link>https://less.coffee/gallery/</link>
-    <description>Recent content in Photos on Less Coffee Gallery</description>
+    <description>Recent content on Less Coffee Gallery</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Arie Oldman</copyright>
