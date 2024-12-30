@@ -7,12 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Arie Oldman</copyright>
-    <lastBuildDate>Fri, 13 Dec 2024 17:20:09 +1100</lastBuildDate><atom:link href="https://less.coffee/gallery/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Dec 2024 14:43:08 +1100</lastBuildDate><atom:link href="https://less.coffee/gallery/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Analog</title>
       <link>https://less.coffee/gallery/tags/analog/</link>
-      <pubDate>Fri, 13 Dec 2024 17:20:09 +1100</pubDate>
+      <pubDate>Mon, 30 Dec 2024 14:43:08 +1100</pubDate>
       <guid>https://less.coffee/gallery/tags/analog/</guid><description>&lt;no value&gt;</description></item>
+    <item>
+      <title>Architecture</title>
+      <link>https://less.coffee/gallery/tags/architecture/</link>
+      <pubDate>Mon, 30 Dec 2024 14:43:08 +1100</pubDate>
+      <guid>https://less.coffee/gallery/tags/architecture/</guid><description>&lt;no value&gt;</description></item>
+    <item>
+      <title>Black and White</title>
+      <link>https://less.coffee/gallery/tags/black-and-white/</link>
+      <pubDate>Mon, 30 Dec 2024 14:43:08 +1100</pubDate>
+      <guid>https://less.coffee/gallery/tags/black-and-white/</guid><description>&lt;no value&gt;</description></item>
     <item>
       <title>Colour</title>
       <link>https://less.coffee/gallery/tags/colour/</link>
@@ -28,11 +38,6 @@
       <link>https://less.coffee/gallery/tags/party/</link>
       <pubDate>Fri, 13 Dec 2024 17:20:09 +1100</pubDate>
       <guid>https://less.coffee/gallery/tags/party/</guid><description>&lt;no value&gt;</description></item>
-    <item>
-      <title>Black and White</title>
-      <link>https://less.coffee/gallery/tags/black-and-white/</link>
-      <pubDate>Wed, 18 Sep 2024 22:46:26 +1000</pubDate>
-      <guid>https://less.coffee/gallery/tags/black-and-white/</guid><description>&lt;no value&gt;</description></item>
     <item>
       <title>Portrait</title>
       <link>https://less.coffee/gallery/tags/portrait/</link>
@@ -53,10 +58,5 @@
       <link>https://less.coffee/gallery/tags/polaroid/</link>
       <pubDate>Mon, 16 Sep 2024 20:38:16 +1000</pubDate>
       <guid>https://less.coffee/gallery/tags/polaroid/</guid><description>&lt;no value&gt;</description></item>
-    <item>
-      <title>Architecture</title>
-      <link>https://less.coffee/gallery/tags/architecture/</link>
-      <pubDate>Sat, 14 Sep 2024 15:07:49 +1000</pubDate>
-      <guid>https://less.coffee/gallery/tags/architecture/</guid><description>&lt;no value&gt;</description></item>
   </channel>
 </rss>
