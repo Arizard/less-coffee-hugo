@@ -96,7 +96,6 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
 #### Code block with backticks
 
 ```
-html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -146,6 +145,10 @@ func main() {
 ```plain
 Hello World, this is using the ```plain code block
 ```
+
+#### Code blocks inline
+
+Sometimes code can be `inline` and potentially contain `very long words or go over multiple lines... how curious?`
 
 ## List Types
 
