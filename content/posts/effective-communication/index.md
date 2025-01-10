@@ -3,7 +3,7 @@ title: "How to communicate effectively"
 subtitle: "My opinion on how to keep the team aligned."
 date: 2025-01-10T21:34:50+11:00
 author: Arie Oldman
-draft: true
+draft: false
 ---
 
 ## What is effective communication
@@ -16,23 +16,25 @@ Communication can occur via meetings (sync), instant messaging/email (async), go
 
 In my most recent sub-project Other Locations I worked with engineers, product managers, designers and QA. During this project, I tried to make the communication effective in three ways.
 
-## Educating the ENTIRE team on key concepts for Other Locations
+## Educating the ENTIRE team on key concepts
 
-Key concepts such as:
+For _Other Locations_, key concepts included:
 
 1. External Timesheet
 2. Primary Workplace
-3. Secondary Workplace, etc.
+3. Secondary Workplace
 
-Keeps everyone aligned on what we’re building, and each discipline can communicate using an agreed set of terms.
+and many more.
+
+Key concepts keeps everyone aligned on what we’re building, and each discipline can communicate using an agreed set of terms.
 
 ## Identifying areas to dive deep with specific team members, and converting these to tasks:
 
 Some examples of areas to dive deep are:
 
-1. I need Product to advise on specific requirements. These are noted down in the Project Plan document.
+1. I need Product to advise on specific functional requirements and scope. These are noted down in the Project Plan document.
 2. I need Design and Frontend to discuss how we will present this feature on the page and whether the mockup by Design is feasible.
-3. I need Backend to discuss how we will implement these requirements into the existing system without causing regression. We also identify broad changes that are broken down into specific tasks.
+3. I need Backend to discuss how we will implement these requirements (functional and non-functional) into the existing system without causing regression. We also identify broad changes that are broken down into specific tasks.
 
 Because each discussion is isolated only to the most relevant individuals, we can dive deep on the problem without having to stop to explain things. This also reduces time wastage for individuals who are not required to contribute.
 
