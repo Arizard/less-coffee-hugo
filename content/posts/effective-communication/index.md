@@ -54,3 +54,5 @@ In summary, there’s 3 main things to try when you want effective communication
 
 Have you ever had this responsibility? Do you agree or disagree, and what worked for you? Let me know in the comments or send me an email at arie.oldman@vhs7.tv.
 
+{{< figure src="cheese.jpg" >}}
+
