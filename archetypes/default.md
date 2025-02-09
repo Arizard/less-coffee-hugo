@@ -1,6 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 subtitle: "bottom text"
+hero: hero.jpg
 date: {{ .Date }}
 author: {{ .Site.Params.defaultAuthor }}
 draft: true
