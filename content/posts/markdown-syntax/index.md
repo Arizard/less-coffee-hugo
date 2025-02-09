@@ -47,11 +47,17 @@ this has no effect on screens less than 770px across.
 The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
 
 # H1 Heading One
+lorem ipsum dolor sit amet
 ## H2 Heading Two
+lorem ipsum dolor sit amet
 ### H3 Heading Three
+lorem ipsum dolor sit amet
 #### H4 Heading Four
+lorem ipsum dolor sit amet
 ##### H5 Heading Five
+lorem ipsum dolor sit amet
 ###### H6 Heading Six
+lorem ipsum dolor sit amet
 
 ## Paragraph
 

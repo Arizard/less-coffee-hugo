@@ -1,12 +1,11 @@
 ---
 title: "Personalised Careers Pages Made With Generative AI"
-subtitle: "Our hackathon project, built with Anthropic Claude, powered by AWS."
+subtitle: "How we built our hackathon project with Anthropic Claude and AWS."
+hero: 01.jpg
 date: 2024-12-26T10:29:16+11:00
 author: Arie Oldman
 draft: false
 ---
-
-{{< figure src="01.jpg" caption="(Courtesy of Natasha)" >}}
 
 In December 2024, myself and 4 other Deputies participated in the internal "AI Hackathon", where teams competed to find ways to innovate the Deputy product using AI.
 

@@ -5,9 +5,9 @@ author: Arie Oldman
 date: 2023-07-17T21:00:00+10:00
 ---
 
-{{< figure src="Capture One Catalog5757.jpg" class="portrait" caption="A photo I took of Renee's nails, with a white streak visible. `1/100s, f/8, ISO 200`" alt="photo of hand with painted nails. the nails are purple with dark red glitter in a striped design at the tip. there is a pronounced lengthwise white streak on each nail caused by the softbox." >}}
-
 When photographing glossy nails in a studio setting using a softbox, you might find that there is an annoying white streak obscuring the nail art. I've been calling this "glare" for lack of a better term.
+
+{{< figure src="Capture One Catalog5757.jpg" class="portrait" caption="A photo I took of Renee's nails, with a white streak visible. `1/100s, f/8, ISO 200`" alt="photo of hand with painted nails. the nails are purple with dark red glitter in a striped design at the tip. there is a pronounced lengthwise white streak on each nail caused by the softbox." >}}
 
 This glare is unflattering and it makes the nail art harder to see. The whole point of the photo is to show off the art!
 
