@@ -8,3 +8,4 @@ draft: true
 
 {{< figure src="image-example-500px.jpg" caption="example image" >}}
 
+<!-- tip: don't start the article with a heading -->

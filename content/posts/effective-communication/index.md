@@ -6,8 +6,6 @@ author: Arie Oldman
 draft: false
 ---
 
-## What is effective communication
-
 Effective communication starts with understanding the unique roles of each team member and how they affect the outcome of the project.
 
 For example, our product manager is the SME for functional requirements and project rollout, our designer is responsible for UX and collecting usability feedback for customers, and our QA is responsible for creating E2E tests to validate features against regression. Even within the engineering discipline, there are multiple specialties: frontend, backend, platform, etc.
