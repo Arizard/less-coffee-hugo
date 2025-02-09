@@ -1,6 +1,6 @@
 ---
-title: "How to communicate effectively"
-subtitle: "My opinion on how to keep the team aligned."
+title: "How to Communicate Effectively"
+subtitle: "3 important ideas for productive collaboration."
 date: 2025-01-10T21:34:50+11:00
 author: Arie Oldman
 draft: false
