@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Digital on Less Coffee Gallery</title>
+    <link>https://less.coffee/gallery/tags/digital/</link>
+    <description>Recent content in Digital on Less Coffee Gallery</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Arie Oldman</copyright>
+    <lastBuildDate>Mon, 30 Dec 2024 14:43:08 +1100</lastBuildDate><atom:link href="https://less.coffee/gallery/tags/digital/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Headshots</title>
+      <link>https://less.coffee/gallery/headshots/</link>
+      <pubDate>Mon, 30 Dec 2024 14:43:08 +1100</pubDate>
+      <guid>https://less.coffee/gallery/headshots/</guid><media:content url="https://less.coffee/gallery/headshots/variant-3-rating-5-DSC04856_hu11758117903541518715.jpg" type="image/jpeg"/>
+        <description>
+          &lt;img src=&quot;https://less.coffee/gallery/headshots/variant-3-rating-5-DSC04856_hu11758117903541518715.jpg&quot; /&gt;
+          &lt;p&gt;Professional headshots I have taken of friends, for LinkedIn, Slack, Teams, Gmail, Outlook, etc.&lt;/p&gt;
+        </description></item>
+  </channel>
+</rss>
