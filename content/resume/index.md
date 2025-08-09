@@ -91,7 +91,24 @@ Software engineer interested in backend development. 5 years of experience with 
 
 ## Professional Experience
 
-**Deputy • Senior Software Engineer •** _October 2022 - present_
+**Eucalyptus • Senior Software Engineer I •** _February 2025 - present_
+
+* **Feature lead** for Juniper _Side Effect Check-In_, where I directed a team of 3 engineers (including myself) and worked with a product manager to implement a new side effect questionnaire which surfaces only when appropriate and intelligently triages patients to connect them with practitioners, improving the patient outcomes for medicated weight loss.
+<!-- what's special about it?:
+    working within microservices architecture -- RPC and Pubsub,
+    technical specification document + review process and iteration,
+    patients often feel unsupported when they get side effects from wegovy/mounjaro,
+    observability with tracing, logging, etc.
+    a few different boundaries: patients, admins, support/practitioners,
+    estimation, capacity, forecasting
+    complex requirements:
+        patients don't need it if they report no side effects 2 weeks in a row
+        questionnaire begin to show up again if they titrate-up their treatment
+        questionnaire dissapears on pause treatment and re-appears on resume.
+        questionnaire
+-->
+
+**Deputy • Senior Software Engineer •** _October 2022 - February 2025_
 
 * **Directed** and developed the implementation of a new asynchronous _Timesheet Actions_ backend (PHP, MySQL), for which I coordinated a team of 5 other backend engineers, 1 product manager and 1 UX designer, scrum-style. This project was crucial in business objective to acquire a strategic partner, enabling delivery of over $3m USD in additional ARR.
 * **Directed** and developed the _Operations API_ project (PHP, Redis) to enable teams to manage state for long-running asynchronous tasks, improving system performance by maximising parallelisation and unifying the approach across the organisation.
