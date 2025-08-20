@@ -5,6 +5,7 @@ date: 2023-09-10T10:05:40+10:00
 author: Arie Oldman
 draft: false
 hero: hero.png
+featured: true
 ---
 
 A few weeks ago, my partner and I (renters) were ushered onto our property manager's new property management software [Ailo](https://www.smh.com.au/national/nsw/tenants-feel-forced-onto-fee-charging-rent-payment-apps-20230707-p5dmi8.html). I was optimistic at first (it aims to make communication with property managers easier) but I would soon learn of the dark patterns and nepotism that propelled Ailo to where it is today.
