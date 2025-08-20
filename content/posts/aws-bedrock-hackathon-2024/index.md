@@ -5,7 +5,7 @@ hero: 01.jpg
 date: 2024-12-26T10:29:16+11:00
 author: Arie Oldman
 draft: false
-featured: true
+featured: false
 ---
 
 In December 2024, myself and 4 other Deputies participated in the internal "AI Hackathon", where teams competed to find ways to innovate the Deputy product using AI.

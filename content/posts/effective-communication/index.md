@@ -60,7 +60,7 @@ In summary, there’s 3 main things to try when you want effective communication
 2. Deep dive with small groups to optimise time usage.
 3. Catalogue everything as reference material – in an organised, searchable, readable way.
 
-Have you ever had this responsibility? Do you agree or disagree, and what worked for you? Let me know in the comments or send me an email at arie.oldman@vhs7.tv.
+Have you ever had this responsibility? Do you agree or disagree, and what worked for you? Let me know in the comments!
 
 {{< figure src="cheese.jpg" >}}
 
