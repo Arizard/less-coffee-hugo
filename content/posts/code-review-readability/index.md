@@ -7,7 +7,7 @@ draft: false
 featured: true
 ---
 
-Making your PRs easier to review enables your team to ship fast while maintaining quality. In this post I’ll explain three ways to improve PR readability (which I learned while at [Eucalyptus](http://eucalyptus.health)) and why it works.
+Making your PRs easier to review enables your team to ship fast while maintaining quality. In this post I'll explain three ways to improve PR readability (that I learned while at [Eucalyptus](http://eucalyptus.health)) and why it works.
 
 ## Reduce Backtracking
 
@@ -15,7 +15,7 @@ Every time you refactor some code block into a new function, the reviewer needs 
 
 Sometimes you do need to create abstractions to reduce code duplication. Try to be absolutely sure that the code is truly duplicated — code blocks often look the same, but evolve differently over time.
 
-My advice: default to inlining your new code, until you have a really good sense of how it will be re-used and evolve. An example would be a class which encapsulates API calls to a third party. It’s obvious that if the third party were to change their API contract, all future calls should match that change, therefore it makes sense to deduplicate this code.
+My advice: default to inlining your new code, until you have a really good sense of how it will be re-used and evolve. An example would be a class that encapsulates API calls to a third party. It’s obvious that if the third party were to change their API contract, all future calls should match that change, therefore it makes sense to deduplicate this code.
 
 **Think about what it would be like to follow the code changes from start to finish. Would the reviewer be able to read the PR top-to-bottom, or would they frequently need to backtrack?**
 
@@ -61,7 +61,7 @@ for _, t := range things {
 }
 ```
 
-At first, there appears to be code duplication. However, having three separate loops rather than one big loop helps to reduce interleaved mutable state. Each code block can be examined in isolation, reducing cognitive load for the reviewer.
+At first glance, there appears to be code duplication. However, having three separate loops rather than one big loop helps to reduce interleaved mutable state. Each code block can be examined in isolation, reducing cognitive load for the reviewer.
 
 **Avoiding mutable state and simplifying that which you can't avoid will make code review easier.**
 
@@ -90,6 +90,6 @@ This section was mostly about name length, but content matters as well. Try to e
 
 ## Good Code Is about Human Comprehension
 
-Even in the age of AI, you should still write code for humans. Getting good code review, _quickly_, enables your team to ship fast *without* breaking things, and allows more code to be reviewed in the same amount of time. Reducing backtracking, simplifying mutable state, and managing mnemonic overhead may seem to be only three out of an infinite number of suggestions, but these are what stood out to me during my first six months at Eucalyptus. It’s something that I wish I had known during my time at Deputy.
+Even in the age of AI, you should still write code for humans. Getting good code review, _quickly_, enables your team to ship fast _without_ breaking things, and allows more code to be reviewed in the same amount of time. Reducing backtracking, simplifying mutable state, and managing mnemonic overhead may seem to be only three out of an infinite number of suggestions, but these are what stood out to me during my first six months at Eucalyptus. It’s something that I wish I had known during my time at Deputy.
 
-Did you find this article useful, or perhaps you used it to [train a coding agent](https://github.com/anthropics/claude-code)? Maybe you disagree strongly—just let me know in the comments!
+Did you find this article useful, or perhaps you used it to [train an AI coding agent](https://github.com/anthropics/claude-code)? Maybe you disagree strongly—just let me know in the comments!
