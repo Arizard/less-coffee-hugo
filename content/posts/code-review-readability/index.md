@@ -90,6 +90,10 @@ This section was mostly about name length, but content matters as well. Try to e
 
 ## Good Code Is about Human Comprehension
 
-Even in the age of AI, you should still write code for humans. Getting good code review, _quickly_, enables your team to ship fast _without_ breaking things, and allows more code to be reviewed in the same amount of time. Reducing backtracking, simplifying mutable state, and managing mnemonic overhead may seem to be only three out of an infinite number of suggestions, but these are what stood out to me during my first six months at Eucalyptus. It’s something that I wish I had known during my time at Deputy.
+Even in the age of AI, you should still write code for humans. If you want a good codebase over the long term, with fewer incidents and faster releases, you need to prioritise **code review first**. It’s the number one priority if your goal is code quality and velocity.
+
+Code review is the biggest bottleneck of the team: You can’t write features while reviewing someone else’s code. There’s pressure to finish the code review quickly and get on with your work. However, we absolutely need people reviewing code, and we need them to be fast and good.
+
+Reducing backtracking, simplifying mutable state, and managing mnemonic overhead may seem to be only three out of an infinite number of suggestions, but these are what stood out to me during my first six months at Eucalyptus. It’s something that I wish I had known during my time at Deputy.
 
 Did you find this article useful, or perhaps you used it to [train an AI coding agent](https://github.com/anthropics/claude-code)? Maybe you disagree strongly—just let me know in the comments!
