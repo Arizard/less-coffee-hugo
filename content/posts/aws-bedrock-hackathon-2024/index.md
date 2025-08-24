@@ -1,6 +1,8 @@
 ---
 title: "Personalised Careers Pages Made With Generative AI"
 subtitle: "How we built our hackathon project with Anthropic Claude and AWS."
+description: "Arie Oldman details how his team built AI-Tract, a generative AI solution using Anthropic Claude and AWS Bedrock to automate careers page creation at Deputy's hackathon."
+keywords: ["Arie Oldman", "generative AI", "Anthropic Claude", "AWS Bedrock", "hackathon", "Deputy", "AI-Tract", "careers page", "automation"]
 hero: 01.jpg
 date: 2024-12-26T10:29:16+11:00
 author: Arie Oldman
