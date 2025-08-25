@@ -4,6 +4,7 @@ subtitle: "A double-edged sword for elevating your engineering practice with ver
 date: 2022-03-22T10:53:38+11:00
 author: Arie
 draft: false
+featured: false
 ---
 
 _This is the blog post version of a presentation I made for my team at Deputy. Enjoy!_

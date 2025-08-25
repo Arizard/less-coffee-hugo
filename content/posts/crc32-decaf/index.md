@@ -5,6 +5,7 @@ date: 2021-01-30T19:24:38+11:00
 author: Arie Oldman
 keywords: ["Arie Oldman", "dexml", "decaf", "deputy", "php", "scripting language"]
 draft: false
+featured: false
 ---
 
 CRC-32 is a used to detect data corruption during a transmission -- one example is the use of CRC-32 to provide a CRC hash to the [Frame Check Sequence](https://en.wikipedia.org/wiki/Frame_check_sequence) in Ethernet transmissions.

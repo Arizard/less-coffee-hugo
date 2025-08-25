@@ -6,6 +6,7 @@ keywords: ["Arie Oldman", "effective communication", "team collaboration", "soft
 date: 2025-01-10T21:34:50+11:00
 author: Arie Oldman
 draft: false
+featured: true
 ---
 
 Effective communication starts with understanding the unique roles of each team member and how they affect the outcome of the project.

@@ -6,6 +6,7 @@ keywords: ["Arie Oldman", "Hugo", "commenting systems", "static site", "open sou
 date: 2024-12-31T16:31:17+11:00
 author: Arie Oldman
 draft: false
+featured: true
 ---
 
 I love using Hugo to generate static sites quickly and deploy them cheaply. If you’re like me, then you also want to add comments to your Hugo site, but there are so many open source options that it’s a bit overwhelming to choose a single one.
