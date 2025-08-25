@@ -1,7 +1,9 @@
 ---
 title: "Implementing CRC-32 in Decaf"
+subtitle: "The challenge of implementing bitwise arithmetic in a high-level language without bitwise abstractions."
 date: 2021-01-30T19:24:38+11:00
 author: Arie Oldman
+keywords: ["Arie Oldman", "dexml", "decaf", "deputy", "php", "scripting language"]
 draft: false
 ---
 
@@ -13,9 +15,72 @@ The challenge is to implement in a high-level language which does not come with 
 
 You may ask, why would I spend time implementing something like this, writing an article to go with it, all in a language nobody will ever use or even hear of? The answer is because I can[^reason]. What are you, the reader, going to do? Call the software police? Call my _boss_? Not likely.
 
+## What is Decaf (DeXML)?
 
+Decaf is a language that is visually similar to [CoffeeScript](https://coffeescript.org), however it is vastly different under the hood. It's actually a scripting language which is executed inside a PHP context. It's how Deputy is able to deliver customer implementations of the product at a high velocity.
+
+Decaf has no `import`, `require` or `include`. There are no custom data types, developers are limited to `number`, `string`, `array` (actually PHP associative arrays), `boolean` and `null`. In Decaf, you cannot pass functions as arguments, so that means no callbacks. You cannot define functions while inside the scope of another function. Most importantly for the following challenge, **Decaf has no bitwise operators**.
+
+The reason for these limitations is that Decaf is first transpiled into XML (or DeXML as it is known within the company). So really, the PHP application is reading XML to execute a series of commands -- this is in contrast to other languages which actually get compiled.
+
+Is it possible to implement a CRC-32 algorithm in Decaf, despite all the limitations of the language? Of course! In the spirit of _Deputy CX Engineering_, some workarounds are required. Read on to find out how.
+
+## Work Around The Limitations
+
+We're going to need some way of converting between an array of bits and base-10 integers.
+
+First, let's build a function which converts integers to binary. The function should take an integer argument and return an array of bits. Each bit is the integer `0` or `1`.
+
+The following function will iterate over each "column" of the binary number (1s, 2s, 4s, 8s etc) and determine whether the column should be `1` or `0`.
+
+First take modulo of the input value and 2 -- this will either be a `0` or `1`. Save this value into the array of bits, in the current position. Finally, subtract the value from the input. Repeat.
+
+_We have assumed we are dealing with 32 bit numbers._
+
+```coffeescript
+intToBinary = (intA) ->
+  arrBit = []
+  intLength = 32
+  intIndex = 0
+
+  while intIndex < intLength
+    arrBit[intIndex] = 0
+
+    if intA > 0
+      intMod = intA % 2
+      arrBit[intIndex] = intMod
+      intA = (intA - intMod) / 2
+
+    intIndex = intIndex + 1
+
+  arrOut = []
+  for intBit in sort({var: arrBit, with: "reverse"})
+    arrOut[length({var: arrOut})] = intBit
+
+  return arrOut
+```
+
+To write a function which converts binary back into integer, iterate through each column of the binary number, evaluate the expression `b * 2^p`, where `b` is the value in the current position, and `2^p` is the place value (or position) of the bit. This means that the value `p` is actually equal to `log_2(2^p)`. When we loop through the array of bits, `p` initially is `len(bits) - 1` and is finally `0` when the loop completes.
+
+To simplify: Set `p` to be `len(bits) - 1` and then decrement `p` at the end of the loop.
+
+To calculate the base-10 value, sum the expression `b * 2^p` for every value of `b` in `bits` with the corresponding place value `2^p`.
+
+```coffeescript
+binaryToInt = (arrBit) ->
+  intInt = 0
+  intPower = length({var: arrBit}) - 1
+  for intBit in arrBit
+    intInt = intInt + math({op: "pow", arg1: 2, arg2: intPower}) * intBit
+    intPower = intPower - 1
+
+  return intInt
+
+```
 
 ## Algorithm Summary
+
+With the workarounds in place, let's get on with the crc32 implementation.
 
 1. Start by generating the _lookup table_ (or _fast table_).
     * Create an array of length 256 to store the _table_.
@@ -98,7 +163,7 @@ to arrays of bits. All the "logical" functions will operate on arrays of bits.
 * This maintains the correct length for each value.
 * This also avoids constant conversion between binary and base-10.
 
-Yes, I also wrote a bunch of bitwise abstractions to go with this, and make the code a bit easier to follow. Will anyone ever need these abstractions? Maybe, for IP addresses or something. If you know any applications of bitwise operations which apply to workforce management, then please [contact me]({{< relref contact >}}).
+Yes, I also wrote a bunch of bitwise abstractions to go with this, and make the code a bit easier to follow. Will anyone ever need these abstractions? Maybe, for IP addresses or something. If you know any applications of bitwise operations which apply to workforce management, then leave a comment.
 
 ### Validation
 
@@ -110,73 +175,9 @@ The following table shows a few validations of crc32.coffee, which has been comp
 |Arie is epic|def989f5|def989f5|
 |[The script of Bee Movie](https://web.njit.edu/~cm395/theBeeMovieScript/)|1ec6c44a (instant)| timeout :( |
 
-### Performance
-
 This is super slow (>1s)! It has to perform a lot of looping and string splitting. For this reason, it was never used in production.
 
-## You Haven't Heard of Decaf?
-
-Decaf is a language similar to [CoffeeScript](https://coffeescript.org), however it is vastly different under the hood. It's actually a scripting language which is executed inside a PHP context. It's how Deputy is able to deliver customer implementations of the product at a high velocity.
-
-Decaf has no `import`, `require` or `include`. There are no custom data types, developers are limited to `number`, `string`, `array` (actually PHP associative arrays), `boolean` and `null`. In Decaf, you cannot pass functions as arguments, so that means no callbacks. You cannot define functions while inside the scope of another function. Most importantly for the following challenge, **Decaf has no bitwise operators**.
-
-The reason for these limitations is that Decaf is first transpiled into XML (or DeXML as it is known within the company). So really, the PHP application is reading XML to execute a series of commands -- this is in contrast to other languages which actually get compiled.
-
-Is it possible to implement a CRC-32 algorithm in Decaf, despite all the limitations of the language? Of course! In the spirit of _Deputy CX Engineering_, some workarounds are required. Read on to find out how.
-
-<!-- ## Work Around The Limitations
-
-We're going to need some way of converting between an array of bits and base-10 integers.
-
-First, let's build a function which converts integers to binary. The function should take an integer argument and return an array of bits. Each bit is the integer `0` or `1`.
-
-The following function will iterate over each "column" of the binary number (1s, 2s, 4s, 8s etc) and determine whether the column should be `1` or `0`.
-
-First take modulo of the input value and 2 -- this will either be a `0` or `1`. Save this value into the array of bits, in the current position. Finally, subtract the value from the input. Repeat.
-
-_We have assumed we are dealing with 32 bit numbers._
-
-```coffeescript
-intToBinary = (intA) ->
-  arrBit = []
-  intLength = 32
-  intIndex = 0
-
-  while intIndex < intLength
-    arrBit[intIndex] = 0
-
-    if intA > 0
-      intMod = intA % 2
-      arrBit[intIndex] = intMod
-      intA = (intA - intMod) / 2
-
-    intIndex = intIndex + 1
-
-  arrOut = []
-  for intBit in sort({var: arrBit, with: "reverse"})
-    arrOut[length({var: arrOut})] = intBit
-
-  return arrOut
-```
-
-To write a function which converts binary back into integer, iterate through each column of the binary number, evaluate the expression `b * 2^p`, where `b` is the value in the current position, and `2^p` is the place value (or position) of the bit. This means that the value `p` is actually equal to `log_2(2^p)`. When we loop through the array of bits, `p` initially is `len(bits) - 1` and is finally `0` when the loop completes.
-
-To simplify: Set `p` to be `len(bits) - 1` and then decrement `p` at the end of the loop.
-
-To calculate the base-10 value, sum the expression `b * 2^p` for every value of `b` in `bits` with the corresponding place value `2^p`.
-
-```coffeescript
-binaryToInt = (arrBit) ->
-  intInt = 0
-  intPower = length({var: arrBit}) - 1
-  for intBit in arrBit
-    intInt = intInt + math({op: "pow", arg1: 2, arg2: intPower}) * intBit
-    intPower = intPower - 1
-
-  return intInt
-
-```
- -->
+Still, I had a lot of fun solving this puzzle. Sometimes you just have to do things to see if it's possible.
 
 ## Appendix A
 
@@ -207,7 +208,7 @@ binaryToInt = (arrBit) ->
 
 **Source code for crc32.coffee**
 
-[View crc32.coffee here]({{< relref crc32-source >}})
+[View crc32.coffee here](crc32.coffee)
 
 ## References
 

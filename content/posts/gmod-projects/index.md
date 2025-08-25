@@ -1,7 +1,11 @@
 ---
 title: "My Garry's Mod Projects"
+subtitle: "Personal projects from my high school and early university years that generated my first programming income."
+description: "Arie Oldman showcases his Garry's Mod projects from 2014-2018, including open source gamemodes, addons, and commercial work that generated his first programming income."
+keywords: ["Arie Oldman", "Garry's Mod", "GMod", "game development", "Lua programming", "Steam Workshop", "Deathrun Neue", "gamemode development"]
 date: 2021-01-25T21:45:50+11:00
-draft: false 
+draft: false
+author: Arie Oldman
 ---
 
 When I was in high school and early university, I loved the game [Garry's Mod](https://store.steampowered.com/app/4000/Garrys_Mod/). It was the community where I worked on my first major personal projects - some of which generated my first ever income. Many are still in use!
@@ -10,7 +14,7 @@ The following is a collection of my works spanning 2014 -- 2018.
 
 ## Deathrun Neue (Open Source)
 
-{{< figure src="deathrun-logo.png" width="200px" alt="deathrun neue logo" caption="Deathrun Neue logo" >}}
+{{< figure src="deathrun-logo.png" class="portrait" width="200px" alt="deathrun neue logo" caption="Deathrun Neue logo" >}}
 
 Deathrun Neue is a batteries-included Deathrun gamemode for Garry's Mod. Players are divided into two teams: Runners and Deaths. Runners must complete an obstacle course, while Deaths activate traps to stop them.
 

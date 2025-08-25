@@ -1,5 +1,6 @@
 ---
-title: "Rebase: A Double-Edged Sword"
+title: "How to Rebase"
+subtitle: "A double-edged sword for elevating your engineering practice with version control."
 date: 2022-03-22T10:53:38+11:00
 author: Arie
 draft: false
