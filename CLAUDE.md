@@ -42,5 +42,5 @@ The `less-coffee-lambda-at-edge/` directory contains AWS Lambda@Edge functions f
 
 ### Deployment
 - Static files built to `public/` directory
-- Likely deployed to AWS CloudFront with Lambda@Edge URL rewriting
-- No build pipeline configuration present in repository
+- Deployed automatically to an S3 bucket via GitHub Actions
+- AWS CloudFront distribution with Lambda@Edge URL rewriting
