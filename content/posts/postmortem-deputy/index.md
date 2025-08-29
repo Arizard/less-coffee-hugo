@@ -6,6 +6,7 @@ keywords: ["Arie Oldman", "Deputy", "postmortem", "career change", "management p
 date: 2025-08-26T22:42:44+10:00
 author: Arie Oldman
 draft: false
+featured: true
 ---
 
 When you interview for a new role, often you’ll get asked:
