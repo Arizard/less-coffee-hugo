@@ -91,9 +91,9 @@ Software engineer interested in backend development. 5 years of experience with 
 
 ## Professional Experience
 
-**Eucalyptus • Senior Software Engineer I •** _February 2025 - present_
+{{< heading-with-sub-label level="3" heading="Senior Software Engineer I at Eucalyptus" label="February 2025 — present" >}}
 
-* **Feature lead** for Juniper _Side Effect Check-In_, where I directed a team of 3 engineers (including myself) and worked with a product manager to implement a new side effect questionnaire which surfaces only when appropriate and intelligently triages patients to connect them with practitioners, improving the patient outcomes for medicated weight loss.
+**Feature lead** for Juniper _Side Effect Check-In_, where I directed a team of 3 engineers (including myself) and worked with a product manager to implement a new side effect questionnaire which surfaces only when appropriate and intelligently triages patients to connect them with practitioners, improving the patient outcomes for medicated weight loss.
 <!-- what's special about it?:
     working within microservices architecture -- RPC and Pubsub,
     technical specification document + review process and iteration,
@@ -108,21 +108,27 @@ Software engineer interested in backend development. 5 years of experience with 
         questionnaire
 -->
 
-**Deputy • Senior Software Engineer •** _October 2022 - February 2025_
+{{< heading-with-sub-label level="3" heading="Senior Software Engineer at Deputy" label="October 2022 — February 2025" >}}
 
-* **Directed** and developed the implementation of a new asynchronous _Timesheet Actions_ backend (PHP, MySQL), for which I coordinated a team of 5 other backend engineers, 1 product manager and 1 UX designer, scrum-style. This project was crucial in business objective to acquire a strategic partner, enabling delivery of over $3m USD in additional ARR.
-* **Directed** and developed the _Operations API_ project (PHP, Redis) to enable teams to manage state for long-running asynchronous tasks, improving system performance by maximising parallelisation and unifying the approach across the organisation.
-* **Directed** and developed the _Distributed Mutex_ project (PHP, Redis) to enable teams to synchronise procedures across different system processes and user sessions, improving quality by reducing deadlocks and data races, at the same time unifying the approach across the organisation.
-* **Developed** a new _Timesheet_ search engine (Opensearch, Go, MySQL), which played a critical role in the business objective of acquiring new strategic partners.
-* **Headed** backend development for the AI-TRACT Hackathon Project using AWS Bedrock, in collaboration with a product manager, UX designer, and 2 frontend engineers, with the business objective to support lead generation for Deputy's Recruitment product offering.
-* **Continuously iterated** the product offering according to user feedback, in collaboration with product managers, UX designers, and frontend engineers.
-* **Aligned team and facilitated collaboration** related to complex domain-specific business logic by summarisation into easy-to-understand shared reference material. Collaborated with other engineers in the team to conduct tradeoff analysis of different software designs, recording decisions in shared project documentation.
+**Directed** and developed the implementation of a new asynchronous _Timesheet Actions_ backend (PHP, MySQL), for which I coordinated a team of 5 other backend engineers, 1 product manager and 1 UX designer, scrum-style. This project was crucial in business objective to acquire a strategic partner, enabling delivery of over $3m USD in additional ARR.
+
+**Directed** and developed the _Operations API_ project (PHP, Redis) to enable teams to manage state for long-running asynchronous tasks, improving system performance by maximising parallelisation and unifying the approach across the organisation.
+
+**Directed** and developed the _Distributed Mutex_ project (PHP, Redis) to enable teams to synchronise procedures across different system processes and user sessions, improving quality by reducing deadlocks and data races, at the same time unifying the approach across the organisation.
+
+**Developed** a new _Timesheet_ search engine (Opensearch, Go, MySQL), which played a critical role in the business objective of acquiring new strategic partners.
+
+**Headed** backend development for the AI-TRACT Hackathon Project using AWS Bedrock, in collaboration with a product manager, UX designer, and 2 frontend engineers, with the business objective to support lead generation for Deputy's Recruitment product offering.
+
+**Continuously iterated** the product offering according to user feedback, in collaboration with product managers, UX designers, and frontend engineers.
+
+**Aligned team and facilitated collaboration** related to complex domain-specific business logic by summarisation into easy-to-understand shared reference material. Collaborated with other engineers in the team to conduct tradeoff analysis of different software designs, recording decisions in shared project documentation.
 <!-- * **Wrote RFCs** for architectural changes and paradigm shifts to Deputy's backend, taking a previously synchronous product and making it asynchronous in order to scale users and data volume. -->
 <!-- * **Designed high-volume bulk actions** that allow users to process up to 10,000 timesheets in one command. -->
 <!-- * **Modernised** Deputy's Timesheet feature by creating a timesheet search engine, using AWS OpenSearch. -->
 <!-- * **Coordinated project delivery** for a team of 10 engineers. -->
 
-**Deputy • Software Engineer •** _September 2019 -- October 2022_
+{{< heading-with-sub-label level="3" heading="Software Engineer at Deputy" label="September 2019 — October 2022" >}}
 
 <!-- * **Pay Comparison**: -->
 <!-- * **Enterprise Employee Profile**: --> 
@@ -140,20 +146,20 @@ Software engineer interested in backend development. 5 years of experience with 
 * **Planned and executed** the _Export Aggregator_ project -- a Go service on the AWS Lambda runtime -- which translated to $25k in billable work for Deputy.
 * **Pioneered** automation of time-consuming manual tasks by creating an internal Go command line tool called _Precaf_. <!-- precaf, common funcs, pay comparison scripts -->
 
-**Spriggy • Junior Software Developer •** _March 2019 -- July 2019_
+{{< heading-with-sub-label level="3" heading="Junior Software Developer at Spriggy" label="March 2019 — July 2019" >}}
 
 * **Maintain quality** by fixing bugs in Spriggy backend.
 * **Reduce** situations of system overload by implementing rate-limiting functionality.
 * **Support cross-functional teams** by adding analytics tracing code into Spriggy backend.
 
-**Singtel Optus • Cadet Engineer (Networks) •** _July 2015 -- March 2019_
+{{< heading-with-sub-label level="3" heading="Cadet Engineer (Networks) at Singtel Optus" label="July 2015 — March 2019" >}}
 
 * **Improve internal productivity** by creating data visualisation software for national IP network topology and mobile network connectivity data using Python and Javascript.
 * **Improve internal productivity** by launching internal web utilities to assist device testing and zero-rating using PHP and Python.
 * **Reduce manual work** by automating legacy IP network data cleanup using Perl.
 * **Coordinate** mobile site upgrades to deliver improved 4G coverage.
 
-**Self Employed & Side Projects •** _since 2015_
+{{< heading-with-sub-label level="3" heading="Self Employed & Side Projects" label="since 2015" >}}
 
 * Creator of open-source project Deathrun Neue (61 stars, 18 contributors), a gamemode for Garry's Mod.
 * Create and sell addon products for Garry's Mod servers to enrich the player's online experience, written in the Lua programming language (4805 units sold).
@@ -161,7 +167,7 @@ Software engineer interested in backend development. 5 years of experience with 
 
 ## Education
 
-**Macquarie University • BEng (Honours) in Telecommunications Engineering •** _2015 -- 2018_
+{{< heading-with-sub-label level="3" heading="BEng (Honours) in Telecommunications Engineering at Macquarie University" label="2015 — 2018" >}}
 
 * **Published undergrad thesis** _Inline DDoS Detection for Small to Medium Businesses_, which examines software-defined networking approaches to intrusion detection and mitigation on the small (home) to medium (small business) scale.
 * Systems engineering, physics, linear algebra, calculus, electronics, engineering statistics, computer networks, signal processing.

@@ -28,13 +28,13 @@ pygmentsUseClasses = true
     name = "resume"
     title = "work"
     url = "/resume/"
-    weight = 3
+    weight = 2
   [[menu.main]]
     identifier = "gallery"
     name = "gallery"
     title = "gallery"
     url = "/gallery/"
-    weight = 2
+    weight = 3
 
 [permalinks]
   posts = "/:title/"
