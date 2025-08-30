@@ -140,36 +140,51 @@ Software engineer interested in backend development. 5 years of experience with 
 <!-- * **Built major compliance product offerings** on Deputy's PHP, Vue and Go stack, much of which is legacy code (10+ years old). <!-1- enterprise profile, pay comparison, svc-compliance -1-> -->
 <!-- * **Responsible for planning and executing** projects as part of a cross-functional team. <!-1- export aggr, bunnings, enterprise profile, pay comparison -1-> -->
 <!-- * **Delivered technical workshops**, guides, and documentation to software engineers. -->
-* **Planned and delivered** the backend APIs (PHP, MySQL) of the _Pay Comparison_ feature with a team of 6 engineers, 1 product manager and 1 designer to bolster Deputy's compliance offering by providing tools for the _Better Off Overall Test_ (BOOT). This supported the business objectives of targeting mid-market accounts and contract renewals for strategic partners.
-* **Mentored** two interns, guiding them through their 3-month intern projects into permanent positions at Deputy, using pair programming, 1-1s and code review.
-* **Improved maintainability** of the Enterprise Employee Profile by refactoring the PHP backend.
-* **Planned and executed** the _Export Aggregator_ project -- a Go service on the AWS Lambda runtime -- which translated to $25k in billable work for Deputy.
-* **Pioneered** automation of time-consuming manual tasks by creating an internal Go command line tool called _Precaf_. <!-- precaf, common funcs, pay comparison scripts -->
+
+**Planned and delivered** the backend APIs (PHP, MySQL) of the _Pay Comparison_ feature with a team of 6 engineers, 1 product manager and 1 designer to bolster Deputy's compliance offering by providing tools for the _Better Off Overall Test_ (BOOT). This supported the business objectives of targeting mid-market accounts and contract renewals for strategic partners.
+
+**Mentored** two interns, guiding them through their 3-month intern projects into permanent positions at Deputy, using pair programming, 1-1s and code review.
+
+**Improved maintainability** of the Enterprise Employee Profile by refactoring the PHP backend.
+
+**Planned and executed** the _Export Aggregator_ project -- a Go service on the AWS Lambda runtime -- which translated to $25k in billable work for Deputy.
+
+**Pioneered** automation of time-consuming manual tasks by creating an internal Go command line tool called _Precaf_. <!-- precaf, common funcs, pay comparison scripts -->
 
 {{< heading-with-sub-label level="3" heading="Junior Software Developer at Spriggy" label="March 2019 — July 2019" >}}
 
-* **Maintain quality** by fixing bugs in Spriggy backend.
-* **Reduce** situations of system overload by implementing rate-limiting functionality.
-* **Support cross-functional teams** by adding analytics tracing code into Spriggy backend.
+
+**Maintain quality** by fixing bugs in Spriggy backend.
+
+**Reduce** situations of system overload by implementing rate-limiting functionality.
+
+**Support cross-functional teams** by adding analytics tracing code into Spriggy backend.
 
 {{< heading-with-sub-label level="3" heading="Cadet Engineer (Networks) at Singtel Optus" label="July 2015 — March 2019" >}}
 
-* **Improve internal productivity** by creating data visualisation software for national IP network topology and mobile network connectivity data using Python and Javascript.
-* **Improve internal productivity** by launching internal web utilities to assist device testing and zero-rating using PHP and Python.
-* **Reduce manual work** by automating legacy IP network data cleanup using Perl.
-* **Coordinate** mobile site upgrades to deliver improved 4G coverage.
+
+**Improve internal productivity** by creating data visualisation software for national IP network topology and mobile network connectivity data using Python and Javascript.
+
+**Improve internal productivity** by launching internal web utilities to assist device testing and zero-rating using PHP and Python.
+
+**Reduce manual work** by automating legacy IP network data cleanup using Perl.
+
+**Coordinate** mobile site upgrades to deliver improved 4G coverage.
 
 {{< heading-with-sub-label level="3" heading="Self Employed & Side Projects" label="since 2015" >}}
 
-* Creator of open-source project Deathrun Neue (61 stars, 18 contributors), a gamemode for Garry's Mod.
-* Create and sell addon products for Garry's Mod servers to enrich the player's online experience, written in the Lua programming language (4805 units sold).
-* Manage sales, promotions and marketing media using the _gmodstore_ marketplace platform.
+Creator of open-source project Deathrun Neue (61 stars, 18 contributors), a gamemode for Garry's Mod.
+
+Create and sell addon products for Garry's Mod servers to enrich the player's online experience, written in the Lua programming language (4805 units sold).
+
+Manage sales, promotions and marketing media using the _gmodstore_ marketplace platform.
 
 ## Education
 
 {{< heading-with-sub-label level="3" heading="BEng (Honours) in Telecommunications Engineering at Macquarie University" label="2015 — 2018" >}}
 
-* **Published undergrad thesis** _Inline DDoS Detection for Small to Medium Businesses_, which examines software-defined networking approaches to intrusion detection and mitigation on the small (home) to medium (small business) scale.
-* Systems engineering, physics, linear algebra, calculus, electronics, engineering statistics, computer networks, signal processing.
+**Published undergrad thesis** _Inline DDoS Detection for Small to Medium Businesses_, which examines software-defined networking approaches to intrusion detection and mitigation on the small (home) to medium (small business) scale.
+
+Systems engineering, physics, linear algebra, calculus, electronics, engineering statistics, computer networks, signal processing.
 
 
