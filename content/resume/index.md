@@ -2,6 +2,7 @@
 title: "Arie Oldman, Senior Software Engineer"
 draft: false
 nocomment: true
+nobottomnav: true
 ---
 
 <style>
