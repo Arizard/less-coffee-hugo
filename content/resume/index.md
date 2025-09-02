@@ -6,7 +6,7 @@ nobottomnav: true
 ---
 
 <style>
-  #post-header {
+  #post-header, .article-after {
     display: none !important;
   }
 
@@ -27,6 +27,10 @@ nobottomnav: true
       font-size: 12pt !important;
       line-height: 16pt !important;
       margin: 0;
+    }
+
+    main#content {
+        margin: 0;
     }
 
     h1 {

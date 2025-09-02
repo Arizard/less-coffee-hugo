@@ -9,12 +9,12 @@ pygmentsUseClasses = true
 [params]
   defaultAuthor = "Arie Oldman"
   description = "Arie Oldman is a software engineer from Sydney, Australia."
-  copyright = 'Made with [Hugo](https://gohugo.io/) using the <span style="white-space: nowrap"><code>etch-less-coffee</code></span> theme, a fork of `etch`.'
+  copyright = ''
   dark = "auto"
   highlight = true
-  github = "https://github.com/Arizard"
-  linkedin = "https://au.linkedin.com/in/arieoldman"
-  profilePicture = "arie-profile-2.jpeg"
+  # github = "https://github.com/Arizard"
+  # linkedin = "https://au.linkedin.com/in/arieoldman"
+  # profilePicture = "arie-profile-2.jpeg"
 
 [menu]
   [[menu.main]]
