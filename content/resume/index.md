@@ -29,6 +29,12 @@ nobottomnav: true
       margin: 0;
     }
 
+    article {
+        text-align: justify;
+        text-wrap: pretty;
+        hyphenate: none;
+    }
+
     main#content {
         margin: 0;
     }
