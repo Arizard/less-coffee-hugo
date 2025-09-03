@@ -20,7 +20,7 @@ My use case is to generate and record one-time passcodes for MFA in an append-on
 
 For the above example, we had also explored other methods:
 1. Postgres transactions, but they didn't protect against concurrent `INSERT`.
-2. Postgres advisory locks, but they risk a deadlock scenario.
+2. [Postgres advisory locks](https://www.postgresql.org/docs/17/explicit-locking.html#ADVISORY-LOCKS), but they risk a deadlock scenario.
 
 Our use case has low lock contention and short execution time, which means that it's suited to optimistic locking, making use of our Postgres read replicas.
 
