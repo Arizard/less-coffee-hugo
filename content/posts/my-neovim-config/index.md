@@ -1,8 +1,9 @@
 ---
 title: "Thoughts on Neovim & Some Configs"
-subtitle: How I've customised Neovim to my personal taste.
+summary: How I've customised Neovim to my personal taste.
 description: "Arie Oldman shares his Neovim configuration and thoughts on why the Vim learning curve is worth the investment. Custom configs and productivity tips included."
 keywords: ["Arie Oldman", "Neovim", "Vim", "text editor", "configuration", "productivity", "programming tools", "developer setup"]
+tags: ["tools", "software-engineering"]
 date: 2023-07-08T23:05:21+10:00
 author: Arie Oldman
 draft: false

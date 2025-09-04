@@ -1,16 +1,17 @@
 ---
 title: "Passing Thoughts about Optimistic Locking"
-subtitle: "How optimistic locking works with read replicas and asynchronous replication."
 description: "Arie Oldman explores optimistic locking patterns with Postgres read replicas, covering race condition prevention for MFA rate limiting and distributed database considerations."
 keywords: ["Arie Oldman", "optimistic locking", "Postgres", "read replicas", "race conditions", "database concurrency", "MFA", "rate limiting"]
+tags: ["databases", "software-engineering"]
 date: 2025-09-03T21:53:57+10:00
 author: Arie Oldman
 draft: false
 ---
 
-After a conversation with my coworker on a code review, I discovered something interesting about optimistic locking.
+I was working on a microservice that used a monotonically increasing `version` column as an optimistic lock. After a conversation with my coworker, I discovered something interesting.
+<!--more-->
 
-I was working on a microservice that used a monotonically increasing `version` column to optimistically lock against concurrent Postgres inserts. He suggested that the `SELECT` queries all go via the Postgres replica.
+He suggested that the `SELECT` queries all go via the Postgres replica.
 
 At first I thought this doesn't make sense, since I need to call `INSERT` later. Then it clicked: my line of reasoning only makes sense in the context of transactional databases, where I had been spending most of my time. It turns out that optimistic locking (in theory) works even when your reader node is asynchronously replicated from your writer node. Since the lock isn't explicit, if your `SELECT` returns slightly old data, that's not appreciably different to having called that `SELECT` further in the past.
 

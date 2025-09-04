@@ -1,12 +1,12 @@
 ---
 title: "How to Communicate Effectively"
-subtitle: "3 important ideas for productive collaboration."
+summary: "3 important ideas for productive collaboration."
 description: "Arie Oldman explains three key strategies for effective team communication in software development. Learn how to collaborate better with engineers, product managers, designers, and QA."
 keywords: ["Arie Oldman", "effective communication", "team collaboration", "software development", "project management", "teamwork", "workplace communication"]
+tags: ["career", "business"]
 date: 2025-01-10T21:34:50+11:00
 author: Arie Oldman
 draft: false
-featured: true
 ---
 
 Effective communication starts with understanding the unique roles of each team member and how they affect the outcome of the project.

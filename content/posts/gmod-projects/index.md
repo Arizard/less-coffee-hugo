@@ -1,12 +1,12 @@
 ---
 title: "My Garry's Mod Projects"
-subtitle: "Personal projects from my high school and early university years that generated my first programming income."
+summary: "Personal projects from my high school and early university years that generated my first programming income."
 description: "Arie Oldman showcases his Garry's Mod projects from 2014-2018, including open source gamemodes, addons, and commercial work that generated his first programming income."
 keywords: ["Arie Oldman", "Garry's Mod", "GMod", "game development", "Lua programming", "Steam Workshop", "Deathrun Neue", "gamemode development"]
+tags: ["game-development", "career"]
 date: 2021-01-25T21:45:50+11:00
 draft: false
 author: Arie Oldman
-featured: false
 ---
 
 When I was in high school and early university, I loved the game [Garry's Mod](https://store.steampowered.com/app/4000/Garrys_Mod/). It was the community where I worked on my first major personal projects - some of which generated my first ever income. Many are still in use!

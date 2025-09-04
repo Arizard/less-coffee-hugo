@@ -1,22 +1,17 @@
 ---
 title: "Postmortem: Deputy"
-subtitle: "Why I knew I had to leave after 5+ years, and what went wrong along the way."
 description: "Arie Oldman's brutally honest postmortem of his 5+ years at Deputy. Covering management issues, technical debt, pay disparities, and organizational problems that led to his departure."
 keywords: ["Arie Oldman", "Deputy", "postmortem", "career change", "management problems", "workplace culture", "software engineering", "startup experience"]
+tags: ["career", "postmortem", "business"]
 date: 2025-08-26T22:42:44+10:00
 author: Arie Oldman
 draft: false
-featured: true
 ---
 
-When you interview for a new role, often you’ll get asked:
+When you interview for a new role, often you’ll get asked: What makes you want to leave your current role? Answering politely is a good professional decision. This is a blog post and not an interview, so I don't have to be polite.
+<!--more-->
 
-> What makes you want to leave your current role?
->
-
-Answering politely here is a good professional decision. Something about “I’m not growing” or “I want some different kind of subject matter”.
-
-That’s not what I’m going to do in this post. Actually the opposite: I’m going to be brutally honest about why I knew I had to leave Deputy, possibly upsetting some individuals in the process.
+I'll do the opposite: I’m going to be brutally honest about why I knew I had to leave Deputy, possibly upsetting some individuals in the process.
 
 Don’t get me wrong, my opinion of team members at Deputy is overwhelmingly positive, but this criticism is necessary for me; a kind of catharsis. I need to get this off my chest.
 

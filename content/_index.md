@@ -5,7 +5,7 @@ keywords: ["Arie Oldman", "software engineer", "telecommunications engineering",
 nocomment: true
 ---
 
-**G'day, I'm Arie**.
+# G'day, I'm Arie.
 
 I'm a software engineer who likes to write code and solve complex problems. Stick around to read about software engineering, technology, and my professional journey.
 

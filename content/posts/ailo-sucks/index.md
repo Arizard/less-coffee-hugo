@@ -1,13 +1,13 @@
 ---
 title: "Ailo: didn't ask, don't want, don't need."
-subtitle: "Property agents and UI dark patterns, together at last."
+summary: "Property agents and UI dark patterns, together at last."
 description: "Arie Oldman analyzes Ailo property management software, exposing dark patterns and questionable business practices affecting Australian renters and property managers."
 keywords: ["Arie Oldman", "Ailo", "property management", "dark patterns", "SaaS", "rental software", "Australia", "user experience", "product critique"]
+tags: ["product-critique", "business"]
 date: 2023-09-10T10:05:40+10:00
 author: Arie Oldman
 draft: false
 hero: hero.png
-featured: false
 ---
 
 A few weeks ago, my partner and I (renters) were ushered onto our property manager's new property management software [Ailo](https://www.smh.com.au/national/nsw/tenants-feel-forced-onto-fee-charging-rent-payment-apps-20230707-p5dmi8.html). I was optimistic at first (it aims to make communication with property managers easier) but I would soon learn of the dark patterns and nepotism that propelled Ailo to where it is today.

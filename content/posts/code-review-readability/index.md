@@ -1,15 +1,16 @@
 ---
 title: "Three Ways to Make Your PRs (And Repos) more Readable"
-subtitle: "Even in the age of AI, you should still write code for humans."
+summary: "Even in the age of AI, you should still write code for humans."
 description: "Arie Oldman shares three practical strategies to improve pull request readability, reduce reviewer cognitive load, and ship better code faster. Learn techniques used at Eucalyptus."
 keywords: ["Arie Oldman", "pull request", "code review", "software engineering", "readability", "team collaboration", "PR best practices", "Eucalyptus"]
+tags: ["software-engineering", "career"]
 date: 2025-08-23T13:10:30+10:00
 author: Arie Oldman
 draft: false
-featured: true
 ---
 
-Making your PRs easier to review enables your team to ship fast while maintaining quality. In this post I'll explain three ways to improve PR readability (that I learned while at [Eucalyptus](http://eucalyptus.health)) and why it works.
+Making your PRs easier to review enables your team to ship fast while maintaining quality. In this post I'll explain three ways to improve PR readability and why it works.
+<!--more-->
 
 ## Reduce Backtracking
 

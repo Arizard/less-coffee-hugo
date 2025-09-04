@@ -1,12 +1,12 @@
 ---
 title: "Hugo Commenting Systems: A Comparison of Open-Source Options"
-subtitle: "Which comment system should you use for your static site?"
+summary: "Which comment system should you use for your static site?"
 description: "Arie Oldman compares open-source commenting systems for Hugo static sites. Detailed analysis of features, deployment complexity, and integration ease for developers."
 keywords: ["Arie Oldman", "Hugo", "commenting systems", "static site", "open source", "web development", "blog comments", "static site generator"]
+tags: ["web-development", "software-engineering"]
 date: 2024-12-31T16:31:17+11:00
 author: Arie Oldman
 draft: false
-featured: true
 ---
 
 I love using Hugo to generate static sites quickly and deploy them cheaply. If you’re like me, then you also want to add comments to your Hugo site, but there are so many open source options that it’s a bit overwhelming to choose a single one.
