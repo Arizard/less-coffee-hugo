@@ -1,6 +1,5 @@
 ---
 title: "How to Communicate Effectively"
-summary: "3 important ideas for productive collaboration."
 description: "Arie Oldman explains three key strategies for effective team communication in software development. Learn how to collaborate better with engineers, product managers, designers, and QA."
 keywords: ["Arie Oldman", "effective communication", "team collaboration", "software development", "project management", "teamwork", "workplace communication"]
 tags: ["career", "business"]
@@ -9,11 +8,12 @@ author: Arie Oldman
 draft: false
 ---
 
+Communication can occur via meetings (sync), instant messaging/email (async), google docs/confluence (collaboration), Jira (work trackers). However, the communication is only effective if it’s relevant to the recipient.
+<!--more-->
+
 Effective communication starts with understanding the unique roles of each team member and how they affect the outcome of the project.
 
 For example, our product manager is the SME for functional requirements and project rollout, our designer is responsible for UX and collecting usability feedback for customers, and our QA is responsible for creating E2E tests to validate features against regression. Even within the engineering discipline, there are multiple specialties: frontend, backend, platform, etc.
-
-Communication can occur via meetings (sync), instant messaging/email (async), google docs/confluence (collaboration), Jira (work trackers). However, the communication is only effective if it’s relevant to the recipient.
 
 In my most recent sub-project Other Locations I worked with engineers, product managers, designers and QA. During this project, I tried to make the communication effective in three ways.
 
