@@ -1,7 +1,6 @@
 ---
 title: "Ailo: didn't ask, don't want, don't need."
 summary: "Property agents and UI dark patterns, together at last."
-description: "Arie Oldman analyzes Ailo property management software, exposing dark patterns and questionable business practices affecting Australian renters and property managers."
 keywords: ["Arie Oldman", "Ailo", "property management", "dark patterns", "SaaS", "rental software", "Australia", "user experience", "product critique"]
 tags: ["opinion"]
 date: 2023-09-10T10:05:40+10:00

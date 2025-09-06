@@ -1,7 +1,6 @@
 ---
 title: "Analog Photography (featuring the Yashica Electro 35)"
 summary: "Getting a 50-year-old camera back into working order."
-description: "Arie Oldman documents his journey into analog photography with a vintage Yashica Electro 35 camera. Film photography restoration, techniques, and experiences included."
 keywords: ["Arie Oldman", "analog photography", "film photography", "Yashica Electro 35", "vintage camera", "camera restoration", "35mm film", "photography"]
 tags: ["creative"]
 date: 2023-09-12

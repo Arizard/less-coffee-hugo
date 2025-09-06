@@ -1,7 +1,6 @@
 ---
 title: "My Garry's Mod Projects"
 summary: "Personal projects from my high school and early university years that generated my first programming income."
-description: "Arie Oldman showcases his Garry's Mod projects from 2014-2018, including open source gamemodes, addons, and commercial work that generated his first programming income."
 keywords: ["Arie Oldman", "Garry's Mod", "GMod", "game development", "Lua programming", "Steam Workshop", "Deathrun Neue", "gamemode development"]
 tags: ["creative"]
 date: 2021-01-25T21:45:50+11:00

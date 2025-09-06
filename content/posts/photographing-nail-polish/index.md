@@ -1,7 +1,6 @@
 ---
 title: "Troubleshooting Reflections in Product Photography"
 summary: "A quick article on how to avoid unsightly reflections."
-description: "Arie Oldman shares professional techniques for eliminating reflections and glare when photographing nail polish and glossy products using studio lighting and softboxes."
 keywords: ["Arie Oldman", "product photography", "nail photography", "reflections", "softbox", "studio lighting", "photography tips", "glare reduction"]
 tags: ["creative"]
 author: Arie Oldman

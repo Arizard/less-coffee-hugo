@@ -1,6 +1,5 @@
 ---
 title: "Postmortem: Deputy"
-description: "Arie Oldman's brutally honest postmortem of his 5+ years at Deputy. Covering management issues, technical debt, pay disparities, and organizational problems that led to his departure."
 keywords: ["Arie Oldman", "Deputy", "postmortem", "career change", "management problems", "workplace culture", "software engineering", "startup experience"]
 tags: ["career"]
 date: 2025-08-26T22:42:44+10:00

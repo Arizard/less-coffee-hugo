@@ -1,6 +1,5 @@
 ---
 title: "How to Communicate Effectively"
-description: "Arie Oldman explains three key strategies for effective team communication in software development. Learn how to collaborate better with engineers, product managers, designers, and QA."
 keywords: ["Arie Oldman", "effective communication", "team collaboration", "software development", "project management", "teamwork", "workplace communication"]
 tags: ["career"]
 date: 2025-01-10T21:34:50+11:00

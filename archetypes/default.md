@@ -1,6 +1,5 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-description: "{{ .Site.Params.defaultAuthor }} writes about [topic]. [Brief description of the post content and key takeaways]."
 keywords: ["{{ .Site.Params.defaultAuthor }}", "keyword1", "keyword2", "keyword3"]
 date: {{ .Date }}
 author: {{ .Site.Params.defaultAuthor }}
