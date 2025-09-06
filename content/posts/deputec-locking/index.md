@@ -3,7 +3,7 @@ title: "Deputec Locking and Timesheet Concurrency Problems"
 summary: "Implementing bulk actions into Deputy presents synchronisation challenges."
 description: "Arie Oldman explains how Deputy tackles timesheet concurrency issues when implementing bulk actions. Deep dive into optimistic locking and synchronization challenges."
 keywords: ["Arie Oldman", "Deputy", "concurrency", "timesheet", "bulk actions", "optimistic locking", "synchronization", "software engineering"]
-tags: ["databases", "software-engineering"]
+tags: ["technical"]
 date: 2023-06-19T16:19:00+1000
 draft: false
 author: Arie Oldman

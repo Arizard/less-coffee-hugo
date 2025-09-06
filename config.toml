@@ -22,19 +22,19 @@ pygmentsUseClasses = true
     name = "posts"
     title = "posts"
     url = "/posts/"
-    weight = 1
+    weight = 10
   [[menu.main]]
     identifier = "resume"
     name = "resume"
     title = "work"
     url = "/resume/"
-    weight = 2
+    weight = 20
   [[menu.main]]
     identifier = "gallery"
     name = "gallery"
     title = "gallery"
     url = "/gallery/"
-    weight = 3
+    weight = 30
 
 [permalinks]
   posts = "/:title/"
@@ -45,3 +45,7 @@ pygmentsUseClasses = true
 
   [markup.tableOfContents]
     ordered = true
+
+[taxonomies]
+  tag = 'tags'
+

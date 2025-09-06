@@ -44,3 +44,4 @@ The `less-coffee-lambda-at-edge/` directory contains AWS Lambda@Edge functions f
 - Static files built to `public/` directory
 - Deployed automatically to an S3 bucket via GitHub Actions
 - AWS CloudFront distribution with Lambda@Edge URL rewriting
+- note that for tags, technical: related to programming, has code snippets and examples. career: soft skills which applies outside of engineering, and analysis of workplace relationships. creative: visual stuff, focused on creating images, words or audio.

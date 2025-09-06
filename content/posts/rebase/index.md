@@ -1,7 +1,7 @@
 ---
 title: "How to Rebase"
 summary: "A double-edged sword for elevating your engineering practice with version control."
-tags: ["git", "software-engineering", "tutorial"]
+tags: ["technical"]
 date: 2022-03-22T10:53:38+11:00
 author: Arie
 draft: false

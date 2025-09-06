@@ -3,7 +3,7 @@ title: "Hugo Commenting Systems: A Comparison of Open-Source Options"
 summary: "Which comment system should you use for your static site?"
 description: "Arie Oldman compares open-source commenting systems for Hugo static sites. Detailed analysis of features, deployment complexity, and integration ease for developers."
 keywords: ["Arie Oldman", "Hugo", "commenting systems", "static site", "open source", "web development", "blog comments", "static site generator"]
-tags: ["web-development", "software-engineering"]
+tags: ["technical"]
 date: 2024-12-31T16:31:17+11:00
 author: Arie Oldman
 draft: false

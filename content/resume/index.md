@@ -61,10 +61,6 @@ nobottomnav: true
         color: black !important;
     }
   }
-
-  main#content li {
-    list-style-type: "» ";
-  }
 </style>
 
 # Arie Oldman, Senior Software Engineer

@@ -1,5 +1,5 @@
 ---
-title: "Arie Oldman - Software Engineer & Personal Blog"
+title: "Arie Oldman's Personal Blog"
 description: "Arie Oldman is a software engineer with a telecommunications engineering background. Personal blog covering software development, photography, and technology insights."
 keywords: ["Arie Oldman", "software engineer", "telecommunications engineering", "Deputy", "Eucalyptus", "personal blog", "technology"]
 nocomment: true

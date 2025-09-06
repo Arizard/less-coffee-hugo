@@ -2,7 +2,7 @@
 title: "Passing Thoughts about Optimistic Locking"
 description: "Arie Oldman explores optimistic locking patterns with Postgres read replicas, covering race condition prevention for MFA rate limiting and distributed database considerations."
 keywords: ["Arie Oldman", "optimistic locking", "Postgres", "read replicas", "race conditions", "database concurrency", "MFA", "rate limiting"]
-tags: ["databases", "software-engineering"]
+tags: ["technical"]
 date: 2025-09-03T21:53:57+10:00
 author: Arie Oldman
 draft: false

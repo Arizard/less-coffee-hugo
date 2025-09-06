@@ -4,7 +4,7 @@ summary: "The challenge of implementing bitwise arithmetic in a high-level langu
 date: 2021-01-30T19:24:38+11:00
 author: Arie Oldman
 keywords: ["Arie Oldman", "dexml", "decaf", "deputy", "php", "scripting language"]
-tags: ["software-engineering", "tutorial"]
+tags: ["technical"]
 draft: false
 ---
 
