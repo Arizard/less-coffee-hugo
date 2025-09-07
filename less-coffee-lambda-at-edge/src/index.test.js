@@ -1,6 +1,6 @@
 const { handler } = require('./index.js');
 
-test('Handler processes Lambda@Edge event correctly', () => {
+test('Handler processes Lambda@Edge event correctly', async () => {
     const event = {
         Records: [{
             cf: {
@@ -11,16 +11,14 @@ test('Handler processes Lambda@Edge event correctly', () => {
         }]
     };
 
-    const callback = jest.fn();
+    const result = await handler(event, null);
 
-    handler(event, null, callback);
-
-    expect(callback).toHaveBeenCalledWith(null, {
+    expect(result).toEqual({
         uri: '/posts/index.html'
     });
 });
 
-test('Handler handles root path', () => {
+test('Handler handles root path', async () => {
     const event = {
         Records: [{
             cf: {
@@ -31,16 +29,14 @@ test('Handler handles root path', () => {
         }]
     };
 
-    const callback = jest.fn();
+    const result = await handler(event, null);
 
-    handler(event, null, callback);
-
-    expect(callback).toHaveBeenCalledWith(null, {
+    expect(result).toEqual({
         uri: '/index.html'
     });
 });
 
-test('Handler handles trailing slash paths', () => {
+test('Handler handles trailing slash paths', async () => {
     const event = {
         Records: [{
             cf: {
@@ -51,16 +47,14 @@ test('Handler handles trailing slash paths', () => {
         }]
     };
 
-    const callback = jest.fn();
+    const result = await handler(event, null);
 
-    handler(event, null, callback);
-
-    expect(callback).toHaveBeenCalledWith(null, {
+    expect(result).toEqual({
         uri: '/posts/index.html'
     });
 });
 
-test('Handler preserves file extensions', () => {
+test('Handler preserves file extensions', async () => {
     const event = {
         Records: [{
             cf: {
@@ -71,11 +65,9 @@ test('Handler preserves file extensions', () => {
         }]
     };
 
-    const callback = jest.fn();
+    const result = await handler(event, null);
 
-    handler(event, null, callback);
-
-    expect(callback).toHaveBeenCalledWith(null, {
+    expect(result).toEqual({
         uri: '/posts/pug-go-doro/help.png'
     });
 });

@@ -1,7 +1,7 @@
 'use strict';
 const Url = require('url-parse');
 
-function handler(event, _context, callback) {
+async function handler(event, _context) {
 
     let request = event.Records[0].cf.request;
 
@@ -11,7 +11,7 @@ function handler(event, _context, callback) {
 
     request.uri = newUri;
 
-    return callback(null, request);
+    return request;
 }
 
 function makeHref(url) {
