@@ -4,12 +4,17 @@
   "description": "Lambda@Edge for Less Coffee",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jest": "^26.1.0",
-    "url-parse": "^1.5.2"
+    "jest": "^30.1.3",
+    "url-parse": "^1.5.10"
+  },
+  "jest": {
+    "globals": {
+      "jest": true
+    }
   }
 }

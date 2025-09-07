@@ -1,7 +1,7 @@
 'use strict';
 const Url = require('url-parse');
 
-exports.handler = (event, context, callback) => {
+function handler(event, _context, callback) {
 
     let request = event.Records[0].cf.request;
 
@@ -12,7 +12,7 @@ exports.handler = (event, context, callback) => {
     request.uri = newUri;
 
     return callback(null, request);
-};
+}
 
 function makeHref(url) {
     return `${url.origin && url.origin}${url.pathname}`;
@@ -59,6 +59,4 @@ function rewriteURI(uri) {
     return url.pathname
 }
 
-exports.addTrailingSlash = addTrailingSlash;
-exports.resolveIndexPath = resolveIndexPath;
-exports.rewriteURI = rewriteURI;
+module.exports = { handler };
