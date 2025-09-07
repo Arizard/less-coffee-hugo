@@ -1,15 +1,11 @@
 'use strict';
 const Url = require('url-parse');
 
+// https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-event-structure.html#example-origin-request
 async function handler(event, _context) {
-
     let request = event.Records[0].cf.request;
 
-    let newUri = rewriteURI(request.uri);
-
-    console.log(`Rewrite ${request.uri} to ${newUri}`);
-
-    request.uri = newUri;
+    request.uri = rewriteURI(request.uri);
 
     return request;
 }

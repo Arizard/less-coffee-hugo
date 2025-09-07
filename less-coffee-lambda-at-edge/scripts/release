@@ -1,0 +1,7 @@
+echo "deleting old release"
+echo $(pwd)
+rm -f release.zip
+echo "making new release"
+zip -r release.zip src/ package.json node_modules/
+echo "done, please upload release.zip to lambda."
+

@@ -4,7 +4,8 @@
   "description": "Lambda@Edge for Less Coffee",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "release": "source scripts/release"
   },
   "author": "",
   "license": "ISC",
