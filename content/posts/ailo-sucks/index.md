@@ -2,7 +2,7 @@
 title: "Ailo: didn't ask, don't want, don't need."
 summary: "Property agents and UI dark patterns, together at last."
 keywords: ["Arie Oldman", "Ailo", "property management", "dark patterns", "SaaS", "rental software", "Australia", "user experience", "product critique"]
-tags: ["opinion"]
+tags: ["life"]
 date: 2023-09-10T10:05:40+10:00
 author: Arie Oldman
 draft: false
