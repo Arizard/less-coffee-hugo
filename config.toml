@@ -21,13 +21,13 @@ pygmentsUseClasses = true
     identifier = "posts"
     name = "posts"
     title = "posts"
-    url = "/posts/"
+    pageRef = "/posts"
     weight = 10
   [[menu.main]]
     identifier = "resume"
     name = "resume"
     title = "work"
-    url = "/resume/"
+    pageRef = "/resume"
     weight = 20
   [[menu.main]]
     identifier = "gallery"
