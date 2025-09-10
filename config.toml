@@ -29,12 +29,12 @@ pygmentsUseClasses = true
     title = "work"
     pageRef = "/resume"
     weight = 20
-  [[menu.main]]
-    identifier = "gallery"
-    name = "gallery"
-    title = "gallery"
-    url = "/gallery/"
-    weight = 30
+  # [[menu.main]]
+  #   identifier = "gallery"
+  #   name = "gallery"
+  #   title = "photos"
+  #   url = "/gallery/"
+  #   weight = 30
 
 [permalinks]
   posts = "/:title/"
