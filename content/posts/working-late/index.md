@@ -1,6 +1,6 @@
 ---
 title: "When Is It Okay to Work Late?"
-keywords: ["Arie Oldman"]
+keywords: ["Arie Oldman", "work life balance", "hustle culture", "burnout"]
 date: 2025-09-20
 author: Arie Oldman
 draft: false
