@@ -8,12 +8,12 @@ tags:
 - career
 ---
 
-Software engineer John Carmack, co-founder of _Id Software_, [worked 10-hour days, 6 days a week throughout his career](https://lexfridman.com/john-carmack/). Some engineers think this is reasonable. Others will say it leads to burnout. So when is it okay to work late and when should you clock off at 5pm? Here's my personal take.
+Software engineer John Carmack, co-founder of _Id Software_, [worked 10-hour days, 6 days a week throughout his career](https://lexfridman.com/john-carmack/). Some engineers think this is reasonable. Others will say it leads to burnout. My take? **Longer hours are fine when it's on your terms, you're gaining something valuable, and your life circumstances allow it.**
 <!--more-->
 
 The noisiest voices on LinkedIn form two camps:
 1. Work only the hours in your contract, and no more.
-2. Hustle all the time, never take breaks, work late and work weekends.
+2. Hustle, never take breaks, work late, and work weekends.
 
 In my opinion the answer lies somewhere in the middle, and heavily depends on the individual.
 
