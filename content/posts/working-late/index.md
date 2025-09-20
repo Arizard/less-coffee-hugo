@@ -6,7 +6,7 @@ author: Arie Oldman
 draft: false
 ---
 
-Software engineer John Carmack, Co-founder of _Id Software_, [worked 10-hour days, 6 days a week throughout his career](https://lexfridman.com/john-carmack/). Some engineers think this is reasonable. Others will say it leads to burnout. So when is it okay to work late and when should you clock off at 5pm? Here's my personal take.
+Software engineer John Carmack, co-founder of _Id Software_, [worked 10-hour days, 6 days a week throughout his career](https://lexfridman.com/john-carmack/). Some engineers think this is reasonable. Others will say it leads to burnout. So when is it okay to work late and when should you clock off at 5pm? Here's my personal take.
 <!--more-->
 
 The noisiest voices on LinkedIn form two camps:
