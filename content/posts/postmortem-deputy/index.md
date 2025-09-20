@@ -16,9 +16,9 @@ Don’t get me wrong, my opinion of team members at Deputy is overwhelmingly pos
 
 ## My Manager Created a Bad Work Environment
 
-Sorry Paul, overall I was not a fan of your management style[^paul] (project management *and* people management). I had 4 other managers, whom I got along with splendidly, until you.
+Sorry Keith*, overall I was not a fan of your management style[^keith] (project management *and* people management). I had 4 other managers, whom I got along with splendidly, until you.
 
-My few good memories of Paul are eclipsed by one particularly bad 1:1. I wanted to discuss a PDP (professional development plan) that I was trying to put together. So I raised this in our 1:1, shared my google doc and everything. I made it clear that I was trying to grow, find new opportunities, and increase my impact. My PDP was right in front of him.
+My few good memories of Keith are eclipsed by one particularly bad 1:1. I wanted to discuss a PDP (professional development plan) that I was trying to put together. So I raised this in our 1:1, shared my google doc and everything. I made it clear that I was trying to grow, find new opportunities, and increase my impact. My PDP was right in front of him.
 
 No feedback, no support. To put it bluntly: my PDP was completely ignored.
 
@@ -63,5 +63,5 @@ I’m thinking the state of the engineering org is caused by lack of strong engi
 Ah well, I’ll keep moving forward, and I still wish all the best to the current team.
 
 
-[^paul]: Maybe I’m a coward because I never said this to his face, and I chose to avoid the discomfort of providing negative feedback. Frankly I don’t care.
+[^keith]: Maybe I’m a coward because I never said this to his face, and I chose to avoid the discomfort of providing negative feedback. Frankly I don’t care.
 [^esop]: Good luck on IPO if that ever happens. Until then, enjoy putting coins into the poker machine.
