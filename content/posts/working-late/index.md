@@ -4,6 +4,8 @@ keywords: ["Arie Oldman", "work life balance", "hustle culture", "burnout"]
 date: 2025-09-20
 author: Arie Oldman
 draft: false
+tags:
+- career
 ---
 
 Software engineer John Carmack, co-founder of _Id Software_, [worked 10-hour days, 6 days a week throughout his career](https://lexfridman.com/john-carmack/). Some engineers think this is reasonable. Others will say it leads to burnout. So when is it okay to work late and when should you clock off at 5pm? Here's my personal take.
