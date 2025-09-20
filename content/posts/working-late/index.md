@@ -1,7 +1,7 @@
 ---
 title: "When Is It Okay to Work Late?"
 keywords: ["Arie Oldman"]
-date: 2025-09-20T00:01:55+10:00
+date: 2025-09-20
 author: Arie Oldman
 draft: true
 ---
@@ -15,9 +15,9 @@ The noisiest voices on LinkedIn form two camps:
 
 In my opinion the answer lies somewhere in the middle, and heavily depends on the individual.
 
-A handful of engineers at Euc will often work 9 or 10 hour days, while some prefer a more sensible work-life balance of 7-8 hours. Usually it's because we're working towards a "target date" (a term that translates to "woke deadline"), or some production issue needs to be resolved _today_ for some reason (maybe app store submission has a cutoff time).
+Most engineers at Euc prefer a more sensible work-life balance of 7-8 hours, while a handful will often work 9 or 10 hour days. Usually it's because we're working towards a "target date" (a term that translates to "woke deadline"), or some production issue needs to be resolved _today_ for some reason (maybe app store submission has a cutoff time).
 
-In these past few weeks, I’ve been in the former group, building multi-factor authentication for our Juniper patients. At my previous company, the work was slow, stagnant, repetitive, and I rarely stayed late. I was spending a lot of time firefighting. In fact, it was common to clock off early.
+In these past few weeks, I’ve been in the latter cohort, building multi-factor authentication for our Juniper patients. But at my previous company, the work was slow, stagnant, repetitive, and I rarely stayed late. I was spending a lot of time firefighting. In fact, it was common to clock off early.
 
 I remember talking to a Staff Engineer at a Christmas party, who gave me some candid advice. In his 20s he was the kind of engineer who would work long hours and weekends, but now that he's matured he wouldn't recommend it. He was burned out for years before he realised.
 
