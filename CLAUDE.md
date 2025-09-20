@@ -45,3 +45,32 @@ The `less-coffee-lambda-at-edge/` directory contains AWS Lambda@Edge functions f
 - Deployed automatically to an S3 bucket via GitHub Actions
 - AWS CloudFront distribution with Lambda@Edge URL rewriting
 - note that for tags, technical: related to programming, has code snippets and examples. career: soft skills which applies outside of engineering, and analysis of workplace relationships. creative: visual stuff, focused on creating images, words or audio.
+- you should use the {{< figure shortcode
+- all svg that gets inlined should have viewbox for proper css scaling
+
+## Writing Style Guidelines
+
+Based on analysis of the author's writing preferences:
+
+### Voice and Tone
+- **Conversational and personal**: Uses "I" frequently, shares personal anecdotes and experiences
+- **Direct and punchy**: Prefers concise sentences over verbose explanations
+- **Professional but relatable**: Discusses technical topics with accessible language
+
+### Language Preferences
+- **Eliminate filler words**: Remove "actually," "really," "all," and other unnecessary intensifiers
+- **Tighten verbose phrases**: "claims to have worked" → "worked", "I reckon that's" → "that's"
+- **Vary vocabulary**: Avoid repetition of "work/working," "hour/hours," "code/coding"
+- **Strong, specific verbs**: "dedicate" over "put," "hanging back" over "staying," "smash out" over "write"
+
+### Structure
+- **Clear paragraph breaks**: Each paragraph focuses on a single idea
+- **Smooth transitions**: Uses phrases like "Despite this warning" to connect contrasting ideas
+- **Context for visuals**: Charts and graphics should have brief explanatory text
+- **Cohesive flow**: Personal anecdotes support the main argument rather than standing alone
+
+### Content Style
+- **Uses humor strategically**: "woke deadline" as workplace terminology
+- **Balances perspectives**: Acknowledges counter-arguments (burnout warnings) while presenting personal view
+- **Concrete examples**: References specific projects (multi-factor authentication) and companies
+- **Ends with actionable advice**: Concludes with clear guidance for readers
