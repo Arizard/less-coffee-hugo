@@ -67,7 +67,7 @@ nobottomnav: true
 
 <p class="show-on-print font-weight-bold">Sydney, Australia • +61 432 934 970 • arie.oldman@vhs7.tv</p>
 
-Software engineer interested in backend development. 5 years of experience with modern and legacy software projects. Experienced in project leadership, PHP, Go, Vue, Javascript/Typescript, MySQL and AWS.
+Software engineer interested in backend development. 6 years of experience with modern and legacy software projects. Experienced in project leadership, PHP, Go, Vue, Javascript/Typescript, MySQL and AWS.
 
 <!-- TODO: re-write this from a work experience perspective https://www.beamjobs.com/resume-help/how-to-define-job-responsibilities -->
 
