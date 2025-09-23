@@ -9,7 +9,7 @@ pygmentsUseClasses = true
 [params]
   defaultAuthor = "Arie Oldman"
   description = "Arie Oldman is a software engineer from Sydney, Australia."
-  copyright = ''
+  copyright = 'less.coffee, by arie. powered by _hugo_ and _gomments_.'
   dark = "auto"
   highlight = true
   # github = "https://github.com/Arizard"
