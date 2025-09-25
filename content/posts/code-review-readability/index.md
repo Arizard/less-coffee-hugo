@@ -1,11 +1,12 @@
 ---
 title: "Three Ways to Make Your PRs (And Repos) more Readable"
 summary: "Even in the age of AI, you should still write code for humans."
-keywords: ["Arie Oldman", "pull request", "code review", "software engineering", "readability", "team collaboration", "PR best practices", "Eucalyptus"]
 tags: ["technical"]
 date: 2025-08-23T13:10:30+10:00
 author: Arie Oldman
 draft: false
+hero: hero.jpg
+hero_attribution: Photo by <a href="https://unsplash.com/@arizard?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Arie Oldman</a> on <a href="https://unsplash.com/photos/a-large-library-filled-with-lots-of-books-VT0Avb_ltQQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 ---
 
 Making your PRs easier to review enables your team to ship fast while maintaining quality. In this post I'll explain three ways to improve PR readability and why it works.
@@ -13,13 +14,94 @@ Making your PRs easier to review enables your team to ship fast while maintainin
 
 ## Reduce Backtracking
 
-Every time you refactor some code block into a new function, the reviewer needs to jump back and forth between files to understand what the code is doing. This gets tiresome and increases cognitive load for the reviewer, and that causes critical issues to be overlooked. Instead, most logic can be written inline, which is a lot easier to reason about, and makes quality more obvious.
+Every time you refactor some code block into a new function, the reviewer needs to jump back and forth between files to understand what the code is doing. This gets tiresome and increases cognitive load for the reviewer, and that causes critical issues to be overlooked. Instead, write most logic inline, which is a lot easier to reason about, and makes quality more obvious.
 
-Sometimes you do need to create abstractions to reduce code duplication. Try to be absolutely sure that the code is truly duplicated — code blocks often look the same, but evolve differently over time.
+Take a look at the code snippet below--it's a handler for Gomments, which powers the commenting system on less.coffee. I _could_ have hidden the validation logic in some kind of `validate` function, but decided not to, because it's a lot more obvious what this handler does. A potential reader can trace the code from top to bottom without backtracking.
+
+```go
+func (s *Service) SubmitReply(
+	ctx context.Context,
+	req SubmitReplyRequest,
+) (*SubmitReplyResponse, ServiceError) {
+	replyAuthorName := reNewlines1.ReplaceAllString(
+		strings.TrimSpace(req.AuthorName),
+		" ",
+	)
+	replyBody := stripConsecutiveWhitespace(req.Body)
+	replyArticle := strings.TrimSpace(req.Article)
+
+	if replyArticle == "" {
+		return nil, Errorf(http.StatusBadRequest, "requires reply article")
+	}
+
+	if replyBody == "" {
+		return nil, Errorf(http.StatusBadRequest, "requires reply body")
+	}
+
+	if len(replyBody) > 500 {
+		return nil, Errorf(http.StatusBadRequest,
+			"reply body max length 500 characters reached")
+	}
+
+	if len(replyAuthorName) > 24 {
+		return nil, Errorf(http.StatusBadRequest,
+			"reply author name max length 24 characters reached")
+	}
+
+	if _, err := uuid.Parse(req.IdempotencyKey); err != nil {
+		return nil, Errorf(http.StatusBadRequest,
+			"parsing idempotency key: %w", err)
+	}
+
+	params := insertReplyParams{
+		Article:        replyArticle,
+		Body:           html.EscapeString(replyBody),
+		Signature:      getReplySignatureFallback(req.SignatureSecret),
+		IdempotencyKey: req.IdempotencyKey,
+		AuthorName: html.EscapeString(
+			getAuthorNameFallback(replyAuthorName)),
+		CreatedAt: time.Now(),
+	}
+	replyID := 0
+	if id, err := insertReply(
+		ctx,
+		s.db,
+		params,
+	); err != nil {
+		return nil, Errorf(http.StatusInternalServerError,
+			"inserting reply: %w", err)
+	} else {
+		replyID = id
+	}
+
+	return &SubmitReplyResponse{
+		Reply: Reply{
+			ID:             replyID,
+			IdempotencyKey: params.IdempotencyKey,
+			Signature:      params.Signature,
+			Article:        params.Article,
+			Body:           params.Body,
+			Deleted:        params.Deleted,
+			CreatedAt:      params.CreatedAt,
+			AuthorName:     params.AuthorName,
+		},
+	}, nil
+}
+```
+
+Even `stripConsecutiveWhitespace` is pushing the envelope--A reader would have to backtrack to figure out how that function works. Notice how it implicitly defines some project-specific behaviour that the reader has to understand first before they can understand the code snippet.
+
+The exceptions are standard package functions. Since these are _standard_ and not project specific, you can reasonably expect that an engineer familiar with Go is also familiar with these functions: `strings.TrimSpace`, `*regexp.Regexp.ReplaceAllString`, etc.
+
+I'm not claiming that my code here is perfect, but I am using it to demonstrate code inlining. There will always be nuance, but it's a reasonable expectation that a good engineer can reason about such a small function in one pass.
+
+Think about what it would be like to follow the code changes from start to finish. Would the reviewer be able to read the PR top-to-bottom, or would they frequently need to backtrack?
+
+### When is extracting functions appropriate?
+
+Sometimes you do need to create abstractions to reduce code duplication. Try to be absolutely sure that the code is truly duplicated--code blocks often look the same, but evolve differently over time.
 
 My advice: default to inlining your new code, until you have a really good sense of how it will be re-used and evolve. An example would be a class that encapsulates API calls to a third party. It’s obvious that if the third party were to change their API contract, all future calls should match that change, therefore it makes sense to deduplicate this code.
-
-**Think about what it would be like to follow the code changes from start to finish. Would the reviewer be able to read the PR top-to-bottom, or would they frequently need to backtrack?**
 
 ## Simplify Mutable State
 
@@ -63,13 +145,13 @@ for _, t := range things {
 }
 ```
 
-At first glance, there appears to be code duplication. However, having three separate loops rather than one big loop helps to reduce interleaved mutable state. Each code block can be examined in isolation, reducing cognitive load for the reviewer.
+At first glance, there appears to be code duplication, and we have three times as many iterations. However, having three separate loops rather than one big loop helps to reduce interleaved mutable state. Each code block can be examined in isolation, reducing cognitive load for the reviewer.
 
-**Avoiding mutable state and simplifying that which you can't avoid will make code review easier.**
+Avoiding mutable state and simplifying that which you can't avoid will make code review easier.
 
 ## Manage Mnemonic Overhead
 
-My last tip is that poor naming creates extra work for code reviewers. The tricky part? It’s hard to pin down a set of blanket rules for naming. Short names such as `t`, `a`, `svc` are useful when they are unambiguous, used sparsely, and in close proximity to where they were first assigned. Longer names are more descriptive and are useful when trying to communicate the programmer’s intent, and help to shape how the codebase evolves.
+Now that you're inlining functions and untangling your mutable state, my last tip is that poor naming creates extra work for code reviewers. The tricky part? It’s hard to pin down a set of blanket rules for naming. Short names such as `t`, `a`, `svc` are useful when they are unambiguous, used sparsely, and in close proximity to where they were first assigned. Longer names are more descriptive and are useful when trying to communicate the programmer’s intent, and help to shape how the codebase evolves.
 
 This example used previously has a mixture of these naming approaches:
 
@@ -88,7 +170,7 @@ We also have `t` as the element of `things` which is easy enough to keep track o
 
 This section was mostly about name length, but content matters as well. Try to encode simple, useful information in the name: `bestThing`, `svcToken`, `user`. This reduces ambiguity, especially in cases where initialisms could have multiple meanings: `ts` could be “timesheet” (Deputy example) or “timestamp”, or `dt` could mean “date and time” or “delta time”. An example of better names would be to name timestamps and datetimes after an event or an intent, such as `createdAt` or `updatedAt`, timesheets should just be `timesheet`, and “delta time” could be `tickIntervalMS`.
 
-**Good naming is really hard. You’ll have to find a balance between succinctness and verbosity, often on a case-by-case basis.**
+Good naming is really hard. You’ll have to find a balance between succinctness and verbosity, often on a case-by-case basis.
 
 ## Good Code Is about Human Comprehension
 
@@ -98,4 +180,4 @@ Code review is the biggest bottleneck of the team: You can’t write features wh
 
 Reducing backtracking, simplifying mutable state, and managing mnemonic overhead may seem to be only three out of an infinite number of suggestions, but these are what stood out to me during my first six months at Eucalyptus. It’s something that I wish I had known during my time at Deputy.
 
-Did you find this article useful, or perhaps you used it to [train an AI coding agent](https://github.com/anthropics/claude-code)? Maybe you disagree strongly—just let me know in the comments!
+Did you find this article useful, or perhaps you used it to train an AI coding agent? Maybe you disagree strongly—just let me know in the comments!
