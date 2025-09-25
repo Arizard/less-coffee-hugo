@@ -1,13 +1,14 @@
 ---
 title: "Postmortem: Deputy"
-keywords: ["Arie Oldman", "Deputy", "postmortem", "career change", "management problems", "workplace culture", "software engineering", "startup experience"]
 tags: ["career"]
 date: 2025-08-26T22:42:44+10:00
 author: Arie Oldman
 draft: false
+hero: hero.jpg
+hero_attribution: Photo by <a href="https://unsplash.com/@tabeaschimpf?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Tabea Schimpf</a> on <a href="https://unsplash.com/photos/a-side-view-mirror-showing-a-car-driving-on-a-road-IsE8kL3p9CE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 ---
 
-When you interview for a new role, often you’ll get asked: What makes you want to leave your current role? Answering politely is a good professional decision. This is a blog post and not an interview, so I don't have to be polite.
+When you interview for a new role, often you’ll get asked: What makes you want to leave your current one? Answering politely is a good professional decision. This is a blog post and not an interview, so I don't have to be polite.
 <!--more-->
 
 I'll do the opposite: I’m going to be brutally honest about why I knew I had to leave Deputy, possibly upsetting some individuals in the process.
