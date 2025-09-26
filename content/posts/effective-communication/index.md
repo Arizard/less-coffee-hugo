@@ -5,6 +5,8 @@ tags: ["career"]
 date: 2025-01-10T21:34:50+11:00
 author: Arie Oldman
 draft: false
+hero: cheese.jpg
+hero_attribution: Photo by Arie.
 ---
 
 Communication can occur via meetings (sync), instant messaging/email (async), google docs/confluence (collaboration), Jira (work trackers). However, the communication is only effective if it’s relevant to the recipient.
@@ -63,6 +65,3 @@ In summary, there’s 3 main things to try when you want effective communication
 3. Catalogue everything as reference material – in an organised, searchable, readable way.
 
 Have you ever had this responsibility? Do you agree or disagree, and what worked for you? Let me know in the comments!
-
-{{< figure src="cheese.jpg" >}}
-
