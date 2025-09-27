@@ -6,6 +6,8 @@ tags: ["creative"]
 date: 2023-09-12
 author: Arie Oldman
 draft: false
+hero: IMG_0203.jpg
+hero_attribution: Photo by Arie.
 ---
 
 Lately I've been experimenting with analog photography. I grew up in the 2000s, so my _exposure_ to film was extremely limited (except for some very faint memories of using a disposable camera on holiday, and then taking it to the post office for development). Read on to hear about my journey so far, starting with my first analog camera.
