@@ -6,7 +6,7 @@ nobottomnav: true
 ---
 
 <style>
-  #post-header, .article-after {
+  .article-after {
     display: none !important;
   }
 
@@ -21,36 +21,20 @@ nobottomnav: true
   }
 
   @media print {
-    header, footer, nav#banner { display: none !important; }
+    footer, nav#banner { display: none !important; }
     body {
       color: black !important;
-      font-size: 12pt !important;
-      line-height: 16pt !important;
       margin: 0;
     }
 
     article {
         text-align: justify;
         text-wrap: pretty;
-        hyphenate: none;
+        hyphens: auto;
     }
 
     main#content {
         margin: 0;
-    }
-
-    h1 {
-      font-size: 24pt !important;
-      line-height: 24pt !important;
-    }
-
-    h2 {
-      font-size: 20pt !important;
-      line-height: 20pt !important;
-    }
-
-    main#content article li {
-      margin-bottom: 0.66rem;
     }
 
     .hide-on-print {
@@ -63,11 +47,9 @@ nobottomnav: true
   }
 </style>
 
-# Arie Oldman, Senior Software Engineer
-
 <p class="show-on-print font-weight-bold">Sydney, Australia • +61 432 934 970 • arie.oldman@vhs7.tv</p>
 
-Software engineer interested in backend development. 6 years of experience with modern and legacy software projects. Experienced in project leadership, PHP, Go, Vue, Javascript/Typescript, MySQL and AWS.
+Software engineer with 6 years of experience, working across modern and legacy code. I'm most interested in feature-leading projects which solve complex problems and have a clear business impact.
 
 <!-- TODO: re-write this from a work experience perspective https://www.beamjobs.com/resume-help/how-to-define-job-responsibilities -->
 
