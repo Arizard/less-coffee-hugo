@@ -102,3 +102,5 @@ Based on Anne E. Greene's guide for clear scientific writing:
 - **Use parallel structure**: "We tested, analyzed, and documented" not "We tested, performed analysis, and documentation was created"
 - **Cut unnecessary words**: "In order to" becomes "to"
 - **Specific over general**: "Reduced response time by 40%" not "improved performance"
+- always use australian english
+- double dash is rendered as emdash by hugo's markdown
