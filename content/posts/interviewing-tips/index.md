@@ -3,7 +3,7 @@ title: "Three Easily Avoidable Technical Interview Mistakes"
 date: 2025-09-27T17:42:48+10:00
 author: Arie Oldman
 draft: false
-hero: hero.jpg
+hero: hero-alt.jpg
 hero_attribution: Photo by <a href="https://unsplash.com/@arizard?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Arie Oldman</a> on <a href="https://unsplash.com/photos/dL30-It7Sxo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 tags: ["career", "technical"]
 ---
