@@ -285,4 +285,4 @@ Once the PR is merged (via CI/CD or manually), the static site is regenerated an
 
 There are many different options to suit your needs, whether that be a standalone comments system, a fully fledged forum package, or developer-focused GitHub-bound discussions.
 
-Have I missed some popular options, or perhaps you’ve just created one? Let me know at arie.oldman@vhs7.tv.
+Have I missed some popular options, or perhaps you’ve just created one? Let me know at arie@less.coffee or leave a comment.

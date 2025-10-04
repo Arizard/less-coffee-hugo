@@ -21,16 +21,36 @@ nobottomnav: true
   }
 
   @media print {
+    .sc-heading-with-sub-label-container {
+      border-bottom: 1px solid black;
+      padding-bottom: 4px !important;
+      padding-top: 0 !important;
+      margin-bottom: 1.35rem;
+    }
+    .sc-heading-with-sub-label-container .sc-heading-with-sub-label {
+      font-weight: 500 !important; -- medium
+    }
+    h3.sc-heading-with-sub-label {
+      font-size: 1.5rem !important;
+      line-height: 2.16rem !important;
+    }
+    h1 {
+        text-align: center !important;
+    }
+    html {
+      zoom: 70%;
+    }
     footer, nav#banner { display: none !important; }
     body {
       color: black !important;
       margin: 0;
+      width: 100%;
     }
 
     article {
-        text-align: justify;
+        text-align: left;
         text-wrap: pretty;
-        hyphens: auto;
+        hyphens: none;
     }
 
     main#content {
@@ -47,7 +67,7 @@ nobottomnav: true
   }
 </style>
 
-<p class="show-on-print font-weight-bold">Sydney, Australia • +61 432 934 970 • arie.oldman@vhs7.tv</p>
+<p class="show-on-print font-weight-bold" style="text-align: center">Sydney, Australia • +61 432 934 970 • arie@less.coffee</p>
 
 Software engineer with 6 years of experience, working across modern and legacy code. I'm most interested in feature-leading projects which solve complex problems and have a clear business impact.
 
@@ -107,11 +127,15 @@ Software engineer with 6 years of experience, working across modern and legacy c
 
 **Developed** a new _Timesheet_ search engine (Opensearch, Go, MySQL), which played a critical role in the business objective of acquiring new strategic partners.
 
+<div class="hide-on-print"><!-- omitted for print -->
+
 **Headed** backend development for the AI-TRACT Hackathon Project using AWS Bedrock, in collaboration with a product manager, UX designer, and 2 frontend engineers, with the business objective to support lead generation for Deputy's Recruitment product offering.
 
 **Continuously iterated** the product offering according to user feedback, in collaboration with product managers, UX designers, and frontend engineers.
 
 **Aligned team and facilitated collaboration** related to complex domain-specific business logic by summarisation into easy-to-understand shared reference material. Collaborated with other engineers in the team to conduct tradeoff analysis of different software designs, recording decisions in shared project documentation.
+
+</div>
 <!-- * **Wrote RFCs** for architectural changes and paradigm shifts to Deputy's backend, taking a previously synchronous product and making it asynchronous in order to scale users and data volume. -->
 <!-- * **Designed high-volume bulk actions** that allow users to process up to 10,000 timesheets in one command. -->
 <!-- * **Modernised** Deputy's Timesheet feature by creating a timesheet search engine, using AWS OpenSearch. -->
@@ -134,39 +158,31 @@ Software engineer with 6 years of experience, working across modern and legacy c
 
 **Mentored** two interns, guiding them through their 3-month intern projects into permanent positions at Deputy, using pair programming, 1-1s and code review.
 
+<div class="hide-on-print"><!-- omitted for print -->
+
 **Improved maintainability** of the Enterprise Employee Profile by refactoring the PHP backend.
 
-**Planned and executed** the _Export Aggregator_ project -- a Go service on the AWS Lambda runtime -- which translated to $25k in billable work for Deputy.
+**Planned and executed** the _Export Aggregator_ project--a Go service on the AWS Lambda runtime--which translated to $25k in billable work for Deputy.
 
 **Pioneered** automation of time-consuming manual tasks by creating an internal Go command line tool called _Precaf_. <!-- precaf, common funcs, pay comparison scripts -->
 
+</div>
+
 {{< heading-with-sub-label level="3" heading="Junior Software Developer at Spriggy" label="March 2019 — July 2019" >}}
 
-
-**Maintain quality** by fixing bugs in Spriggy backend.
-
-**Reduce** situations of system overload by implementing rate-limiting functionality.
-
-**Support cross-functional teams** by adding analytics tracing code into Spriggy backend.
+**Contributed to** bug fixes, quality-of-life improvements, and analytics telemetry in the Spriggy platform.
 
 {{< heading-with-sub-label level="3" heading="Cadet Engineer (Networks) at Singtel Optus" label="July 2015 — March 2019" >}}
 
-
-**Improve internal productivity** by creating data visualisation software for national IP network topology and mobile network connectivity data using Python and Javascript.
-
-**Improve internal productivity** by launching internal web utilities to assist device testing and zero-rating using PHP and Python.
-
-**Reduce manual work** by automating legacy IP network data cleanup using Perl.
-
-**Coordinate** mobile site upgrades to deliver improved 4G coverage.
+**Improve internal productivity** by creating data visualisation software for network topology, web utilities for handset testing and traffic rating, and data cleaning automations (PHP, Javascript, Perl).
 
 {{< heading-with-sub-label level="3" heading="Self Employed & Side Projects" label="since 2015" >}}
 
-Creator of open-source project Deathrun Neue (61 stars, 18 contributors), a gamemode for Garry's Mod.
+**Self-design, self-develop, and self-host** personal blog at [less.coffee](https://less.coffee), using the Hugo site builder as a base.
 
-Create and sell addon products for Garry's Mod servers to enrich the player's online experience, written in the Lua programming language (4805 units sold).
+**Creator of open-source project** Deathrun Neue (61 stars, 18 contributors), a gamemode for Garry's Mod.
 
-Manage sales, promotions and marketing media using the _gmodstore_ marketplace platform.
+**Create and sell** addon products for Garry's Mod servers to enrich the player's online experience, written in the Lua programming language (4805 units sold). Managed sales, promotions and marketing media using the _gmodstore_ marketplace platform.
 
 ## Education
 
@@ -174,6 +190,10 @@ Manage sales, promotions and marketing media using the _gmodstore_ marketplace p
 
 **Published undergrad thesis** _Inline DDoS Detection for Small to Medium Businesses_, which examines software-defined networking approaches to intrusion detection and mitigation on the small (home) to medium (small business) scale.
 
+<div class="hide-on-print"><!-- omitted for print -->
+
 Systems engineering, physics, linear algebra, calculus, electronics, engineering statistics, computer networks, signal processing.
+
+</div>
 
 
