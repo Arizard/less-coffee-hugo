@@ -25,6 +25,10 @@ jobs:
         git submodule init
         git submodule update
 
+    - name: Install npm packages
+      run: |
+        npm i
+
     - name: Build Hugo
       uses: arizard/build-hugo@v0.148.1
 
