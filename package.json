@@ -1,0 +1,16 @@
+{
+  "comments": {
+    "dependencies": {
+      "react": "etch-less-coffee",
+      "react-dom": "etch-less-coffee"
+    },
+    "devDependencies": {}
+  },
+  "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {},
+  "name": "less-coffee-hugo",
+  "version": "0.1.0"
+}
