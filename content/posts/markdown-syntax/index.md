@@ -2,6 +2,8 @@
 author = "Hugo Authors"
 title = "Markdown Syntax Guide"
 date = "2019-03-11"
+updated_at = "2026-02-01"
+hero_attribution = "Anonymous at unsplash.com"
 description = "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
 tags = [
     "markdown",
