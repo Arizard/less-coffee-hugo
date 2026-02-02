@@ -1,12 +1,13 @@
 ---
 title: "G'day, I'm Arie"
-summary: "G'day, I'm Arie. I'm a software engineer who likes to write code and solve complex problems. Stick around to read about software engineering, technology, and my professional journey."
 nocomment: true
 ---
 
 # G'day, I'm Arie.
 
-I'm a software engineer who likes to solve complex problems. Stick around to read about software engineering, technology, and my professional journey.
+I'm a software engineer who likes to write.
+
+I hope you stick around to read my posts about software engineering, my career, photography, and life.
 
 <!-- <div style="text-align: center; margin-top: 32px;"> -->
 <!--     <img src="https://backend.less.coffee/view-count-stickers/stickers?id=d730676f-ccbb-4477-b315-856aa7e5d0f5" width="200"/> -->
