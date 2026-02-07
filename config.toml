@@ -24,6 +24,12 @@ pygmentsUseClasses = true
     pageRef = "/posts"
     weight = 10
   [[menu.main]]
+    identifier = "artefacts"
+    name = "artefacts"
+    title = "artefacts"
+    pageRef = "/artefacts"
+    weight = 15
+  [[menu.main]]
     identifier = "resume"
     name = "resume"
     title = "work"

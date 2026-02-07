@@ -3,6 +3,8 @@ title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 author: {{ .Site.Params.defaultAuthor }}
 draft: true
+tags:
+    - artefact
 ---
 
 Lorem ipsum, I am a summary.
