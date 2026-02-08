@@ -8,11 +8,10 @@ hero_attribution: Photo by Arie.
 tags:
     - career
     - life
+summary: "Five years of remote work was too isolating."
 ---
 
 After five years of fully remote work, the loneliness was too much.
-
-<!--more-->
 
 The COVID-19 pandemic was extraordinarily isolating. Gen Z were affected uniquely.
 

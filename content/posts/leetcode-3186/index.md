@@ -7,10 +7,10 @@ hero: hero.jpg
 hero_attribution: Photo by <a href="https://unsplash.com/@rick_rothenberg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rick Rothenberg</a> on <a href="https://unsplash.com/photos/an-abstract-purple-background-with-a-circular-design-E4fPxFE5_gg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 tags:
 - technical
+summary: "I failed, then I didn't. Here's the solution."
 ---
 
 I failed miserably solving this medium leetcode. Then my submission finally passed. Here's what I learned plus my solution in Go.
-<!--more-->
 
 ## Problem Description
 

@@ -10,7 +10,6 @@ hero_attribution: Photo by <a href="https://unsplash.com/@arizard?utm_content=cr
 ---
 
 Making your PRs easier to review enables your team to ship fast while maintaining quality. In this post I'll explain three ways to improve PR readability and why it works.
-<!--more-->
 
 ## Reduce Backtracking
 

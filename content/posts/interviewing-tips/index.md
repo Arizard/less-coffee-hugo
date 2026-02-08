@@ -6,10 +6,11 @@ draft: false
 hero: hero-alt.jpg
 hero_attribution: Photo by <a href="https://unsplash.com/@arizard?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Arie Oldman</a> on <a href="https://unsplash.com/photos/dL30-It7Sxo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 tags: ["career", "technical"]
+featured: true
+summary: Take luck out of the equation.
 ---
 
 Six months ago, I was on the other side of a technical interview for the first time. Today, I’m going to share what I’ve learned so far. Here are three quick ways to take luck out of the equation and signal your competencies to the interviewer.
-<!--more-->
 
 I’ve conducted many technical interviews now—some more memorable than others—and I’ve lost track of the exact number. I’ll guesstimate somewhere around 36 interviews: approximately three interviews every two weeks. I’ve noticed three main mistakes that candidates make at the mid and senior level, especially if they don’t interview often. The good news? These mistakes are easily avoided.
 

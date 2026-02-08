@@ -6,10 +6,10 @@ author: Arie Oldman
 draft: false
 tags:
  - life
+summary: "Renting isn't as simple as the boomers claim."
 ---
 
 How often has a family member told you "renting is dead money"? In my opinion, that's not the whole story.
-<!--more-->
 
 ## Everyone Needs to Live Somewhere
 

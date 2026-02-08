@@ -4,7 +4,7 @@ keywords: ["Arie Oldman", "effective communication", "team collaboration", "soft
 tags: ["career"]
 date: 2025-01-10T21:34:50+11:00
 author: Arie Oldman
-draft: false
+draft: true
 hero: cheese.jpg
 hero_attribution: Photo by Arie.
 ---

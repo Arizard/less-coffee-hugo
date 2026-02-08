@@ -4,7 +4,7 @@ keywords: ["Arie Oldman", "optimistic locking", "Postgres", "read replicas", "ra
 tags: ["technical"]
 date: 2025-09-03T21:53:57+10:00
 author: Arie Oldman
-draft: false
+draft: true
 ---
 
 I was working on a microservice that used a monotonically increasing `version` column as an optimistic lock. After a conversation with my coworker, I discovered something interesting.
