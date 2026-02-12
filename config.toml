@@ -45,10 +45,16 @@ pygmentsUseClasses = true
 [permalinks]
   posts = "/:title/"
 
-[markup.goldmark.renderer]
-  # Allow HTML in Markdown
-  unsafe = true
-
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+      # https://gohugo.io/content-management/markdown-attributes/
+        image = true
+        block = true
+        title = true
+    [markup.goldmark.renderer]
+      unsafe = true
   [markup.tableOfContents]
     ordered = true
 
