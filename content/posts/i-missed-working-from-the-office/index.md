@@ -9,6 +9,7 @@ tags:
     - career
     - life
 summary: "Five years of remote work was too isolating."
+featured: true
 ---
 
 After five years of fully remote work, the loneliness was too much.
