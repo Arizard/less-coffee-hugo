@@ -29,17 +29,17 @@ pygmentsUseClasses = true
     title = "artefacts"
     pageRef = "/artefacts"
     weight = 15
-  # [[menu.main]]
-  #   identifier = "resume"
-  #   name = "resume"
-  #   title = "work"
-  #   pageRef = "/resume"
-  #   weight = 20
   [[menu.main]]
     identifier = "gallery"
     name = "gallery"
     title = "gallery"
     url = "/gallery/"
+    weight = 20
+  [[menu.main]]
+    identifier = "about"
+    name = "about"
+    title = "about"
+    pageRef = "/about"
     weight = 30
 
 [permalinks]
