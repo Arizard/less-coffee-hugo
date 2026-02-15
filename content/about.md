@@ -1,7 +1,7 @@
 ---
 title: "About"
 draft: false
-nocomment: true
+nocomment: false
 ---
 
 I'm Arie, and less.coffee is my personal website.
