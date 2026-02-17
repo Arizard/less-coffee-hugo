@@ -1037,7 +1037,7 @@
             <div class="modal-section-title">Ingredients</div>
             <div class="modal-ingredients">${tea.ingredients}</div>
             ${tea.website ? `<a href="${tea.website.startsWith('http') ? '' : 'https://'}${tea.website}" target="_blank" class="modal-link">${tea.website.replace(/^https?:\/\//, '')}</a>` : ''}
-            ${tea.picture ? `<img src="${tea.picture}" alt="${tea.name}" class="modal-image">` : ''}
+            ${tea.picture ? `<img src="/renee-tea-catalogue/${tea.picture}" alt="${tea.name}" class="modal-image">` : ''}
           </div>
         </div>
       `;
