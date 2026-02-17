@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#9DD5C7">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>Tea Collection</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    :root {
+      --mint: #9DD5C7;
+      --mint-light: #D5EDE8;
+      --dark: #1A3A34;
+      --white: #FFFFFF;
+      --gray-light: #F5F5F5;
+      --gray-border: #E8E8E8;
+      --link-blue: #0066CC;
+    }
+
+    body {
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--white);
+      color: var(--dark);
+      min-height: 100vh;
+      min-height: 100dvh;
+      overflow-x: hidden;
+    }
+
+    .app {
+      max-width: 430px;
+      margin: 0 auto;
+      min-height: 100vh;
+      min-height: 100dvh;
+      position: relative;
+      background: var(--white);
+    }
+
+    /* Header */
+    .header {
+      background: var(--mint);
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-back {
+      position: absolute;
+      left: 20px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header-back svg {
+      width: 24px;
+      height: 24px;
+      stroke: var(--dark);
+    }
+
+    .header-title {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--dark);
+    }
+
+    /* Expandable Search */
+    .header-search-container {
+      position: absolute;
+      left: 20px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      justify-content: flex-end;
+      pointer-events: none;
+    }
+
+    .header-search-input {
+      width: 0;
+      padding: 0;
+      border: none;
+      border-radius: 20px;
+      background: var(--white);
+      font-family: inherit;
+      font-size: 16px;
+      outline: none;
+      transition: width 0.3s ease, padding 0.3s ease;
+      pointer-events: auto;
+    }
+
+    .header-search-input.expanded {
+      width: 100%;
+      padding: 10px 16px;
+    }
+
+    .header-search-input::placeholder {
+      color: #999;
+    }
+
+    .header-search-btn {
+      background: var(--white);
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      pointer-events: auto;
+    }
+
+    .header-search-btn svg {
+      width: 20px;
+      height: 20px;
+      stroke: var(--dark);
+    }
+
+    /* Menu List */
+    .menu-list {
+      padding: 0;
+    }
+
+    .menu-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 20px;
+      border-bottom: 1px solid var(--gray-border);
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .menu-item:active {
+      background: var(--gray-light);
+    }
+
+    .menu-item-text {
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--dark);
+    }
+
+    .menu-item svg {
+      width: 24px;
+      height: 24px;
+      stroke: var(--dark);
+    }
+
+    /* Filter Button */
+    .filter-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: var(--mint);
+      border: none;
+      border-radius: 30px;
+      padding: 16px 24px;
+      margin: 16px 20px;
+      width: calc(100% - 40px);
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: var(--dark);
+    }
+
+    .filter-btn svg {
+      width: 20px;
+      height: 20px;
+      stroke: var(--dark);
+    }
+
+    /* Tea Cards */
+    .tea-list {
+      padding: 0 20px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .tea-card {
+      background: var(--white);
+      border: 1px solid var(--gray-border);
+      border-radius: 16px;
+      padding: 20px;
+      cursor: pointer;
+      transition: box-shadow 0.15s;
+    }
+
+    .tea-card:active {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .tea-card-name {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .tea-card-type {
+      font-size: 16px;
+      color: var(--dark);
+      margin-bottom: 2px;
+    }
+
+    .tea-card-brand {
+      font-size: 16px;
+      font-style: italic;
+      color: var(--dark);
+      margin-bottom: 16px;
+    }
+
+    .tea-card-tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .tea-tag {
+      background: var(--mint-light);
+      border-radius: 20px;
+      padding: 8px 16px;
+      font-size: 14px;
+      color: var(--dark);
+    }
+
+    /* Tea Detail Modal */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 200;
+      display: none;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 60px 16px 20px;
+      overflow-y: auto;
+    }
+
+    .modal-overlay.active {
+      display: flex;
+    }
+
+    .modal-content {
+      background: var(--white);
+      border-radius: 16px;
+      width: 100%;
+      max-width: 400px;
+      position: relative;
+      padding: 24px;
+      animation: slideUp 0.3s ease;
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: 2px solid var(--dark);
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-close svg {
+      width: 14px;
+      height: 14px;
+      stroke: var(--dark);
+    }
+
+    .modal-name {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 4px;
+      padding-right: 40px;
+    }
+
+    .modal-type {
+      font-size: 16px;
+      margin-bottom: 2px;
+    }
+
+    .modal-brand {
+      font-size: 16px;
+      font-style: italic;
+      margin-bottom: 16px;
+    }
+
+    .modal-tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+
+    .modal-section-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .modal-ingredients {
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+
+    .modal-link {
+      color: var(--link-blue);
+      text-decoration: underline;
+      font-size: 15px;
+      display: inline-block;
+      margin-bottom: 24px;
+      text-overflow: ellipsis;
+      width: 100%;
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .modal-image {
+      width: 100%;
+      aspect-ratio: 1;
+      background: #E5E5E5;
+      border-radius: 50%;
+      margin: 0 auto;
+      max-width: 280px;
+      display: block;
+      object-fit: cover;
+    }
+
+    img.modal-image {
+      background: transparent;
+    }
+
+    /* Filter Panel */
+    .filter-panel {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--white);
+      z-index: 150;
+      display: none;
+      flex-direction: column;
+    }
+
+    .filter-panel.active {
+      display: flex;
+    }
+
+    .filter-panel-header {
+      display: flex;
+      justify-content: flex-end;
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--gray-border);
+    }
+
+    .filter-panel-close {
+      background: none;
+      border: 2px solid var(--dark);
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .filter-panel-close svg {
+      width: 16px;
+      height: 16px;
+      stroke: var(--dark);
+    }
+
+    .filter-section {
+      padding: 20px;
+      border-bottom: 1px solid var(--gray-border);
+    }
+
+    .filter-section-title {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+
+    .filter-option-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      border-bottom: 1px solid var(--gray-border);
+      cursor: pointer;
+    }
+
+    .filter-option-row:active {
+      background: var(--gray-light);
+    }
+
+    .filter-option-row svg {
+      width: 24px;
+      height: 24px;
+      stroke: var(--dark);
+      flex-shrink: 0;
+    }
+
+    .filter-option-content {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .filter-option-selected {
+      font-size: 14px;
+      color: #666;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .filter-option-text {
+      font-size: 18px;
+    }
+
+    .sort-select {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .sort-value {
+      font-size: 16px;
+    }
+
+    /* Sort Dropdown */
+    .sort-dropdown {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      margin-top: 8px;
+      background: #5C6B66;
+      border-radius: 12px;
+      padding: 8px 0;
+      min-width: 220px;
+      z-index: 10;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .sort-option {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 16px;
+      color: var(--white);
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .sort-option:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .sort-option-check {
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sort-option-check svg {
+      width: 18px;
+      height: 18px;
+      stroke: var(--white);
+    }
+
+    /* Reset Filters Button */
+    .reset-filters-btn {
+      width: 100%;
+      padding: 14px 20px;
+      background: transparent;
+      border: 2px solid var(--dark);
+      border-radius: 30px;
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--dark);
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .reset-filters-btn:active {
+      background: var(--gray-light);
+    }
+
+    /* Checkbox Filter List */
+    .checkbox-list {
+      padding: 0 20px;
+      flex: 1;
+      overflow-y: auto;
+    }
+
+    .checkbox-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--gray-border);
+      cursor: pointer;
+    }
+
+    .checkbox-item-text {
+      font-size: 18px;
+    }
+
+    .checkbox {
+      width: 24px;
+      height: 24px;
+      border: 2px solid var(--dark);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .checkbox.checked {
+      background: var(--dark);
+    }
+
+    .checkbox svg {
+      width: 16px;
+      height: 16px;
+      stroke: var(--white);
+      display: none;
+    }
+
+    .checkbox.checked svg {
+      display: block;
+    }
+
+    /* Flavour Grid */
+    .flavour-grid {
+      padding: 20px;
+      padding-bottom: 100px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .flavour-prompt {
+      grid-column: 1 / -1;
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    .flavour-btn {
+      background: var(--mint-light);
+      border: none;
+      border-radius: 30px;
+      padding: 18px 16px;
+      font-family: inherit;
+      font-size: 18px;
+      color: var(--dark);
+      cursor: pointer;
+      transition: background 0.15s, transform 0.1s;
+    }
+
+    .flavour-btn:active {
+      transform: scale(0.98);
+    }
+
+    .flavour-btn.selected {
+      background: var(--mint);
+    }
+
+    /* Fixed Apply Button */
+    .apply-btn-container {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 16px 20px;
+      background: var(--white);
+      max-width: 430px;
+      margin: 0 auto;
+    }
+
+    .apply-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: var(--mint);
+      border: none;
+      border-radius: 30px;
+      padding: 18px 24px;
+      width: 100%;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: var(--dark);
+    }
+
+    .apply-btn svg {
+      width: 20px;
+      height: 20px;
+      stroke: var(--dark);
+    }
+
+    /* Random Tea */
+    .shuffle-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: var(--mint);
+      border: none;
+      border-radius: 30px;
+      padding: 18px 24px;
+      margin: 16px 20px;
+      width: calc(100% - 40px);
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: var(--dark);
+    }
+
+    .shuffle-btn svg {
+      width: 20px;
+      height: 20px;
+      stroke: var(--dark);
+    }
+
+    .filter-results-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--gray-border);
+      cursor: pointer;
+    }
+
+    .filter-results-text {
+      font-size: 18px;
+    }
+
+    .filter-results-toggle svg {
+      width: 24px;
+      height: 24px;
+      stroke: var(--dark);
+      transition: transform 0.2s;
+    }
+
+    .filter-results-toggle.open svg {
+      transform: rotate(180deg);
+    }
+
+    .random-result {
+      padding: 20px;
+    }
+
+    .random-card {
+      background: var(--white);
+      border: 1px solid var(--gray-border);
+      border-radius: 16px;
+      padding: 20px;
+      position: relative;
+    }
+
+    .random-card-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: none;
+      border: 2px solid var(--dark);
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .random-card-close svg {
+      width: 14px;
+      height: 14px;
+      stroke: var(--dark);
+    }
+
+    /* Screen visibility */
+    .screen {
+      display: none;
+    }
+
+    .screen.active {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app" id="app"></div>
+
+  <script>
+    // Tea data embedded from CSV
+    const teaData = [
+      {id:1,name:"Adelaide Breakfast",brand:"T2",type:"Black tea",flavours:["Berry", "Sweet", "Fruity"],ingredients:"Black tea, cranberry bits, sugar, anti-caking agent, sunflower oil, artificial flavouring, lemongrass, sweet blackberry leaves",favourite:2,website:"",picture:"adelaide-breakfast.jpg"},
+      {id:2,name:"All Nighter",brand:"Bird & Blend",type:"Green tea, Yerba Mate tea",flavours:["Coffee", "Sweet", "Vegetal"],ingredients:"Chinese Sencha Green Tea, Yerba Mate, Coffee Beans, Cocoa Shells, Cocoa Nibs, Natural Flavouring",favourite:3,website:"https://www.birdandblendtea.us/products/all-nighter-tea?_pos=1&_psq=all+nighter&_ss=e&_v=1.0",picture:"all-nighter.jpg"},
+      {id:3,name:"Apple Strudel",brand:"Bird & Blend",type:"Rooibois",flavours:["Cinnamon", "Fruity", "Vanilla"],ingredients:"Rooibos, Cinnamon, Freeze-Dried Apple, Air-Dried Apple, Rosehip, Hibiscus, Vanilla Pieces, Orange Peel, Natural Flavouring",favourite:2,website:"https://www.birdandblendtea.us/products/apple-strudel-tea?_pos=1&_psq=apple+strudel&_ss=e&_v=1.0",picture:"apple-strudel.jpg"},
+      {id:4,name:"Australian Breakfast",brand:"T Totaler",type:"Black tea",flavours:["Black", "Strong"],ingredients:"Black tea (Northern NSW), black tea (QLD)",favourite:3,website:"https://www.ttotalertea.com/product-page/australian-breakfast-tea",picture:"australian-breakfast.avif"},
+      {id:5,name:"Banana Bake",brand:"T2",type:"Black tea",flavours:["Fruity", "Nutty", "Vanilla"],ingredients:"Black tea, banana bits, coconut oil, sugar, honey, banana flavouring, natural and artificial flavouring, vanilla, marigold metals, safflower petals, hazelnut brittle",favourite:3,website:"",picture:"banana-bake.jpg"},
+      {id:6,name:"Banana Bread Chai",brand:"Bird & Blend",type:"Chai",flavours:["Fruity", "Cinnamon", "Spiced"],ingredients:"Rooibos, Cinnamon, Ginger, Freeze-Dried Banana, Cardamom, Vanilla Pieces, Natural Flavouring",favourite:3,website:"https://www.birdandblendtea.us/products/banana-bread-chai-tea?_pos=1&_psq=banana+bread+chai&_ss=e&_v=1.0",picture:"banana-bread-chai.jpg"},
+      {id:7,name:"Birthday Cake",brand:"Bird & Blend",type:"Rooibois",flavours:["Sweet", "Vanilla", "Nutty"],ingredients:"Rooibos, SPRINKLES (Sugar, Potato Starch, Maltodextrin, Vegetable Fat (Coconut), Colours (E160C Paprika, E100 Curcumin, E163 Anthocyanins, E162 Beetroot Red), Glazing Agent (Carnauba Wax), Spirulina Extract), Vanilla Pieces, Mallow Flowers, Natural Flavouring",favourite:4,website:"https://www.birdandblendtea.us/products/birthday-cake-tea",picture:"birthday-cake.jpg"},
+      {id:8,name:"Blueberry Pancakes",brand:"Bird & Blend",type:"Black tea",flavours:["Berry", "Sweet", "Nutty"],ingredients:"Rooibos, Hibiscus, Freeze-Dried Blueberry, Apple Pieces, Blackcurrant Leaves, Rosehip, Elderberries, Orange Peel, Cornflowers, Mallow Flowers, Natural Flavouring",favourite:4,website:"https://www.birdandblendtea.us/products/blueberry-pancake-tea?_pos=1&_psq=blueberry+pancakes&_ss=e&_v=1.0",picture:"blueberry-pancakes.jpg"},
+      {id:9,name:"Bonfire Toffee",brand:"Bird & Blend",type:"Black tea",flavours:["Smoky", "Sweet", "Fruity"],ingredients:"Sri Lankan Black Tea, Lapsang Souchong Black Tea, Cinnamon, Air-Dried Apple, Safflower, Natural Flavouring",favourite:3,website:"https://www.birdandblendtea.us/products/bonfire-toffee-tea?_pos=1&_sid=8579c0254&_ss=r",picture:"bonfire-toffee.jpg"},
+      {id:10,name:"Brown Sugar Bourbon",brand:"David's Tea",type:"Black tea",flavours:["Vanilla", "Spiced", "Sweet"],ingredients:"Black tea, Brown sugar, Apple, Roasted chicory root, Brittle pieces (sugar, hazelnut), Artificial (vanilla, caramel) flavouring, Pu'erh tea, Caramel pieces (sugar, cocoa butter, caramel powder (whole milk powder, whey powder, sugar, butter, natural flavour), whole milk powder, sunflower lecithin, paprika extract), Cornflower blossoms, Vanilla, Stevia extract.",favourite:2,website:"https://davidstea.com/products/brown-sugar-bourbon-tea?variant=46532208558320",picture:"brown-sugar-boubon.webp"},
+      {id:11,name:"Butter Toffee Popcorn",brand:"Bird & Blend",type:"Rooibois",flavours:["Sweet", "Caramel", "Smoky"],ingredients:"Rooibos, Toasted Rice, Fenugreek, Puffed Quinoa, Sunflower Petals, Natural Flavouring",favourite:2,website:"https://www.birdandblendtea.us/products/butter-toffee-popcorn-tea?_pos=1&_psq=butter+toffee+popcorn&_ss=e&_v=1.0",picture:"butter-toffee-popcorn.jpg"},
+      {id:12,name:"Butterfly Pee",brand:"Customised",type:"Green tea",flavours:["Citrus", "Floral", "Vegetal"],ingredients:"Green tea, lavender, lemon myrtle, orange peel, butterfly pea flower, jasmine",favourite:4,website:"",picture:""},
+      {id:13,name:"Camomile & Spearmint",brand:"Twinings",type:"Camomile",flavours:["Mint", "Fruity", "Citrus"],ingredients:"Spearmint, camomile, lemongrass, linden, blackberry leaves",favourite:4,website:"https://twinings.com.au/products/camomile-spearmint?_pos=2&_psq=camomile&_ss=e&_v=1.0&variant=44962202714417",picture:""},
+      {id:14,name:"Caramel Brownie",brand:"T2",type:"Black tea",flavours:["Caramel", "Cocoa", "Creamy"],ingredients:"Black tea, cocoa husks, cocoa drops, sugar, cocoa butter, cocoa mass, cocoa powder, emulsilfer, sunflower oil, carob, caramel pieces, condensed milk, natural and artificial flavouring, natural and artificial brownie flavouring, dairy",favourite:2,website:"https://www.t2tea.com/en/au/caramel-brownie-loose-leaf-cube-100g-T125AE124.html",picture:"caramel-brownie.jpg"},
+      {id:15,name:"Caramelised Banana Pancakes",brand:"Bird & Blend",type:"Rooibois",flavours:["Sweet", "Fruity", "Caramel"],ingredients:"Rooibos, Cocoa Nibs, Liquorice, Fenugreek, Freeze-dried Banana, Natural Flavouring",favourite:3,website:"https://www.birdandblendtea.us/products/caramelised-banana-pancakes-tea?_pos=5&_psq=caramel&_ss=e&_v=1.0",picture:"caramelised-banana-pancakes.jpg"},
+      {id:16,name:"Chai Masala",brand:"Impra Tea",type:"Chai",flavours:["Spiced", "Cinnamon", "Strong"],ingredients:"Black tea, flavour natural spices",favourite:4,website:"",picture:""},
+      {id:17,name:"Cherry Blossom",brand:"The Tea Collective",type:"Green tea",flavours:["Berry", "Fruity", "Floral"],ingredients:"Green tea, strawberries, purple cornflower petals, natural flavour",favourite:2,website:"https://theteacollective.com.au/products/cherry-blossom?_pos=1&_psq=cherry+blossom&_ss=e&_v=1.0",picture:"cherry-blossom.webp"},
+      {id:18,name:"Cherry Cola Bottles",brand:"Bird & Blend",type:"Fruit tea",flavours:["Fruity", "Cinnamon", "Sweet"],ingredients:"Apple Pieces, Hibiscus, Rosehip, Cinnamon, Cardamom, Lime Leaves, Orange Peel, Stevia, Freeze-Dried Cranberry, Freeze-Dried Cherry, Natural Flavouring",favourite:3,website:"https://www.birdandblendtea.us/products/cherry-cola-bottles-tea?_pos=1&_psq=cherry+cola&_ss=e&_v=1.0",picture:"cherry-cola-bottles.jpg"},
+      {id:19,name:"China Jasmine",brand:"T2",type:"Green tea",flavours:["Green", "Vegetal"],ingredients:"Green tea",favourite:3,website:"https://www.t2tea.com/en/au/china-jasmine-tea-bag-refill-60-pack-B115AG011.html",picture:"china-jasmine.jpg"},
+      {id:20,name:"Chocolate Digestives",brand:"Bird & Blend",type:"Black tea",flavours:["Cocoa", "Biscuit", "Sweet"],ingredients:"Sri Lankan Black Tea, Cocoa Shells, Fenugreek, Cocoa Nibs, Liquorice Root, Natural Flavouring.",favourite:1,website:"https://www.birdandblendtea.us/products/chocolate-digestives-tea?_pos=1&_psq=chocolate+digestives&_ss=e&_v=1.0",picture:"chocolate-digestives.jpg"},
+      {id:21,name:"Chocolate Digestives Sticky Chai",brand:"Bird & Blend",type:"Chai",flavours:["Biscuit", "Cocoa", "Spiced"],ingredients:"Wildflower Honey (43%), Sri Lankan Black Tea (21%), Cocoa Nibs (10%), Ginger, Cinnamon, Cardamom, Star Anise, Fenugreek, Liquorice, Cloves, Cocoa (2%), Nutmeg, Natural Flavouring",favourite:2,website:"https://www.birdandblendtea.us/products/chocolate-digestives-sticky-chai-jar-90g?_pos=1&_psq=chocolate+digestives+sticky&_ss=e&_v=1.0",picture:"chocolate-digestives-sticky-chai.jpg"},
+      {id:22,name:"Chocolate Dream Roobois",brand:"Neo",type:"Rooibois",flavours:["Cocoa", "Sweet", "Spiced"],ingredients:"Rooibos, Chicory Root, Raw Cacao nibs, Cinnamon, Cardamom, Nutmeg",favourite:4,website:"https://neoaustralia.com.au/products/rooibos-tea-chocolate-dream-tea-jar-160g?_pos=4&_psq=chocolate+dream&_ss=e&_v=1.0",picture:"chocolate-dreams-roobois.webp"},
+      {id:23,name:"Cinnamon Fusion Black Tea",brand:"The Tea Life",type:"Black tea",flavours:["Cinnamon", "Spiced"],ingredients:"Black tea, cinnamon",favourite:3,website:"",picture:"cinnamon-fusion-tea.webp"},
+      {id:24,name:"Cinnamon Sugar Churro",brand:"David's Tea",type:"Black tea",flavours:["Cinnamon", "Caramel", "Sweet"],ingredients:"Brittle (sugar, hazelnut, invert sugar), Cinnamon, Black tea, Caramel (condensed skim milk, sugar, glucose syrup, butter, sorbitol, mono and diglycerides), Monk fruit, Natural (butterscotch, cinnamon) flavouring.",favourite:1,website:"https://davidstea.com/products/cinnamon-sugar-churro-50-grams?variant=46724362993904",picture:"cinnamon-sugar-churro.webp"},
+      {id:25,name:"Coconut Lemon Splice",brand:"T Totaler",type:"Green tea",flavours:["Citrus", "Creamy", "Vegetal"],ingredients:"Green tea, coconut, lemon myrtle",favourite:4,website:"https://www.ttotalertea.com/product-page/coconut-lemon-splice-green-tea",picture:"coconut-lemon-splice.avif"},
+      {id:26,name:"Coconut Truffle Infusion",brand:"Neo",type:"White tea",flavours:["Fruity", "Vanilla", "Sweet"],ingredients:"Coconut, White Tea, Lapacho, Blackberry Leaves, Vanilla",favourite:4,website:"https://neoaustralia.com.au/products/coconut-tea-140g-refill-coconut-truffle-tea?_pos=2&_psq=coconut+truffle&_ss=e&_v=1.0",picture:"coconut-truffle-infusion.webp"},
+      {id:27,name:"Crazy Good Cocoa",brand:"T2",type:"Herbal tea",flavours:["Cocoa", "Creamy", "Sweet"],ingredients:"Cocoa husks",favourite:2,website:"",picture:"crazy-good-cocoa.jpg"},
+      {id:28,name:"Deckchair Dreaming",brand:"Bird & Blend",type:"Camomile",flavours:["Fruity", "Floral", "Citrus"],ingredients:"Chamomile, Apple Pieces, Rosehip, Linden Blossom, Hibiscus, Orange Peel, Natural Flavouring",favourite:3,website:"https://www.birdandblendtea.us/products/deckchair-dreaming-tea?_pos=1&_psq=deckchair+dreaming&_ss=e&_v=1.0",picture:"deckchair-dreaming.jpg"},
+      {id:29,name:"Devon Cream Tea",brand:"Bird & Blend",type:"Black tea",flavours:["Berry", "Creamy", "Sweet"],ingredients:"Sri Lankan Black Tea, Ashwagandha, Freeze-Dried Strawberry, Natural Flavouring",favourite:4,website:"https://www.birdandblendtea.us/products/devon-cream-tea?_pos=1&_psq=devon+cream+tea&_ss=e&_v=1.0",picture:"devon-cream-tea.webp"},
+      {id:30,name:"Dutch Spiced Snaps",brand:"T2",type:"Black tea",flavours:["Biscuit", "Caramel", "Spiced"],ingredients:"Black tea, ginger, cinnamon, nutmeg, flavouring",favourite:3,website:"",picture:""},
+      {id:31,name:"Eggnog",brand:"T2",type:"Black tea",flavours:["Caramel", "Creamy", "Nutty"],ingredients:"Black tea, sweet blackberry leaves, hazelnut brittle, sugar, nutmeg, natural and artificial flavourings, condensed milk, vanilla, eggnog, caramel, hazelnut",favourite:4,website:"",picture:"eggnog.jpg"},
+      {id:32,name:"Fire and Ice",brand:"Bird & Blend",type:"Pu-erh",flavours:["Spiced", "Mint", "Hot"],ingredients:"Pu-erh tea, ginger, peppermint, red peppercorns, chilli, blue cornflowers",favourite:2,website:"https://www.birdandblendtea.us/products/winter-is-coming-tea?_pos=1&_psq=fire+and+ice&_ss=e&_v=1.0",picture:"fire-and-ice.jpg"},
+      {id:33,name:"French Earl Grey",brand:"T2",type:"Black tea",flavours:["Floral", "Fruity", "Citrus"],ingredients:"Black tea, hibiscus, natural and artificial flavouring, sunflower petals, rose betals, mallow flowers, bergamont",favourite:2,website:"https://www.t2tea.com/en/au/french-earl-grey-tea-bag-tin-60-pack-B125AI008.html",picture:"french-earl-grey.jpg"},
+      {id:34,name:"Fruitalicious",brand:"T2",type:"Fruit tea",flavours:["Berry", "Fruity", "Tropical"],ingredients:"Fruit (96.5%)(apple, dragon fruit bits (dragon fruit, anti-caking agent: rice flour), goji berries, chokeberries, papaya bits (papaya, sugar), sea buckthorn berries, blueberries (blueberries, sugar), pineapple bits (pineapple, sugar, acidifier: E330), cranberries), natural and artificial flavouring, antioxidant (E300), acidifier (E334)",favourite:4,website:"https://www.t2tea.com/en/au/fruitalicious-loose-leaf-cube-100g-T130AE018.html",picture:"fruitalicious.jpg"},
+      {id:35,name:"Glove Lotion",brand:"Customised",type:"Black tea",flavours:["Floral", "Spiced", "Cinnamon"],ingredients:"Black tea, rose petals, calendula, ginger root, cinnamon",favourite:2,website:"",picture:""},
+      {id:36,name:"Granny Smith",brand:"Bird & Blend",type:"Fruit tea",flavours:["Fruity", "Floral", "Citrus"],ingredients:"Apple pieces, rosehip, hibiscus, calendula petals, natural flavouring",favourite:2,website:"",picture:""},
+      {id:37,name:"Green Rose",brand:"T2",type:"Green tea",flavours:["Fruity", "Floral", "Vegetal"],ingredients:"Green tea (87%), currants (currants, anti-caking agent: sunflower oil), papaya bits (papaya, sugar), rose petals (2%), mango bits (mango, sugar, acidifier: E330), natural and artificial flavouring, cornflower petals",favourite:4,website:"https://www.t2tea.com/en/au/green-rose-loose-leaf-refill-250g-T115AG013.html",picture:"green-rose.jpg"},
+      {id:38,name:"Honeycomb Cookie Doh!",brand:"Bird & Blend",type:"Rooibois, Black tea",flavours:["Cocoa", "Sweet", "Salty"],ingredients:"Rooibos, cocoa nibs, black tea, puffed quinoa, oat flowering tops, stevia, natural flavourings",favourite:3,website:"",picture:"honeycomb-cookie-doh.png"},
+      {id:39,name:"Hot Chilli Chocolate Tea",brand:"The Tea Life",type:"Black tea",flavours:["Cocoa", "Chilli", "Hot"],ingredients:"Black tea, cacao husk, chilli flakes",favourite:3,website:"https://www.tealife.com.au/products/hot-chilli-chocolate?srsltid=AfmBOoo2YTplwxSF8yysBSjvOX0MBZci__FvQXbwD3Lkv1TZJwF4hq33",picture:"hot-chilli-chocolate.webp"},
+      {id:40,name:"Hot Cinnamon",brand:"Bird & Blend",type:"Rooibois",flavours:["Cinnamon", "Chilli", "Spiced"],ingredients:"Cinnamon, Rooibos, Chilli, Stevia, Natural Flavouring",favourite:1,website:"https://www.birdandblendtea.us/products/hot-cinnamon-tea?_pos=1&_psq=hot+cinnamon&_ss=e&_v=1.0",picture:"hot-cinnamon.webp"},
+      {id:41,name:"Hot Jam Brownie",brand:"T2",type:"Black tea",flavours:["Creamy", "Fruity", "Berry"],ingredients:"Black tea, cocoa husks, blackberry leaves, carob, chocolate bits/ cocoa powder, natural and artificial flavouring, raspberry pieces, soy",favourite:3,website:"",picture:""},
+      {id:42,name:"Ice Cream Matcha",brand:"Bird & Blend",type:"Matcha",flavours:["Sweet", "Green", "Vegetal"],ingredients:"Japanese Matcha Green Tea (80%), Carob, Natural Flavouring Granules",favourite:3,website:"https://www.birdandblendtea.us/products/ice-cream-matcha-tea?_pos=1&_psq=ice+cream+matcha&_ss=e&_v=1.0",picture:"ice-cream-matcha.jpg"},
+      {id:43,name:"Irish Breakfast",brand:"Twinings",type:"Black tea",flavours:["Black", "Strong"],ingredients:"Black tea",favourite:4,website:"https://twinings.com.au/products/irish-breakfast?variant=44962199732529",picture:""},
+      {id:44,name:"Irish Cream",brand:"Bird & Blend",type:"Rooibois",flavours:["Cocoa", "Vanilla", "Coffee"],ingredients:"Rooibos, Cocoa Shells, Coffee Beans, Roasted Dandelion Root, Natural Flavouring",favourite:3,website:"https://www.birdandblendtea.us/products/irish-cream-tea?_pos=1&_psq=irish+cream&_ss=e&_v=1.0",picture:"irish-cream.webp"},
+      {id:45,name:"Love Potion",brand:"Bird & Blend",type:"Black tea",flavours:["Cocoa", "Floral", "Sweet"],ingredients:"Sri Lankan Black Tea, Cocoa Shells, Rose Petals, Freeze-Dried Strawberry, SPRINKLES (Sugar, Potato Starch, Maltodextrin, Vegetable Fat (Coconut), Colours (E163 Anthocyanins, E160C Paprika, E162 Beetroot Red), Glazing Agent (Carnauba Wax)), Calendula Petals, Vanilla Pieces, Natural Flavouring",favourite:2,website:"https://www.birdandblendtea.us/products/love-potion-tea?_pos=1&_psq=love+potion&_ss=e&_v=1.0",picture:"love-potion.jpg"},
+      {id:46,name:"Love Spell",brand:"Customised",type:"Black tea",flavours:["Floral", "Spiced", "Citrus"],ingredients:"Black tea, calendula, lemon peel, rose, cinnamon",favourite:2,website:"",picture:""},
+      {id:47,name:"Madagascan Vanilla",brand:"T2",type:"Black tea",flavours:["Vanilla", "Creamy", "Sweet"],ingredients:"Black tea, natural and artificial vanilla flavouring",favourite:2,website:"",picture:"madagascan-vanilla.png"},
+      {id:48,name:"Maple Bacon Pancakes",brand:"Bird & Blend",type:"Rooibois, Black tea, Pu-erh",flavours:["Sweet", "Vanilla", "Nutty"],ingredients:"Rooibos, Chinese Pu-erh Tea, Cinnamon, Sri Lankan Black Tea, Chinese Lapsang Souchong Black Tea, Calendula Petals, Natural Flavouring",favourite:2,website:"https://www.birdandblendtea.us/products/maple-bacon-pancakes-tea?_pos=1&_psq=maple+bacon&_ss=e&_v=1.0",picture:"maple-bacon-pancakes.jpg"},
+      {id:49,name:"Maple Matcha",brand:"David's Tea",type:"Matcha",flavours:["Sweet", "Green", "Vegetal"],ingredients:"Organic cane sugar, organic matcha green tea, organic matcha flavouring",favourite:3,website:"https://davidstea.com/products/organic-maple-matcha?variant=46532142072048",picture:"maple-matcha.jpg"},
+      {id:50,name:"Mexican Mango & Chilli",brand:"The Tea Collective",type:"Black tea",flavours:["Fruity", "Chilli", "Hot"],ingredients:"Black tea, orange peel, amaranth, mango, calendula, cranberries, chilli flakes, natural cranberry and mango",favourite:2,website:"https://theteacollective.com.au/products/mexicanmangochilli",picture:"mexican-mango-chilli.webp"},
+      {id:51,name:"Milk Oolong Chai",brand:"Bird & Blend",type:"Oolong",flavours:["Creamy", "Spiced", "Sweet"],ingredients:"Chinese Milk Oolong, Ginger, Chinese Ti Guan Yin Oolong, Cinnamon, Cocoa Shells, Cardamom, Chilli, Natural Flavouring",favourite:2,website:"https://www.birdandblendtea.us/products/milk-oolong-chai-tea?_pos=1&_psq=milk+oolong+chai&_ss=e&_v=1.0",picture:"milk-oolong-chai.jpg"},
+      {id:52,name:"Mon Coeur",brand:"The Tea Collective",type:"Black tea",flavours:["Fruity", "Vanilla", "Sweet"],ingredients:"Black tea, orange peel, safflowers, calendula, vanilla, natural peach and diced apricots",favourite:1,website:"https://theteacollective.com.au/products/mon-coeur?variant=37474570698919",picture:"mon-coeur.webp"},
+      {id:53,name:"Monkey Chops",brand:"Bird & Blend",type:"Black tea",flavours:["Fruity", "Vanilla", "Tropical"],ingredients:"Sri Lankan Black Tea, Freeze-Dried Banana, Calendula Petals, Desiccated Coconut, Vanilla Pieces, Natural Flavouring",favourite:2,website:"https://www.birdandblendtea.us/products/monkey-chops-tea?_pos=1&_psq=monkey+chops&_ss=e&_v=1.0",picture:"monkey-chops.jpg"},
+      {id:54,name:"Mulled Cider",brand:"Bird & Blend",type:"Rooibois",flavours:["Citrus", "Fruity", "Spiced"],ingredients:"Apple pieces, ginger, rosehip, hibiscus, cinnamon, cloves, lemon peel, natural flavouring",favourite:3,website:"https://www.birdandblendtea.us/products/mulled-cider-tea?_pos=1&_psq=mulled+cider&_ss=e&_v=1.0",picture:"mulled-cider.jpg"},
+      {id:55,name:"Mystery Tea",brand:"David's Tea",type:"Black tea",flavours:["Fruity", "Citrus", "Vegetal"],ingredients:"Black tea, Apple, Purple sweet potato, Natural flavouring.",favourite:3,website:"https://davidstea.com/products/mystery-tea?variant=46623065178352",picture:"mystery-tea.webp"},
+      {id:56,name:"Native Bush Sticky Chai",brand:"T Totaler",type:"Chai",flavours:["Spiced", "Sweet", "Cinnamon"],ingredients:"Black tea, cinnamon myrtle, ginger, mountain pepper, wattle seed, honey",favourite:3,website:"https://www.ttotalertea.com/product-page/native-bush-sticky-chai-tea",picture:"native-bush-sticky-chai.avif"},
+      {id:57,name:"New York Breakfast",brand:"T2",type:"Black tea",flavours:["Cinnamon", "Sweet", "Vanilla"],ingredients:"Black tea, cinnamon, natural and artificial flavouring, vanilla",favourite:3,website:"https://www.t2tea.com/en/au/new-york-breakfast-loose-leaf-refill-250g-T140AG072.html",picture:"new-york-breakfast.jpg"},
+      {id:58,name:"Orange & Spice",brand:"Impra Tea",type:"Black tea",flavours:["Citrus", "Spiced", "Fruity"],ingredients:"Black tea, orange peel, cinnamon, ginger, cardamom, clove",favourite:4,website:"https://impratea.com.au/product/impra-orange-and-spice-black-tea-200g-metal-caddy/",picture:"orange-and-spice.jpg"},
+      {id:59,name:"Organic Japanese Black Tea",brand:"Makushima",type:"Black tea",flavours:["Black", "Strong"],ingredients:"Black tea",favourite:4,website:"",picture:""},
+      {id:60,name:"Peach Cobbler",brand:"Bird & Blend",type:"Black tea",flavours:["Tropical", "Fruity", "Sweet"],ingredients:"Sri Lankan Black Tea, Freeze-Dried Peach, Cornflowers, Natural Flavouring",favourite:1,website:"https://www.birdandblendtea.us/products/peach-cobbler-tea?_pos=1&_psq=peach+cobbler&_ss=e&_v=1.0",picture:"peach-cobbler.jpg"},
+      {id:61,name:"Peach Soda",brand:"Bird & Blend",type:"Fruit tea",flavours:["Fruity", "Tropical", "Sweet"],ingredients:"Apple Pieces, Hibiscus, Cardamom, Rose Petals, Rosehip, Freeze-Dried Peach, Orange Peel, Natural Flavouring",favourite:2,website:"https://www.birdandblendtea.us/products/peach-soda-tea?_pos=1&_sid=fe5a003cb&_ss=r",picture:"peach-soda.jpg"},
+      {id:62,name:"Pear & Butterscotch",brand:"T2",type:"Black tea",flavours:["Fruity", "Caramel", "Spiced"],ingredients:"Black tea, caramel pieces, cinnamon, pear, natural and artificial flavourings",favourite:3,website:"",picture:"pear-and-butterscotch.jpg"},
+      {id:63,name:"Pink Delight Chai",brand:"T Totaler",type:"Chai",flavours:["Spiced", "Sweet", "Cinnamon"],ingredients:"Rose, pink peppercorn, star anise, beetroot, cardamom, cloves, cinnamon, coconut sugar",favourite:4,website:"https://www.ttotalertea.com/product-page/pink-delight-chai-tea",picture:"pink-delight-chai.avif"},
+      {id:64,name:"Premium Green Tea",brand:"Basilur",type:"Green tea",flavours:["Green", "Vegetal"],ingredients:"Green tea",favourite:4,website:"https://www.basilurtea.com.au/products/sencha-20-tea-bags?_pos=10&_sid=25172b03f&_ss=r",picture:"premium-green-tea.webp"},
+      {id:65,name:"Pure Green Tea",brand:"Impra Tea",type:"Green tea",flavours:["Green", "Vegetal"],ingredients:"Green tea",favourite:4,website:"https://impratea.com.au/product/impra-100-pure-ceylon-green-tea-packeted-big-leaf-op-250g/",picture:"pure-green-tea.jpg"},
+      {id:66,name:"Queen of Hearts",brand:"Australian Tea Masters",type:"Black tea",flavours:["Fruity", "Sweet", "Creamy"],ingredients:"Black Tea, Oolong Tea, Calendula, Cornflower, Safflower, Natural Blackberry, Natural Strawberry",favourite:4,website:"https://australianteamasters.com.au/product/queens-choice/",picture:"queen-of-hearts.webp"},
+      {id:67,name:"Queen Victoria",brand:"The Tea Collective",type:"Black tea",flavours:["Floral", "Fruity", "Berry"],ingredients:"Black tea, rose petals, cornflower petals, berry, grape, apple flavour",favourite:4,website:"https://theteacollective.com.au/products/queen-victoria?variant=46756196647079",picture:"queen-victoria.webp"},
+      {id:68,name:"Raspberry Popcorn",brand:"The Tea Collective",type:"Black tea",flavours:["Floral", "Fruity", "Salty"],ingredients:"Black tea, apple pieces, calendula petals, blue cornflower petals, rose petals, popcorn pieces, natural fruit flavours",favourite:1,website:"https://theteacollective.com.au/products/raspberry-popcorn?variant=46756196810919",picture:"raspberry-popcorn.webp"},
+      {id:69,name:"Red",brand:"T2",type:"Rooibois",flavours:["Sweet", "Nutty"],ingredients:"Roobois tea",favourite:4,website:"",picture:"red.png"},
+      {id:70,name:"Red Green Vanilla",brand:"T2",type:"Rooibois",flavours:["Vanilla", "Sweet", "Nutty"],ingredients:"Green rooibos, artificial flavour",favourite:4,website:"",picture:"red-green-vanilla.jpg"},
+      {id:71,name:"Rhubarb and Custard",brand:"Bird & Blend",type:"Rooibois",flavours:["Creamy", "Sweet", "Vanilla"],ingredients:"Rooibos, Freeze-dried Rhubarb, Calendula Petals, Flavouring",favourite:2,website:"https://www.birdandblendtea.us/products/rhubarb-custard-tea?_pos=1&_psq=rhubarb&_ss=e&_v=1.0",picture:"rhubarb-and-custard.jpg"},
+      {id:72,name:"Rose and Cardamom Chai",brand:"Bird & Blend",type:"Chai",flavours:["Floral", "Spiced"],ingredients:"Black tea, cardamom, ginger, fennel, rose petals, natural flavouring",favourite:3,website:"",picture:"rose-and-cardamom-chai.webp"},
+      {id:73,name:"Salted Caramel Oolong Tea",brand:"David's Tea",type:"Oolong",flavours:["Caramel", "Fruity", "Salty"],ingredients:"Oolong tea, caramel bits, condensed milk, glucose syrup, milk powder, sugar crystals, artificial caramel flavouring, pinapple, citric avid, carob, chocory root, salt, soy",favourite:2,website:"",picture:"salted-caramel-oolong.jpg"},
+      {id:74,name:"Salted Caramel Sticky Chai",brand:"Bird & Blend",type:"Chai",flavours:["Spiced", "Caramel", "Sweet"],ingredients:"Black tea, honey, ginger, cardamom, cloves, cinnamon, nutmeg, black peppercorns, fennel",favourite:2,website:"",picture:"salted-caramel-sticky-chai.jpg"},
+      {id:75,name:"Sauvage",brand:"Wild Tea Lane",type:"Fruit tea",flavours:["Fruity", "Creamy", "Citrus"],ingredients:"Pineapple, Lemongrass, Coconut, Bergamot",favourite:3,website:"https://wildlanetea.com.au/products/sauvage?_pos=1&_sid=14d6b8978&_ss=r",picture:""},
+      {id:76,name:"Simply Maple Breakfast",brand:"David's Tea",type:"Black tea",flavours:["Sweet", "Biscuit", "Fruity"],ingredients:"Apple (apple, citric acid), Raisin, Black tea, Brown sugar, Gluten-free oat, Roasted chicory root, Maple sugar, Marigold petal, Natural flavouring with stevia extract.",favourite:3,website:"https://davidstea.com/products/simply-maple-breakfast-tea?variant=46724364632304",picture:"simply-maple-breakfast.webp"},
+      {id:77,name:"Single Malt Caramel",brand:"T2",type:"Black tea",flavours:["Caramel", "Spiced", "Smoky"],ingredients:"Black tea, malt, caramel, whisky",favourite:1,website:"",picture:""},
+      {id:78,name:"Snowball",brand:"Bird & Blend",type:"Black tea",flavours:["Coconut", "Cocoa", "Sweet"],ingredients:"Sri Lankan black tea, cocoa shells, desiccated coconut, cocoa nibs, red cornflowers, and vegan marshmallows",favourite:2,website:"https://www.birdandblendtea.us/products/snowball-tea?_pos=1&_psq=snowball&_ss=e&_v=1.0",picture:"snowball.jpg"},
+      {id:79,name:"Sophia's Flask",brand:"Wild Tea Lane",type:"Fruit tea",flavours:["Berry", "Fruity", "Floral"],ingredients:"Raspberries, Juniper Berries, Elderberries, Hibiscus, Calendula",favourite:3,website:"https://wildlanetea.com.au/products/sophia-s-flask?_pos=1&_psq=sophia%27s+flask&_ss=e&_v=1.0",picture:"sophias-flask.webp"},
+      {id:80,name:"Spiced Pumpkin Pie",brand:"Bird & Blend",type:"Black tea",flavours:["Spiced", "Sweet", "Vanilla"],ingredients:"Sri Lankan black tea, cinnamon, ginger, cloves, carrot pieces, vanilla, and decorative sprinkles",favourite:1,website:"https://www.birdandblendtea.us/products/spiced-pumpkin-pie-tea?_pos=1&_psq=spiced+pumpkin&_ss=e&_v=1.0",picture:"spiced-pumpkin-pie.jpg"},
+      {id:81,name:"Spiced Pumpkin Pie Sticky Chai",brand:"Bird & Blend",type:"Chai",flavours:["Sweet", "Spiced", "Vanilla"],ingredients:"Black tea, honey, cinnamon, carrot, ginger, cloves, cardamom, fennel, nutmeg, sprinkles, sugar, vanilla pieces, natural flavouring",favourite:2,website:"",picture:"spiced-pumpkin-pie-sticky-chai.jpg"},
+      {id:82,name:"Sticky Choc Chai",brand:"T2",type:"Chai",flavours:["Sweet", "Cocoa", "Spiced"],ingredients:"Black tea, honey, cinnamon, cloves, cardamom, ginger, cocoa husks, vanilla essence, salt",favourite:4,website:"",picture:"sticky-choc-chai.jpg"},
+      {id:83,name:"Sticky Honey Chai",brand:"T2",type:"Chai",flavours:["Sweet", "Caramel", "Spiced"],ingredients:"Black tea, honey, cinnamon, cardamom, ginger, cloves, vanilla, salt",favourite:1,website:"https://www.t2tea.com/en/au/sticky-honey-chai-loose-leaf-refill-250g-T125AG071.html",picture:"sticky-honey-chai.jpg"},
+      {id:84,name:"Sticky Honey Roobois",brand:"T2",type:"Rooibois",flavours:["Sweet", "Cinnamon", "Spiced"],ingredients:"Honey (35.8%), rooibos (17.9%), honeybush, cinnamon, cardamon pods, cardamon seed, cloves, peppercorns, ginger, salt",favourite:4,website:"https://www.t2tea.com/en/au/sticky-honey-rooibos-loose-leaf-refill-250g-T135AG019.html",picture:"sticky-honey-roobois.jpg"},
+      {id:85,name:"Strawberry Rhubarb Parfait",brand:"David's Tea",type:"Fruit tea",flavours:["Fruity", "Creamy", "Berry"],ingredients:"Apple, Hibiscus, Raisins, Carrot, Artificial (strawberry, rhubarb) flavouring, Beetroot, Yogurt bits (skim milk yogurt powder, sugar, maltodextrin, modified starch, citric acid), Strawberry, Rhubarb.",favourite:2,website:"https://davidstea.com/products/strawberry-rhubarb-parfait-tea?variant=46532131619056",picture:"strawberry-rhubarb-parfait.webp"},
+      {id:86,name:"Tummy Tea",brand:"T2",type:"Herbal tea",flavours:["Mint", "Floral", "Vegetal"],ingredients:"Peppermint, liquorice root, fennel, marigold petals CONTAINS LIQUORICE. People suffering from hypertension should avoid excessive consumption.",favourite:4,website:"https://www.t2tea.com/en/au/tummy-tea-tea-bag-refill-60-pack-B140AG054.html",picture:"tummy-tea.jpg"},
+      {id:87,name:"WhiskTEA",brand:"Bird & Blend",type:"Rooibois",flavours:["Cinnamon", "Spiced", "Smoky"],ingredients:"Rooibos, Cinnamon, Ginger, Chinese Lapsang Souchong Black Tea, Safflower, Natural Flavouring",favourite:4,website:"https://www.birdandblendtea.us/products/whisktea?_pos=1&_psq=Whisktea&_ss=e&_v=1.0",picture:"whisk-tea.jpg"},
+      {id:88,name:"Yorkshire Rose",brand:"Bird & Blend",type:"Black tea",flavours:["Floral", "Fruity", "Sweet"],ingredients:"Sri Lankan Black Tea, Apple Pieces, Hibiscus, Rosehip, Rose Petals, Freeze-dried Rhubarb, Flavouring",favourite:2,website:"https://www.birdandblendtea.us/products/yorkshire-rose-tea?_pos=1&_psq=yorkshire+rose&_ss=e&_v=1.0",picture:"yorkshire-rose.jpg"}
+    ];
+
+    // Extract unique types and flavours from data
+    const teaTypes = [...new Set(teaData.map(t => t.type))].sort();
+    const flavours = [...new Set(teaData.flatMap(t => t.flavours))].sort();
+
+    // App state
+    let currentScreen = 'home';
+    let navigationStack = ['home'];
+    let searchActive = false;
+    let searchQuery = '';
+    let selectedFilters = {types: [], flavours: []};
+    let sortBy = 'alpha-asc';
+    let selectedTea = null;
+    let randomTea = null;
+    let filterPanelOpen = false;
+    let filterSubPanel = null;
+    let randomFiltersOpen = false;
+    let sortDropdownOpen = false;
+
+    const sortOptions = [
+      {value: 'alpha-asc', label: "Alphabetically, A-Z"},
+      {value: 'alpha-desc', label: "Alphabetically, Z-A"},
+      {value: 'favourites', label: "Renee's favourites"},
+      {value: 'date-desc', label: "Date, new to old"},
+      {value: 'date-asc', label: "Date, old to new"}
+    ];
+
+    // Icons
+    const icons = {
+      back: '<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>',
+      search: '<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>',
+      chevron: '<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>',
+      chevronDown: '<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>',
+      close: '<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>',
+      filter: '<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="8" x2="20" y2="8"/><line x1="6" y1="16" x2="18" y2="16"/></svg>',
+      arrow: '<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>',
+      check: '<svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>'
+    };
+
+    // Render functions
+    function render() {
+      const app = document.getElementById('app');
+
+      let html = '';
+
+      switch (currentScreen) {
+        case 'home':
+          html = renderHeader('RENEE\'S TEA', false) + renderHomeMenu();
+          break;
+        case 'all-tea':
+          html = renderHeader('ALL TEA', true) + renderFilterButton() + renderTeaList();
+          break;
+        case 'tea-by-type':
+          html = renderHeader('TEA BY TYPE', true) + renderTypeList();
+          break;
+        case 'tea-by-type-detail':
+          html = renderHeader(selectedFilters.types[0]?.toUpperCase() || 'TEA', true) + renderFilterButton() + renderTeaList();
+          break;
+        case 'tea-by-flavour':
+          html = renderHeader('TEA BY FLAVOUR', true) + renderFlavourGrid();
+          break;
+        case 'tea-by-flavour-detail':
+          html = renderHeader('TEA BY FLAVOUR', true) + renderFilterButton() + renderTeaList();
+          break;
+        case 'random-tea':
+          html = renderHeader('RANDOM TEA', true) + renderRandomTea();
+          break;
+      }
+
+      // Modal
+      if (selectedTea) {
+        html += renderTeaModal(selectedTea);
+      }
+
+      // Filter panel
+      if (filterPanelOpen) {
+        html += renderFilterPanel();
+      }
+
+      app.innerHTML = html;
+      attachEventListeners();
+    }
+
+    function renderHeader(title, showBack) {
+      return `
+        <div class="header">
+          ${showBack ? `<button class="header-back" onclick="goBack()">${icons.back}</button>` : ''}
+          <span class="header-title">${title}</span>
+          <div class="header-search-container">
+            <input type="text" class="header-search-input ${searchActive ? 'expanded' : ''}" placeholder="Search..." value="${searchQuery}" oninput="updateSearch(this.value)" id="header-search-field">
+            <button class="header-search-btn" onclick="toggleSearch()">${searchActive ? icons.close : icons.search}</button>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderHomeMenu() {
+      if (searchQuery) {
+        const teas = getFilteredTeas();
+        return `
+          <div class="menu-list">
+            ${teas.length === 0
+            ? '<div class="menu-item"><span class="menu-item-text">No teas found</span></div>'
+            : teas.map(tea => `
+                  <div class="menu-item" onclick="openTeaModal(${tea.id})">
+                    <span class="menu-item-text">${tea.name}</span>
+                    ${icons.chevron}
+                  </div>
+                `).join('')}
+          </div>
+        `;
+      }
+      return `
+        <div class="menu-list">
+          <div class="menu-item" onclick="navigateTo('all-tea')">
+            <span class="menu-item-text">All Tea</span>
+            ${icons.chevron}
+          </div>
+          <div class="menu-item" onclick="navigateTo('tea-by-type')">
+            <span class="menu-item-text">Tea by Type</span>
+            ${icons.chevron}
+          </div>
+          <div class="menu-item" onclick="navigateTo('tea-by-flavour')">
+            <span class="menu-item-text">Tea by Flavour</span>
+            ${icons.chevron}
+          </div>
+          <div class="menu-item" onclick="navigateTo('random-tea')">
+            <span class="menu-item-text">Random Tea</span>
+            ${icons.chevron}
+          </div>
+        </div>
+      `;
+    }
+
+    function renderFilterButton() {
+      return `
+        <button class="filter-btn" onclick="openFilterPanel()">
+          FILTER AND SORT
+          ${icons.filter}
+        </button>
+      `;
+    }
+
+    function renderTeaList() {
+      const teas = getFilteredTeas();
+      return `
+        <div class="tea-list">
+          ${teas.map(tea => renderTeaCard(tea)).join('')}
+          ${teas.length === 0 ? '<p style="text-align:center;padding:40px;color:#666;">No teas match your filters</p>' : ''}
+        </div>
+      `;
+    }
+
+    function renderTeaCard(tea) {
+      return `
+        <div class="tea-card" onclick="openTeaModal(${tea.id})">
+          <div class="tea-card-name">${tea.name}</div>
+          <div class="tea-card-type">${tea.type}</div>
+          <div class="tea-card-brand">${tea.brand}</div>
+          <div class="tea-card-tags">
+            ${tea.flavours.slice(0, 3).map(f => `<span class="tea-tag">${f}</span>`).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    function renderTeaModal(tea) {
+      return `
+        <div class="modal-overlay active" onclick="closeTeaModal(event)">
+          <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeTeaModal()">${icons.close}</button>
+            <div class="modal-name">${tea.name}</div>
+            <div class="modal-type">${tea.type}</div>
+            <div class="modal-brand">${tea.brand}</div>
+            <div class="modal-tags">
+              ${tea.flavours.map(f => `<span class="tea-tag">${f}</span>`).join('')}
+            </div>
+            <div class="modal-section-title">Ingredients</div>
+            <div class="modal-ingredients">${tea.ingredients}</div>
+            ${tea.website ? `<a href="${tea.website.startsWith('http') ? '' : 'https://'}${tea.website}" target="_blank" class="modal-link">${tea.website.replace(/^https?:\/\//, '')}</a>` : ''}
+            ${tea.picture ? `<img src="${tea.picture}" alt="${tea.name}" class="modal-image">` : ''}
+          </div>
+        </div>
+      `;
+    }
+
+    function renderTypeList() {
+      return `
+        <div class="menu-list">
+          ${teaTypes.map(type => `
+            <div class="menu-item" onclick="selectType('${type}')">
+              <span class="menu-item-text">${type}</span>
+              ${icons.chevron}
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    function renderFlavourGrid() {
+      return `
+        <div class="flavour-grid">
+          <div class="flavour-prompt">What do you feel like today?</div>
+          ${flavours.map(f => `
+            <button class="flavour-btn ${selectedFilters.flavours.includes(f) ? 'selected' : ''}" onclick="toggleFlavourSelect('${f}')">${f}</button>
+          `).join('')}
+        </div>
+        <div class="apply-btn-container">
+          <button class="apply-btn" onclick="applyFlavours()">
+            APPLY
+            ${icons.arrow}
+          </button>
+        </div>
+      `;
+    }
+
+    function renderFilterPanel() {
+      if (filterSubPanel === 'type') {
+        return renderCheckboxPanel('Tea type', teaTypes, 'types');
+      }
+      if (filterSubPanel === 'flavour') {
+        return renderCheckboxPanel('Flavour', flavours, 'flavours');
+      }
+
+      return `
+        <div class="filter-panel active">
+          <div class="header">
+            <span class="header-title">ALL TEA</span>
+          </div>
+          <div class="filter-panel-header">
+            <button class="filter-panel-close" onclick="closeFilterPanel()">${icons.close}</button>
+          </div>
+          <div class="filter-section">
+            <div class="filter-section-title">FILTER BY</div>
+          </div>
+          <div class="filter-option-row" onclick="openFilterSubPanel('type')">
+            <div class="filter-option-content">
+              <span class="filter-option-text">Tea type</span>
+              ${selectedFilters.types.length > 0 ? `<span class="filter-option-selected">${selectedFilters.types.join(', ')}</span>` : ''}
+            </div>
+            ${icons.chevron}
+          </div>
+          <div class="filter-option-row" onclick="openFilterSubPanel('flavour')">
+            <div class="filter-option-content">
+              <span class="filter-option-text">Flavour</span>
+              ${selectedFilters.flavours.length > 0 ? `<span class="filter-option-selected">${selectedFilters.flavours.join(', ')}</span>` : ''}
+            </div>
+            ${icons.chevron}
+          </div>
+          <div class="filter-section">
+            <div style="display:flex;align-items:center;justify-content:space-between;">
+              <span class="filter-section-title" style="margin-bottom:0;">SORT BY</span>
+              <div class="sort-select" onclick="toggleSortDropdown(event)">
+                <span class="sort-value">${sortOptions.find(o => o.value === sortBy)?.label || 'Alphabetically, A-Z'}</span>
+                ${icons.chevronDown}
+                ${sortDropdownOpen ? `
+                  <div class="sort-dropdown" onclick="event.stopPropagation()">
+                    ${sortOptions.map(opt => `
+                      <div class="sort-option" onclick="selectSort('${opt.value}')">
+                        <span class="sort-option-check">${sortBy === opt.value ? icons.check : ''}</span>
+                        <span>${opt.label}</span>
+                      </div>
+                    `).join('')}
+                  </div>
+                ` : ''}
+              </div>
+            </div>
+          </div>
+          <div class="filter-section" style="border-bottom:none;">
+            <button class="reset-filters-btn" onclick="resetFilters()">Reset Filters</button>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderCheckboxPanel(title, items, filterKey) {
+      return `
+        <div class="filter-panel active">
+          <div class="header">
+            <button class="header-back" onclick="closeFilterSubPanel()">${icons.back}</button>
+            <span class="header-title">ALL TEA</span>
+            <button class="header-search">${icons.search}</button>
+          </div>
+          <div class="filter-panel-header">
+            <button class="filter-panel-close" onclick="closeFilterPanel()">${icons.close}</button>
+          </div>
+          <div class="checkbox-list">
+            ${items.map(item => `
+              <div class="checkbox-item" onclick="toggleFilter('${filterKey}', '${item}')">
+                <span class="checkbox-item-text">${item}</span>
+                <div class="checkbox ${selectedFilters[filterKey].includes(item) ? 'checked' : ''}">
+                  ${icons.check}
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    function renderRandomTea() {
+      return `
+        <button class="shuffle-btn" onclick="shuffleTea()">
+          ${randomTea ? 'SHUFFLE AGAIN' : 'SHUFFLE'}
+          ${icons.arrow}
+        </button>
+        <div class="filter-results-toggle ${randomFiltersOpen ? 'open' : ''}" onclick="toggleRandomFilters()">
+          <span class="filter-results-text">Filter Results</span>
+          ${icons.chevronDown}
+        </div>
+        ${randomFiltersOpen ? renderRandomFilters() : ''}
+        ${randomTea ? `
+          <div class="random-result">
+            <div class="random-card">
+              <button class="random-card-close" onclick="clearRandomTea()">${icons.close}</button>
+              <div class="tea-card-name">${randomTea.name}</div>
+              <div class="tea-card-type">${randomTea.type}</div>
+              <div class="tea-card-brand">${randomTea.brand}</div>
+              <div class="tea-card-tags">
+                ${randomTea.flavours.slice(0, 3).map(f => `<span class="tea-tag">${f}</span>`).join('')}
+              </div>
+              <div class="modal-section-title" style="margin-top:20px;">Ingredients</div>
+              <div class="modal-ingredients">${randomTea.ingredients}</div>
+              ${randomTea.website ? `<a href="${randomTea.website.startsWith('http') ? '' : 'https://'}${randomTea.website}" target="_blank" class="modal-link">${randomTea.website.replace(/^https?:\/\//, '')}</a>` : ''}
+              ${randomTea.picture ? `<img src="${randomTea.picture}" alt="${randomTea.name}" class="modal-image" style="margin-top:16px;">` : '<div class="modal-image" style="margin-top:16px;"></div>'}
+            </div>
+          </div>
+        ` : ''}
+      `;
+    }
+
+    function renderRandomFilters() {
+      return `
+        <div class="menu-list" style="border-top:none;">
+          <div class="menu-item" onclick="openFilterSubPanel('type'); filterPanelOpen = true; render();">
+            <span class="menu-item-text">Tea type</span>
+            ${icons.chevron}
+          </div>
+          <div class="menu-item" onclick="openFilterSubPanel('flavour'); filterPanelOpen = true; render();">
+            <span class="menu-item-text">Flavour</span>
+            ${icons.chevron}
+          </div>
+        </div>
+      `;
+    }
+
+    // Helper functions
+    function getFilteredTeas() {
+      let filtered = [...teaData];
+
+      if (searchQuery) {
+        const q = searchQuery.toLowerCase();
+        filtered = filtered.filter(t =>
+          t.name.toLowerCase().includes(q) ||
+          t.type.toLowerCase().includes(q) ||
+          t.brand.toLowerCase().includes(q) ||
+          t.flavours.some(f => f.toLowerCase().includes(q))
+        );
+      }
+
+      if (selectedFilters.types.length > 0) {
+        filtered = filtered.filter(t => selectedFilters.types.includes(t.type));
+      }
+
+      if (selectedFilters.flavours.length > 0) {
+        filtered = filtered.filter(t =>
+          t.flavours.some(f => selectedFilters.flavours.includes(f))
+        );
+      }
+
+      // Sorting
+      switch (sortBy) {
+        case 'alpha-asc':
+          filtered.sort((a, b) => a.name.localeCompare(b.name));
+          break;
+        case 'alpha-desc':
+          filtered.sort((a, b) => b.name.localeCompare(a.name));
+          break;
+        case 'favourites':
+          filtered.sort((a, b) => (a.favourite || 5) - (b.favourite || 5) || a.name.localeCompare(b.name));
+          break;
+        case 'date-desc':
+          filtered.sort((a, b) => b.id - a.id);
+          break;
+        case 'date-asc':
+          filtered.sort((a, b) => a.id - b.id);
+          break;
+      }
+
+      return filtered;
+    }
+
+    // Navigation
+    function navigateTo(screen) {
+      navigationStack.push(screen);
+      currentScreen = screen;
+      if (screen === 'all-tea') {
+        selectedFilters = {types: [], flavours: []};
+      }
+      render();
+    }
+
+    function goBack() {
+      if (navigationStack.length > 1) {
+        navigationStack.pop();
+        currentScreen = navigationStack[navigationStack.length - 1];
+        if (currentScreen === 'tea-by-type') {
+          selectedFilters.types = [];
+        }
+        if (currentScreen === 'tea-by-flavour') {
+          selectedFilters.flavours = [];
+        }
+        render();
+      }
+    }
+
+    function toggleSearch() {
+      searchActive = !searchActive;
+      if (!searchActive) {
+        searchQuery = '';
+        clearTimeout(window.searchTimeout);
+      }
+      render();
+      if (searchActive) {
+        setTimeout(() => {
+          const input = document.getElementById('header-search-field');
+          if (input) input.focus();
+        }, 350);
+      }
+    }
+
+    function updateSearch(value) {
+      searchQuery = value;
+      // Debounce the render to avoid losing focus
+      clearTimeout(window.searchTimeout);
+      window.searchTimeout = setTimeout(() => {
+        const input = document.getElementById('header-search-field');
+        const cursorPos = input ? input.selectionStart : 0;
+        renderContent();
+        const newInput = document.getElementById('header-search-field');
+        if (newInput) {
+          newInput.focus();
+          newInput.setSelectionRange(cursorPos, cursorPos);
+        }
+      }, 300);
+    }
+
+    function renderContent() {
+      // Only re-render the content area, not the header
+      const teaListEl = document.querySelector('.tea-list');
+      const menuListEl = document.querySelector('.menu-list');
+
+      if (teaListEl && (currentScreen === 'all-tea' || currentScreen === 'tea-by-type-detail' || currentScreen === 'tea-by-flavour-detail')) {
+        const teas = getFilteredTeas();
+        teaListEl.innerHTML = teas.length === 0
+          ? '<p style="text-align:center;padding:40px;color:#666;">No teas match your search</p>'
+          : teas.map(tea => renderTeaCard(tea)).join('');
+      } else if (menuListEl && currentScreen === 'home') {
+        const teas = getFilteredTeas();
+        if (searchQuery) {
+          menuListEl.innerHTML = teas.length === 0
+            ? '<div class="menu-item"><span class="menu-item-text">No teas found</span></div>'
+            : teas.map(tea => `
+                <div class="menu-item" onclick="openTeaModal(${tea.id})">
+                  <span class="menu-item-text">${tea.name}</span>
+                  ${icons.chevron}
+                </div>
+              `).join('');
+        }
+      }
+    }
+
+    function selectType(type) {
+      selectedFilters.types = [type];
+      navigateTo('tea-by-type-detail');
+    }
+
+    function toggleFlavourSelect(flavour) {
+      const idx = selectedFilters.flavours.indexOf(flavour);
+      if (idx >= 0) {
+        selectedFilters.flavours.splice(idx, 1);
+      } else {
+        selectedFilters.flavours.push(flavour);
+      }
+      render();
+    }
+
+    function applyFlavours() {
+      if (selectedFilters.flavours.length > 0) {
+        navigateTo('tea-by-flavour-detail');
+      }
+    }
+
+    // Modal
+    function openTeaModal(id) {
+      selectedTea = teaData.find(t => t.id === id);
+      render();
+    }
+
+    function closeTeaModal(event) {
+      if (!event || event.target.classList.contains('modal-overlay')) {
+        selectedTea = null;
+        render();
+      }
+    }
+
+    // Filter panel
+    function openFilterPanel() {
+      filterPanelOpen = true;
+      filterSubPanel = null;
+      render();
+    }
+
+    function closeFilterPanel() {
+      filterPanelOpen = false;
+      filterSubPanel = null;
+      sortDropdownOpen = false;
+      render();
+      window.scrollTo(0, 0);
+    }
+
+    function openFilterSubPanel(panel) {
+      filterSubPanel = panel;
+      render();
+    }
+
+    function closeFilterSubPanel() {
+      filterSubPanel = null;
+      render();
+    }
+
+    function toggleFilter(key, value) {
+      const idx = selectedFilters[key].indexOf(value);
+      if (idx >= 0) {
+        selectedFilters[key].splice(idx, 1);
+      } else {
+        selectedFilters[key].push(value);
+      }
+      // Save scroll position before render
+      const checkboxList = document.querySelector('.checkbox-list');
+      const scrollPos = checkboxList ? checkboxList.scrollTop : 0;
+      render();
+      // Restore scroll position after render
+      const newCheckboxList = document.querySelector('.checkbox-list');
+      if (newCheckboxList) {
+        newCheckboxList.scrollTop = scrollPos;
+      }
+    }
+
+    function toggleSortDropdown(event) {
+      event.stopPropagation();
+      sortDropdownOpen = !sortDropdownOpen;
+      render();
+    }
+
+    function selectSort(value) {
+      sortBy = value;
+      sortDropdownOpen = false;
+      render();
+    }
+
+    function resetFilters() {
+      selectedFilters = {types: [], flavours: []};
+      sortBy = 'alpha-asc';
+      render();
+    }
+
+    // Random tea
+    function shuffleTea() {
+      const filtered = getFilteredTeas();
+      if (filtered.length > 0) {
+        randomTea = filtered[Math.floor(Math.random() * filtered.length)];
+      }
+      render();
+    }
+
+    function clearRandomTea() {
+      randomTea = null;
+      render();
+    }
+
+    function toggleRandomFilters() {
+      randomFiltersOpen = !randomFiltersOpen;
+      render();
+    }
+
+    function attachEventListeners() {
+      // Handle back gesture / button
+      window.onpopstate = function () {
+        if (navigationStack.length > 1) {
+          goBack();
+        }
+      };
+    }
+
+    // Initial render
+    render();
+  </script>
+</body>
+
+</html>

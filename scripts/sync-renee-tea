@@ -1,0 +1,3 @@
+cd renee/tea
+./sync.sh
+cd ../../

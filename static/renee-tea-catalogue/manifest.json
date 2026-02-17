@@ -1,0 +1,11 @@
+{
+  "name": "Tea Collection",
+  "short_name": "Tea",
+  "description": "Digital catalogue of your tea collection",
+  "start_url": "/renee-tea-catalogue/index.html",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#9DD5C7",
+  "orientation": "portrait",
+  "icons": []
+}
