@@ -4,6 +4,7 @@ date: 2026-02-07T19:01:00+11:00
 author: Claude & Arie Oldman
 draft: false
 summary: How to avoid over-cooking.
+hero: hero.png
 ---
 
 A quick checklist to help engineers _get to simple_ when designing a product feature. AI code generation tools are lifting the burden of execution, which means engineers must be even more careful in deciding _what_ to execute on.

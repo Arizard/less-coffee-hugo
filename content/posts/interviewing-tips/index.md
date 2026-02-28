@@ -6,7 +6,6 @@ draft: false
 hero: hero-alt.jpg
 hero_attribution: Photo by <a href="https://unsplash.com/@arizard?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Arie Oldman</a> on <a href="https://unsplash.com/photos/dL30-It7Sxo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 tags: ["career", "technical"]
-featured: true
 summary: Take luck out of the equation.
 ---
 

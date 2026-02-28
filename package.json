@@ -1,16 +1,19 @@
 {
   "comments": {
     "dependencies": {
+      "@resvg/resvg-js": "project",
       "react": "etch-less-coffee",
       "react-dom": "etch-less-coffee"
     },
     "devDependencies": {}
   },
   "dependencies": {
+    "@resvg/resvg-js": "^2.6.2",
     "react": "^19.2.3",
     "react-dom": "^19.2.3"
   },
   "devDependencies": {},
   "name": "less-coffee-hugo",
+  "type": "module",
   "version": "0.1.0"
 }

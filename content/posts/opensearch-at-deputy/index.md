@@ -6,6 +6,7 @@ draft: false
 tags:
     - technical
 summary: The most egregiously over-engineered solution I have ever been a part of.
+hero: hero.png
 ---
 
 At Deputy, a dozen engineers—myself included—spent 18 months attempting to index all timesheets as documents in OpenSearch Serverless. The business needed to boost revenue from mid-market, AWS had a compelling pitch, and we ended up committing to a solution that ran well over scope.

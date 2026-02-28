@@ -1,4 +1,8 @@
 {
   "name": "less-coffee-hugo",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "type": "module",
+  "dependencies": {
+    "@resvg/resvg-js": "^2.6.2"
+  }
 }
