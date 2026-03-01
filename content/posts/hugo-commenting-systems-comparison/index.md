@@ -18,6 +18,9 @@ Allow me to make it a little bit easier for you with a quick overview of a few o
 > [!TIP]+ Update March 2026
 > You can try [_Gomments_ on this very page](#gomments-container). It's my own basic commenting system which uses SQLite, so all you need is some spare compute. You can also check out the project [on github](https://github.com/Arizard/gomments).
 
+> [!NOTE]+ Isso is my personal favorite
+> My favorite out of this list is Isso, but I had trouble with running it behind an nginx path, it doesn't seem to have a way to specific a base URL.
+
 **Quick Navigation**
 
 Standalone Comment Systems
