@@ -15,6 +15,9 @@ You’d rather not use a commercial system for a small project — perhaps for p
 
 Allow me to make it a little bit easier for you with a quick overview of a few open-source commenting systems, graded on features, simplicity, ease of integration, and deployability.
 
+> [!TIP]+ Update March 2026
+> You can try [_Gomments_ on this very page](#gomments-container). It's my own basic commenting system which uses SQLite, so all you need is some spare compute. You can also check out the project [on github](https://github.com/Arizard/gomments).
+
 **Quick Navigation**
 
 Standalone Comment Systems
