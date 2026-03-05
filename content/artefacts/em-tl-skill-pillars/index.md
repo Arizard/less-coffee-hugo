@@ -3,7 +3,6 @@ title: "EM/TL Skill Pillars"
 date: 2026-02-22T14:51:11+11:00
 author: Arie Oldman and Claude
 summary: Skills for leaders.
-hero: hero.png
 ---
 
 | Skill | TL Effort | EM Effort | Bias |
