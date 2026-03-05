@@ -12,4 +12,8 @@ Comments are powered by my own comment server called `gomments`. Names can be fo
 
 My favorite part about this website is that the pages are served via a Cloudfront distribution backed by S3. It would be cheap if not for the compute required to host `gomments`.
 
-Now, [go and read something, please]({{< ref "/" >}}). Or, [look at my resume]({{< ref "/resume" >}}).
+Now, [go and read something, please]({{< ref "/" >}}).
+
+Or [view the gallery](/gallery).
+
+Or [look at my resume]({{< ref "/resume" >}}).

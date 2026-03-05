@@ -30,12 +30,6 @@ pygmentsUseClasses = true
     pageRef = "/artefacts"
     weight = 15
   [[menu.main]]
-    identifier = "gallery"
-    name = "gallery"
-    title = "gallery"
-    url = "/gallery/"
-    weight = 20
-  [[menu.main]]
     identifier = "about"
     name = "about"
     title = "about"
