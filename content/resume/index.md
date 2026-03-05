@@ -5,70 +5,6 @@ nocomment: true
 nobottomnav: true
 ---
 
-<style>
-  .article-after {
-    display: none !important;
-  }
-
-  .font-weight-bold {
-    font-weight: bold;
-  }
-
-  @media screen {
-    .show-on-print {
-      display: none;
-    }
-  }
-
-  @media print {
-    .sc-heading-with-sub-label-container {
-      border-bottom: 1px solid black;
-      padding-bottom: 4px !important;
-      padding-top: 0 !important;
-      margin-bottom: 1.35rem;
-    }
-    .sc-heading-with-sub-label-container .sc-heading-with-sub-label {
-      font-weight: 500 !important; -- medium
-    }
-    h3.sc-heading-with-sub-label {
-      font-size: 1.5rem !important;
-      line-height: 2.16rem !important;
-    }
-    h1 {
-        text-align: center !important;
-    }
-    html {
-      zoom: 70%;
-    }
-    footer, nav#banner { display: none !important; }
-    body {
-      color: black !important;
-      margin: 0;
-      width: 100%;
-    }
-
-    article {
-        text-align: left;
-        text-wrap: pretty;
-        hyphens: none;
-    }
-
-    main#content {
-        margin: 0;
-    }
-
-    .hide-on-print {
-      display: none;
-    }
-
-    main#content p {
-        color: black !important;
-    }
-  }
-</style>
-
-<p class="show-on-print font-weight-bold" style="text-align: center">Sydney, Australia • +61 432 934 970 • arie@less.coffee</p>
-
 Software engineer with 6 years of experience, working across modern and legacy code. I'm most interested in feature-leading projects which solve complex problems and have a clear business impact.
 
 <!-- TODO: re-write this from a work experience perspective https://www.beamjobs.com/resume-help/how-to-define-job-responsibilities -->
@@ -100,7 +36,9 @@ Software engineer with 6 years of experience, working across modern and legacy c
 
 ## Professional Experience
 
-{{< heading-with-sub-label level="3" heading="Senior Software Engineer I at Eucalyptus" label="February 2025 — present" >}}
+### Senior Software Engineer I at Eucalyptus
+
+February 2025 – present
 
 **Feature lead** for Juniper _Side Effect Check-In_, where I directed a team of 3 engineers (including myself) and worked with a product manager to implement a new side effect questionnaire which surfaces only when appropriate and intelligently triages patients to connect them with practitioners, improving the patient outcomes for medicated weight loss.
 <!-- what's special about it?:
@@ -117,7 +55,9 @@ Software engineer with 6 years of experience, working across modern and legacy c
         questionnaire
 -->
 
-{{< heading-with-sub-label level="3" heading="Senior Software Engineer at Deputy" label="October 2022 — February 2025" >}}
+### Senior Software Engineer at Deputy
+
+October 2022 – February 2025
 
 **Directed** and developed the implementation of a new asynchronous _Timesheet Actions_ backend (PHP, MySQL), for which I coordinated a team of 5 other backend engineers, 1 product manager and 1 UX designer, scrum-style. This project was crucial in business objective to acquire a strategic partner, enabling delivery of over $3m USD in additional ARR.
 
@@ -141,7 +81,9 @@ Software engineer with 6 years of experience, working across modern and legacy c
 <!-- * **Modernised** Deputy's Timesheet feature by creating a timesheet search engine, using AWS OpenSearch. -->
 <!-- * **Coordinated project delivery** for a team of 10 engineers. -->
 
-{{< heading-with-sub-label level="3" heading="Software Engineer at Deputy" label="September 2019 — October 2022" >}}
+### Software Engineer at Deputy
+
+September 2019 – October 2022
 
 <!-- * **Pay Comparison**: -->
 <!-- * **Enterprise Employee Profile**: --> 
@@ -168,15 +110,21 @@ Software engineer with 6 years of experience, working across modern and legacy c
 
 </div>
 
-{{< heading-with-sub-label level="3" heading="Junior Software Developer at Spriggy" label="March 2019 — July 2019" >}}
+### Junior Software Developer at Spriggy
+
+March 2019 – July 2019
 
 **Contributed to** bug fixes, quality-of-life improvements, and analytics telemetry in the Spriggy platform.
 
-{{< heading-with-sub-label level="3" heading="Cadet Engineer (Networks) at Singtel Optus" label="July 2015 — March 2019" >}}
+### Cadet Engineer (Networks) at Singtel Optus
+
+July 2015 – March 2019
 
 **Improve internal productivity** by creating data visualisation software for network topology, web utilities for handset testing and traffic rating, and data cleaning automations (PHP, Javascript, Perl).
 
-{{< heading-with-sub-label level="3" heading="Self Employed & Side Projects" label="since 2015" >}}
+### Self Employed & Side Projects
+
+2015 – present
 
 **Self-design, self-develop, and self-host** personal blog at [less.coffee](https://less.coffee), using the Hugo site builder as a base.
 
@@ -186,7 +134,9 @@ Software engineer with 6 years of experience, working across modern and legacy c
 
 ## Education
 
-{{< heading-with-sub-label level="3" heading="BEng (Honours) in Telecommunications Engineering at Macquarie University" label="2015 — 2018" >}}
+### BEng (Honours) in Telecommunications Engineering at Macquarie University
+
+2015 – 2018
 
 **Published undergrad thesis** _Inline DDoS Detection for Small to Medium Businesses_, which examines software-defined networking approaches to intrusion detection and mitigation on the small (home) to medium (small business) scale.
 
