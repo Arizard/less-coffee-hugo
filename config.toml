@@ -24,12 +24,30 @@ pygmentsUseClasses = true
     pageRef = "/posts"
     weight = 10
   [[menu.main]]
+    identifier = "about"
+    name = "about"
+    title = "about"
+    pageRef = "/about"
+    weight = 30
+  [[menu.footer]]
+    identifier = "index"
+    name = "index"
+    title = "index"
+    pageRef = "/"
+    weight = 5
+  [[menu.footer]]
+    identifier = "posts"
+    name = "posts"
+    title = "posts"
+    pageRef = "/posts"
+    weight = 10
+  [[menu.footer]]
     identifier = "artefacts"
     name = "artefacts"
     title = "artefacts"
     pageRef = "/artefacts"
     weight = 15
-  [[menu.main]]
+  [[menu.footer]]
     identifier = "about"
     name = "about"
     title = "about"
