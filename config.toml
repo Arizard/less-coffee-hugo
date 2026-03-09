@@ -53,6 +53,12 @@ pygmentsUseClasses = true
     title = "about"
     pageRef = "/about"
     weight = 30
+  [[menu.footer]]
+    identifier = "ai-policy"
+    name = "ai-policy"
+    title = "ai policy"
+    pageRef = "/ai"
+    weight = 40
 
 [permalinks]
   posts = "/:title/"
