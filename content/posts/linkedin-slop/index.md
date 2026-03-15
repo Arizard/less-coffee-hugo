@@ -6,7 +6,6 @@ tags:
     - creative
 hero: hero.jpeg
 hero_attribution: Photo by Arie.
-featured: true
 ---
 
 LinkedIn has become appreciably worse. Or perhaps it's just my algorithm. You've probably noticed it already.
