@@ -1,6 +1,6 @@
 ---
 title: "Your Best Manager Will Terminate You"
-date: 2026-03-14T21:01:26+11:00
+date: 2026-03-15T15:00:00+11:00
 author: Arie Oldman
 draft: false
 hero: hero.jpeg
