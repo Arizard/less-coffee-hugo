@@ -1,0 +1,4 @@
+print -n "title: "
+read -r title
+slug=$(echo "$title" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd '[:alnum:]-')
+hugo new content "posts/$(TZ=UTC date +%Y-%m-%d-%H%M)-$slug/index.md"
