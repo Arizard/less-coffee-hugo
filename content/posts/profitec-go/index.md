@@ -6,6 +6,7 @@ hero: hero.jpeg
 hero_attribution: Photo by Arie.
 tags:
     - life
+summary: My thoughts on this espresso machine after 18 months.
 ---
 
 ## Summary
