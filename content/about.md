@@ -17,3 +17,8 @@ Now, [go and read something, please]({{< ref "/" >}}).
 Or [view the gallery](/gallery).
 
 Or [look at my resume]({{< ref "/resume" >}}).
+
+By the way I'm testing out some illustrations from [Notioly](https://www.notioly.com/). I love the notion-style illustrations and I think they give great character to the website. I'll try the free ones for a while as I think about buying the full pack. I'd love the bike-related or dog-related illustrations.
+
+![sticka](</sticker/notioly/Christmas-Collection n.7.svg>)
+{lineart=true}

@@ -26,6 +26,8 @@ You get some high-end features out-of-the-box: OPV and PID control are usually o
 
 It heats up pretty fast. Not as fast as something like a Barista Express[^bbe], but still pretty fast. Like maybe 10 minutes or less. It's perfectly reasonable for me to switch the machine on first thing in the morning, then change into workout clothes or make some quick breakfast before brewing my coffee. Even with the fast heat up, the temperature is pretty stable through the shot. The built-in thermometer reads only a few degrees lower than the starting temperature.
 
+[^bbe]: Whether that machine is _truly ready_ after the short heat-up time is a point of contention.
+
 I'm fond of the ergonomics as well. The Go's controls are all front-facing which reduces its overall footprint. It seems insignificant, but something as simple as being able to steam milk with your right hand while opening the valve with your left hand makes the experience enjoyable.
 
 ## Cons
@@ -46,4 +48,3 @@ Pressure should be optimal from factory, but if you need to re-calibrate, instal
 
 Hold the steam wand in the centre of the milk's surface. The stock steam wand has two openings, which form two milk vortexes on either side. This is sufficient for achieving a microfoam. Online tutorials will recommend forming a vortex by holding the wand off-centre, but you should ignore this if you've got the two-hole wand.
 
-[^bbe]: Whether that machine is _truly ready_ after the short heat-up time is a point of contention.
