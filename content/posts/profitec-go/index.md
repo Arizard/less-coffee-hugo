@@ -2,12 +2,15 @@
 title: "Notes on the Profitec Go"
 date: 2026-04-03T13:06:14+11:00
 author: Arie Oldman
-hero: hero.jpeg
+hero: latte-crop.jpeg
 hero_attribution: Photo by Arie.
 tags:
     - life
 summary: My thoughts on this espresso machine after 18 months.
 ---
+
+![A capuccino I made (with some decent-ish latte art) in front of the Profitec Go.](latte.jpeg)
+{.portrait}
 
 ## Summary
 
@@ -31,7 +34,7 @@ The first one or two releases of the Go rattle... a lot. While the machine has a
 
 Speaking of drip trays—the short and stout stature of the machine means there's very little headroom under the portafilter. Taller cups need to be threaded underneath the spouts. I solved this by buying shorter cups, but you could also swap out the stock portafilter for a _naked portafilter_—with the added benefit of better shot diagnosis.
 
-## Misconceptions
+## Tips
 
 ### Pressure
 

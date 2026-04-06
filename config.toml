@@ -66,6 +66,7 @@ pygmentsUseClasses = true
 [markup]
   [markup.goldmark]
     [markup.goldmark.parser]
+      wrapStandAloneImageWithinParagraph = false
       [markup.goldmark.parser.attribute]
       # https://gohugo.io/content-management/markdown-attributes/
         image = true
