@@ -58,6 +58,14 @@ For example, the below code snippet renders the image that follows:
 
 ![This is the caption](landscape.jpg "This is the title.")
 
+```markdown
+![This is the caption without a title at all...](landscape.jpg)
+```
+
+
+![This is the caption without a title at all...](landscape.jpg)
+
+
 ### Override default full-width behaviour
 
 For portrait images we can specify the attribute `portrait`:
@@ -245,25 +253,4 @@ use `---`:
 {{< dinkus >}}
 
 ^ see this
-
-## [deprecated] Images using &lt;figure&gt;
-
-[deprecated] shortcode for images:
-
-```plain
-{{</* figure src="landscape.jpg" caption="this is a caption" */>}}
-```
-
-{{< figure src="landscape.jpg" caption="this is a caption" >}}
-
-For portrait images, we can add `class="portrait"` to the shortcode, which keeps the width small (so that we don't take over the whole page).
-
-this has no effect on screens less than 770px across.
-
-```plain
-{{</* figure src="portrait.jpg" class="portrait" caption="this is a caption on a portrait aspect ratio" */>}}
-```
-{{< figure src="portrait.jpg" class="portrait" caption="this is a caption on a portrait aspect ratio" >}}
-
-{{< figure src="Capture One Catalog5757.jpg" class="portrait" caption="A photo I took of Renee's nails, with a white streak visible. `1/100s, f/8, ISO 200`" alt="photo of hand with painted nails. the nails are purple with dark red glitter in a striped design at the tip. there is a pronounced lengthwise white streak on each nail caused by the softbox." >}}
 

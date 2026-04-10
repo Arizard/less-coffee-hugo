@@ -9,14 +9,14 @@ tags:
 summary: My thoughts on this espresso machine after 18 months.
 ---
 
-![A capuccino I made (with some decent-ish latte art) in front of the Profitec Go.](latte.jpeg)
-{.portrait}
-
 ## Summary
 
 Great little machine, effortlessly simple to use, and ships with some luxuries (OPV and PID control). Reliable and consistent. Aesthetically pleasing if you're going for an industrial or utilitarian feel—it shows you what you need without over-complicating the interface.
 
 The price is a bit higher than other single-boilers, so I was expecting the experience to be more "polished" with much less rattle. For some reason it ships with a two-hole steam wand rather than the more common single-hole steam wand.
+
+![A cappuccino I made (with some decent-ish latte art) in front of the Profitec Go.](latte.jpeg)
+{.portrait}
 
 ## Pros
 

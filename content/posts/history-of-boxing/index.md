@@ -4,7 +4,8 @@ date: 2006-10-05T00:00:00+10:00
 draft: true
 ---
 
-{{< figure src="andre-felipe.jpeg" class="portrait" width="150px" caption="Andre Felipe c. 1635" >}}
+![Andre Felipe c. 1635](andre-felipe.jpeg)
+{.portrait}
 
 As conceived in 1632 by Portuguese printing press operator Andre Felipe, boxing was a gentleman's game, in which two men would square off and regale each other with stories monotonous for days on end, until one of them fell to the ground from boredom or exhaustion. Over the next few years the new sport developed a respectable following of a few hundred local socialites.
 

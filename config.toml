@@ -5,10 +5,15 @@ languageCode = "en-US"
 enableInlineShortcodes = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true
+summaryLength = 10
 
 [params]
   defaultAuthor = "Arie Oldman"
-  description = "Arie Oldman is a software engineer from Sydney, Australia."
+  # shows up in meta tags
+  description = "A place for me to write"
+  # shows up in secondary nav line
+  greeting = 'A place for me to write. Hello from Sydney!'
+  # shows up in footer
   copyright = 'Made by Arie. Powered by _hugo_ and _gomments_.'
   dark = "auto"
   highlight = true
@@ -18,11 +23,17 @@ pygmentsUseClasses = true
 
 [menu]
   [[menu.main]]
-    identifier = "posts"
-    name = "posts"
-    title = "posts"
-    pageRef = "/posts"
+    identifier = "index"
+    name = "index"
+    title = "index"
+    pageRef = "/"
     weight = 10
+  # [[menu.main]]
+  #   identifier = "posts"
+  #   name = "posts"
+  #   title = "posts"
+  #   pageRef = "/posts"
+  #   weight = 10
   [[menu.main]]
     identifier = "about"
     name = "about"
@@ -35,18 +46,18 @@ pygmentsUseClasses = true
     title = "index"
     pageRef = "/"
     weight = 5
-  [[menu.footer]]
-    identifier = "posts"
-    name = "posts"
-    title = "posts"
-    pageRef = "/posts"
-    weight = 10
-  [[menu.footer]]
-    identifier = "artefacts"
-    name = "artefacts"
-    title = "artefacts"
-    pageRef = "/artefacts"
-    weight = 15
+  # [[menu.footer]]
+  #   identifier = "posts"
+  #   name = "posts"
+  #   title = "posts"
+  #   pageRef = "/posts"
+  #   weight = 10
+  # [[menu.footer]]
+  #   identifier = "artefacts"
+  #   name = "artefacts"
+  #   title = "artefacts"
+  #   pageRef = "/artefacts"
+  #   weight = 15
   [[menu.footer]]
     identifier = "about"
     name = "about"
@@ -76,7 +87,4 @@ pygmentsUseClasses = true
       unsafe = true
   [markup.tableOfContents]
     ordered = true
-
-[taxonomies]
-  tag = 'tags'
 

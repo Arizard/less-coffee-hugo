@@ -18,15 +18,16 @@ This post was titled "Yashica Electro 35", but I need to give context first. I'l
 
 Last year, while browsing my local Vinnies (an Australian thrift store/charity organisation) I found a **Ricoh XR-10** with a **Rikenon 35-70mm** lens for only A$20. At the time, I had no idea if it worked, but since it was dirt cheap I took a chance on it. I learned to [replace light seals](https://www.youtube.com/watch?v=6jvQP-IZIC8), ordered a new battery, and filled a roll of film with "test shots" (just me snapping whatever I was doing that week).
 
-{{< figure src="IMG_7544.jpg" class="portrait" caption="A bargain? We'll see." >}}
+![A bargain? We'll see.](IMG_7544.jpg)
+{.portrait}
 
 I was quite pleased with the condition of the lens. The body at first appeared to also be in good condition. At one point, the winding lever was jammed. I removed the bottom cover and found strange brown crumbs lodged in one of the mechanical components. I cleared it out and the lever worked again. Not sure what that was. Maybe I don't want to know.
 
 According to the manual that I found online, there was meant to be some kind of shutter speed indicator inside the viewfinder. There was not, which meant that I could not see the light meter reading, however the light meter still seems to work! Not a problem, I can rely on the [sunny 16 rule](https://en.wikipedia.org/wiki/Sunny_16_rule) or aperture priority. Take a look at the test shots:
 
-{{< figure src="ricoh-test-01.jpg" caption="Left to right: Chinatown, Monstera with morning sunlight masked by a window. Fujifilm Superia C200. [Click to view larger size](ricoh-test-01-1024px.jpg)." >}}
+![Left to right: Chinatown, Monstera with morning sunlight masked by a window. Fujifilm Superia C200. [Click to view larger size](ricoh-test-01-1024px.jpg).](ricoh-test-01.jpg)
 
-{{< figure src="ricoh-test-02.jpg" caption="Top to bottom: Goat at petting zoo, Pugs on sofa in filtered sunlight. Fujifilm Superia C200. [Click to view larger size](ricoh-test-02-1024px.jpg)." >}}
+![Top to bottom: Goat at petting zoo, Pugs on sofa in filtered sunlight. Fujifilm Superia C200. [Click to view larger size](ricoh-test-02-1024px.jpg).](ricoh-test-02.jpg)
 
 For the most part, the photos look pretty good! It's evident that there is some light leaks still happening (as seen in the goat photo). Okay, so maybe I'm not a professional light seal repairer, but I think I did a fairly good job!
 
@@ -48,7 +49,8 @@ Don't forget: when we take photos, it's often about saving a memory for later. T
 
 ## The Yashica Electro 35 GSN
 
-{{< figure src="IMG_0203.jpg" class="portrait" caption="The Electro 35 GSN right after I bought it." >}}
+![The Electro 35 GSN right after I bought it.](IMG_0203.jpg)
+{.portrait}
 
 The Yashica Electro 35 was a line of rangefinder cameras manufactured by Yashica in the early 1970s. They feature a 45mm f/1.7 unit-focusing fixed lens, aperture priority automatic shutter speed, and a cadmium sulfide (CdS) photoresistor.
 
@@ -62,7 +64,7 @@ Despite there being no evidence whatsoever that this camera was in working condi
 
 The Electro 35 takes a mercury battery which is no longer legal to manufacture (for good reason). Luckily this unit actually included the after-market battery adapter, which takes a 4LR44 battery (or 4x LR44 stacked together -- requires some adapter adjustment). It's literally a piece of plastic pipe with an aluminium cylinder wedged into one end.
 
-{{< figure src="IMG_0205.jpg" caption="4LR44 battery adapter." >}}
+![4LR44 battery adapter.](IMG_0205.jpg)
 
 Fortunately, LR44 batteries are available at the supermarket, in packs of 4. I loaded the batteries in, and it worked! I could see the "battery test" light come on in the frame counter!
 
@@ -86,9 +88,9 @@ I shot the rest of the roll anyway to see what would happen.
 
 Some shots came out surprisingly clear, while others looked awful and washed out for some reason.
 
-{{< figure src="yashica-good.jpg" caption="These shots came out really nice, in my opinion. [View full size](yashica-good-1024.jpg)" >}}
+![These shots came out really nice, in my opinion. [View full size](yashica-good-1024.jpg)](yashica-good.jpg)
 
-{{< figure src="yashica-bad.jpg" caption="These ones, not so good. Maybe it was the overcast sky? Or the shutter got stuck? Maybe daylight balanced film just looks like that? [View full size](yashica-bad-1024.jpg)" >}}
+![These ones, not so good. Maybe it was the overcast sky? Or the shutter got stuck? Maybe daylight balanced film just looks like that? [View full size](yashica-bad-1024.jpg)](yashica-bad.jpg)
 
 ## Fixing the Pad-of-Death
 
@@ -108,13 +110,15 @@ More searching led me to [Yashica Guy's repair guides](http://www.yashica-guy.co
 
 How hard could it be? After all, it's not brain surgery... just micro-surgery?
 
-{{< figure src="old-pad.jpg" class="portrait" caption="The old pad of death. It turned to dust with minimal scraping. It's on the _underside_ of that horizontal metal plate." >}}
+![The old pad of death. It turned to dust with minimal scraping. It's on the _underside_ of that horizontal metal plate.](old-pad.jpg)
+{.portrait}
 
 It was a bit trickier than expected, but I managed.
 
 I had ordered a tool kit from Jaycar for this exact purpose. I'm not sponsored but this kit is awesome. It had everything I needed (except for a very specific tool called a _watch spanner_ which would have made it easier to unscrew the winding lever and ASA adjustment).
 
-{{< figure src="tools.jpg" class="portrait" caption="The angled tweezers were really useful" >}}
+![The angled tweezers were really useful](tools.jpg)
+{.portrait}
 
 I was able to scrape out the old gunk using Pointy Black Stick (name I just made up for one of the tools) and isopropyl alcohol (loosens the glue).
 
@@ -125,8 +129,10 @@ Since apparently the pad used to be made of the same stuff as the light seals, I
 The Youtube commenter before said he used double-sided tape with one side still covered, but I didn't have any of that on hand. Instead, I saw a passing Flickr comment where a user said that the used **electrical tape layered to the desired thickness**. So I took the closest thing to electrical tape I had and layered away.
 
 {{< figure src="tape.jpg" class="portrait" >}}
+{.portrait}
 
-{{< figure src="new-pad.jpg" class="portrait" caption="This was a PITA to get in." >}}
+![This was a PITA to get in.](new-pad.jpg)
+{.portrait}
 
 According to Yashica Guy, the pad needs to be about 4x5mm with 2mm thickness. When I tried this, it was too thick, so I actually used closer to 1mm thickness. This may be because Yashica Guy used a _neoprene_ washer, which compresses more under load, while the tape I used is less elastic and more firm.
 
@@ -155,7 +161,7 @@ After the fix, there were no more issues with the shutter getting stuck. The war
 
 I loaded up some **Ilford HP5+**, here are some shots:
 
-{{< figure src="hp5-plus.jpg" caption="Scanned these using my A7iii and a makeshift light box. [View full size](hp5-plus-2048.jpg)" >}}
+![Scanned these using my A7iii and a makeshift light box. [View full size](hp5-plus-2048.jpg)](hp5-plus.jpg)
 
 <!-- TODO -->
 
