@@ -70,6 +70,12 @@ summaryLength = 10
     title = "ai policy"
     pageRef = "/ai"
     weight = 40
+  [[menu.footer]]
+    identifier = "github"
+    name = "github"
+    title = "github"
+    pageRef = "https://github.com/Arizard"
+    weight = 50
 
 [permalinks]
   posts = "/:title/"
