@@ -14,3 +14,5 @@ Occasionally I'll use Claude Code to modify the theme, though I haven't had much
 
 I've used Claude to experiment with different font pairings, colour schemes, etc.
 
+Honestly it kinda sucks for getting it to automate anything. It's not bad as a more advanced search engine. It's useful if you're mindful of how it will try to agree with you where possible. It has a hard time doing everything else.
+
