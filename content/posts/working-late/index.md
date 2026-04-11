@@ -27,7 +27,8 @@ I remember talking to a Staff Engineer at a Christmas party, who gave me some ca
 
 Despite this warning, I find that once most of the team goes home, I get an hour of uninterrupted focus time. No meetings, no questions, no distractions. I can smash out some good code, or focus deeply on code review.
 
-![](inline-svg src="distractions-chart.svg")
+![Crappy diagram of how distractions vary through the day.](distraction-chart.png)
+
 
 Committing to extra time isn't challenging. I don't have kids. I don't have a long commute. If I can dedicate an extra hour towards my career, that's worth it in the long run. Call it "career investment".
 
