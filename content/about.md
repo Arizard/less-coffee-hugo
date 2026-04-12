@@ -5,6 +5,7 @@ nocomment: false
 ---
 
 I'm Arie, and less.coffee is my personal website.
+{.text-align-left}
 
 It's built with the Hugo static site generator, using a theme I created called `etch-less-coffee`. It's named that way because it was originally a fork of the etch theme—barely anything remains now.
 
