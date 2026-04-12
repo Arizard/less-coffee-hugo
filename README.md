@@ -10,4 +10,6 @@ The website is built with Hugo.
 2. `npm i` to install packages
 3. `hugo serve -D`
 
+## Notes
 
+- [Use "shy" hyphen to hint at line break points](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/hyphens#suggesting_line_break_opportunities)
