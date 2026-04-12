@@ -74,7 +74,7 @@ summaryLength = 10
     identifier = "github"
     name = "github"
     title = "github"
-    pageRef = "https://github.com/Arizard"
+    url = "https://github.com/Arizard"
     weight = 50
 
 [permalinks]
