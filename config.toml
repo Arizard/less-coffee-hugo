@@ -10,9 +10,9 @@ summaryLength = 10
 [params]
   defaultAuthor = "Arie Oldman"
   # shows up in meta tags
-  description = "A place for me to write"
+  description = "Writing for clarity."
   # shows up in secondary nav line
-  greeting = 'A place for me to write. Hello from Sydney!'
+  greeting = 'Writing for clarity. Hello from Sydney!'
   # shows up in footer
   copyright = 'Made by Arie. Powered by _hugo_ and _gomments_.'
   dark = "auto"

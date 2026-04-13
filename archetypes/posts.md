@@ -1,6 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
+date: "{{ .Date }}" # TODO
 author: {{ .Site.Params.defaultAuthor }}
 draft: true
 hero: hero.jpg
