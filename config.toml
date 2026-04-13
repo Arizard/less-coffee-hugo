@@ -15,7 +15,6 @@ summaryLength = 10
   greeting = 'Writing for clarity. Hello from Sydney!'
   # shows up in footer
   copyright = 'Made by Arie. Powered by _hugo_ and _gomments_.'
-  dark = "auto"
   highlight = true
   # github = "https://github.com/Arizard"
   # linkedin = "https://au.linkedin.com/in/arieoldman"
