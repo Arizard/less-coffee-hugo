@@ -6,7 +6,8 @@ nocomment: false
 
 I'm Arie, and this is _Arie's Blog_, my personal website.
 
-![<!-- image -->](</sticker/notioly/Christmas-Collection n.7.svg>)
+![Welcome!](</sticker/notioly/Christmas-Collection n.7.svg>)
+{.portrait}
 
 ## About me
 
