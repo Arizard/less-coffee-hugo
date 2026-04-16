@@ -2,7 +2,6 @@
 title: "The Encyclopædia Pugilum"
 date: 2006-10-05T00:00:00+10:00
 author: Jim Crawford
-draft: true
 summary: A history of boxing.
 ---
 
