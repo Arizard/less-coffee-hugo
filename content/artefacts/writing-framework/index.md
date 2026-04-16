@@ -66,4 +66,14 @@ They are sequential, not parallel. You cannot write something engaging until you
 
 The showing-not-telling discipline in the output pass only works if there's something genuine to show. That's what the input pass is for.
 
+## The writing compass
+
+Two axes determine the character of a piece of writing. **Craft** (vertical) is about what the writing does at the sentence level — does it create tension through showing, or announce it through telling? **Disposition** (horizontal) is about the posture behind the writing — is authority earned through specificity, or assumed from position?
+
+The goal is the top-left quadrant: guerrilla drama. Writing that finds its way in through the side door because it has to, and constructs the conditions for the reader to feel something rather than instructing them to. The trap is bottom-right: imperial sitcom — the LinkedIn-bot mode, where tension is signalled rather than created, from a position of assumed authority.
+
+The two axes are independent. Imperial drama (top-right) is polished, well-crafted writing that still writes from authority — think certain long-form journalism or TED-style essays. Guerrilla sitcom (bottom-left) is personal and honest in disposition but lazy in craft — the anecdote that goes nowhere.
+
+![The writing compass](compass.svg)
+
 {{< dinkus >}}
