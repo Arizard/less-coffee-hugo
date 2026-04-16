@@ -64,6 +64,12 @@ summaryLength = 10
     pageRef = "/about"
     weight = 30
   [[menu.footer]]
+    identifier = "preservation"
+    name = "preservation"
+    title = "preservation"
+    pageRef = "/preserved"
+    weight = 35
+  [[menu.footer]]
     identifier = "ai-policy"
     name = "ai-policy"
     title = "ai policy"

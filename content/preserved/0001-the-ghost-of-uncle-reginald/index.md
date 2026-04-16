@@ -3,6 +3,7 @@ title: "The Ghost of Uncle Reginald"
 date: 2015-10-30T08:00:00+10:00
 author: Pat Magee
 draft: false
+summary: Transcription of a spooky story by Pat Magee, first aired on Triple J Breakfast with Matt Okine and Alex Dyson.
 ---
 
 > [!NOTE] Attribution
@@ -11,6 +12,8 @@ draft: false
 > Pat seems to have disappeared from the internet. One might call him a ghost. I'm sharing this because it's too good to lose, and if it's going to be immortalised on Reddit then it better be attributed to the original author.
 >
 > Originally transcribed by [my friend](https://ggor.ca/) with formatting cleaned up by me, for drama. Title added by me with creative license.
+
+{{< audio "pat_magee_spooky_triplej.ogg" >}}
 
 Skeletons. call them what you will, Boneboys, skulluloids, tooth gentlemen. There's no doubt that they're the spookiest of all the halloween creatures. Thank goodness they're not real.
 
