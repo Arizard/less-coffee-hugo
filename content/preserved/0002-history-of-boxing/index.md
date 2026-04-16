@@ -6,7 +6,7 @@ summary: A history of boxing.
 ---
 
 > [!NOTE] Attribution
-> Originally posted by Jim Crawford on [goombas.org](https://web.archive.org/web/20130103084028/http://www.goombas.org/1206_boxing-a-history.html). Audio ripped from the Frog Fractions 2 <abbr title="Small Web Format (of Adobe)">swf</abbr>.
+> Originally posted by Jim Crawford on [goombas.org](https://web.archive.org/web/20130103084028/http://www.goombas.org/1206_boxing-a-history.html). Audio ripped from the Frog Fractions <abbr title="Small Web Format (of Adobe)">swf</abbr>.
 
 ![Andre Felipe c. 1635](andre-felipe.jpeg)
 {.portrait}
