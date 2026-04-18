@@ -6,10 +6,8 @@ draft: true
 hero: hero.jpg
 hero_attribution: TODO add attribution
 tags:
-    - career
+    - misc
+summary: A history of boxing.
 ---
 
-Lorem ipsum, I am a summary.
-<!--more-->
-
-Dolor amet, I am the rest of it.
+Nope, no reports of any spookological activity or phantoms, just a regular old house.
