@@ -11,3 +11,9 @@ summary: A history of boxing.
 ---
 
 Nope, no reports of any spookological activity or phantoms, just a regular old house.
+
+{{< draft >}}
+
+this is draft content. it's removed when the post is published.
+
+{{< /draft >}}
