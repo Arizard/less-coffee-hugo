@@ -19,6 +19,7 @@ summaryLength = 10
   # github = "https://github.com/Arizard"
   # linkedin = "https://au.linkedin.com/in/arieoldman"
   # profilePicture = "arie-profile-2.jpeg"
+  email = "arie@less.coffee"
 
 [menu]
   [[menu.main]]
