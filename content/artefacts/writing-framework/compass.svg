@@ -1,7 +1,7 @@
 <svg width="100%" viewBox="0 0 680 580" xmlns="http://www.w3.org/2000/svg">
   <style>
     text {
-      font-family: "Inter", sans-serif;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     }
   </style>
   <line x1="340" y1="60" x2="340" y2="520" stroke="#ccc" stroke-width="1"/>
