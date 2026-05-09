@@ -12,5 +12,6 @@ The website is built with Hugo.
 
 ## Notes
 
-- [Use "shy" hyphen to hint at line break points](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/hyphens#suggesting_line_break_opportunities)
+- [Use "shy" hyphen to hint at line break points (it hyphenates upon breaking)](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/hyphens#suggesting_line_break_opportunities)
+- Use `<wbr />` to hint at breakpoints which don't hyphenate.
 - Use `fingerprint` for assets so that you can cache-bust on new releases, e.g. `gomments.js`

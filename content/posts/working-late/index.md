@@ -7,7 +7,7 @@ draft: false
 tags:
 - career
 hero: hero.jpg
-hero_attribution: Photo by <a href="https://unsplash.com/@tylerhlyons95?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Tyler Lyons</a> on <a href="https://unsplash.com/photos/a-very-tall-building-with-a-lot-of-windows-cabtvL6nNU8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+hero_attribution: Photo <wbr />by <a href="https://unsplash.com/@tylerhlyons95?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Tyler Lyons</a> on <wbr /><a href="https://unsplash.com/photos/a-very-tall-building-with-a-lot-of-windows-cabtvL6nNU8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 summary: Long hours are okay, sometimes.
 ---
 
