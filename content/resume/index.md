@@ -7,143 +7,56 @@ nobottomnav: true
 
 Software engineer with 6 years of experience, working across modern and legacy code. I'm most interested in feature-leading projects which solve complex problems and have a clear business impact.
 
-<!-- TODO: re-write this from a work experience perspective https://www.beamjobs.com/resume-help/how-to-define-job-responsibilities -->
-
-<!-- ## Technical Skills -->
-
-<!-- * Programming languages: **PHP, Javascript, Go**. -->
-<!-- * Build and maintain distributed systems with **AWS, Docker, Linux, MySQL, Elasticsearch**. -->
-<!-- * Design major features according to **SOLID, domain-driven design (DDD), 12-factor**. -->
-<!-- * **Unit testing**, test-driven development (**TDD**). -->
-<!-- * **Refactoring and optimisation** of legacy code. -->
-<!-- * Create APIs with **gRPC and Protobuf**. -->
-<!-- * Create web front-ends with **Vue and Javascript**. -->
-
-<!-- ## Interpersonal Skills -->
-
-<!-- * **Communication**, knowledge sharing, deliver technical presentations, write RFCs. -->
-<!-- * **Agile** (scrum, kanban, stand-ups, retros). -->
-<!-- * **Mentoring** intern and junior engineers, pair programming, code review. -->
-<!-- * **Project Planning**, breaking down work into tasks and assigning tasks to team members based on individual strengths. -->
-
-<!-- * Code review (frontend and backend). -->
-<!-- * Documentation (guides, tutorials, references, READMEs) and RFCs. -->
-<!-- * Professional feedback. -->
-
-<!-- TODO more information about management style (agile, scrum etc.) -->
-<!-- TODO more specific services, libraries, packages, platforms etc. -->
-<!-- TODO include mentions of soft skills (e.g., “worked cross-functionally with product managers and business stakeholders,” “facilitated team retrospectives” or “resolved production issues under tight deadlines”) -->
-
 ## Professional Experience
 
-### Senior Software Engineer I at Eucalyptus
+**Senior Software Engineer I at Eucalyptus**
+_February 2025 – present_
 
-February 2025 – present
+- Enabled non-technical teams to manage in-app marketing content by building operator-managed educational articles with embedded shop carousels.
+- Established a recurring purchase capability by leading the development of the _Subscribe and save_ experiment, proving viability for certain non-prescription products.
+- Reduced friction in nutrition tracking and improved dietary compliance by building a patient meal tracker that estimates macros from photos, labels, or text.
+- Enabled SOC 2 compliance by building a proprietary multi-factor authentication system from scratch.
+- Reduced daily medical support tickets by 63% by leading the development of a mobile app questionnaire which triages patients based on severity and frequency of side effects.
 
-**Feature lead** for Juniper _Side Effect Check-In_, where I directed a team of 3 engineers (including myself) and worked with a product manager to implement a new side effect questionnaire which surfaces only when appropriate and intelligently triages patients to connect them with practitioners, improving the patient outcomes for medicated weight loss.
-<!-- what's special about it?:
-    working within microservices architecture -- RPC and Pubsub,
-    technical specification document + review process and iteration,
-    patients often feel unsupported when they get side effects from wegovy/mounjaro,
-    observability with tracing, logging, etc.
-    a few different boundaries: patients, admins, support/practitioners,
-    estimation, capacity, forecasting
-    complex requirements:
-        patients don't need it if they report no side effects 2 weeks in a row
-        questionnaire begin to show up again if they titrate-up their treatment
-        questionnaire dissapears on pause treatment and re-appears on resume.
-        questionnaire
--->
+**Senior Software Engineer at Deputy**
+_October 2022 – February 2025_
 
-### Senior Software Engineer at Deputy
+- Delivered $3m USD in additional ARR by coordinating a team of 5 engineers to build a new asynchronous _Timesheet Actions_ backend of my own design.
+- Standardised the organisation's approach to managing state for long-running asynchronous tasks by conceiving and building the _Operations API_ project.
+- Reduced database deadlocks and data races across the organisation by conceiving and building a distributed mutex, enabling teams to synchronise procedures across different system processes and user sessions. <!-- I now know better—advisory locks for example. Distributed mutexes don't work -->
+- Enabled acquisition of strategic mid-market partners by developing a new Timesheet search engine that improved search performance for accounts with several orders of magnitude more employees.
+- Lifted the organisation's technical clarity through technical writing related to complex domain-specific business logic, which formed the basis for future technical decisions.
 
-October 2022 – February 2025
+**Software Engineer at Deputy**
+_September 2019 – October 2022_
 
-**Directed** and developed the implementation of a new asynchronous _Timesheet Actions_ backend (PHP, MySQL), for which I coordinated a team of 5 other backend engineers, 1 product manager and 1 UX designer, scrum-style. This project was crucial in business objective to acquire a strategic partner, enabling delivery of over $3m USD in additional ARR.
+- Enabled mid-market compliance and strategic partner acquisition by leading development of the Pay Comparison feature, providing tools for the Better Off Overall Test.
+- Developed two interns into permanent engineers through structured mentorship and pair programming.
+- Improved Enterprise Employee Profile maintainability through backend refactoring.
+- Generated $25k in billable work by building the Export Aggregator, a Go service on AWS Lambda.
+- Streamlined customer deployments by building Precaf, a Go command-line tool for shipping DeXML code, which became the default across professional services.
 
-**Directed** and developed the _Operations API_ project (PHP, Redis) to enable teams to manage state for long-running asynchronous tasks, improving system performance by maximising parallelisation and unifying the approach across the organisation.
+**Junior Software Developer at Spriggy**
+_March 2019 – July 2019_
 
-**Directed** and developed the _Distributed Mutex_ project (PHP, Redis) to enable teams to synchronise procedures across different system processes and user sessions, improving quality by reducing deadlocks and data races, at the same time unifying the approach across the organisation.
+- Contributed to bug fixes, quality-of-life improvements, and analytics telemetry in the Spriggy platform.
 
-**Developed** a new _Timesheet_ search engine (Opensearch, Go, MySQL), which played a critical role in the business objective of acquiring new strategic partners.
+**Cadet Engineer (Networks) at Singtel Optus**
+_July 2015 – March 2019_
 
-<div class="hide-on-print"><!-- omitted for print -->
+- Improve internal productivity by creating data visualisation software for network topology, web utilities for handset testing and traffic rating, and data cleaning automations (PHP, Javascript, Perl).
 
-**Headed** backend development for the AI-TRACT Hackathon Project using AWS Bedrock, in collaboration with a product manager, UX designer, and 2 frontend engineers, with the business objective to support lead generation for Deputy's Recruitment product offering.
+**Self Employed & Side Projects**
+_2015 – present_
 
-**Continuously iterated** the product offering according to user feedback, in collaboration with product managers, UX designers, and frontend engineers.
-
-**Aligned team and facilitated collaboration** related to complex domain-specific business logic by summarisation into easy-to-understand shared reference material. Collaborated with other engineers in the team to conduct tradeoff analysis of different software designs, recording decisions in shared project documentation.
-
-</div>
-<!-- * **Wrote RFCs** for architectural changes and paradigm shifts to Deputy's backend, taking a previously synchronous product and making it asynchronous in order to scale users and data volume. -->
-<!-- * **Designed high-volume bulk actions** that allow users to process up to 10,000 timesheets in one command. -->
-<!-- * **Modernised** Deputy's Timesheet feature by creating a timesheet search engine, using AWS OpenSearch. -->
-<!-- * **Coordinated project delivery** for a team of 10 engineers. -->
-
-### Software Engineer at Deputy
-
-September 2019 – October 2022
-
-<!-- * **Pay Comparison**: -->
-<!-- * **Enterprise Employee Profile**: --> 
-<!-- * **Agreed Hours**: -->
-<!-- * **Export Aggregator**: -->
-<!-- * **Precaf**: -->
-<!-- * **Environment Variables Custom App**: -->
-
-<!-- * **Built major compliance product offerings** on Deputy's PHP, Vue and Go stack, much of which is legacy code (10+ years old). <!-1- enterprise profile, pay comparison, svc-compliance -1-> -->
-<!-- * **Responsible for planning and executing** projects as part of a cross-functional team. <!-1- export aggr, bunnings, enterprise profile, pay comparison -1-> -->
-<!-- * **Delivered technical workshops**, guides, and documentation to software engineers. -->
-
-**Planned and delivered** the backend APIs (PHP, MySQL) of the _Pay Comparison_ feature with a team of 6 engineers, 1 product manager and 1 designer to bolster Deputy's compliance offering by providing tools for the _Better Off Overall Test_ (BOOT). This supported the business objectives of targeting mid-market accounts and contract renewals for strategic partners.
-
-**Mentored** two interns, guiding them through their 3-month intern projects into permanent positions at Deputy, using pair programming, 1-1s and code review.
-
-<div class="hide-on-print"><!-- omitted for print -->
-
-**Improved maintainability** of the Enterprise Employee Profile by refactoring the PHP backend.
-
-**Planned and executed** the _Export Aggregator_ project--a Go service on the AWS Lambda runtime--which translated to $25k in billable work for Deputy.
-
-**Pioneered** automation of time-consuming manual tasks by creating an internal Go command line tool called _Precaf_. <!-- precaf, common funcs, pay comparison scripts -->
-
-</div>
-
-### Junior Software Developer at Spriggy
-
-March 2019 – July 2019
-
-**Contributed to** bug fixes, quality-of-life improvements, and analytics telemetry in the Spriggy platform.
-
-### Cadet Engineer (Networks) at Singtel Optus
-
-July 2015 – March 2019
-
-**Improve internal productivity** by creating data visualisation software for network topology, web utilities for handset testing and traffic rating, and data cleaning automations (PHP, Javascript, Perl).
-
-### Self Employed & Side Projects
-
-2015 – present
-
-**Self-design, self-develop, and self-host** personal blog at [less.coffee](https://less.coffee), using the Hugo site builder as a base.
-
-**Creator of open-source project** Deathrun Neue (61 stars, 18 contributors), a gamemode for Garry's Mod.
-
-**Create and sell** addon products for Garry's Mod servers to enrich the player's online experience, written in the Lua programming language (4805 units sold). Managed sales, promotions and marketing media using the _gmodstore_ marketplace platform.
+- Self-design, self-develop, and self-host personal blog at [less.coffee](https://less.coffee), using the Hugo site builder as a base.
+- Creator of open-source project Deathrun Neue (61 stars, 18 contributors), a gamemode for Garry's Mod.
+- Create and sell addon products for Garry's Mod servers to enrich the player's online experience, written in the Lua programming language (4805 units sold). Managed sales, promotions and marketing media using the _gmodstore_ marketplace platform.
 
 ## Education
 
-### BEng (Honours) in Telecommunications Engineering at Macquarie University
+**BEng (Honours) in Telecommunications Engineering at Macquarie University**
+_2015 – 2018_
 
-2015 – 2018
-
-**Published undergrad thesis** _Inline DDoS Detection for Small to Medium Businesses_, which examines software-defined networking approaches to intrusion detection and mitigation on the small (home) to medium (small business) scale.
-
-<div class="hide-on-print"><!-- omitted for print -->
-
-Systems engineering, physics, linear algebra, calculus, electronics, engineering statistics, computer networks, signal processing.
-
-</div>
-
+Published undergrad thesis _Inline DDoS Detection for Small to Medium Businesses_, which examines software-defined networking approaches to intrusion detection and mitigation on the small (home) to medium (small business) scale.
 
