@@ -14,7 +14,7 @@ _February 2025 – present_
 
 - Enabled non-technical teams to manage in-app marketing content by building operator-managed educational articles with embedded shop carousels.
 - Established a recurring purchase capability by leading the development of the _Subscribe and save_ experiment, proving viability for certain non-prescription products.
-- Reduced friction in nutrition tracking and improved dietary compliance by building a patient meal tracker that estimates macros from photos, labels, or text.
+- Reduced friction in nutrition tracking and improved dietary compliance by building a patient meal tracker that estimates macros from photos, labels, or text. Co-led the nutrition team through a critical 1-month period without a dedicated manager, shipping the meal tracker on schedule while reviewing and unblocking engineering work.
 - Enabled SOC 2 compliance by building a proprietary multi-factor authentication system from scratch.
 - Reduced daily medical support tickets by 63% by leading the development of a mobile app questionnaire which triages patients based on severity and frequency of side effects.
 
