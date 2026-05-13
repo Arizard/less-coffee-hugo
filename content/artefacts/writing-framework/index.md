@@ -77,3 +77,48 @@ The two axes are independent. Imperial drama (top-right) is polished, well-craft
 ![The writing compass](compass.svg)
 
 {{< dinkus >}}
+
+## Arie's Notes
+
+Stuff that I am adding as I go.
+
+### Personal vs Critical
+
+Consider two types of essays: _personal essay_ and _critical essay_. The former is like saying "here's how I tried to make sense of a thing" while the latter is like saying "here's what is objectively true about a thing".
+
+> At the core of the personal essay there is the supposition that there is a certain unity to the human experience.
+
+### Orwell
+
+> The whole tendency of modern prose is away from concreteness.
+> https://gutenberg.net.au/ebooks02/0200151h.html
+
+Question for when I'm writing or reviewing: does this passage easily evoke mental imagery? Or is the meaning clouded despite multiple re-reads?
+
+> The great enemy of clear language is insincerity. When there is a gap between one's real and one's declared aims, one turns, as it were instinctively, to long words and exhausted idioms, like a cuttlefish squirting out ink.
+
+> What is above all needed is to let the meaning choose the word, and not the other way about.
+
+> When you think of a concrete object, you think wordlessly, and then, if you want to describe the thing you have been visualizing, you probably hunt about till you find the exact words that seem to fit it. When you think of something abstract you are more inclined to use words from the start, and unless you make a conscious effort to prevent it, the existing dialect will come rushing in and do the job for you, at the expense of blurring or even changing your meaning.
+
+> If you simplify your English, you are freed from the worst follies of orthodoxy. You cannot speak any of the necessary dialects, and when you make a stupid remark its stupidity will be obvious, even to yourself.
+
+{{< dinkus >}}
+
+Excerpt:
+
+> To begin with, it has nothing to do with archaism, with the salvaging of obsolete words and turns of speech, or with the setting-up of a "standard-English" which must never be departed from. On the contrary, it is especially concerned with the scrapping of every word or idiom which has outworn its usefulness. It has nothing to do with correct grammar and syntax, which are of no importance so long as one makes one's meaning clear, or with the avoidance of Americanisms, or with having what is called a "good prose style." On the other hand it is not concerned with fake simplicity and the attempt to make written English colloquial. Nor does it even imply in every case preferring the Saxon word to the Latin one, though it does imply using the fewest and shortest words that will cover one's meaning. What is above all needed is to let the meaning choose the word, and not the other way about. In prose, the worst thing one can do with words is to surrender them. When you think of a concrete object, you think wordlessly, and then, if you want to describe the thing you have been visualizing, you probably hunt about till you find the exact words that seem to fit it. When you think of something abstract you are more inclined to use words from the start, and unless you make a conscious effort to prevent it, the existing dialect will come rushing in and do the job for you, at the expense of blurring or even changing your meaning. Probably it is better to put off using words as long as possible and get one's meaning as clear as one can through pictures or sensations. Afterwards one can choose—not simply accept—the phrases that will best cover the meaning, and then switch round and decide what impressions one's words are likely to make on another person. This last effort of the mind cuts out all stale or mixed images, all prefabricated phrases, needless repetitions, and humbug and vagueness generally. But one can often be in doubt about the effect of a word or a phrase, and one needs rules that one can rely on when instinct fails. I think the following rules will cover most cases:
+>
+> 1. **Never use a metaphor, simile or other figure of speech which you are used to seeing in print.**
+> 2. **Never use a long word where a short one will do.**
+> 3. **If it is possible to cut a word out, always cut it out.**
+> 4. **Never use the passive where you can use the active.**
+> 5. **Never use a foreign phrase, a scientific word or a jargon word if you can think of an everyday English equivalent.**
+> 6. **Break any of these rules sooner than say anything barbarous.**
+>
+> These rules sound elementary, and so they are, but they demand a deep change of attitude in anyone who has grown used to writing in the style now fashionable. One could keep all of them and still write bad English, but one could not write the kind of stuff that I quoted in these five specimens at the beginning of this article.
+>
+
+Orwell is lamenting that the English written by his contemporaries is being influenced by indirect and imprecise language used by politicians and academics. A politician might deliberately use _euphemisms_ to avoid evoking vivid imagery, such as that of overseas conflict. Orwell correctly points out that if you can't clearly define your counterpart's statement, you have no hope of opposing it. Clichés tend to emerge to compensate for an author's knowledge gaps, presumably they sound "about right", which results in imprecision. Finally, foreign words (such as Latin words used in academia, or French words, German words etc.) are often used to give a sense of intelligence or culture, and should be avoided as well. The takeaway, if you want to write like Orwell, is to get to the point quickly, avoid using clichés, be succinct, write in the active voice when possible, and avoid foreign language.
+
+Orwell demonstrates it is indeed possible to write engaging articles under these rules: "like a cuttlefish squirting out ink".
