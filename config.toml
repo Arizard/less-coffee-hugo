@@ -25,7 +25,7 @@ summaryLength = 10
   [[menu.main]]
     identifier = "index"
     name = "index"
-    title = "index"
+    title = "blog"
     pageRef = "/"
     weight = 10
   # [[menu.main]]
@@ -43,7 +43,7 @@ summaryLength = 10
   [[menu.footer]]
     identifier = "index"
     name = "index"
-    title = "index"
+    title = "blog"
     pageRef = "/"
     weight = 5
   # [[menu.footer]]
@@ -70,12 +70,12 @@ summaryLength = 10
     title = "artefacts"
     pageRef = "/artefacts"
     weight = 33
-  [[menu.footer]]
-    identifier = "ai-policy"
-    name = "ai-policy"
-    title = "ai policy"
-    pageRef = "/ai"
-    weight = 40
+  # [[menu.footer]]
+  #   identifier = "ai-policy"
+  #   name = "ai-policy"
+  #   title = "ai policy"
+  #   pageRef = "/ai"
+  #   weight = 40
   [[menu.footer]]
     identifier = "github"
     name = "github"
