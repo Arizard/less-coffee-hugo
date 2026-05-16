@@ -29,6 +29,8 @@ jobs:
 
     - name: Build Hugo
       uses: arizard/build-hugo@v0.161.1-rc1
+      with:
+        install-npm-packages: true
 
     - name: S3 Sync
       uses: jakejarvis/s3-sync-action@v0.5.1
