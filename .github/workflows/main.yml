@@ -27,12 +27,8 @@ jobs:
         git submodule init
         git submodule update
 
-    - name: Install npm packages
-      run: |
-        npm i
-
     - name: Build Hugo
-      uses: arizard/build-hugo@v0.161.1
+      uses: arizard/build-hugo@v0.161.1-rc1
 
     - name: S3 Sync
       uses: jakejarvis/s3-sync-action@v0.5.1
