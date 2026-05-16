@@ -2,7 +2,6 @@ node_modules/*
 node_modules
 resources/*
 .idea
-package-lock.json
 .DS_Store
 .hugo_build.lock
 public
