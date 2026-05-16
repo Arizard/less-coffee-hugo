@@ -32,7 +32,7 @@ jobs:
         npm i
 
     - name: Build Hugo
-      uses: arizard/build-hugo@v0.148.1
+      uses: arizard/build-hugo@v0.161.1
 
     - name: S3 Sync
       uses: jakejarvis/s3-sync-action@v0.5.1
