@@ -28,12 +28,12 @@ summaryLength = 10
     title = "index"
     pageRef = "/"
     weight = 10
-  [[menu.main]]
-    identifier = "posts"
-    name = "posts"
-    title = "posts"
-    pageRef = "/posts"
-    weight = 20
+  # [[menu.main]]
+  #   identifier = "posts"
+  #   name = "posts"
+  #   title = "posts"
+  #   pageRef = "/posts"
+  #   weight = 20
   [[menu.main]]
     identifier = "about"
     name = "about"
@@ -46,12 +46,12 @@ summaryLength = 10
     title = "index"
     pageRef = "/"
     weight = 5
-  [[menu.footer]]
-    identifier = "posts"
-    name = "posts"
-    title = "posts"
-    pageRef = "/posts"
-    weight = 10
+  # [[menu.footer]]
+  #   identifier = "posts"
+  #   name = "posts"
+  #   title = "posts"
+  #   pageRef = "/posts"
+  #   weight = 10
   [[menu.footer]]
     identifier = "about"
     name = "about"
