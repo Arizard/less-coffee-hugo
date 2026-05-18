@@ -2,6 +2,7 @@
 title: "People on the Footpath"
 date: "2026-05-17T21:26:53+10:00"
 author: Arie Oldman
+class: essay
 ---
 
 People on the footpath frustrate me often. Is it their first day out in public? They don't know which side of the footpath to walk on, walk three or four abreast, zig-zag like they're trying to evade something, or they pretend not to notice the way their dog's leash cordons the way for everyone else. Don't even get me started on slow walkers.

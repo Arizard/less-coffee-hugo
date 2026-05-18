@@ -7,6 +7,7 @@ hero: hero-alt.jpg
 hero_attribution: Photo by <a href="https://unsplash.com/@arizard?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Arie Oldman</a> on <a href="https://unsplash.com/photos/dL30-It7Sxo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 tags: ["career", "technical"]
 summary: Take luck out of the equation.
+class: essay
 ---
 
 Six months ago, I was on the other side of a technical interview for the first time. Today, I’m going to share what I’ve learned so far. Here are three quick ways to take luck out of the equation and signal your competencies to the interviewer.
@@ -26,6 +27,7 @@ The first thing you do when you’ve progressed to the technical is **ask the re
 >
 
 In your mind, break it down into bullet points:
+{.no-indent .space-above}
 
 - project deep dive
 - programming problem
@@ -33,6 +35,7 @@ In your mind, break it down into bullet points:
 - question time
 
 Now you’ve got something to work with.
+{.no-indent .space-above}
 
 ### What if the recruiter doesn’t know, or won’t tell me?
 
@@ -75,6 +78,7 @@ If you’re spending two hours in a room with the people responsible for hiring 
 Interviewers deliberately ask questions to challenge your reasoning and force you to justify technical decisions. It’s a proxy for how you handle conflict in an engineering context. They’re not being disruptive. You need to defend your point of view in a professional manner.
 
 Here are some quick ways to show that you don’t have an ego:
+{.no-indent .space-above}
 
 - Instead of assuming you fully understand what someone’s talking about, ask “What do you mean by that?”. It’s an open-ended question which gives the other person space to elaborate. They will feel like you’ve really considered their idea, and you may even learn something!
 - Instead of saying “No, that won’t work.” ask “Okay, what about {edge case}?” because it points out the differences of opinion rather than rejecting their idea upfront. It shows you actually thought about what they said.
@@ -86,4 +90,3 @@ Engineers face interpersonal conflict every day: code reviews, design discussion
 
 This can seem like a lot to digest, but don’t stress. Improving the interview outcome takes less practice than one might think. If it feels like you’ve only covered 20% of the content, then I expect your outcome to improve by 80%. Quantifying that is up to you, but you’ll be lightyears ahead of the next candidate who prepared nothing at all.
 
-Have questions about this article? Leave a comment below!
