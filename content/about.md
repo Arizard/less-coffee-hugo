@@ -3,6 +3,7 @@ title: "About"
 draft: false
 nocomment: false
 date: 2026-05-18
+class: essay
 ---
 
 I'm Arie, and this is _Arie's Blog_, my personal website. I'm a software engineer from Sydney. I've worked with a lot of Go, Typescript, and PHP. Sometimes it runs on a laptop, sometimes on an EC2, and sometimes it runs in Kubernetes. My professional interests fall under the umbrella of “software engineering”: technology, people, and managing complexity. But I also appreciate user interface design (it needs to be functional, accessible, _and_ beautiful) and commercial awareness (whether we are burning money by building this). Outside of software I'm an espresso enthusiast and amateur photographer, and I'm also into running, cycling, and blogging.
