@@ -8,6 +8,7 @@ tags = [
     "text",
 ]
 draft = true
+class = "essay"
 +++
 
 Lorem est tota propiore conpellat pectoribus de

@@ -2,10 +2,9 @@
 title: "Arie Oldman, Senior Software Engineer"
 draft: false
 nocomment: true
-nobottomnav: true
 ---
 
-Software engineer with 6 years of experience, working across modern and legacy code. I'm most interested in feature-leading projects which solve complex problems and have a clear business impact.
+Software engineer with 7 years of experience, working across modern and legacy code. I'm most interested in feature-leading projects which solve complex problems and have a clear business impact.
 
 ## Professional Experience
 
