@@ -27,7 +27,7 @@ I could write in a journal and never show anyone, so why do I publish? Deep down
 ## Links
 
 - [Blog]({{< ref "/" >}})
-- [Photo Gallery](/galley)
+- [Photo Gallery](/gallery)
 - [Résumé]({{< ref "/resume" >}})
 
 ## About this site
