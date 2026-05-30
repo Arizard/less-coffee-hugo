@@ -18,12 +18,14 @@ summaryLength = 10
   # linkedin = "https://au.linkedin.com/in/arieoldman"
   # profilePicture = "arie-profile-2.jpeg"
   email = "arie@less.coffee"
+  authorBio = "Hi, I'm Arie."
+  authorBioImage = "/arie-bio.jpeg"
 
 [menu]
   [[menu.main]]
     identifier = "index"
     name = "index"
-    title = "blog"
+    title = "posts"
     pageRef = "/"
     weight = 10
   # [[menu.main]]
@@ -38,10 +40,16 @@ summaryLength = 10
     title = "about"
     pageRef = "/about"
     weight = 30
+  # [[menu.main]]
+  #   identifier = "resume"
+  #   name = "resume"
+  #   title = "resume"
+  #   pageRef = "/resume"
+  #   weight = 40
   [[menu.footer]]
     identifier = "index"
     name = "index"
-    title = "blog"
+    title = "posts"
     pageRef = "/"
     weight = 5
   # [[menu.footer]]

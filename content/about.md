@@ -9,6 +9,11 @@ class: essay
 
 I'm Arie. I'm a software engineer from Sydney. I was Deputy for 5 years, working across professional services and engineering. Now I'm an engineer at Eucalyptus (Hims & Hers). I'm into coffee, cameras, running, cycling, and writing. I used to teach Les Mills classes at a few gyms in Sydney.
 
+{{< draft >}}
+![Photo of arie](/arie-profile-3.jpeg)
+{.sm .nocaption}
+{{< /draft >}}
+
 I've worked with a lot of Go, Typescript, and PHP. Sometimes it runs on a laptop, sometimes on an EC2, and sometimes it runs in Kubernetes. I've also worked with a lot of different people: product managers, designers, support agents, frontend engineers, backend engineers, mobile engineers, data engineers, platform engineers, juniors, seniors, mids, mids who should be seniors, seniors who should be mids, staff engineers who should be seniors, bad managers, good managers, pre-sales, post-sales...
 
 ## Why this site exists
