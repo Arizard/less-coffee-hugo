@@ -32,5 +32,5 @@ I've also worked with a lot of different people: product managers, designers, su
 
 ## About this site
 
-It's built with the Hugo static site generator, using a theme I created called `etch-less-coffee`, with commenting functionality provide by `gomments`, my own comment server. The website also works with javascript disabled, you just won't be able to view or add replies.
+It's built with the Hugo static site generator, using a theme I created called `etch-less-coffee`, with commenting functionality provided by `gomments`, my own comment server. The website also works with javascript disabled, you just won't be able to view or add replies.
 
