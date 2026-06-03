@@ -9,10 +9,8 @@ class: essay
 
 I'm Arie. I'm a software engineer from Sydney. I'm into coffee, cameras, running, cycling, and writing. I used to teach Les Mills classes at a few gyms in Sydney. I write about all these things.
 
-{{< draft >}}
-![Photo of arie](/arie-profile-3.jpeg)
-{.sm .nocaption}
-{{< /draft >}}
+![handstand on a toilet](arie-about.jpg)
+{.nocaption .sm}
 
 ## Why have a blog?
 
