@@ -5,16 +5,17 @@ nocomment: false
 nobio: true
 date: 2026-05-18
 class: essay
+summary: "About Arie and less.coffee."
 ---
+
+![polaroid of arie, taken upside down, which gives the illusion that he is doing a handstand on a toilet bowl.](arie-about.jpg)
+{.nocaption .sm}
 
 I'm Arie. I'm a software engineer from Sydney. I'm into coffee, cameras, running, cycling, and writing. I used to teach Les Mills classes at a few gyms in Sydney. I write about all these things.
 
-![handstand on a toilet](arie-about.jpg)
-{.nocaption .sm}
-
 ## Why have a blog?
 
-I could write in a journal and never show anyone, so why do I publish? Writing something and sending it out into the world is a form of closure. It's like taking a pile of half-baked ideas scribbled on sticky notes, and transforming it into a hefty paperback. What were once scattered thoughts is now a distinct point of view which stands on its own. Also, I hope you're entertained, or intrigued, or otherwise get some use out of my blog.
+I could write in a journal and never show anyone, so why do I publish? <mark>Writing something and sending it out into the world is a form of closure.</mark> It's like taking a pile of half-baked ideas scribbled on sticky notes, and transforming it into a hefty paperback. What were once scattered thoughts is now a distinct point of view which stands on its own. Also, I hope you're entertained, or intrigued, or otherwise get some use out of my blog.
 
 ## About my work
 
