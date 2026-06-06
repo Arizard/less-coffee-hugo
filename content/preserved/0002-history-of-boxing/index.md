@@ -5,9 +5,6 @@ author: Jim Crawford
 summary: A history of boxing.
 ---
 
-> [!NOTE] Attribution
-> Originally posted by Jim Crawford on [goombas.org](https://web.archive.org/web/20130103084028/http://www.goombas.org/1206_boxing-a-history.html). Audio ripped from the Frog Fractions <abbr title="Small Web Format (of Adobe)">swf</abbr>.
-
 ![Andre Felipe c. 1635](andre-felipe.jpeg)
 {.portrait}
 
@@ -22,4 +19,7 @@ While it was universally agreed that the boy had violated the spirit of the game
 Today's boxing enthusiasts fantasize about a newcomer that would rock the ring the way Felipe did. Calcification of the modern rule set has essentially locked the “Punching” strategy into place, but it's easy to get caught up in the fantasy. Young scholars with big dreams often enter the ring with their crazy new trick, usually a variant of hypnosis, and though they've achieved the occasional victory, none of the gimmicks have been robust enough to make it to the big time.
 
 The real wonder, though, is that Andre Felipe's original vision of boxing is still around! Gentleman's Boxing clubs can be found in cities all over the world. You can visit one most any day of the week and see two erudite gentlemen exchanging pleasantries in the ring. Most people only come to watch a few hours of a match and then leave, but every once in a while you'll find amongst your elders a stout fellow, a die-hard fan, who perhaps witnessed that historic battle between Felipe and Bishop, who for love of the sport must stay to witness the last glorious seconds of wakefulness slip away... only to return to fight again another day.
+
+> [!NOTE] Attribution
+> Originally posted by Jim Crawford on [goombas.org](https://web.archive.org/web/20130103084028/http://www.goombas.org/1206_boxing-a-history.html). Audio ripped from the Frog Fractions <abbr title="Small Web Format (of Adobe)">swf</abbr>.
 

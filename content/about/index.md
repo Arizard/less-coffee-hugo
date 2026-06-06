@@ -11,7 +11,7 @@ summary: "About Arie and less.coffee."
 ![polaroid of arie, taken upside down, which gives the illusion that he is doing a handstand on a toilet bowl.](arie-about.jpg)
 {.nocaption .sm}
 
-I'm Arie. I'm a software engineer from Sydney. I'm into coffee, cameras, running, cycling, and writing. I used to teach Les Mills classes at a few gyms in Sydney. I write about all these things.
+I'm Arie, proud grug-brained trad-coder. I'm a software engineer from Sydney. I'm into coffee, cameras, running, cycling, and writing. I used to teach Les Mills classes at a few gyms in Sydney. I write about all these things.
 
 ## Why have a blog?
 

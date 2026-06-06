@@ -3,15 +3,8 @@ title: "The Ghost of Uncle Reginald"
 date: 2015-10-30T08:00:00+10:00
 author: Pat Magee
 draft: false
-summary: Transcription of a spooky story by Pat Magee, first aired on Triple J Breakfast with Matt Okine and Alex Dyson.
+summary: Skeletons. call them what you will, Boneboys, skulluloids, tooth gentlemen. There's no doubt that they're the spookiest of all the halloween creatures. Thank goodness they're not real.
 ---
-
-> [!NOTE] Attribution
-> This is a transcript of a story told by guest Pat Magee on the Triple J breakfast show with Matt and Alex in October 2015. It's not attributed to him anywhere even though it has been shared on Reddit a few times. You can find the radio archives from that day, or view a YouTube video here: https://www.youtube.com/watch?v=EP_Ft7Ig1UQ
->
-> Pat seems to have disappeared from the internet. One might call him a ghost. I'm sharing this because it's too good to lose, and if it's going to be immortalised on Reddit then it better be attributed to the original author.
->
-> Originally transcribed by [my friend](https://ggor.ca/) with formatting cleaned up by me, for drama. Title added by me with creative license.
 
 {{< audio "pat_magee_spooky_triplej.ogg" >}}
 
@@ -62,3 +55,11 @@ My beloved uncle Reginald, who I'd always thought wasn't a murderer, turned out 
 I gave the bones back to old man Nickelback, who gave a thumbs up while his soul flew straight up to Heaven. Meanwhile the soul of my uncle Reginald was down in the other place. _Evil Heaven_.
 
 I slept well that night. And when the lawyer called me up the next morning and asked how my night was I said "Let's just say it was the ride of a death time." We both laughed, but there's nothing funny about skeletons. Stay safe out there, whatever you are...
+
+> [!NOTE] Attribution
+> This is a transcript of a story told by guest Pat Magee on the Triple J breakfast show with Matt and Alex in October 2015. It's not attributed to him anywhere even though it has been shared on Reddit a few times. You can find the radio archives from that day, or view a YouTube video here: https://www.youtube.com/watch?v=EP_Ft7Ig1UQ
+>
+> Pat seems to have disappeared from the internet. One might call him a ghost. I'm sharing this because it's too good to lose, and if it's going to be immortalised on Reddit then it better be attributed to the original author.
+>
+> Originally transcribed by [my friend](https://ggor.ca/) with formatting cleaned up by me, for drama. Title added by me with creative license.
+
