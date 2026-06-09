@@ -1,11 +1,11 @@
 ---
 title: "Deputec Locking and Timesheet Concurrency Problems"
-summary: "Implementing bulk actions into Deputy presents synchronisation challenges."
 keywords: ["Arie Oldman", "Deputy", "concurrency", "timesheet", "bulk actions", "optimistic locking", "synchronization", "software engineering"]
 tags: ["technical"]
 date: 2023-06-19T16:19:00+1000
 draft: false
 author: Arie Oldman
+summary: "Notes while thinking through concurrency problems."
 ---
 
 At Deputy, we are starting to introduce bulk actions for timesheets: bulk approve, bulk discard, and so on.

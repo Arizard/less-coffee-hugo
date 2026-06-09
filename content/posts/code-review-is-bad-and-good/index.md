@@ -5,7 +5,7 @@ author: Arie Oldman
 draft: false
 tags:
     - technical
-summary: On people and code quality.
+summary: Justifying code review to myself.
 ---
 
 After an interaction at work, I'm torn between two opposing views:

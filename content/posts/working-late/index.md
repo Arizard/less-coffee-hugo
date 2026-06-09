@@ -8,7 +8,7 @@ tags:
 - career
 hero: hero.jpg
 hero_attribution: Photo <wbr />by <a href="https://unsplash.com/@tylerhlyons95?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Tyler Lyons</a> on <wbr /><a href="https://unsplash.com/photos/a-very-tall-building-with-a-lot-of-windows-cabtvL6nNU8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-summary: Long hours are okay, sometimes.
+summary: What I think about working longer hours.
 ---
 
 Software engineer John Carmack, co-founder of _Id Software_, [worked 10-hour days, 6 days a week throughout his career](https://lexfridman.com/john-carmack/). Some engineers think this is reasonable. Others will say it leads to burnout. My take? **Longer hours are fine when it's on your terms, you're gaining something valuable, and your life circumstances allow it.**

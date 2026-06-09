@@ -5,7 +5,7 @@ languageCode = "en-US"
 enableInlineShortcodes = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true
-summaryLength = 10
+summaryLength = 0
 
 [params]
   defaultAuthor = "Arie Oldman"

@@ -6,6 +6,7 @@ tags:
     - creative
 hero: hero.jpeg
 hero_attribution: Photo by Arie.
+summary: I'm sick of LinkedIn.
 ---
 
 LinkedIn has become appreciably worse. Or perhaps it's just my algorithm. You've probably noticed it already.

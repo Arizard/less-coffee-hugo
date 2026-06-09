@@ -1,12 +1,12 @@
 ---
 title: "Three Ways to Make Your PRs (And Repos) more Readable"
-summary: "Even in the age of AI, you should still write code for humans."
 tags: ["technical"]
 date: 2025-08-23T13:10:30+10:00
 author: Arie Oldman
 draft: false
 hero: hero.jpg
 hero_attribution: Photo by <a href="https://unsplash.com/@arizard?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Arie Oldman</a> on <a href="https://unsplash.com/photos/a-large-library-filled-with-lots-of-books-VT0Avb_ltQQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+summary: "My advice for writing human-readable code, even in the age of AI."
 ---
 
 Making your PRs easier to review enables your team to ship fast while maintaining quality. In this post I'll explain three ways to improve PR readability and why it works.

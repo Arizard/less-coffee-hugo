@@ -6,7 +6,7 @@ author: Arie Oldman
 draft: false
 tags:
  - life
-summary: "Renting isn't as simple as the boomers claim."
+summary: "I argue that the stigma around renting is unwarranted."
 ---
 
 How often has a family member told you "renting is dead money"? In my opinion, that's not the whole story.

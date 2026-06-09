@@ -6,7 +6,7 @@ author: Arie Oldman
 draft: false
 hero: hero.jpg
 hero_attribution: Photo by <a href="https://unsplash.com/@tabeaschimpf?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Tabea Schimpf</a> on <a href="https://unsplash.com/photos/a-side-view-mirror-showing-a-car-driving-on-a-road-IsE8kL3p9CE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-summary: "This is not an interview, so I don't have to be polite."
+summary: "Why Deputy wasn't right for me, in the end."
 ---
 
 When you interview for a new role, often you'll get asked: What makes you want to leave your current one? Answering politely is a good professional decision. This is a blog post and not an interview, so I don't have to be polite.

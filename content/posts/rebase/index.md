@@ -1,10 +1,10 @@
 ---
 title: "How to Rebase"
-summary: "A double-edged sword for elevating your engineering practice with version control."
 tags: ["technical"]
 date: 2022-03-22T10:53:38+11:00
 author: Arie
 draft: false
+summary: "A presentation I made at Deputy to explain why we might choose rebasing over merging."
 ---
 
 _This is the blog post version of a presentation I made for my team at Deputy. Enjoy!_

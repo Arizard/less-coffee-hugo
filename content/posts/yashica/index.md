@@ -1,6 +1,5 @@
 ---
 title: "Analog Photography (featuring the Yashica Electro 35)"
-summary: "Getting a 50-year-old camera back into working order."
 keywords: ["Arie Oldman", "analog photography", "film photography", "Yashica Electro 35", "vintage camera", "camera restoration", "35mm film", "photography"]
 tags: ["creative"]
 date: 2023-09-12
@@ -8,6 +7,7 @@ author: Arie Oldman
 draft: false
 hero: IMG_0203.jpg
 hero_attribution: Photo by Arie.
+summary: "How I restored a 50 year old camera into working order."
 ---
 
 Lately I've been experimenting with analog photography. I grew up in the 2000s, so my _exposure_ to film was extremely limited (except for some very faint memories of using a disposable camera on holiday, and then taking it to the post office for development). Read on to hear about my journey so far, starting with my first analog camera.

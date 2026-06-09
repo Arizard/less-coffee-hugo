@@ -8,7 +8,7 @@ hero_attribution: Photo by Arie.
 tags:
     - career
     - life
-summary: "Five years of remote work was too isolating."
+summary: "How I felt after five years of being fully remote."
 ---
 
 After five years of fully remote work, the loneliness was too much.

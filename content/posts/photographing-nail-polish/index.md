@@ -1,10 +1,10 @@
 ---
 title: "Troubleshooting Reflections in Product Photography"
-summary: "A quick article on how to avoid unsightly reflections."
 keywords: ["Arie Oldman", "product photography", "nail photography", "reflections", "softbox", "studio lighting", "photography tips", "glare reduction"]
 tags: ["creative"]
 author: Arie Oldman
 date: 2023-07-17T21:00:00+10:00
+summary: "A quick article about what I learned on avoiding unsightly reflections."
 ---
 
 When photographing glossy nails in a studio setting using a softbox, you might find that there is an annoying white streak obscuring the nail art. I've been calling this "glare" for lack of a better term.

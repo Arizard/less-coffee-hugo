@@ -8,6 +8,7 @@ hero_attribution: Photo by Arie.
 tags:
     - career
 featured: true
+summary: How I got fired from my first developer job.
 ---
 
 One day, several years ago, my manager and the CTO pulled me aside to tell me _"The business has decided not to continue with your employment. We don't have the processes or resources here to make you successful."_
