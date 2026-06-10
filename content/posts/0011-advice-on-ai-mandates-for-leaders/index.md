@@ -6,7 +6,7 @@ hero: hero.jpeg
 hero_attribution: Photo by Arie.
 tags:
     - misc
-summary: How I would sensibly tackle the problems with AI usage-based targets.
+summary: How I would sensibly approach AI usage targets.
 unlisted: true
 ---
 
