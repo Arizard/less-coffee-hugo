@@ -5,7 +5,7 @@ author: Arie Oldman
 hero: hero.jpeg
 hero_attribution: Photo by Arie.
 tags:
-    - misc
+    - career
 summary: How I would sensibly approach AI usage targets.
 unlisted: true
 ---
