@@ -8,7 +8,6 @@ tags:
     - career
 summary: How I would sensibly approach AI usage targets.
 unlisted: true
-class: essay
 ---
 
 Imagine you're in charge of a team. You've just been told by your boss that you need to drive AI usage. They're anxious that the business is being left behind. I suppose AI psychosis is a powerful thing. They're setting an "adoption target" of 100% of employees using AI for their daily work. After some quiet grumbling and eye rolls, and letting off some steam to your peers, you resolve to find a meaningful way to meet this target. Here's how I'd do it.
