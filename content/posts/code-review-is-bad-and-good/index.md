@@ -32,6 +32,3 @@ Code review _is_ where quality gets enforced, _and_ bad quality leads to unhappy
 Your code will outlive your presence, so go ahead and request changes.
 
 {{< dinkus >}}
-
-> [!NOTE] AI Disclaimer
-> Just to let you know, I used Claude to give me feedback on this one. It's not generating actual content, instead it's used as a "rubber duck" by asking it to summarise key points, so that I can see whether it makes sense from a perspective other than my own.
