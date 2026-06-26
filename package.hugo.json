@@ -2,5 +2,9 @@
   "name": "less-coffee-hugo",
   "version": "0.1.0",
   "dependencies": {
+    "prettier": "^3.8.4"
+  },
+  "scripts": {
+    "format": "prettier --prose-wrap always --print-width 80 --write \"content/**/*.md\""
   }
 }
