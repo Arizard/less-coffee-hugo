@@ -16,32 +16,32 @@ aliases = ["migrate-from-jekyl"]
 draft = true
 +++
 
-This article offers a sample of basic Markdown syntax that can be used in Hugo
-content files, also it shows whether basic HTML elements are decorated with CSS
-in a Hugo theme.
-
+This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
 <!--more-->
 
-> [!NOTE] This is a note...
+> [!NOTE]
+> This is a note...
 
-> [!TIP] This is a tip...
+> [!TIP]
+> This is a tip...
 
-> [!WARNING]+ warn extended This is a warning... and it has layers
+> [!WARNING]+ warn extended
+> This is a warning...
+> and it has layers
 >
 > yeah
 
 followed by a paragreaph....
 
-> [!IMPORTANT] This article offers a sample of basic Markdown syntax that can be
-> used in Hugo content files, also it shows whether basic HTML elements are
-> decorated with CSS in a Hugo theme.
+> [!IMPORTANT]
+> This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
 
-> [!CAUTION] This is cautious...
+> [!CAUTION]
+> This is cautious...
 
 ## Images NEW!
 
-Markdown images have three components: a description, a src URL, and an optional
-title:
+Markdown images have three components: a description, a src URL, and an optional title:
 
 ```
 ![white kitten](/images/kitten.jpg "A kitten!")
@@ -55,129 +55,100 @@ For example, the below code snippet renders the image that follows:
 ![This is the caption](landscape.jpg "This is the title.")
 ```
 
+
 ![This is the caption](landscape.jpg "This is the title.")
 
 ```markdown
 ![This is the caption without a title at all...](landscape.jpg)
 ```
 
+
 ![This is the caption without a title at all...](landscape.jpg)
+
 
 ### Override default full-width behaviour
 
 For portrait images we can specify the attribute `portrait`:
 
 ```markdown
-![I saw these chickens in Lombok](portrait.jpg "Three Chickens") {.portrait}
+![I saw these chickens in Lombok](portrait.jpg "Three Chickens")
+{.portrait}
 ```
 
-![I saw these chickens in Lombok](portrait.jpg "Three Chickens") {.portrait}
+![I saw these chickens in Lombok](portrait.jpg "Three Chickens")
+{.portrait}
 
-![This is the caption](landscape.jpg "This is the title.") {.portrait}
+![This is the caption](landscape.jpg "This is the title.")
+{.portrait}
 
 ![A photo I took of Renee's nails, with a white streak visible `here's some code`](<Capture One Catalog5757.jpg> "Nails")
 {.portrait}
 
 ## Headings
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section
-headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
 
 # H1 Heading One
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-fugiat nulla pariatur.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 ## H2 Heading Two
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor
-sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
-mi vitae est. Mauris placerat eleifend leo.
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
 
 ### H3 Heading Three
 
-Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare
-vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna.
-Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent
-commodo cursus magna, vel scelerisque nisl consectetur et.
+Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
 
 #### H4 Heading Four
 
-Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus
-sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Vivamus
-sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit
-libero, a pharetra augue.
+Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue.
 
 ##### H5 Heading Five
 
-Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-fermentum massa justo sit amet risus. Donec sed odio dui. Cras justo odio,
-dapibus ut facilisis in, egestas eget quam. Morbi leo risus, porta ac
-consectetur ac, vestibulum at eros.
+Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Cras justo odio, dapibus ut facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
 
 ###### H6 Heading Six
 
-Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est
-at lobortis. Maecenas faucibus mollis interdum. Nullam id dolor id nibh
-ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis
-parturient montes, nascetur ridiculus mus.
+Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 
 ## Paragraph
 
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum,
-voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma
-dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as
-cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin
-porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur?
-Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit
-ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda
-veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore
-eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata
-tiustia prat.
+Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
 
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne
-sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
 
 ## Blockquotes
 
-The blockquote element represents content that is quoted from another source,
-optionally with a citation which must be within a `footer` or `cite` element,
-and optionally with in-line changes such as annotations and abbreviations.
+The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
 
 #### Blockquote without attribution
 
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae. **Note** that you can
-> use _Markdown syntax_ within a blockquote.
+> Tiam, ad mint andaepu dandae nostion secatur sequo quae.
+> **Note** that you can use *Markdown syntax* within a blockquote.
 
 #### Blockquote with attribution
 
-> Don't communicate by sharing memory, share memory by communicating.</p> —
-> <cite>Rob Pike[^1]</cite>
+> Don't communicate by sharing memory, share memory by communicating.</p>
+> — <cite>Rob Pike[^1]</cite>
 
-[^1]:
-    The above quote is excerpted from Rob Pike's
-    [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest,
-    November 18, 2015.
+
+[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
 
 ## Tables
 
-Tables aren't part of the core Markdown spec, but Hugo supports supports them
-out-of-the-box.
+Tables aren't part of the core Markdown spec, but Hugo supports supports them out-of-the-box.
 
-| Name  | Age |
-| ----- | --- |
-| Bob   | 27  |
-| Alice | 23  |
+   Name | Age
+--------|------
+    Bob | 27
+  Alice | 23
 
 #### Inline Markdown within tables
 
-| Inline&nbsp;&nbsp;&nbsp; | Markdown&nbsp;&nbsp;&nbsp; | In&nbsp;&nbsp;&nbsp;                | Table  |
-| ------------------------ | -------------------------- | ----------------------------------- | ------ |
-| _italics_                | **bold**                   | ~~strikethrough~~&nbsp;&nbsp;&nbsp; | `code` |
+| Inline&nbsp;&nbsp;&nbsp;     | Markdown&nbsp;&nbsp;&nbsp;  | In&nbsp;&nbsp;&nbsp;                | Table      |
+| ---------- | --------- | ----------------- | ---------- |
+| *italics*  | **bold**  | ~~strikethrough~~&nbsp;&nbsp;&nbsp; | `code`     |
 
 ## Code Blocks
 
@@ -195,7 +166,6 @@ out-of-the-box.
 </body>
 </html>
 ```
-
 #### Code block indented with four spaces
 
     <!DOCTYPE html>
@@ -234,14 +204,13 @@ func main() {
 }
 ```
 
-````plain
+```plain
 Hello World, this is using the ```plain code block
-````
+```
 
 #### Code blocks inline
 
-Sometimes code can be `inline` and potentially contain
-`very long words or go over multiple lines... how curious?`
+Sometimes code can be `inline` and potentially contain `very long words or go over multiple lines... how curious?`
 
 ## List Types
 
@@ -253,15 +222,15 @@ Sometimes code can be `inline` and potentially contain
 
 #### Unordered List
 
-- List item
-- Another item
-- And another item
+* List item
+* Another item
+* And another item
 
 #### Nested list
 
-- Item
-  1. First Sub-item
-  2. Second Sub-item
+* Item
+    1. First Sub-item
+    2. Second Sub-item
 
 ## Other Elements — abbr, sub, sup, kbd, mark, hr
 
@@ -271,11 +240,9 @@ H<sub>2</sub>O
 
 X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the
-session.
+Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
 
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and
-other small creatures.
+Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
 
 ### Horizontal Rule
 
@@ -286,3 +253,4 @@ use `---`:
 {{< dinkus >}}
 
 ^ see this
+

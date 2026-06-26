@@ -6,7 +6,6 @@
       "postcss-cli": "etch-less-coffee",
       "postcss-nested": "etch-less-coffee",
       "postcss-preset-env": "etch-less-coffee",
-      "prettier": "project",
       "react": "etch-less-coffee",
       "react-dom": "etch-less-coffee"
     },
@@ -18,15 +17,13 @@
     "postcss-cli": "^11.0.1",
     "postcss-nested": "^7.0.2",
     "postcss-preset-env": "^11.3.0",
-    "prettier": "^3.8.4",
     "react": "^19.2.3",
     "react-dom": "^19.2.3"
   },
   "devDependencies": {},
   "name": "less-coffee-hugo",
   "scripts": {
-    "bump-theme": "git add themes/etch-less-coffee && git commit -m \"bump theme\"",
-    "format": "prettier --prose-wrap always --print-width 80 --write \"content/**/*.md\""
+    "bump-theme": "git add themes/etch-less-coffee && git commit -m \"bump theme\""
   },
   "version": "0.1.0"
 }

@@ -1,7 +1,7 @@
 ---
 title: Posts
 build:
-  render: never
+    render: never
 ---
 
 # Posts
