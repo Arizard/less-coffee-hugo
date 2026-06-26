@@ -5,6 +5,7 @@
     "prettier": "^3.8.4"
   },
   "scripts": {
-    "format": "prettier --prose-wrap always --print-width 80 --write \"content/**/*.md\""
+    "format": "prettier --prose-wrap always --print-width 80 --write \"content/**/*.md\"",
+    "bump-theme": "git add themes/etch-less-coffee && git commit -m \"bump theme\""
   }
 }

@@ -25,6 +25,7 @@
   "devDependencies": {},
   "name": "less-coffee-hugo",
   "scripts": {
+    "bump-theme": "git add themes/etch-less-coffee && git commit -m \"bump theme\"",
     "format": "prettier --prose-wrap always --print-width 80 --write \"content/**/*.md\""
   },
   "version": "0.1.0"
