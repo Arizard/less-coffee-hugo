@@ -9,7 +9,9 @@
       "react": "etch-less-coffee",
       "react-dom": "etch-less-coffee"
     },
-    "devDependencies": {}
+    "devDependencies": {
+      "prettier": "project"
+    }
   },
   "dependencies": {
     "autoprefixer": "^10.5.0",
@@ -20,10 +22,13 @@
     "react": "^19.2.3",
     "react-dom": "^19.2.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "prettier": "^3.9.0"
+  },
   "name": "less-coffee-hugo",
   "scripts": {
-    "bump-theme": "git add themes/etch-less-coffee && git commit -m \"bump theme\""
+    "bump-theme": "git add themes/etch-less-coffee && git commit -m \"bump theme\"",
+    "format": "prettier --prose-wrap always --print-width 80 --write"
   },
   "version": "0.1.0"
 }
