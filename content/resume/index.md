@@ -18,8 +18,8 @@ problems and have a clear business impact.
 - Reduced daily medical support tickets by 63% by leading the development of a
   mobile app questionnaire which triages patients based on severity and
   frequency of side effects.
-- Enabled SOC 2 compliance by building a proprietary multi-factor authentication
-  system from scratch.
+- Enabled ISO27001 certification by building a proprietary multi-factor
+  authentication system from scratch.
 - Reduced friction in nutrition tracking and improved dietary compliance by
   building a patient meal tracker that estimates macros from photos, labels, or
   text. Co-led the nutrition team through a critical 1-month period without a
