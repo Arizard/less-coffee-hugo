@@ -13,9 +13,13 @@ summary: "About Arie and less.coffee."
 
 I'm Arie, proud grug-brained trad-coder. I'm a software engineer from Sydney. I'm into coffee, cameras, running, cycling, and writing. I used to teach Les Mills classes at a few gyms in Sydney. I write about all these things.
 
-## Why have a blog?
+## Why I blog
 
 I could write in a journal and never show anyone, so why do I publish? <mark>Writing something and sending it out into the world is a form of closure.</mark> It's like taking a pile of half-baked ideas scribbled on sticky notes, and transforming it into a hefty paperback. What were once scattered thoughts is now a distinct point of view which stands on its own. Also, I hope you're entertained, or intrigued, or otherwise get some use out of my blog.
+
+### Why I self-host
+
+I've been reading _Technofeudalism_ by Yanis Varoufakis (as of June 2026), it puts into words what I couldn't for a long time. Blogging platforms like Medium and Substack are "fiefdoms"—by writing on those platforms I create content for those platform owners, thereby enriching the platform owners by making their platform more valuable. They aren't even paying me! So I self-host this blog, the difference being that I am using AWS transactionally; I pay a monthly fee for a service they provide, rather than making someone else's platform more valuable using my unwaged labour.
 
 ## About my work
 
