@@ -7,14 +7,14 @@ hero_attribution: Photo by Arie.
 tags:
     - career
 summary: How I would sensibly approach AI usage targets.
-unlisted: true
+draft: true
 ---
 
 Imagine you're in charge of a team. You've just been told by your boss that you need to drive AI usage. They're anxious that the business is being left behind. I suppose AI psychosis is a powerful thing. They're setting an "adoption target" of 100% of employees using AI for their daily work. After some quiet grumbling and eye rolls, and letting off some steam to your peers, you resolve to find a meaningful way to meet this target. Here's how I'd do it.
 
 By now you should be familiar with Goodhart's Law: any measure that becomes a target ceases to become a good measure. If we pass this target on to our teams as-is, then we risk creating a perverse incentive. Team members could, hypothetically, say "good morning" to Claude each day as a box-ticking exercise, or (my favourite technique) ask Claude to recite the alphabet until their usage quota is met. The usage target _tells_ employees to use the tool, but doesn't _show_ them the value upfront. Now they have to juggle both their day job and AI experimentation. You've added another responsibility to their role. Usage targets, adoption targets, token targets, whatever you're calling it, they are a spectacularly bad idea.
 
-Adoption of a new tool requires a change to "the way it has always been". You change the culture by demonstrating the value in a new way of working[^morgadas]. I'd find a business objective first—a good objective would be one which has a fifty-percent chance of being met because it's not a given. I would create a "market demand" for productive tooling: ask yourself "how can the objective be more ambitious?". Find the bar and raise it.
+Adoption of a new tool requires a change to "the way it has always been". You change the culture by demonstrating the value in a new way of working[^morgadas]. I'd find a business objective first, then create conditions which necessitate productive tooling: ask yourself "how can the objective be more ambitious?". Find the bar and raise it.
 
 Then I would roll out new AI tools to any employee who wants to make use of them. There will be early adopters, so find them and elevate their voice, social proof is the best kind of proof. Identify your team's pain-points as opportunities to try new techniques with AI. And once you've found some concrete use cases, expect to invest more resources: good tooling is not just one-and-done, you need to maintain it by assembling a team around it. Find a use case for AI which is so valuable to the business that becomes a part of the infrastructure. That's how you'll hit 100% adoption in a meaningful way.
 
