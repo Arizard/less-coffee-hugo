@@ -12,9 +12,6 @@ problems and have a clear business impact.
 
 **Senior Software Engineer I at Eucalyptus** _February 2025 – present_
 
-- Grew engineering team from 20 to 60 engineers by leading over 36 technical
-  interviews and composing detailed feedback on candidates to influence hiring
-  decisions.
 - Reduced daily medical support tickets by 63% by leading the development of a
   mobile app questionnaire which triages patients based on severity and
   frequency of side effects.
@@ -25,6 +22,9 @@ problems and have a clear business impact.
   text. Co-led the nutrition team through a critical 1-month period without a
   dedicated manager, shipping the meal tracker on schedule while reviewing and
   unblocking engineering work.
+- Supported the growth of the engineering team by conducting over 36 technical
+  interviews and composing detailed feedback on candidates to influence hiring
+  decisions.
 - Established a recurring purchase capability by leading the development of the
   _Subscribe and save_ experiment, proving viability for certain
   non-prescription products.

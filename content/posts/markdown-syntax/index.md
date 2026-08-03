@@ -250,7 +250,5 @@ use `---`:
 
 ---
 
-{{< dinkus >}}
-
 ^ see this
 
