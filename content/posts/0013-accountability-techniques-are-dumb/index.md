@@ -20,8 +20,3 @@ job), they’re just sharing the challenge, and you’re all bonding over that.
 Connecting with people energises you more than an accountability tool ever will.
 It’s a lot easier to turn up regularly to a thing if it’s full of people you
 like.
-
-It’s probably why group fitness is so slutty (who, me?)—a room full of stupidly
-fit and hot people in their 20s and 30s, moving together in time, bonding over
-the shared pain and emotion of a HIIT class. But I'll tell you about that
-another time :)
