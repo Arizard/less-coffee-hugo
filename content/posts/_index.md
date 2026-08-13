@@ -1,9 +1,5 @@
 ---
 title: Posts
-build:
-    render: never
 ---
 
-# Posts
-
-Posts. Stuff written by me.
+Writing about whatever comes to mind.

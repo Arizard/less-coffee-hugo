@@ -1,0 +1,7 @@
+rm -rf static/gallery/*;
+cd ../less-coffee-gallery-hugo
+rm -rf public/*
+hugo
+cd ../less-coffee-hugo
+cp -R ../less-coffee-gallery-hugo/public/* static/gallery;
+hugo
