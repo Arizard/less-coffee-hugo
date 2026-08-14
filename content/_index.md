@@ -1,8 +1,5 @@
 ---
-title: "Posts by Arie"
-nocomment: true
+title: "Index"
 ---
-
-
 
 

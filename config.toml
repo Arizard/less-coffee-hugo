@@ -22,42 +22,48 @@ summaryLength = 0
   authorBioImage = "/arie-bio.jpeg"
 
 [menu]
-  [[menu.main]]
-    identifier = "index"
-    name = "index"
+  [[menu.index]]
+    identifier = "posts"
+    name = "posts"
     title = "posts"
-    pageRef = "/"
+    pageRef = "/posts"
     weight = 10
-  # [[menu.main]]
-  #   identifier = "posts"
-  #   name = "posts"
-  #   title = "posts"
-  #   pageRef = "/posts"
-  #   weight = 20
+  [[menu.index]]
+    identifier = "resume"
+    name = "resume"
+    title = "resume"
+    pageRef = "/resume"
+    weight = 50
+  [[menu.index]]
+    identifier = "gallery"
+    name = "gallery"
+    title = "gallery"
+    url = "/gallery"
+    weight = 40
+  [[menu.index]]
+    identifier = "about"
+    name = "about"
+    title = "about"
+    pageRef = "/about"
+    weight = 100
+  [[menu.main]]
+    identifier = "posts"
+    name = "posts"
+    title = "posts"
+    pageRef = "/posts"
+    weight = 10
   [[menu.main]]
     identifier = "about"
     name = "about"
     title = "about"
     pageRef = "/about"
     weight = 30
-  # [[menu.main]]
-  #   identifier = "resume"
-  #   name = "resume"
-  #   title = "resume"
-  #   pageRef = "/resume"
-  #   weight = 40
   [[menu.footer]]
     identifier = "index"
     name = "index"
     title = "posts"
     pageRef = "/"
     weight = 5
-  # [[menu.footer]]
-  #   identifier = "posts"
-  #   name = "posts"
-  #   title = "posts"
-  #   pageRef = "/posts"
-  #   weight = 10
   [[menu.footer]]
     identifier = "about"
     name = "about"
@@ -76,12 +82,6 @@ summaryLength = 0
     title = "artefacts"
     pageRef = "/artefacts"
     weight = 33
-  # [[menu.footer]]
-  #   identifier = "ai-policy"
-  #   name = "ai-policy"
-  #   title = "ai policy"
-  #   pageRef = "/ai"
-  #   weight = 40
   [[menu.footer]]
     identifier = "github"
     name = "github"

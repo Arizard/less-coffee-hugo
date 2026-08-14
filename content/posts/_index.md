@@ -2,4 +2,4 @@
 title: Posts
 ---
 
-Writing about whatever comes to mind.
+Essays, notes, ramblings, etc. about whatever comes to mind.
