@@ -3,27 +3,29 @@ title: "About Me"
 draft: false
 nocomment: false
 nobio: true
-date: 2026-05-18
+date: 2026-08-15
 class: essay
 summary: "About Arie and less.coffee."
 ---
 
-![polaroid of arie, taken upside down, which gives the illusion that he is doing a handstand on a toilet bowl.](arie-about.jpg)
+![sticker-style image of a circular convex mirror, a group of four tourists are visible in front of mount fuji, japan.](/fujimirror.webp)
 {.nocaption .sm}
 
 I'm Arie, proud grug-brained trad-coder. I'm a software engineer from Sydney. I'm into coffee, cameras, running, cycling, and writing. I used to teach Les Mills classes at a few gyms in Sydney. I write about all these things.
 
+Nothing bad ever happens to me.
+
 ## Why I blog
 
-I could write in a journal and never show anyone, so why do I publish? <mark>Writing something and sending it out into the world is a form of closure.</mark> It's like taking a pile of half-baked ideas scribbled on sticky notes, and transforming it into a hefty paperback. What were once scattered thoughts is now a distinct point of view which stands on its own. Also, I hope you're entertained, or intrigued, or otherwise get some use out of my blog.
+I could write in a journal and never show anyone, so why do I publish? Writing something and sending it out into the world is a form of closure. It's like taking a pile of half-baked ideas scribbled on sticky notes, and transforming it into a hefty paperback. What were once scattered thoughts is now a distinct point of view which stands on its own. Also, I hope you're entertained, or intrigued, or otherwise get some use out of my blog.
 
 As for why I self host: I've been reading _Technofeudalism_ by Yanis Varoufakis (as of June 2026), it puts into words what I couldn't for a long time. Blogging platforms like Medium and Substack are "fiefdoms"—by writing on those platforms I create content for those platform owners, thereby enriching the platform owners by making their platform more valuable. They aren't even paying me! So I self-host this blog, the difference being that I am using AWS transactionally; I pay a monthly fee for a service they provide, rather than making someone else's platform more valuable using my unwaged labour.
 
 ## About my work
 
-I was Deputy [for 5 years]({{< ref "posts/postmortem-deputy" >}}), working across professional services and engineering. Now I'm an engineer at Eucalyptus (Hims & Hers). I've worked with a lot of Go, Typescript, and PHP. Sometimes it runs on a laptop, sometimes on an EC2, and sometimes it runs in Kubernetes.
+I value the craft of software engineering itself, not just the business outcomes. I believe craft and outcome are inseparable. If you want outcomes, you need craftspeople. I am always chasing a sense of progression through mastery of my craft.
 
-I've also worked with a lot of different people: product managers, designers, support agents, frontend engineers, backend engineers, mobile engineers, data engineers, platform engineers, juniors, seniors, mids, mids who should be seniors, seniors who should be mids, staff engineers who should be seniors, bad managers, good managers, pre-sales, post-sales...
+As an engineer I’ve spent my career working with languages like Go, PHP, and Typescript, but my programming experience started long before that when I was producing custom plugins for a computer game called Garry’s Mod—and, yes, people paid me for this! I’ve had experience with a mostly-monolith stack at Deputy, and now a mostly-microservice stack at Euc. I earned a Bachelor’s in Telecom Engineering and have tinkered with AWS and GCP in my spare time, so I tend to understand things fairly well from a systems POV. However, wouldn’t go as far as to call myself a platform engineer.
 
 ## Links
 
