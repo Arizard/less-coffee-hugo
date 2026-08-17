@@ -5,7 +5,7 @@ author: {{ .Site.Params.defaultAuthor }}
 draft: true
 hero: hero.jpg
 hero_attribution: TODO add attribution
-tags:
+tags: # aka "topics"
     - misc
 summary: A history of boxing.
 ---

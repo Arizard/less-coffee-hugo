@@ -2,7 +2,7 @@
 title: "About Me"
 draft: false
 nocomment: false
-nobio: true
+author: Arie
 date: 2026-08-15
 class: essay
 summary: "About Arie and less.coffee."

@@ -6,7 +6,8 @@ draft: false
 hero: hero.jpeg
 hero_attribution: Photo by Arie.
 tags:
-    - career
+    - feedback
+    - personal growth
 featured: true
 summary: How I got fired from my first developer job.
 ---

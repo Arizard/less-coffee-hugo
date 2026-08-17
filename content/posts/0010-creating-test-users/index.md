@@ -3,6 +3,9 @@ title: "Creating a test user"
 date: "2026-05-21T00:00:00+10:00"
 author: Arie Oldman
 class: essay
+tags:
+    - word vomit
+    - testing
 ---
 
 {{< draft >}}

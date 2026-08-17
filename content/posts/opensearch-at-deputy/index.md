@@ -4,7 +4,8 @@ date: 2026-02-17T21:25:57+11:00
 author: Arie Oldman
 draft: false
 tags:
-    - technical
+    - opensearch
+    - engineering
 summary: The most egregiously over-engineered solution I have ever been a part of.
 class: essay
 ---

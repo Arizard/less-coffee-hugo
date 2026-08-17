@@ -3,7 +3,7 @@ title: "Make your habit a social one"
 date: "2026-06-22T23:02:34+10:00"
 author: Arie Oldman
 tags:
-  - life
+  - motivation
 summary: Why "accountability" is a buzzword.
 class: essay
 ---
