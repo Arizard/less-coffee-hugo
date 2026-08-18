@@ -3,10 +3,12 @@ title: "Peculiarities in text wrapping across platforms"
 date: "2026-08-18T20:09:14+10:00"
 author: Arie Oldman
 tags: # aka "topics"
-    - text wrapping
-    - text rendering
+    - Text Wrapping
+    - Text Rendering
     - iOS
-    - web dev
+    - WebKit
+    - Web Dev
+    - Browsers
 summary: "Why does text wrap differently on iOS? I still don't know for sure."
 ---
 
@@ -22,6 +24,7 @@ I've spent a fair bit of time tinkering with the CSS on less.coffee. A significa
 For example, see the screenshot below. On macOS Chrome dev tools "responsive mode" vs iOS Safari, these two pages wrap text at different points in the paragraph:
 
 ![There are differences in line breaks.](1.png)
+{original=true}
 
 Believe it or not: both screenshots have `text-wrap: pretty` applied.
 
@@ -29,19 +32,30 @@ Could it be subpixel antialiasing? [macOS disables subpixel AA](https://en.wikip
 
 I can't find a source, but I am pretty sure iOS never had subpixel AA because _you can't guarantee the orientation of the device_, so you effectively need to [implement subpixel logic for two distinct subpixel configurations](https://mjtsai.com/blog/2018/07/13/macos-10-14-mojave-removes-subpixel-anti-aliasing/#:~:text=Subpixel%20antialiasing%20is%20obnoxious%20to%20implement.).
 
-I concluded that Safari (and presumably, other browsers on mobile) must use the OS's text wrapping algorithms, because this looks the same in iOS Chrome. It also seems like iOS has a slightly different text wrapping algorithm. Maybe it's more aggressively trying to balance the rag? An interesting property I noticed was that the length of the shortest line (or <abbr title="Length of Shortest Line">LOSL</abbr>) is greater on iOS compared to macOS:
+I concluded that Safari must use the OS's text wrapping algorithms, because this looks the same in iOS Chrome. It also seems like iOS has a slightly different text wrapping algorithm. Maybe it's more aggressively trying to balance the rag? An interesting property I noticed was that the length of the shortest line (or <abbr title="Length of Shortest Line">LOSL</abbr>) is greater on iOS compared to macOS:
 
 ![Length of shortest line is different too.](2.png)
+{original=true}
 
 Finally, I decided to test a website out in the wild, with default user agent `text-wrap`, and this is the difference:
 
 ![Side by side screenshots of the Wikipedia page for the Go programming language. macOS on left, iOS on right.](3.png)
+{original=true}
 
 I have a hard time deciding if left or right is better in this screenshot. Left looks pretty dense, but right's rag is a bit more jagged. The LOSL is quite similar between both paragraphs.
 
 I could be scaling the image wrong, but it really seems like iOS renders the font slightly bigger. That would explain why inline iconography sometimes looks out of position on iOS—placing a block element inline with a text span ends up looking out of alignment when the text height adjusts the container height.
 
-There's nothing, really, to conclude here, other than the fact that I find it interesting. Even with the same viewport width, same CSS, same assets, the two different platforms render text subtly differently. Perhaps something to consider when designing websites!
+I went back and checked Safari on desktop and... wait, it looks just like iOS?
+
+![Safari desktop, Safari iOS, and Chrome iOS all wrap text the same way](4.png)
+{original=true}
+
+So this actually means Chrome on macOS is the odd one out. What do all the other browsers share in common? I was surprised, turns out they all use **WebKit**—yes, even Chrome on iOS. Chrome on macOS uses Blink. According to Apple's _App Store Review Guidelines_, [browsers on iOS must all use WebKit](https://developer.apple.com/app-store/review/guidelines/#:~:text=Apps%20that%20browse%20the%20web%20must%20use%20the%20appropriate%20WebKit%20framework%20and%20WebKit%20JavaScript). Except on a case-by-case basis in Europe and Japan, apparently.
+
+I still don't know exactly _how_ the text wrapping is implemented, but I have most of my answer now. Since I've got the Australian app store, all my iOS browser apps use WebKit. They render the slightly more balanced typography which maximises LOSL. Chrome on macOS renders using a different text wrapping algorithm. Maybe it's less computationally expensive, because Chrome is meant to be performance-conscious? I don't know. It's getting late.
+
+There's nothing else to conclude here, other than the fact that I find it interesting. Even with the same viewport width, same CSS, same assets, the two different browser engines render text subtly differently. Something to consider when designing websites!
 
 ---
 
