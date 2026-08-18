@@ -10,6 +10,13 @@ tags: # aka "topics"
 summary: "Why does text wrap differently on iOS? I still don't know for sure."
 ---
 
+{{< audio "maple-leaf-rag.mp3" >}}
+
+
+> what's so wrong with a rag, apple?
+>
+> ---James
+
 I've spent a fair bit of time tinkering with the CSS on less.coffee. A significant portion of that time was spent fidgeting with text wrapping. In particular, I've been testing out the [(relatively) new "pretty" option for text wrapping](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-wrap#:~:text=Results%20in%20the%20same%20behavior%20as%20wrap%2C%20except%20that%20the%20user%20agent%20will%20use%20a%20slower%20algorithm%20that%20favors%20better%20layout%20over%20speed.%20This%20is%20intended%20for%20body%20copy%20where%20good%20typography%20is%20favored%20over%20performance%20(for%20example%2C%20when%20the%20number%20of%20orphans%20should%20be%20kept%20to%20a%20minimum).). Overall, it seems to work, but I've noticed some unexpected nuance in rendering across different platforms.
 
 For example, see the screenshot below. On macOS Chrome dev tools "responsive mode" vs iOS Safari, these two pages wrap text at different points in the paragraph:
@@ -35,3 +42,11 @@ I have a hard time deciding if left or right is better in this screenshot. Left 
 I could be scaling the image wrong, but it really seems like iOS renders the font slightly bigger. That would explain why inline iconography sometimes looks out of position on iOS—placing a block element inline with a text span ends up looking out of alignment when the text height adjusts the container height.
 
 There's nothing, really, to conclude here, other than the fact that I find it interesting. Even with the same viewport width, same CSS, same assets, the two different platforms render text subtly differently. Perhaps something to consider when designing websites!
+
+---
+
+<strong>Audio Attribution</strong><br>
+"Maple Leaf Rag" Kevin MacLeod (incompetech.com)<br>
+Licensed under Creative Commons: By Attribution 4.0 License<br>
+http://creativecommons.org/licenses/by/4.0/
+
