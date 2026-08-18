@@ -7,7 +7,7 @@ tags: # aka "topics"
     - text rendering
     - iOS
     - web dev
-summary: "Why does text-wrapping look different between platforms?"
+summary: "Why does text wrap differently on iOS? I still don't know for sure."
 ---
 
 I've spent a fair bit of time tinkering with the CSS on less.coffee. A significant portion of that time was spent fidgeting with text wrapping. In particular, I've been testing out the [(relatively) new "pretty" option for text wrapping](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-wrap#:~:text=Results%20in%20the%20same%20behavior%20as%20wrap%2C%20except%20that%20the%20user%20agent%20will%20use%20a%20slower%20algorithm%20that%20favors%20better%20layout%20over%20speed.%20This%20is%20intended%20for%20body%20copy%20where%20good%20typography%20is%20favored%20over%20performance%20(for%20example%2C%20when%20the%20number%20of%20orphans%20should%20be%20kept%20to%20a%20minimum).). Overall, it seems to work, but I've noticed some unexpected nuance in rendering across different platforms.
