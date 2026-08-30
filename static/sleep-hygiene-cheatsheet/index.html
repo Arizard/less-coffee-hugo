@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sleep Hygiene Cheat Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --night: #191724;
+    --night-2: #1f1d2e;
+    --card-border: rgba(224,222,244,0.08);
+    --dawn: #c4a7e7;
+    --dawn-dim: rgba(196,167,231,0.15);
+    --moon: #9ccfd8;
+    --moon-dim: rgba(156,207,216,0.15);
+    --ink: #e0def4;
+    --ink-dim: #908caa;
+    --ink-faint: #6e6a86;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background:
+      radial-gradient(ellipse 70% 35% at 50% 0%, rgba(196,167,231,0.07), transparent 65%),
+      radial-gradient(ellipse 120% 80% at 50% -10%, var(--night-2), var(--night) 60%);
+    color: var(--ink);
+    font-family: 'Archivo', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    padding: 88px 20px 80px;
+  }
+
+  .wrap {
+    max-width: 880px;
+    margin: 0 auto;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+
+  h1 {
+    font-weight: 900;
+    font-size: clamp(32px, 5vw, 48px);
+    margin: 0 0 12px;
+    letter-spacing: -0.01em;
+  }
+
+  .sub {
+    color: var(--ink-dim);
+    font-size: 18px;
+    max-width: 480px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  /* 24-hour arc timeline */
+  .arc-section {
+    position: relative;
+    margin: 0 auto 64px;
+    max-width: 880px;
+  }
+
+  .arc-svg { width: 100%; height: auto; display: block; }
+
+  .arc-point-label {
+    font-size: 22px;
+    font-weight: 500;
+    fill: var(--ink);
+  }
+
+  .arc-point-time {
+    font-size: 20px;
+    fill: var(--ink-faint);
+  }
+
+  /* Grid of cards */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 36px;
+  }
+
+  @media (max-width: 640px) {
+    .grid { grid-template-columns: 1fr; }
+    .arc-section { display: none; }
+  }
+
+  .card {
+    padding: 4px 0;
+    position: relative;
+  }
+
+  .card h2 {
+    font-weight: 900;
+    font-size: 22px;
+    margin: 0 0 12px;
+    color: var(--ink);
+    position: relative;
+    z-index: 1;
+  }
+
+  .card p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--ink-dim);
+    margin: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .card p + p { margin-top: 14px; }
+
+  .card p strong {
+    color: var(--accent, var(--dawn));
+    font-weight: 600;
+  }
+
+  .citations {
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid var(--card-border);
+  }
+
+  .citations h3 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-faint);
+    font-weight: 500;
+    margin: 0 0 14px;
+  }
+
+  .citations ol {
+    margin: 0;
+    padding-left: 20px;
+    display: grid;
+    gap: 8px;
+  }
+
+  .citations li {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--ink-faint);
+  }
+
+  .citations em {
+    font-style: italic;
+    color: var(--ink-dim);
+  }
+
+  .citations a {
+    color: var(--moon);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+
+  .citations a:hover {
+    border-bottom-color: var(--moon);
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 32px;
+    color: var(--ink-faint);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+  }
+
+  footer a {
+    color: var(--ink-faint);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+
+  footer a:hover {
+    border-bottom-color: var(--ink-faint);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>A Cheat Sheet for Better Sleep</h1>
+    <p class="sub">Seven habits worth the effort, backed by research.</p>
+  </header>
+
+  <div class="arc-section">
+    <svg class="arc-svg" viewBox="0 0 880 270" xmlns="http://www.w3.org/2000/svg">
+      <!-- base arc: circle center (440,561), r 541 -> peak at y=20, chord at y=220 -->
+      <path d="M 20 220 A 541 541 0 0 1 860 220" fill="none" stroke="url(#arcGradient)" stroke-width="3" stroke-linecap="round"/>
+      <defs>
+        <linearGradient id="arcGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#9ccfd8"/>
+          <stop offset="50%" stop-color="#c4a7e7"/>
+          <stop offset="100%" stop-color="#9ccfd8"/>
+        </linearGradient>
+      </defs>
+
+      <!-- Sunlight: on waking, start of the arc -->
+      <circle cx="20" cy="220" r="8" fill="#c4a7e7"/>
+      <text x="45" y="218" text-anchor="start" class="arc-point-label">Sunlight</text>
+      <text x="45" y="246" text-anchor="start" class="arc-point-time">on waking</text>
+
+      <!-- Caffeine cutoff: shifted further outward toward Sunlight -->
+      <circle cx="170" cy="92" r="7" fill="#f6c177"/>
+      <text x="223" y="126" text-anchor="middle" class="arc-point-label">Caffeine cutoff</text>
+      <text x="223" y="150" text-anchor="middle" class="arc-point-time">6h+ before bed</text>
+
+      <!-- Dim the lights: at the peak, label below the dot -->
+      <circle cx="440" cy="20" r="7" fill="#c4a7e7"/>
+      <text x="440" y="54" text-anchor="middle" class="arc-point-label">Dim the lights</text>
+      <text x="440" y="78" text-anchor="middle" class="arc-point-time">1–2h before bed</text>
+
+      <!-- Warm shower: shifted further outward toward Lights out -->
+      <circle cx="710" cy="92" r="7" fill="#31748f"/>
+      <text x="657" y="126" text-anchor="middle" class="arc-point-label">Warm shower</text>
+      <text x="657" y="150" text-anchor="middle" class="arc-point-time">~90 min before</text>
+
+      <!-- Lights out: end of the arc, label inside-left of the node -->
+      <circle cx="860" cy="220" r="8" fill="#9ccfd8"/>
+      <text x="835" y="218" text-anchor="end" class="arc-point-label">Lights out</text>
+      <text x="835" y="246" text-anchor="end" class="arc-point-time">same time</text>
+    </svg>
+  </div>
+
+  <div class="grid">
+
+    <div class="card" style="--accent:#c4a7e7;">
+      <h2>Light</h2>
+      <p><strong>Get outside within an hour of waking.</strong> Real sunlight, even on a cloudy day, beats indoor lighting, and this is what sets your internal clock via the suprachiasmatic nucleus.</p>
+      <p>In the evening, dim things down for an hour or two before bed, screens especially.</p>
+    </div>
+
+    <div class="card" style="--accent:#9ccfd8;">
+      <h2>Consistency</h2>
+      <p><strong>Wake up at the same time every day</strong>, weekends included. Sleep debt isn't like financial debt: you can't really pay it back, and shifting your schedule around just confuses your body more.</p>
+    </div>
+
+    <div class="card" style="--accent:#f6c177;">
+      <h2>Caffeine</h2>
+      <p><strong>Cut caffeine at least 6 hours before bed</strong>, longer if you're a slow metaboliser. Its half-life ranges from 2 to 10 hours depending on genetics, so it lingers more than it feels like.</p>
+    </div>
+
+    <div class="card" style="--accent:#eb6f92;">
+      <h2>Alcohol</h2>
+      <p><strong>Last drinks at least 3 hours before bed.</strong> As your body breaks down alcohol overnight, you get a "rebound effect" that fragments sleep and cuts into REM, leaving you groggy and short-tempered even after a full night's sleep.</p>
+    </div>
+
+    <div class="card" style="--accent:#31748f;">
+      <h2>Temperature</h2>
+      <p><strong>Keep the room cool, somewhere around 16–19°C.</strong> Your body needs to drop in core temperature to fall asleep. A warm shower about 90 minutes beforehand helps, since it pulls blood to your skin so you cool off faster once you're out.</p>
+    </div>
+
+    <div class="card" style="--accent:#ebbcba;">
+      <h2>Bed = Sleep (and Sex) Only</h2>
+      <p><strong>Don't use the bed for anything other than sleep and sex,</strong> so your brain doesn't link it with lying there awake and stressed. Not asleep after 20 minutes? Get up, do something dull, come back when tired.</p>
+    </div>
+
+  </div>
+
+  <div class="card" style="--accent:#c4a7e7; margin-top:32px;">
+    <h2>Wind-Down Routine</h2>
+    <p><strong>Do the same few steps most nights</strong>, so your brain learns to recognise them as the signal sleep's coming. If your mind races with to-do lists, dump it all on paper before you lie down.</p>
+  </div>
+
+  <div class="citations">
+    <h3>Sources</h3>
+    <ol>
+      <li>de Menezes-Júnior, L. A. A., et al. "The role of sunlight in sleep regulation: analysis of morning, evening and late exposure." <em>BMC Public Health</em>, 25:3362, 2025. <a href="https://link.springer.com/article/10.1186/s12889-025-24618-8" target="_blank" rel="noopener">link</a></li>
+      <li>Drake, C., Roehrs, T., Shambroom, J., Roth, T. "Caffeine Effects on Sleep Taken 0, 3, or 6 Hours before Going to Bed." <em>Journal of Clinical Sleep Medicine</em>, 9(11), 2013. <a href="https://jcsm.aasm.org/doi/10.5664/jcsm.3170" target="_blank" rel="noopener">link</a></li>
+      <li>Gardiner, C., et al. "The effect of caffeine on subsequent sleep: A systematic review and meta-analysis." <em>Sleep Medicine Reviews</em>, 69:101764, 2023. Summarised in <em>AJMC</em>. <a href="https://www.ajmc.com/view/caffeine-and-sleep-review-suggests-consumption-guidelines" target="_blank" rel="noopener">link</a></li>
+      <li>Haghayegh, S., Khoshnevis, S., Smolensky, M. H., Diller, K. R., Castriotta, R. J. "Before-bedtime passive body heating by warm shower or bath to improve sleep: A systematic review and meta-analysis." <em>Sleep Medicine Reviews</em>, 46:124–135, 2019. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1087079218301552" target="_blank" rel="noopener">link</a></li>
+      <li>Gardiner, C., et al. "The effect of alcohol on subsequent sleep in healthy adults: A systematic review and meta-analysis." <em>Sleep Medicine Reviews</em>, 80:102030, 2025. <a href="https://www.sciencedirect.com/science/article/pii/S1087079224001345" target="_blank" rel="noopener">link</a></li>
+      <li>Sleep Foundation. "Alcohol and Sleep." <a href="https://www.sleepfoundation.org/nutrition/alcohol-and-sleep" target="_blank" rel="noopener">link</a></li>
+      <li>Sleep Foundation. "The Best Temperature for Sleep." <a href="https://www.sleepfoundation.org/bedroom-environment/best-temperature-for-sleep" target="_blank" rel="noopener">link</a></li>
+      <li>Wittmann, M., Dinich, J., Merrow, M., Roenneberg, T. "Social Jetlag: Misalignment of Biological and Social Time." <em>Chronobiology International</em>, 23(1-2):497-509, 2006. <a href="https://www.tandfonline.com/doi/abs/10.1080/07420520500545979" target="_blank" rel="noopener">link</a></li>
+      <li>Bootzin, R. R. "Stimulus control treatment for insomnia." <em>Proceedings of the 80th Annual Convention, American Psychological Association</em>, 1972. <a href="https://www.med.upenn.edu/cbti/assets/user-content/documents/Bootzin%201972.pdf" target="_blank" rel="noopener">link</a></li>
+      <li>Scullin, M. K., Krueger, M. L., Ballard, H. K., Pruett, N., Bliwise, D. L. "The effects of bedtime writing on difficulty falling asleep: A polysomnographic study comparing to-do lists and completed activity lists." <em>Journal of Experimental Psychology: General</em>, 147(1):139-146, 2018. <a href="https://kellercenter.hankamer.baylor.edu/news/story/2018/effects-bedtime-writing" target="_blank" rel="noopener">link</a></li>
+    </ol>
+  </div>
+
+  <footer>Arie Oldman · Made using Claude · Colours: <a href="https://rosepinetheme.com/" target="_blank" rel="noopener">Rosé Pine</a></footer>
+
+</div>
+</body>
+</html>
