@@ -8,4 +8,4 @@ A simple, vibe-coded cheatsheet to list some evidence-based tactics to make your
 
 <!--more-->
 
-[Click here to view the cheatsheet](/sleep-hygiene-cheatsheet).
+<a href="/sleep-hygiene-cheatsheet" target="_blank">View the cheatsheet.</a>
